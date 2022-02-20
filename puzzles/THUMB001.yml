@@ -1,0 +1,18 @@
+tune:
+  - [-2, 4]
+  - [1, 6]
+  - [0, 1]
+  - [1, 1]
+  - [2, 2]
+  - [-1, 1]
+  - [0, 1]
+  - [-2, 4]
+  - [3, 4]
+tuneBeatDur: 200
+tunePitchBase: 63
+tuneRevealBeatDur: 192
+tuneRevealOffset: 816
+
+workTitle: The Seventh Night of July
+workAuthor: Itaru Sakai
+workDesc: 演出：The Band of the Royal Netherlands Air Force，指挥：Jan de Haan
