@@ -7,7 +7,7 @@ const indexHtmlContents = new TextDecoder().decode(await Deno.readFile('page/ind
 const indexTemplate = etaCompile(indexHtmlContents);
 
 const handler = async (req) => {
-  const urlMatch = /^(?:https?:\/\/)?[A-Za-z0-9:-]+(\/.*)?$/g.exec(req.url);
+  const urlMatch = /^(?:https?:\/\/)?[A-Za-z0-9.:-]+(\/.*)?$/g.exec(req.url);
   const reqPath = (urlMatch[1] || '/');
   if (reqPath === '/') {
     return new Response('under construction');
