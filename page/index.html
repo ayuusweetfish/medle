@@ -161,7 +161,7 @@
     <p style='text-align: center; color: #888'>除数字、颜色外的记号均不影响游戏。其含义留给有兴趣的玩家自行探索。</p>
     <br>
     <p>一共有 5 次机会。游戏愉快~</p>
-    <p style='color: #999'>北京时间每日 0:00 更新谜题，记得回来呀！</p>
+    <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-finish'>
@@ -200,6 +200,11 @@
     <div style='color: #999'>&copy; Medle♪ 2022</div>
     <div class='bottom-shadow'></div>
   </div>
+  <div class='modal hidden' id='modal-guide-today'>
+    <p class='title'>📜</p>
+    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题，请前往 <a href='/'><strong>Medle 首页</strong></a>。</p>
+    <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
+  </div>
 </div>
 <div id='modal-bg' class='hidden'></div>
 
@@ -212,6 +217,7 @@ const tuneBeatDur = <%= it.tuneBeatDur %>;
 const tunePitchBase = <%= it.tunePitchBase %>;
 const tuneRevealBeatDur = <%= it.tuneRevealBeatDur %>;
 const tuneRevealOffset = <%= it.tuneRevealOffset %>;
+const guideToToday = <%= it.guideToToday %>;
 </script>
 <script src='/static/index.js'></script>
 

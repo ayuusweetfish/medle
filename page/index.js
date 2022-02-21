@@ -416,6 +416,8 @@ preloadSounds((loaded, total) => {
 if (localStorage.first === undefined) {
   showModal('modal-intro');
   localStorage.first = '';
+} else if (guideToToday) {
+  showModal('modal-guide-today');
 }
 
 document.getElementById('icon-btn-help').addEventListener('click', () => {

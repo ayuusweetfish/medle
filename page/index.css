@@ -27,6 +27,9 @@ html, body {
 .fa {
   font-family: 'Font Awesome';
 }
+a {
+  color: #25a;
+}
 
 #page-title {
   font-size: 24px;
