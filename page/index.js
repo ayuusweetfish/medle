@@ -316,7 +316,7 @@ const startGame = () => {
       btnShare.innerText = '✓ 已复制到剪贴板';
       btnShare.classList.add('copied');
       const prefix = `Medle #${puzzleId} ${succeeded ? attempts.length : 'X'}/5\n`;
-      const suffix = `https://medle.0-th.art/`;
+      const suffix = `https://medle.0-th.art/${puzzleId}`;
       return prefix +
         attempts.map((result) => result.map((r) => {
           if (r === 0) return '\u{26aa}';
