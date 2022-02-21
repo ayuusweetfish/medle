@@ -13,6 +13,15 @@ const servePuzzle = async (puzzleId) => {
     new TextDecoder().decode(await Deno.readFile(`puzzles/${puzzleId}.yml`))
   );
   puzzleContents.id = puzzleId;
+  for (const note of puzzleContents.tune) {
+    const noteName = note[0].toString();
+    let noteValue = parseInt(noteName[0]);
+    if (noteName.indexOf('-') !== -1) noteValue -= 7;
+    if (noteName.indexOf('+') !== -1) noteValue += 7;
+    if (noteName.indexOf('b') !== -1) noteValue -= 0.1;
+    if (noteName.indexOf('#') !== -1) noteValue += 0.1;
+    note[0] = noteValue;
+  }
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,
