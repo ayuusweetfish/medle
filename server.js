@@ -1,5 +1,6 @@
 import { serve } from 'https://deno.land/std@0.126.0/http/server.ts';
 import { serveFile } from 'https://deno.land/std@0.126.0/http/file_server.ts';
+import { existsSync } from 'https://deno.land/std@0.126.0/fs/mod.ts';
 import { parse as parseYaml } from 'https://deno.land/std@0.126.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
 
@@ -18,8 +19,12 @@ const midiPitch = (s) => {
 };
 
 const servePuzzle = async (puzzleId) => {
+  const file = `puzzles/${puzzleId}.yml`;
+  if (!existsSync(file)) {
+    return new Response('No such puzzle > <', { status: 404 });
+  }
   const puzzleContents = parseYaml(
-    new TextDecoder().decode(await Deno.readFile(`puzzles/${puzzleId}.yml`))
+    new TextDecoder().decode(await Deno.readFile(file))
   );
   puzzleContents.id = puzzleId;
   for (const note of puzzleContents.tune) {

@@ -316,12 +316,14 @@ const startGame = () => {
       btnShare.innerText = '✓ 已复制到剪贴板';
       btnShare.classList.add('copied');
       const prefix = `Medle #${puzzleId} ${succeeded ? attempts.length : 'X'}/5\n`;
+      const suffix = `https://medle.0-th.art/`;
       return prefix +
         attempts.map((result) => result.map((r) => {
           if (r === 0) return '\u{26aa}';
           if (r === 1) return '\u{1f7e1}';
           if (r === 2) return '\u{1f7e2}';
-        }).join('')).join('\n');
+        }).join('')).join('\n') +
+        '\n' + suffix;
     }
   });
 
