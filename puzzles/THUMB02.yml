@@ -8,11 +8,11 @@ tune:
   - [4, 2]
   - [5, 2]
   - [1+, 6]
-tuneBeatDur: 100
+tuneBeatDur: 110
 tunePitchBase: Bb3
 
-tuneRevealBeatDur: 0
-tuneRevealOffset: 0
+tuneRevealBeatDur: 112
+tuneRevealOffset: 525
 
 workTitle: Addison Way
 workAuthor: Ed Huckeby
