@@ -1,0 +1,18 @@
+tune:
+  - [3, 3]
+  - [5, 2]
+  - [6, 1]
+  - [6, 6]
+  - [4, 3]
+  - [6, 2]
+  - [7, 1]
+  - [7, 6]
+tuneBeatDur: 280
+tunePitchBase: A3
+
+tuneRevealBeatDur: 337
+tuneRevealOffset: 520
+
+workTitle: 溜冰圆舞曲（Les Patineurs）
+workAuthor: Émile Waldteufel
+workDesc: 演奏：Slovak State Philharmonic Orchestra；指挥：Alfred Walter
