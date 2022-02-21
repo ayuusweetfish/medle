@@ -31,6 +31,8 @@ html, body {
   min-height: 100%;
   margin: 0 auto;
   width: 100%;
+  max-width: 80vh;
+  position: relative;
 }
 
 #icon-btns-container {
@@ -202,7 +204,7 @@ html, body {
 #btns-container {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
 }
 .list.btn.confirm {
   margin-top: -200px;
