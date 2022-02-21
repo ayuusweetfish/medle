@@ -81,15 +81,15 @@ a {
   display: flex;
 }
 .list > div.fg {
-  margin-top: -64px;
+  margin-top: -56px;
 }
 .list .bubble {
   display: inline-block;
-  flex: 1 1 64px;
-  height: 64px;
-  line-height: 64px;
+  flex: 1 1 56px;
+  height: 56px;
+  line-height: 56px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   overflow: visible;
 }
 .list .bubble > div.content {
@@ -97,8 +97,8 @@ a {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   transform: translateX(-50%);
   opacity: 1;
   border: 1px solid transparent;
@@ -225,13 +225,13 @@ a {
 #btns-container {
   width: 100%;
   position: absolute;
-  bottom: 24px;
+  bottom: 12px;
 }
 .list.btn {
   margin: 18px 12px;
 }
 .list.btn.confirm {
-  margin-top: -80px;
+  margin-top: -72px;
 }
 .list.btn.confirm .bubble {
 }
