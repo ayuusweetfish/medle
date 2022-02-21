@@ -332,7 +332,7 @@ const startGame = () => {
   let fadeOutTimer = -1;
   let playing = false;
   const updatePlayButtonText = () => {
-    btnPlayContent.innerText = (playing ? 'Stop' : 'Play');
+    btnPlayContent.innerText = (playing ? '\u{f04d}' : '\u{f04b}');
   };
 
   let revealBubbleTimers = [];
@@ -415,6 +415,6 @@ if (localStorage.first === undefined) {
   localStorage.first = '';
 }
 
-document.getElementById('icon-btns-container').addEventListener('click', () => {
+document.getElementById('icon-btn-help').addEventListener('click', () => {
   showModal('modal-intro');
 });

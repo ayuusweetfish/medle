@@ -8,6 +8,15 @@ const epoch = new Date('2022-02-20T16:00:00Z');
 const indexHtmlContents = new TextDecoder().decode(await Deno.readFile('page/index.html'));
 const indexTemplate = etaCompile(indexHtmlContents);
 
+const midiPitch = (s) => {
+  const i = s.charCodeAt(0) - 'A'.charCodeAt(0);
+  const oct = s.charCodeAt(s.length - 1) - '0'.charCodeAt(0);
+  return 12 +
+    [9, 11, 0, 2, 4, 5, 7][i] +
+    oct * 12 +
+    (s[1] === '#' ? 1 : s[1] === 'b' ? -1 : 0);
+};
+
 const servePuzzle = async (puzzleId) => {
   const puzzleContents = parseYaml(
     new TextDecoder().decode(await Deno.readFile(`puzzles/${puzzleId}.yml`))
@@ -22,6 +31,7 @@ const servePuzzle = async (puzzleId) => {
     if (noteName.indexOf('#') !== -1) noteValue += 0.1;
     note[0] = noteValue;
   }
+  puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,

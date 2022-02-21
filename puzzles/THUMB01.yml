@@ -9,7 +9,8 @@ tune:
   - [5-, 4]
   - [3, 4]
 tuneBeatDur: 200
-tunePitchBase: 63
+tunePitchBase: Eb4
+
 tuneRevealBeatDur: 192
 tuneRevealOffset: 816
 

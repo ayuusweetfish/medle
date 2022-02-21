@@ -8,6 +8,11 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'Font Awesome';
+  src: url(/static/fa-solid-900-subset.woff2) format('woff2');
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -19,6 +24,9 @@ html, body {
   font-family: "Varela Round", sans-serif;
   user-select: none;
 }
+.fa {
+  font-family: 'Font Awesome';
+}
 #container {
   min-height: 100%;
   margin: 0 auto;
@@ -29,6 +37,7 @@ html, body {
   position: absolute;
   top: 36px;
   padding: 0 20px;
+  width: calc(100% - 40px);
 }
 #icon-btns-container > div {
   width: 80px;
@@ -36,12 +45,18 @@ html, body {
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
-  font-size: 60px;
+  font-size: 54px;
   background: rgba(220, 220, 220, 80%);
   transition: background-color 0.2s ease;
 }
 #icon-btns-container > div:active {
   background: rgba(200, 200, 200, 80%);
+}
+#icon-btn-help {
+  float: left;
+}
+#icon-btn-options {
+  float: right;
 }
 
 .list {
@@ -269,10 +284,10 @@ html, body {
 .modal .list .bubble.large > div.content {
   transform: translateX(-50%) scale(0.8);
 }
-.modal .list .tune-dot.ottava {
+#modal-intro .list .tune-dot.ottava {
   top: 5%;
 }
-.modal .list .tune-dot.ottava-bassa {
+#modal-intro .list .tune-dot.ottava-bassa {
   top: 88%;
 }
 
