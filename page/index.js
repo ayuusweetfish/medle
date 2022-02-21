@@ -172,6 +172,7 @@ const startButtonContainer = document.getElementById('btn-start');
 
 const startGame = () => {
   startButtonContainer.classList.add('hidden');
+  document.getElementById('text-recommend-audio').classList.add('hidden');
 
   const listContainer = document.getElementById('list-container');
   const btnsRow1 = document.getElementById('input-btns-row-1');

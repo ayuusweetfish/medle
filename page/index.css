@@ -30,6 +30,7 @@ html, body {
 
 #page-title {
   font-size: 24px;
+  font-weight: bold;
   text-align: center;
   position: relative;
   top: 18px;
@@ -158,22 +159,22 @@ html, body {
 }
 
 .tune-dot {
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
   position: relative;
   left: 50%;
   background: #222;
   transform: translate(-50%, -50%);
   opacity: 1;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
 .tune-dot.ottava {
-  top: -10%;
+  top: -8%;
 }
 .tune-dot.ottava-bassa {
-  top: 110%;
+  top: 108%;
 }
 .list .bubble.hidden > div > div.tune-dot {
   opacity: 0;
@@ -198,17 +199,25 @@ html, body {
   width: 100%;
   font-size: 22px;
   text-align: center;
+}
+.text-fading {
   pointer-events: none;
   transform: scale(1);
   opacity: 1;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-#text-loading.hidden {
+.text-fading.hidden {
   transform: scale(0.5);
   opacity: 0;
 }
 #btn-start {
   transform: scale(1.5);
+}
+#btn-start p {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin-top: 18px;
 }
 #btns-container {
   width: 100%;
@@ -299,10 +308,10 @@ html, body {
   transform: translateX(-50%) scale(0.8);
 }
 #modal-intro .list .tune-dot.ottava {
-  top: 5%;
+  top: 8%;
 }
 #modal-intro .list .tune-dot.ottava-bassa {
-  top: 88%;
+  top: 89%;
 }
 
 #answer-container {
