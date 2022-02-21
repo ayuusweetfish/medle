@@ -421,3 +421,7 @@ if (localStorage.first === undefined) {
 document.getElementById('icon-btn-help').addEventListener('click', () => {
   showModal('modal-intro');
 });
+
+document.getElementById('icon-btn-options').addEventListener('click', () => {
+  showModal('modal-options');
+});

@@ -334,3 +334,36 @@ html, body {
 #btn-share.copied {
   background: #dbf7ca;
 }
+
+#modal-options .options-btns-list {
+  display: table;
+  width: 100%;
+  margin: 12px 0;
+}
+#modal-options .options-btns-list span {
+  display: table-cell;
+  text-align: start;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+.small-btn {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  background: rgba(220, 220, 220, 80%);
+  transition: background-color 0.2s ease;
+}
+.small-btn:active {
+  background: rgba(200, 200, 200, 80%);
+}
+.small-btn.on {
+  background: rgba(128, 216, 48, 80%);
+}
+.small-btn.on:active {
+  background: rgba(108, 196, 28, 80%);
+}
