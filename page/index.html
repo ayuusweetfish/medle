@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=no' />
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <link rel='stylesheet' href='/static/index.css'>
 </head><body>
 
 <div id='container'>
-  <h1 style='font-size: 60px; text-align: center'>Medle #<%= it.id %></h1>
+  <div id='page-title'>Medle #<%= it.id %></div>
   <div id='icon-btns-container'>
     <div id='icon-btn-help'>?</div>
     <div id='icon-btn-options' class='fa'>&#xf013;</div>
@@ -79,7 +79,6 @@
     </div>
   </div>
 
-  <div id='modal-bg' class='hidden'></div>
   <div class='modal hidden' id='modal-intro'>
     <p class='title'>- Medle 游戏规则 -</p>
     <p>猜出旋律中的每个音符。<p>
@@ -182,6 +181,7 @@
     <div class='bottom-shadow'></div>
   </div>
 </div>
+<div id='modal-bg' class='hidden'></div>
 
 <script src='/static/howler.core.min.js'></script>
 <script src='/static/clipboard.min.js'></script>
