@@ -180,6 +180,10 @@
     </div>
     <p><%= it.workDesc %></p>
     <div id='btn-share'></div>
+    <p style='color: #999'><% if (it.isDaily) { %>今日<% } %>选题：<%= it.curator %></p>
+    <% if (it.isDaily) { %>
+      <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
+    <% } %>
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-options'>
@@ -202,7 +206,7 @@
   </div>
   <div class='modal hidden' id='modal-guide-today'>
     <p class='title'>📜</p>
-    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题，请前往 <a href='/'><strong>Medle 首页</strong></a>。</p>
+    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题，请前往 <a href='/'><strong>Medle 首页</strong></a>。如果想继续游玩，关闭本提示即可。</p>
     <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
   </div>
 </div>

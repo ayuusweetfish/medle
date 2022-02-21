@@ -327,7 +327,7 @@ a {
   padding: 8px;
   background: #cbf4ba;
   border-radius: 8px;
-  margin-top: 16px;
+  margin: 16px 0;
   text-align: center;
   transition: background-color 0.2s ease;
 }

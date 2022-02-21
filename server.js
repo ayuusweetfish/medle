@@ -30,7 +30,9 @@ const servePuzzle = async (puzzleId, checkToday) => {
   const puzzleContents = parseYaml(
     new TextDecoder().decode(await Deno.readFile(file))
   );
+
   puzzleContents.id = puzzleId;
+
   for (const note of puzzleContents.tune) {
     const noteName = note[0].toString();
     let noteValue = parseInt(noteName[0]);
@@ -41,9 +43,12 @@ const servePuzzle = async (puzzleId, checkToday) => {
     note[0] = noteValue;
   }
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
+
+  const isDaily = puzzleId.match(/^[0-9]{3,}$/g);
   puzzleContents.guideToToday =
-    (checkToday &&
-     puzzleId.match(/^[0-9]{3,}$/g) && puzzleId !== todaysPuzzle());
+    (checkToday && isDaily && puzzleId !== todaysPuzzle());
+  puzzleContents.isDaily = isDaily;
+
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,
