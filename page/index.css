@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: 'Font Awesome';
-  src: url(/static/fa-solid-900-subset.woff2) format('woff2');
+  font-family: 'Medle Icons Collection';
+  src: url(/static/icons.woff2) format('woff2');
 }
 
 html, body {
@@ -24,8 +24,8 @@ html, body {
   font-family: "Varela Round", sans-serif;
   user-select: none;
 }
-.fa {
-  font-family: 'Font Awesome';
+.iconfont {
+  font-family: 'Medle Icons Collection';
 }
 a {
   color: #25a;
@@ -240,6 +240,7 @@ body.dark .tune-dot {
 }
 
 .accidental {
+  font-family: 'Medle Icons Collection';
   font-size: 14px;
   position: relative;
   left: 22.5%;
