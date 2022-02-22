@@ -85,6 +85,10 @@
     <p>猜出旋律中的每个音符。<p>
     <p>玩家不必具备音乐知识，Medle 可以是纯粹的数字游戏。</p>
     <p>音符用 1 至 7 的数字表示。每次猜测后，将针对每个音符给出提示。</p>
+    <div class='options-btns-list'>
+      <span>清晰显示</span>
+      <div id='btn-high-con-alt' class='small-btn'>OFF</div>
+    </div>
     <div class='list intro'>
       <div class='bg'>
         <div class='bubble none'><div class='content'></div></div>
@@ -94,11 +98,11 @@
         <div class='bubble none'><div class='content'></div></div>
       </div>
       <div class='fg'>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>2</div></div>
-        <div class='bubble'><div class='content'>3</div></div>
-        <div class='bubble'><div class='content'>4</div></div>
-        <div class='bubble'><div class='content'>5</div></div>
+        <div class='bubble none'><div class='content'>1</div></div>
+        <div class='bubble bingo'><div class='content'>2</div></div>
+        <div class='bubble none'><div class='content'>3</div></div>
+        <div class='bubble none'><div class='content'>4</div></div>
+        <div class='bubble none'><div class='content'>5</div></div>
       </div>
     </div>
     <p style='text-align: center; color: #888'>音符“2”处于谜底中的正确位置。</p>
@@ -111,11 +115,11 @@
         <div class='bubble none'><div class='content'></div></div>
       </div>
       <div class='fg'>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>2</div></div>
-        <div class='bubble'><div class='content'>3</div></div>
-        <div class='bubble'><div class='content'>4</div></div>
-        <div class='bubble'><div class='content'>5</div></div>
+        <div class='bubble none'><div class='content'>1</div></div>
+        <div class='bubble none'><div class='content'>2</div></div>
+        <div class='bubble maybe'><div class='content'>3</div></div>
+        <div class='bubble none'><div class='content'>4</div></div>
+        <div class='bubble none'><div class='content'>5</div></div>
       </div>
     </div>
     <p style='text-align: center; color: #888'>音符“3”出现在谜底中，但并不在猜测的位置上。</p>
@@ -131,12 +135,12 @@
         <div class='bubble none'><div class='content'></div></div>
       </div>
       <div class='fg'>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>5</div></div>
-        <div class='bubble'><div class='content'>6</div></div>
+        <div class='bubble maybe'><div class='content'>1</div></div>
+        <div class='bubble maybe'><div class='content'>1</div></div>
+        <div class='bubble none'><div class='content'>1</div></div>
+        <div class='bubble bingo'><div class='content'>1</div></div>
+        <div class='bubble none'><div class='content'>5</div></div>
+        <div class='bubble none'><div class='content'>6</div></div>
       </div>
     </div>
     <p style='text-align: center; color: #888'>一个音符“1”在正确的位置；除此之外，谜底中还有两个“1”，但都不在猜测为“1”的位置上。</p>
@@ -151,11 +155,11 @@
         <div class='bubble none'><div class='content'></div></div>
       </div>
       <div class='fg'>
-        <div class='bubble'><div class='content'>1</div></div>
-        <div class='bubble'><div class='content'>2</div></div>
-        <div class='bubble'><div class='content'>3</div><div class='tune-dot ottava'></div></div>
-        <div class='bubble'><div class='content'>4</div><div class='tune-dot ottava-bassa'></div></div>
-        <div class='bubble'><div class='content'>5</div></div>
+        <div class='bubble bingo'><div class='content'>1</div></div>
+        <div class='bubble none'><div class='content'>2</div></div>
+        <div class='bubble none'><div class='content'>3</div><div class='tune-dot ottava'></div></div>
+        <div class='bubble maybe'><div class='content'>4</div><div class='tune-dot ottava-bassa'></div></div>
+        <div class='bubble none'><div class='content'>5</div></div>
       </div>
     </div>
     <p style='text-align: center; color: #888'>除数字、颜色外的记号均不影响游戏。其含义留给有兴趣的玩家自行探索。</p>
@@ -193,8 +197,8 @@
       <div id='btn-dark-theme' class='small-btn'>OFF</div>
     </div>
     <div class='options-btns-list'>
-      <span>🚧 高对比颜色</span>
-      <div id='btn-alt-palette' class='small-btn'>OFF</div>
+      <span>清晰显示</span>
+      <div id='btn-high-con' class='small-btn'>OFF</div>
     </div>
     <div class='options-btns-list'>
       <span>🚧 音符记号</span>

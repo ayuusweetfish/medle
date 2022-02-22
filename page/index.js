@@ -283,7 +283,9 @@ const startGame = () => {
     showButtons(false);
     const input = curInput.splice(0);
     const result = check(tuneAnswer, input);
+    const previousRow = r;
     for (const [i, [a, b]] of Object.entries(tune)) {
+      const r = previousRow;
       setTimeout(() => {
         r.pop(i);
         if (result[i] === 0) r.style(i, 'none');
@@ -295,6 +297,8 @@ const startGame = () => {
     }
     attInputs.push(input);
     attResults.push(result);
+    r = createRow(tuneDecos, listContainer);
+    r.show(false);
     setTimeout(() => {
       succeeded = result.every((r) => r === 2);
       if (attResults.length === 5 || succeeded) {
@@ -307,11 +311,7 @@ const startGame = () => {
         window.revealAnswer();
         showButtons(true);
       } else {
-        r = createRow(tuneDecos, listContainer);
-        r.show(false);
-        setTimeout(() => {
-          for (let i = 0; i < N; i++) r.clear(i);
-        }, 10);
+        for (let i = 0; i < N; i++) r.clear(i);
         showButtons(true);
       }
     }, 500 + tuneDur * tuneBeatDur + 1000);
@@ -442,21 +442,32 @@ document.getElementById('icon-btn-options').addEventListener('click', () => {
   showModal('modal-options');
 });
 
-const setDarkTheme = (b) => {
-  if (b) document.body.classList.add('dark');
-  else document.body.classList.remove('dark');
-};
-setDarkTheme(localStorage.dark === '1');
+const initToggleButton = (ids, bodyClass, localStorageKey) => {
+  if (typeof ids === 'string') ids = [ids];
+  const btns = ids.map((id) => document.getElementById(id));
 
-document.getElementById('btn-dark-theme').addEventListener('click', (e) => {
-  const on = (localStorage.dark !== '1');
-  localStorage.dark = (on ? '1' : '0');
-  setDarkTheme(on);
-  if (on) {
-    e.target.classList.add('on');
-    e.target.innerText = 'ON';
-  } else {
-    e.target.classList.remove('on');
-    e.target.innerText = 'OFF';
-  }
-});
+  const update = (on) => {
+    if (on) {
+      document.body.classList.add(bodyClass);
+      for (const btn of btns) {
+        btn.classList.add('on');
+        btn.innerText = 'ON';
+      }
+    } else {
+      document.body.classList.remove(bodyClass);
+      for (const btn of btns) {
+        btn.classList.remove('on');
+        btn.innerText = 'OFF';
+      }
+    }
+  };
+  update(localStorage[localStorageKey] === '1');
+  for (const btn of btns)
+    btn.addEventListener('click', (e) => {
+      const on = (localStorage[localStorageKey] !== '1');
+      localStorage[localStorageKey] = (on ? '1' : '0');
+      update(on);
+    });
+};
+initToggleButton('btn-dark-theme', 'dark', 'dark');
+initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', 'highcon');

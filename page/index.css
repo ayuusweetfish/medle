@@ -110,6 +110,7 @@ body.dark #icon-btns-container > div:active {
   position: fixed;
   width: 56px;
   height: 56px;
+  box-sizing: border-box;
   transform: translateX(-50%);
   opacity: 1;
   border: 1px solid transparent;
@@ -124,7 +125,7 @@ body.dark #icon-btns-container > div:active {
 .list > .bg > .bubble.maybe > div.content {
   background: rgba(240, 232, 64, 80%);
 }
-body.dark .list > .bg > .bubble:not(.none):not(.bingo):not(.maybe) > div.content {
+body.dark .list > .bg > .bubble:not(.outline):not(.none):not(.bingo):not(.maybe) > div.content {
   background: rgba(72, 72, 72, 80%);
 }
 body.dark .list > .bg > .bubble.none > div.content {
@@ -135,6 +136,25 @@ body.dark .list > .bg > .bubble.bingo > div.content {
 }
 body.dark .list > .bg > .bubble.maybe > div.content {
   background: rgba(240, 232, 64, 60%);
+}
+/*body.altpal .list > .bg > .bubble.bingo > div.content {
+  background: rgba(48, 192, 255, 80%);
+}
+body.altpal .list > .bg > .bubble.maybe > div.content {
+  background: rgba(232, 224, 64, 80%);
+}*/
+body.highcon .list > .bg > .bubble.bingo > div.content {
+  border-color: #808080;
+  border-width: 2px;
+}
+body.highcon .list > .bg > .bubble.maybe > div.content {
+  border-color: #808080;
+  border-width: 2px;
+  border-style: dashed;
+}
+body.highcon.dark .list > .bg > .bubble.bingo > div.content,
+body.highcon.dark .list > .bg > .bubble.maybe > div.content {
+  border-color: #f0f0f0;
 }
 .list .bubble.hidden > div.content,
 .list.hidden .bubble:not(.nohidden) > div.content,
@@ -153,6 +173,7 @@ body.dark .list > .bg > .bubble.maybe > div.content {
 }
 body.dark .list .bubble.outline:not(.hidden) > div.content {
   border-color: #707070;
+  background: rgba(40, 40, 40, 80%);
 }
 .list .bubble.fast > div.content {
   transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), background 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -192,6 +213,9 @@ body.dark .list .bubble.outline:not(.hidden) > div.content {
   opacity: 1;
   border: 1px solid transparent;
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+body.dark .tune-dot {
+  background: #fdfdfd;
 }
 .tune-dot.ottava {
   top: -8%;
@@ -373,12 +397,12 @@ body.dark #btn-share.copied {
   background: #4b743a;
 }
 
-#modal-options .options-btns-list {
+.options-btns-list {
   display: table;
   width: 100%;
   margin: 12px 0;
 }
-#modal-options .options-btns-list span {
+.options-btns-list span {
   display: table-cell;
   text-align: start;
   vertical-align: middle;
@@ -416,4 +440,11 @@ body.dark .small-btn.on {
 }
 body.dark .small-btn.on:active {
   background: rgba(108, 196, 28, 80%);
+}
+#modal-intro .options-btns-list {
+  padding: 6px 12px;
+  width: calc(100% - 24px);
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  background: rgba(128, 128, 128, 3%);
 }
