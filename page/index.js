@@ -146,16 +146,15 @@ const preloadSounds = (callback) => {
 };
 
 const playSound = (name, vol) => {
-  audios[name].stop();
-  audios[name].volume(vol !== undefined ? vol : 1);
-  audios[name].play();
-  return name;
+  const id = audios[name].play();
+  audios[name].volume(vol !== undefined ? vol : 1, id);
+  return [name, id];
 };
-const stopSound = (name, fade) => {
+const stopSound = ([name, id], fade) => {
   if (fade) {
-    audios[name].fade(audios[name].volume(), 0, 100);
+    audios[name].fade(audios[name].volume(undefined, id), 0, 100, id);
   } else {
-    audios[name].stop();
+    audios[name].stop(id);
   }
 };
 
