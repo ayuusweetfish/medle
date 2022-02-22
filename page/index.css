@@ -132,10 +132,10 @@ body.dark .list > .bg > .bubble.none > div.content {
   background: rgba(45, 45, 45, 80%);
 }
 body.dark .list > .bg > .bubble.bingo > div.content {
-  background: rgba(128, 216, 48, 60%);
+  background: rgba(128, 216, 48, 65%);
 }
 body.dark .list > .bg > .bubble.maybe > div.content {
-  background: rgba(240, 232, 64, 60%);
+  background: rgba(240, 232, 64, 65%);
 }
 /*body.altpal .list > .bg > .bubble.bingo > div.content {
   background: rgba(48, 192, 255, 80%);
@@ -197,6 +197,9 @@ body.dark .list .bubble.outline:not(.hidden) > div.content {
 .list.btn.disabled .bubble > div.content {
   background: rgba(240, 240, 240, 80%);
   pointer-events: none;
+}
+body.dark .list.btn.disabled .bubble > div.content {
+  background: rgba(45, 45, 45, 80%);
 }
 .list .bubble.large > div.content {
   transform: translateX(-50%) scale(1.2);
@@ -328,7 +331,8 @@ body.dark .modal {
   transform: scale(0.9);
 }
 .modal p {
-  margin: 0 0 0.8ex 0;
+  margin: 0 0 1ex 0;
+  line-height: 1.7;
 }
 .modal p.title {
   font-size: 1.5em;
@@ -343,7 +347,7 @@ body.dark .modal {
   width: 100%;
   height: 24px;
   position: sticky;
-  bottom: -20px;
+  bottom: -24px;
   left: 0;
   background: linear-gradient(rgba(253, 253, 253, 0), rgba(253, 253, 253, 1));
 }
