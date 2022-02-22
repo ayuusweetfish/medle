@@ -7,6 +7,7 @@ import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/
 const log = (msg) => {
   console.log(`${(new Date()).toISOString()} ${msg}`);
 };
+const debug = (Deno.env.get('DEBUG') === '1');
 
 const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
@@ -49,7 +50,7 @@ const servePuzzle = async (puzzleId, checkToday) => {
 
   const isDaily = puzzleId.match(/^[0-9]{3,}$/g);
   puzzleContents.guideToToday =
-    (checkToday && isDaily && puzzleId !== todaysPuzzle());
+    (checkToday && isDaily && parseInt(puzzleId) < todaysPuzzleIndex());
   puzzleContents.isDaily = isDaily;
 
   log(`puzzle ${puzzleId}`);
@@ -79,7 +80,7 @@ const handler = async (req) => {
     // Custom puzzle
     if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
       const puzzleId = url.pathname.substring(1);
-      if (parseInt(puzzleId) > todaysPuzzleIndex())
+      if (!debug && parseInt(puzzleId) > todaysPuzzleIndex())
         return noSuchPuzzle();
       return servePuzzle(puzzleId, url.search !== '?past');
     }
