@@ -279,6 +279,12 @@ body.dark .tune-dot {
   font-size: 22px;
   text-align: center;
 }
+#text-tip {
+  /* Parent is scaled 1.5x */
+  width: 50%;
+  position: fixed;
+  left: 25%;
+}
 .text-fading {
   pointer-events: none;
   transform: scale(1);

@@ -190,6 +190,17 @@ modalBackground.addEventListener('mouseup', closeModal);
 const loadingContainer = document.getElementById('text-loading');
 const loadingProgress = document.getElementById('text-loading-progress');
 const startButton = document.getElementById('btn-start');
+const textTip = document.getElementById('text-tip');
+
+// Display tip
+const tips = [
+  '试试打开声音吧~',
+  '点按此前输入的圆圈，可以重新播放声音',
+  '推荐在夜晚使用深色主题',
+];
+const tipIndex = ((+localStorage.tip || 0) + 1) % tips.length;
+localStorage.tip = tipIndex;
+textTip.innerText = tips[tipIndex];
 
 let gamePreloaded = false;
 let gameStarted = false;
@@ -198,7 +209,7 @@ const startGame = () => {
   gameStarted = true;
   startButton.classList.add('hidden');
   document.getElementById('start-btn-container').classList.add('no-pointer');
-  document.getElementById('text-recommend-audio').classList.add('hidden');
+  textTip.classList.add('hidden');
 
   const listContainer = document.getElementById('list-container');
   const btnsRow1 = document.getElementById('input-btns-row-1');

@@ -24,7 +24,7 @@
       <div class='fg'>
         <div class='bubble'><div class='content iconfont'>&#xf04b;</div></div>
       </div>
-      <p id='text-recommend-audio' class='text-fading'>试试打开声音吧~</p>
+      <p id='text-tip' class='text-fading'></p>
     </div>
   </div>
   <div id='btns-container'>
@@ -184,7 +184,7 @@
     </div>
     <p><%= it.workDesc %></p>
     <div id='btn-share'></div>
-    <p style='color: #999'><% if (it.isDaily) { %>今日<% } %>选题~♪ <%= it.curator %></p>
+    <p style='color: #999'>♪<% if (it.isDaily) { %>今日<% } %>选题<span style='margin: 0 8px'>|</span><%= it.curator %></p>
     <% if (it.isDaily) { %>
       <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
     <% } %>
@@ -193,7 +193,7 @@
   <div class='modal hidden' id='modal-options'>
     <p class='title'>选项</p>
     <div class='options-btns-list'>
-      <span>暗色主题</span>
+      <span>深色主题</span>
       <div id='btn-dark-theme' class='small-btn'>OFF</div>
     </div>
     <div class='options-btns-list'>
