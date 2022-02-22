@@ -69,9 +69,11 @@ const createRow = (decos, parentEl) => {
   };
   o.style = (i, s) => {
     bgDivs[i].classList.add(s);
+    fgDivs[i].classList.add(s);
   };
   o.clearStyle = (i, s) => {
     bgDivs[i].classList.remove(s);
+    fgDivs[i].classList.remove(s);
   };
   o.pop = (i) => {
     fgDivs[i].classList.add('large');
@@ -438,4 +440,23 @@ document.getElementById('icon-btn-help').addEventListener('click', () => {
 
 document.getElementById('icon-btn-options').addEventListener('click', () => {
   showModal('modal-options');
+});
+
+const setDarkTheme = (b) => {
+  if (b) document.body.classList.add('dark');
+  else document.body.classList.remove('dark');
+};
+setDarkTheme(localStorage.dark === '1');
+
+document.getElementById('btn-dark-theme').addEventListener('click', (e) => {
+  const on = (localStorage.dark !== '1');
+  localStorage.dark = (on ? '1' : '0');
+  setDarkTheme(on);
+  if (on) {
+    e.target.classList.add('on');
+    e.target.innerText = 'ON';
+  } else {
+    e.target.classList.remove('on');
+    e.target.innerText = 'OFF';
+  }
 });

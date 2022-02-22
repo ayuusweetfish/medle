@@ -31,6 +31,11 @@ a {
   color: #25a;
 }
 
+body.dark {
+  background: #222;
+  color: #fdfdfd;
+}
+
 #page-title {
   font-size: 24px;
   font-weight: bold;
@@ -65,6 +70,12 @@ a {
 }
 #icon-btns-container > div:active {
   background: rgba(200, 200, 200, 80%);
+}
+body.dark #icon-btns-container > div {
+  background: rgba(72, 72, 72, 80%);
+}
+body.dark #icon-btns-container > div:active {
+  background: rgba(45, 45, 45, 80%);
 }
 #icon-btn-help {
   float: left;
@@ -104,14 +115,26 @@ a {
   border: 1px solid transparent;
   transition: opacity 0.5s ease, transform 0.5s ease, background 0.5s ease, border-color 0.5s ease;
 }
-.list .bubble.none > div.content {
+.list > .bg > .bubble.none > div.content {
   background: rgba(240, 240, 240, 80%);
 }
-.list .bubble.bingo > div.content {
+.list > .bg > .bubble.bingo > div.content {
   background: rgba(128, 216, 48, 80%);
 }
-.list .bubble.maybe > div.content {
+.list > .bg > .bubble.maybe > div.content {
   background: rgba(240, 232, 64, 80%);
+}
+body.dark .list > .bg > .bubble:not(.none):not(.bingo):not(.maybe) > div.content {
+  background: rgba(72, 72, 72, 80%);
+}
+body.dark .list > .bg > .bubble.none > div.content {
+  background: rgba(45, 45, 45, 80%);
+}
+body.dark .list > .bg > .bubble.bingo > div.content {
+  background: rgba(128, 216, 48, 60%);
+}
+body.dark .list > .bg > .bubble.maybe > div.content {
+  background: rgba(240, 232, 64, 60%);
 }
 .list .bubble.hidden > div.content,
 .list.hidden .bubble:not(.nohidden) > div.content,
@@ -128,6 +151,9 @@ a {
   transform: translateX(-50%) scale(1);
   border-color: #999;
 }
+body.dark .list .bubble.outline:not(.hidden) > div.content {
+  border-color: #707070;
+}
 .list .bubble.fast > div.content {
   transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), background 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -138,12 +164,6 @@ a {
   background: none;
   z-index: 910;
   pointer-events: none;
-}
-.list > .fg > .bubble.bingo > div.content {
-  color: #164;
-}
-.list > .fg > .bubble.maybe > div.content {
-  color: #664;
 }
 .list.btn .bubble > div.content {
   transform: translateX(-50%) scale(1.2);
@@ -276,6 +296,9 @@ a {
   transform: scale(1);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+body.dark .modal {
+  background: #222;
+}
 .modal.hidden {
   opacity: 0;
   transform: scale(0.9);
@@ -299,6 +322,9 @@ a {
   bottom: -20px;
   left: 0;
   background: linear-gradient(rgba(253, 253, 253, 0), rgba(253, 253, 253, 1));
+}
+body.dark .modal .bottom-shadow {
+  background: linear-gradient(rgba(34, 34, 34, 0), rgba(34, 34, 34, 1));
 }
 
 .modal .list {
@@ -337,6 +363,15 @@ a {
 #btn-share.copied {
   background: #dbf7ca;
 }
+body.dark #btn-share {
+  background-color: #3b642a;
+}
+body.dark #btn-share:active {
+  background-color: #1b440a;
+}
+body.dark #btn-share.copied {
+  background: #4b743a;
+}
 
 #modal-options .options-btns-list {
   display: table;
@@ -368,5 +403,17 @@ a {
   background: rgba(128, 216, 48, 80%);
 }
 .small-btn.on:active {
+  background: rgba(108, 196, 28, 80%);
+}
+body.dark .small-btn {
+  background: rgba(72, 72, 72, 80%);
+}
+body.dark .small-btn:active {
+  background: rgba(45, 45, 45, 80%);
+}
+body.dark .small-btn.on {
+  background: rgba(128, 216, 48, 80%);
+}
+body.dark .small-btn.on:active {
   background: rgba(108, 196, 28, 80%);
 }
