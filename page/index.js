@@ -119,16 +119,19 @@ const check = (answer, guess) => {
 };
 
 const audios = {};
-const paths = ['/static/samples/pop.wav'];
+const paths = [['/static/samples/pop.wav']];
 for (let i = -12; i <= 24; i++)
   if (tuneChromatic || SCALE.indexOf((i + 12) % 12) !== -1)
-    paths.push(`/static/samples/pf-${tunePitchBase + i}.mp3`);
+    paths.push([
+      `/static/samples/pf-${tunePitchBase + i}.ogg`,
+      `/static/samples/pf-${tunePitchBase + i}.mp3`,
+    ]);
 
 const preloadSounds = (callback) => {
   let count = 0;
-  for (const path of paths) {
-    const name = path.split('/').pop().split('.')[0];
-    const audio = new Howl({src: [path]});
+  for (const pathList of paths) {
+    const name = pathList[0].split('/').pop().split('.')[0];
+    const audio = new Howl({src: pathList});
     audio.once('load', () => {
       callback(++count, paths.length);
     });
@@ -242,7 +245,7 @@ const startGame = () => {
   for (const [i, [a, b]] of Object.entries(tune)) {
     setTimeout(() => {
       initialRow.fill(i, '');
-      playSound('pop', 0.5);
+      playSound('pop');
     }, b * tuneBeatDur + 20);
   }
   setTimeout(() => {
@@ -283,7 +286,7 @@ const startGame = () => {
         if (result[i] === 1) r.style(i, 'maybe');
         if (result[i] === 2) r.style(i, 'bingo');
         playForPos(i, curInput[i], result[i] === 2 ? 1 : 0.2);
-        if (result[i] !== 2) playSound('pop', 0.2);
+        if (result[i] !== 2) playSound('pop');
       }, 500 + b * tuneBeatDur);
     }
     attempts.push(result);
