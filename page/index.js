@@ -284,11 +284,17 @@ const startGame = () => {
       replayTimers.splice(0);
       for (let i = 0; i < N; i++)
         attRows[curReplay].clearStyle(i, 'large');
+      curReplay = -1;
     }
   };
   const replay = (attemptIndex) => {
+    const prevReplay = curReplay;
     stopReplay();
     if (!buttonsVisible) return;
+    if (prevReplay === attemptIndex) {
+      curReplay = -1;
+      return;
+    }
     // Start replay
     curReplay = attemptIndex;
     const input = (attemptIndex >= attInputs.length ?
@@ -309,6 +315,10 @@ const startGame = () => {
       }, b * tuneBeatDur + 20);
       replayTimers.push(t);
     }
+    const t = setTimeout(() => {
+      curReplay = -1;
+      replayTimers.splice(0);
+    }, tuneDur * tuneBeatDur + 20);
   };
   window.replay = replay;
 
