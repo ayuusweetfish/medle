@@ -213,7 +213,7 @@ body.dark .list.btn.disabled .bubble > div.content {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  position: relative;
+  position: fixed;
   left: 50%;
   background: #222;
   transform: translate(-50%, -50%);
@@ -242,16 +242,23 @@ body.dark .tune-dot {
 .accidental {
   font-family: 'Medle Icons Collection';
   font-size: 14px;
-  position: relative;
-  left: 22.5%;
-  top: 33.3%;
+  position: fixed;
+  left: 20%;
+  top: 30%;
   transform: rotate(5deg) translate(-50%, -50%);
+}
+.accidental::before {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 .accidental.flat::before {
   content: '\266d';
 }
 .accidental.sharp::before {
   content: '\266f';
+}
+.list .bubble.outline > div > div.accidental::before {
+  opacity: 0.4;
 }
 
 #list-container {
