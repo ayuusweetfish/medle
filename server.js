@@ -4,11 +4,13 @@ import { existsSync } from 'https://deno.land/std@0.126.0/fs/mod.ts';
 import { parse as parseYaml } from 'https://deno.land/std@0.126.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
 
-const epoch = new Date('2022-02-20T16:00:00Z');
-const todaysPuzzle = () => {
-  const index = Math.ceil((new Date() - epoch) / 86400000);
-  return index.toString().padStart(3, '0');
+const log = (msg) => {
+  console.log(`${(new Date()).toISOString()} ${msg}`);
 };
+
+const epoch = new Date('2022-02-20T16:00:00Z');
+const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
+const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 
 const indexHtmlContents = new TextDecoder().decode(await Deno.readFile('page/index.html'));
 const indexTemplate = etaCompile(indexHtmlContents);
@@ -22,11 +24,12 @@ const midiPitch = (s) => {
     (s[1] === '#' ? 1 : s[1] === 'b' ? -1 : 0);
 };
 
+const noSuchPuzzle = () => new Response('No such puzzle > <\n', { status: 404 });
+
 const servePuzzle = async (puzzleId, checkToday) => {
   const file = `puzzles/${puzzleId}.yml`;
-  if (!existsSync(file)) {
-    return new Response('No such puzzle > <', { status: 404 });
-  }
+  if (!existsSync(file)) return noSuchPuzzle();
+
   const puzzleContents = parseYaml(
     new TextDecoder().decode(await Deno.readFile(file))
   );
@@ -49,6 +52,7 @@ const servePuzzle = async (puzzleId, checkToday) => {
     (checkToday && isDaily && puzzleId !== todaysPuzzle());
   puzzleContents.isDaily = isDaily;
 
+  log(`puzzle ${puzzleId}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,
@@ -60,24 +64,40 @@ const servePuzzle = async (puzzleId, checkToday) => {
 
 const handler = async (req) => {
   const url = new URL(req.url);
-  if (url.pathname === '/') {
-    return servePuzzle(todaysPuzzle(), false);
+  if (req.method === 'GET') {
+    if (url.pathname === '/') {
+      return servePuzzle(todaysPuzzle(), false);
+    }
+    if (url.pathname.startsWith('/static/')) {
+      const fileName = url.pathname.substring('/static/'.length);
+      return serveFile(req, 'page/' + fileName);
+    }
+    if (url.pathname.startsWith('/reveal/')) {
+      const fileName = url.pathname.substring('/reveal/'.length);
+      return serveFile(req, 'puzzles/reveal/' + fileName);
+    }
+    // Custom puzzle
+    if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
+      const puzzleId = url.pathname.substring(1);
+      if (parseInt(puzzleId) > todaysPuzzleIndex())
+        return noSuchPuzzle();
+      return servePuzzle(puzzleId, url.search !== '?past');
+    }
+  } else if (req.method === 'POST') {
+    // Analytics
+    if (url.pathname === '/analytics') {
+      try {
+        const body = await req.formData();
+        log(`analy ${body.get('puzzle')} ${body.get('att')}`);
+      } catch (e) {
+        return new Response('', { status: 400 });
+      }
+      return new Response('', { status: 200 });
+    }
   }
-  if (url.pathname.startsWith('/static/')) {
-    const fileName = url.pathname.substring('/static/'.length);
-    return serveFile(req, 'page/' + fileName);
-  }
-  if (url.pathname.startsWith('/reveal/')) {
-    const fileName = url.pathname.substring('/reveal/'.length);
-    return serveFile(req, 'puzzles/reveal/' + fileName);
-  }
-  // Custom puzzle
-  if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
-    const puzzleId = url.pathname.substring(1);
-    return servePuzzle(puzzleId, url.search !== '?past');
-  }
+  return new Response('Void space, please return\n', { status: 404 });
 };
 
 const port = 2220;
-console.log(`http://localhost:${port}/`);
+log(`http://localhost:${port}/`);
 const server = serve(handler, { port });
