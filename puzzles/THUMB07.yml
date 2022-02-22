@@ -1,0 +1,20 @@
+tune:
+  - [3, 3]
+  - [4, 3]
+  - [4#, 3]
+  - [5, 3]
+  - [3+, 2]
+  - [3+, 1]
+  - [3+, 2]
+  - [2#+, 1]
+  - [3+, 6]
+tuneBeatDur: 165
+tunePitchBase: Bb3
+
+tuneRevealBeatDur: 165
+tuneRevealOffset: 260
+
+workTitle: The Liberty Bell
+workAuthor: John Philip Sousa (arr. Jay Bocook)
+workDesc: 示范音频来自 JW Pepper
+curator: Ayu
