@@ -184,7 +184,11 @@ const loadingContainer = document.getElementById('text-loading');
 const loadingProgress = document.getElementById('text-loading-progress');
 const startButton = document.getElementById('btn-start');
 
+let gamePreloaded = false;
+let gameStarted = false;
+
 const startGame = () => {
+  gameStarted = true;
   startButton.classList.add('hidden');
   document.getElementById('start-btn-container').classList.add('no-pointer');
   document.getElementById('text-recommend-audio').classList.add('hidden');
@@ -486,6 +490,22 @@ const startGame = () => {
     playing = !playing;
     updatePlayButtonText();
   };
+
+  // Keyboard support
+  document.addEventListener('keydown', (e) => {
+    if (!buttonsVisible) return;
+    // Do not use e.keyCode for better compatibility with numpads
+    if (e.key.length === 1) {
+      const code = e.key.charCodeAt(0) - 48;
+      if (code >= 1 && code <= 7)
+        window.input(code);
+    } else if (e.key === 'Backspace') {
+        window.input(-1);
+    } else if (e.key === 'Enter') {
+      if (curInput.length === N)
+        window.confirmGuess();
+    }
+  });
 };
 
 preloadSounds((loaded, total) => {
@@ -493,6 +513,18 @@ preloadSounds((loaded, total) => {
   if (loaded === total) {
     loadingContainer.classList.add('hidden');
     startButton.classList.remove('hidden');
+    gamePreloaded = true;
+  }
+});
+
+// Press Enter to start
+document.addEventListener('keydown', function (e) {
+  if (gameStarted) {
+    document.removeEventListener('keydown', arguments.callee);
+  }
+  if (gamePreloaded && !gameStarted && e.key === 'Enter') {
+    startGame();
+    document.removeEventListener('keydown', arguments.callee);
   }
 });
 
