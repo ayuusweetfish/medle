@@ -196,11 +196,12 @@ const startGame = () => {
   };
 
   const curInput = [];
-  const attempts = [];
+  const attInputs = [];
+  const attResults = [];
   let succeeded = false;
 
   const pickVisibleButtons = () => {
-    if (attempts.length === 5 || succeeded) {
+    if (attResults.length === 5 || succeeded) {
       btnsRow1.classList.add('hidden');
       btnsRow2.classList.add('hidden');
       btnsRow2.classList.add('must');
@@ -278,21 +279,29 @@ const startGame = () => {
 
   window.confirmGuess = () => {
     showButtons(false);
-    const result = check(tuneAnswer, curInput);
+    const input = curInput.splice(0);
+    const result = check(tuneAnswer, input);
     for (const [i, [a, b]] of Object.entries(tune)) {
       setTimeout(() => {
         r.pop(i);
         if (result[i] === 0) r.style(i, 'none');
         if (result[i] === 1) r.style(i, 'maybe');
         if (result[i] === 2) r.style(i, 'bingo');
-        playForPos(i, curInput[i], result[i] === 2 ? 1 : 0.2);
+        playForPos(i, input[i], result[i] === 2 ? 1 : 0.2);
         if (result[i] !== 2) playSound('pop');
       }, 500 + b * tuneBeatDur);
     }
-    attempts.push(result);
+    attInputs.push(input);
+    attResults.push(result);
     setTimeout(() => {
       succeeded = result.every((r) => r === 2);
-      if (attempts.length === 5 || succeeded) {
+      if (attResults.length === 5 || succeeded) {
+        // Send analytics
+        const form = new FormData();
+        form.append('puzzle', puzzleId);
+        form.append('att', attInputs.map((a) => a.join('')).join(','));
+        fetch('/analytics', { method: 'POST', body: form });
+        // Reveal answer
         window.revealAnswer();
         showButtons(true);
       } else {
@@ -301,7 +310,6 @@ const startGame = () => {
         setTimeout(() => {
           for (let i = 0; i < N; i++) r.clear(i);
         }, 10);
-        curInput.splice(0);
         showButtons(true);
       }
     }, 500 + tuneDur * tuneBeatDur + 1000);
@@ -318,11 +326,11 @@ const startGame = () => {
     text: () => {
       btnShare.innerText = '✓ 已复制到剪贴板';
       btnShare.classList.add('copied');
-      const prefix = `Medle #${puzzleId} ${succeeded ? attempts.length : 'X'}/5\n`;
+      const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/5\n`;
       const suffix = `https://medle.0-th.art/` +
         (isDaily && !guideToToday ? '' : puzzleId);
       return prefix +
-        attempts.map((result) => result.map((r) => {
+        attResults.map((result) => result.map((r) => {
           if (r === 0) return '\u{26aa}';
           if (r === 1) return '\u{1f7e1}';
           if (r === 2) return '\u{1f7e2}';
