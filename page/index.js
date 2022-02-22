@@ -159,17 +159,22 @@ const modalBackground = document.getElementById('modal-bg');
 let curModal = null;
 let curModalOnClose = undefined;
 
+const closeModal = () => {
+  if (curModal !== null) {
+    curModal.classList.add('hidden');
+    curModal = null;
+  }
+  modalBackground.classList.add('hidden');
+  if (curModalOnClose) curModalOnClose();
+};
 const showModal = (id, onClose) => {
+  if (curModal !== null) closeModal();
   curModal = document.getElementById(id);
   curModal.classList.remove('hidden');
   modalBackground.classList.remove('hidden');
   curModalOnClose = onClose;
 };
-modalBackground.addEventListener('mouseup', () => {
-  if (curModal !== null) curModal.classList.add('hidden');
-  modalBackground.classList.add('hidden');
-  if (curModalOnClose) curModalOnClose();
-});
+modalBackground.addEventListener('mouseup', closeModal);
 
 const loadingContainer = document.getElementById('text-loading');
 const loadingProgress = document.getElementById('text-loading-progress');
