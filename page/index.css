@@ -171,6 +171,10 @@ body.highcon.dark .list > .bg > .bubble.maybe > div.content {
   transform: translateX(-50%) scale(1);
   border-color: #999;
 }
+.list .bubble.outline:not(.hidden).large > div.content {
+  transform: translateX(-50%) scale(1.2);
+  transition: opacity 0.5s ease, transform 0.15s ease, background 0.5s ease, border-color 0.5s ease;
+}
 body.dark .list .bubble.outline:not(.hidden) > div.content {
   border-color: #707070;
   background: rgba(40, 40, 40, 80%);
@@ -242,6 +246,9 @@ body.dark .tune-dot {
   position: absolute;
   top: 30%;
   width: 100%;
+}
+#start-btn-container.no-pointer {
+  pointer-events: none;
 }
 #text-loading {
   position: absolute;

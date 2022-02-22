@@ -21,7 +21,7 @@ for (const v of tune) {
   tuneDur += t;
 }
 
-const createRow = (decos, parentEl) => {
+const createRow = (decos, parentEl, rowIndex) => {
   const o = {};
 
   const n = decos.length;
@@ -101,6 +101,10 @@ const createRow = (decos, parentEl) => {
     else   for (let i = 0; i < n; i++) bgDivs[i].classList.remove('fast-pop');
   };
 
+  if (rowIndex !== undefined) {
+    el1.addEventListener('click', () => window.replay(rowIndex));
+  }
+
   return o;
 };
 
@@ -178,10 +182,11 @@ modalBackground.addEventListener('mouseup', closeModal);
 
 const loadingContainer = document.getElementById('text-loading');
 const loadingProgress = document.getElementById('text-loading-progress');
-const startButtonContainer = document.getElementById('btn-start');
+const startButton = document.getElementById('btn-start');
 
 const startGame = () => {
-  startButtonContainer.classList.add('hidden');
+  startButton.classList.add('hidden');
+  document.getElementById('start-btn-container').classList.add('no-pointer');
   document.getElementById('text-recommend-audio').classList.add('hidden');
 
   const listContainer = document.getElementById('list-container');
@@ -194,19 +199,24 @@ const startGame = () => {
   const btnRevealBg = document.getElementById('input-btn-reveal-bg');
 
   let curPfSound = undefined;
+  const stopPfSound = () => {
+    if (curPfSound !== undefined) stopSound(curPfSound, true);
+  };
   const playForPos = (pos, solf, vol) => {
     const pitch = tunePitchBase + SCALE[solf - 1] +
       ((tuneDecos[pos] & DECO_8VA) ? 12 :
        (tuneDecos[pos] & DECO_8VB) ? -12 : 0);
-    if (curPfSound !== undefined) stopSound(curPfSound, true);
+    stopPfSound();
     curPfSound = playSound(`pf-${pitch}`, vol);
   };
 
   const curInput = [];
   const attInputs = [];
   const attResults = [];
+  const attRows = [];
   let succeeded = false;
 
+  let buttonsVisible = false;
   const pickVisibleButtons = () => {
     if (attResults.length === 5 || succeeded) {
       btnsRow1.classList.add('hidden');
@@ -230,6 +240,7 @@ const startGame = () => {
     }
   };
   const showButtons = (b) => {
+    buttonsVisible = b;
     if (b) {
       btnsRow1.classList.remove('hidden');
       btnsRow2.classList.remove('hidden');
@@ -246,9 +257,10 @@ const startGame = () => {
     }
   };
 
-  const initialRow = createRow(tuneDecos, listContainer);
+  const initialRow = createRow(tuneDecos, listContainer, 0);
   initialRow.fast(true);
   initialRow.show(false);
+  attRows.push(initialRow);
 
   for (const [i, [a, b]] of Object.entries(tune)) {
     setTimeout(() => {
@@ -262,6 +274,44 @@ const startGame = () => {
   }, tuneDur * tuneBeatDur);
   setTimeout(() => showButtons(true), tuneDur * tuneBeatDur + 1000);
 
+  // Replay
+  let replayTimers = [];
+  let curReplay = -1;
+  const stopReplay = () => {
+    // Stop the replay in progress, if any
+    if (curReplay !== -1) {
+      for (const t of replayTimers) clearTimeout(t);
+      replayTimers.splice(0);
+      for (let i = 0; i < N; i++)
+        attRows[curReplay].clearStyle(i, 'large');
+    }
+  };
+  const replay = (attemptIndex) => {
+    stopReplay();
+    if (!buttonsVisible) return;
+    // Start replay
+    curReplay = attemptIndex;
+    const input = (attemptIndex >= attInputs.length ?
+        curInput : attInputs[attemptIndex]);
+    const row = attRows[attemptIndex];
+    const result = attResults[attemptIndex];
+    for (const [i, [a, b]] of Object.entries(tune)) {
+      const t = setTimeout(() => {
+        row.pop(i);
+        if (input[i] !== undefined) {
+          const pop = (result && result[i] !== 2);
+          playForPos(i, input[i], pop ? 0.2 : 1);
+          if (pop) playSound('pop');
+        } else {
+          stopPfSound();
+          playSound('pop');
+        }
+      }, b * tuneBeatDur + 20);
+      replayTimers.push(t);
+    }
+  };
+  window.replay = replay;
+
   const recalcConfirmWidth = () => {
     const rect = btnDelBg.getBoundingClientRect();
     const vw = document.body.clientWidth;
@@ -273,6 +323,7 @@ const startGame = () => {
   let r = initialRow;
 
   window.input = (i) => {
+    stopReplay();
     if (i === -1 && curInput.length > 0) {
       curInput.pop();
       r.clear(curInput.length);
@@ -285,6 +336,7 @@ const startGame = () => {
   };
 
   window.confirmGuess = () => {
+    stopReplay();
     showButtons(false);
     const input = curInput.splice(0);
     const result = check(tuneAnswer, input);
@@ -296,14 +348,16 @@ const startGame = () => {
         if (result[i] === 0) r.style(i, 'none');
         if (result[i] === 1) r.style(i, 'maybe');
         if (result[i] === 2) r.style(i, 'bingo');
-        playForPos(i, input[i], result[i] === 2 ? 1 : 0.2);
-        if (result[i] !== 2) playSound('pop');
+        const pop = (result[i] !== 2);
+        playForPos(i, input[i], pop ? 0.2 : 1);
+        if (pop) playSound('pop');
       }, 500 + b * tuneBeatDur);
     }
     attInputs.push(input);
     attResults.push(result);
-    r = createRow(tuneDecos, listContainer);
+    r = createRow(tuneDecos, listContainer, attResults.length);
     r.show(false);
+    attRows.push(r);
     setTimeout(() => {
       succeeded = result.every((r) => r === 2);
       if (attResults.length === 5 || succeeded) {
@@ -428,7 +482,7 @@ preloadSounds((loaded, total) => {
   loadingProgress.innerText = `${loaded}/${total}`;
   if (loaded === total) {
     loadingContainer.classList.add('hidden');
-    startButtonContainer.classList.remove('hidden');
+    startButton.classList.remove('hidden');
   }
 });
 
