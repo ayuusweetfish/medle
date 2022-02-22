@@ -239,6 +239,20 @@ body.dark .tune-dot {
   border-color: #999;
 }
 
+.accidental {
+  font-size: 14px;
+  position: relative;
+  left: 22.5%;
+  top: 33.3%;
+  transform: rotate(5deg) translate(-50%, -50%);
+}
+.accidental.flat::before {
+  content: '\266d';
+}
+.accidental.sharp::before {
+  content: '\266f';
+}
+
 #list-container {
   margin-top: 32px;
 }
@@ -370,12 +384,6 @@ body.dark .modal .bottom-shadow {
 }
 .modal .list .bubble.large > div.content {
   transform: translateX(-50%) scale(0.8);
-}
-#modal-intro .list .tune-dot.ottava {
-  top: 8%;
-}
-#modal-intro .list .tune-dot.ottava-bassa {
-  top: 89%;
 }
 
 #answer-container {

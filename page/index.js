@@ -3,10 +3,16 @@ const DECO_8VA = 1;
 const DECO_8VB = 2;
 const DECO_SHARP = 4;
 const DECO_FLAT = 8;
-const tuneDecos = tune.map(([a, b]) => {
+const tuneDecos = tune.map((note) => {
+  const a = note[0];
   let r = 0;
   if (a < 1) r |= DECO_8VB;
   if (a > 7) r |= DECO_8VA;
+  if (Math.round(a) !== a) {
+    const i = Math.round(a);
+    note[0] = i;
+    r |= (a < i ? DECO_FLAT : DECO_SHARP);
+  }
   return r;
 });
 const tuneChromatic = !tuneDecos.every((r) => (r & (DECO_SHARP | DECO_FLAT)) === 0);
@@ -54,6 +60,8 @@ const createRow = (decos, parentEl, rowIndex) => {
     // Decoration?
     if (decos[i] & DECO_8VA) div(el5a, ['tune-dot', 'ottava']);
     if (decos[i] & DECO_8VB) div(el5a, ['tune-dot', 'ottava-bassa']);
+    if (decos[i] & DECO_FLAT) div(el5a, ['accidental', 'flat']);
+    if (decos[i] & DECO_SHARP) div(el5a, ['accidental', 'sharp']);
   }
 
   o.fill = (i, s) => {
@@ -208,7 +216,9 @@ const startGame = () => {
   const playForPos = (pos, solf, vol) => {
     const pitch = tunePitchBase + SCALE[solf - 1] +
       ((tuneDecos[pos] & DECO_8VA) ? 12 :
-       (tuneDecos[pos] & DECO_8VB) ? -12 : 0);
+       (tuneDecos[pos] & DECO_8VB) ? -12 : 0) +
+      ((tuneDecos[pos] & DECO_SHARP) ? 1 :
+       (tuneDecos[pos] & DECO_FLAT) ? -1 : 0);
     stopPfSound();
     curPfSound = playSound(`pf-${pitch}`, vol);
   };
