@@ -208,6 +208,9 @@ body.dark .list.btn.disabled .bubble > div.content {
 .list .bubble.large > div.content {
   transform: translateX(-50%) scale(1.2);
 }
+.list.hidden .bubble:not(.nohidden) {
+  pointer-events: none;
+}
 
 .tune-dot {
   width: 3px;
