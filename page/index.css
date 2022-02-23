@@ -225,7 +225,7 @@ body.nota-num .bubble.solf-4 > div.content:before { content: '4'; }
 body.nota-num .bubble.solf-5 > div.content:before { content: '5'; }
 body.nota-num .bubble.solf-6 > div.content:before { content: '6'; }
 body.nota-num .bubble.solf-7 > div.content:before { content: '7'; }
-/* body.nota-solf .bubble > div.content:before { font-size: 22px; } */
+body.nota-solf .bubble > div.content:before { font-size: 20px; }
 body.nota-solf .bubble.solf-1 > div.content:before { content: 'do'; }
 body.nota-solf .bubble.solf-2 > div.content:before { content: 're'; }
 body.nota-solf .bubble.solf-3 > div.content:before { content: 'mi'; }
