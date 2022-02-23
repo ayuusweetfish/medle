@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Medle Icons Collection';
+  font-family: 'Medle Icons Collection - 0224';
   src: url(/static/icons.woff2) format('woff2');
 }
 
@@ -25,7 +25,7 @@ html, body {
   user-select: none;
 }
 .iconfont {
-  font-family: 'Medle Icons Collection';
+  font-family: 'Medle Icons Collection - 0224';
 }
 a {
   color: #25a;
@@ -218,6 +218,52 @@ body.dark .list.btn.disabled .bubble > div.content {
   pointer-events: none;
 }
 
+body.nota-num .bubble.solf-1 > div.content:before { content: '1'; }
+body.nota-num .bubble.solf-2 > div.content:before { content: '2'; }
+body.nota-num .bubble.solf-3 > div.content:before { content: '3'; }
+body.nota-num .bubble.solf-4 > div.content:before { content: '4'; }
+body.nota-num .bubble.solf-5 > div.content:before { content: '5'; }
+body.nota-num .bubble.solf-6 > div.content:before { content: '6'; }
+body.nota-num .bubble.solf-7 > div.content:before { content: '7'; }
+/* body.nota-solf .bubble > div.content:before { font-size: 22px; } */
+body.nota-solf .bubble.solf-1 > div.content:before { content: 'do'; }
+body.nota-solf .bubble.solf-2 > div.content:before { content: 're'; }
+body.nota-solf .bubble.solf-3 > div.content:before { content: 'mi'; }
+body.nota-solf .bubble.solf-4 > div.content:before { content: 'fa'; }
+body.nota-solf .bubble.solf-5 > div.content:before { content: 'sol'; }
+body.nota-solf .bubble.solf-6 > div.content:before { content: 'la'; }
+body.nota-solf .bubble.solf-7 > div.content:before { content: 'si'; }
+body.nota-aikin .bubble > div.content:before { font-family: 'Medle Icons Collection - 0224'; }
+body.nota-aikin .bubble.solf-1 > div.content:before {
+  content: '\f04b';
+  font-size: 24px;
+  transform: rotate(-90deg);
+  display: block;
+  position: relative;
+  top: -2px;
+}
+body.nota-aikin .bubble.solf-2 > div.content:before {
+  content: '\1f319';
+  font-size: 24px;
+  transform: rotate(-70deg);
+  display: block;
+  position: relative;
+  top: -2px;
+}
+body.nota-aikin .bubble.solf-3 > div.content:before { content: '\f219'; }
+body.nota-aikin .bubble.solf-4 > div.content:before {
+  content: '\f0d8';
+  font-size: 34px;
+  transform: rotate(45deg);
+  display: block;
+  position: relative;
+  top: -3px;
+  left: 3px;
+}
+body.nota-aikin .bubble.solf-5 > div.content:before { content: '\1f7e4'; }
+body.nota-aikin .bubble.solf-6 > div.content:before { content: '\f0c8'; }
+body.nota-aikin .bubble.solf-7 > div.content:before { content: '\f041'; }
+
 .tune-dot {
   width: 3px;
   height: 3px;
@@ -249,7 +295,7 @@ body.dark .tune-dot {
 }
 
 .accidental {
-  font-family: 'Medle Icons Collection';
+  font-family: 'Medle Icons Collection - 0224';
   font-size: 14px;
   position: fixed;
   left: 20%;
@@ -490,6 +536,12 @@ body.dark .small-btn.on:active {
   border-bottom: 1px solid #808080;
   background: rgba(128, 128, 128, 3%);
 }
+body.nota-num .small-btn#btn-notation { background: rgba(232, 232, 0, 70%); }
+body.nota-num .small-btn#btn-notation:active { background: rgba(196, 196, 0, 70%); }
+body.nota-solf .small-btn#btn-notation { background: rgba(255, 160, 0, 70%); }
+body.nota-solf .small-btn#btn-notation:active { background: rgba(235, 140, 0, 70%); }
+body.nota-aikin .small-btn#btn-notation { background: rgba(64, 192, 255, 70%); }
+body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 70%); }
 
 #archive-container > a {
   display: block;

@@ -70,7 +70,9 @@ const createRow = (decos, parentEl, rowIndex) => {
     bgDivs[i].classList.remove('hidden');
     fgDivs[i].classList.remove('hidden');
     bgDivs[i].classList.remove('outline');
-    fgTexts[i].innerText = s;
+    for (let s = 1; s <= 7; s++)
+      fgDivs[i].classList.remove(`solf-${s}`);
+    if (s !== undefined) fgDivs[i].classList.add(`solf-${s}`);
   };
   o.clear = (i) => {
     bgDivs[i].classList.remove('hidden');
@@ -301,7 +303,7 @@ const startGame = () => {
 
   for (const [i, [a, b]] of Object.entries(tune)) {
     setTimeout(() => {
-      initialRow.fill(i, '');
+      initialRow.fill(i, undefined);
       playSound('pop');
     }, b * tuneBeatDur + 20);
   }
@@ -375,7 +377,7 @@ const startGame = () => {
       curInput.pop();
       r.clear(curInput.length);
     } else if (i !== -1 && curInput.length < N) {
-      r.fill(curInput.length, i.toString());
+      r.fill(curInput.length, i);
       curInput.push(i);
       playForPos(curInput.length - 1, i);
     }
@@ -640,3 +642,20 @@ initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', false, (on) =>
   if (on) document.body.classList.add('highcon');
   else document.body.classList.remove('highcon');
 });
+
+const btnNotation = document.getElementById('btn-notation');
+const updateNotation = (inc) => {
+  const notations = ['nota-num', 'nota-solf', 'nota-aikin'];
+  const notationNames = ['数字', '唱名', '图形'];
+  const current = (localStorage.notation === undefined ?
+      0 : parseInt(localStorage.notation));
+  const nova = (current + (inc ? 1 : 0)) % notations.length;
+  localStorage.notation = nova;
+  document.body.classList.remove(notations[current]);
+  document.body.classList.add(notations[nova]);
+  btnNotation.innerText = notationNames[nova];
+};
+btnNotation.addEventListener('click', () => {
+  updateNotation(true);
+});
+updateNotation(false);
