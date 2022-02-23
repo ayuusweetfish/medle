@@ -27,6 +27,8 @@ for (const v of tune) {
   tuneDur += t;
 }
 
+let sfxOn;
+
 const createRow = (decos, parentEl, rowIndex) => {
   const o = {};
 
@@ -154,11 +156,13 @@ const preloadSounds = (callback) => {
 };
 
 const playSound = (name, vol) => {
+  if (!sfxOn) return;
   const id = audios[name].play();
   audios[name].volume(vol !== undefined ? vol : 1, id);
   return [name, id];
 };
 const stopSound = ([name, id], fade) => {
+  if (!sfxOn) return;
   if (fade) {
     audios[name].fade(audios[name].volume(undefined, id), 0, 100, id);
   } else {
@@ -563,32 +567,40 @@ document.getElementById('icon-btn-options').addEventListener('click', () => {
   showModal('modal-options');
 });
 
-const initToggleButton = (ids, bodyClass, localStorageKey) => {
+const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
   if (typeof ids === 'string') ids = [ids];
   const btns = ids.map((id) => document.getElementById(id));
 
   const update = (on) => {
+    fn(on);
     if (on) {
-      document.body.classList.add(bodyClass);
       for (const btn of btns) {
         btn.classList.add('on');
         btn.innerText = 'ON';
       }
     } else {
-      document.body.classList.remove(bodyClass);
       for (const btn of btns) {
         btn.classList.remove('on');
         btn.innerText = 'OFF';
       }
     }
   };
-  update(localStorage[localStorageKey] === '1');
+  if (localStorage[cfgKey] === undefined)
+    localStorage[cfgKey] = (defaultVal ? '1' : '0');
+  update(localStorage[cfgKey] === '1');
   for (const btn of btns)
     btn.addEventListener('click', (e) => {
-      const on = (localStorage[localStorageKey] !== '1');
-      localStorage[localStorageKey] = (on ? '1' : '0');
+      const on = (localStorage[cfgKey] !== '1');
+      localStorage[cfgKey] = (on ? '1' : '0');
       update(on);
     });
 };
-initToggleButton('btn-dark-theme', 'dark', 'dark');
-initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', 'highcon');
+initToggleButton('btn-play-sfx', 'sfx', true, (on) => sfxOn = on);
+initToggleButton('btn-dark-theme', 'dark', false, (on) => {
+  if (on) document.body.classList.add('dark');
+  else document.body.classList.remove('dark');
+});
+initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', false, (on) => {
+  if (on) document.body.classList.add('highcon');
+  else document.body.classList.remove('highcon');
+});
