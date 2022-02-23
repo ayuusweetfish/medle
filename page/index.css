@@ -80,12 +80,14 @@ body.dark #icon-btns-container > div:active {
 #icon-btn-help {
   float: left;
 }
-#icon-btn-options {
+#icon-btns-container > div#icon-btn-options {
   float: right;
+  font-size: 20px;
 }
-#icon-btn-archive {
+#icon-btns-container > div#icon-btn-archive {
   float: right;
   margin-right: 6px;
+  font-size: 20px;
 }
 
 .list {

@@ -1,0 +1,10 @@
+# fontforge -lang=ff -script %
+Open("fa-solid-900-subset.ttf")
+em1=$em
+Close()
+
+Open("rounded-mplus-1c-regular-subset.ttf")
+ScaleToEm(em1)
+MergeFonts("fa-solid-900-subset.ttf")
+Generate("icons.ttf")
+Close()
