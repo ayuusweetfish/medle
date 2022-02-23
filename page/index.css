@@ -83,6 +83,10 @@ body.dark #icon-btns-container > div:active {
 #icon-btn-options {
   float: right;
 }
+#icon-btn-archive {
+  float: right;
+  margin-right: 6px;
+}
 
 .list {
   margin: 20px 20px;
@@ -483,4 +487,36 @@ body.dark .small-btn.on:active {
   border-top: 1px solid #808080;
   border-bottom: 1px solid #808080;
   background: rgba(128, 128, 128, 3%);
+}
+
+#archive-container > a {
+  display: block;
+  background: rgba(220, 220, 220, 80%);
+  color: #222;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 16px 0;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+#archive-container > a:not(.today):active {
+  background: rgba(200, 200, 200, 80%);
+}
+body.dark #archive-container > a:not(.today) {
+  background: rgba(72, 72, 72, 80%);
+  color: #fdfdfd;
+}
+body.dark #archive-container > a:not(.today):active {
+  background: rgba(45, 45, 45, 80%);
+}
+#archive-container > a.today {
+  background: rgba(128, 216, 48, 80%);
+  color: #222;
+}
+body.dark #archive-container > a.today {
+  background: rgba(128, 216, 48, 80%);
+}
+body.dark #archive-container > a.today:active {
+  background: rgba(108, 196, 28, 80%);
 }

@@ -49,9 +49,11 @@ const servePuzzle = async (puzzleId, checkToday) => {
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
   const isDaily = puzzleId.match(/^[0-9]{3,}$/g);
+  const today = todaysPuzzle();
   puzzleContents.guideToToday =
-    (checkToday && isDaily && parseInt(puzzleId) < todaysPuzzleIndex());
+    (checkToday && isDaily && puzzleId !== today);
   puzzleContents.isDaily = isDaily;
+  puzzleContents.todayDaily = today;
 
   log(`puzzle ${puzzleId}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);

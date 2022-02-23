@@ -576,6 +576,33 @@ document.getElementById('icon-btn-options').addEventListener('click', () => {
   showModal('modal-options');
 });
 
+// Archive
+if (isDaily) {
+  document.getElementById('icon-btn-archive').addEventListener('click', () => {
+    showModal('modal-archive');
+  });
+
+  const container = document.getElementById('archive-container');
+  const latest = parseInt(todayDaily);
+  for (let i = latest; i >= 1; i--) {
+    const a = document.createElement('a');
+    const id = i.toString().padStart(3, '0');
+    const date = new Date('2022-02-21');
+    date.setDate(date.getDate() + i);
+    a.innerHTML =
+      date.getFullYear() + '.' +
+      (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
+      (date.getDate() + 1).toString().padStart(2, '0') +
+      ` — <strong>#${id}</strong>`;
+    if (id === puzzleId) {
+      a.classList.add('today');
+    } else {
+      a.setAttribute('href', `/${id}?past`);
+    }
+    container.appendChild(a);
+  }
+}
+
 const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
   if (typeof ids === 'string') ids = [ids];
   const btns = ids.map((id) => document.getElementById(id));

@@ -10,6 +10,9 @@
   <div id='icon-btns-container'>
     <div id='icon-btn-help'>?</div>
     <div id='icon-btn-options' class='iconfont'>&#xf013;</div>
+    <% if (it.isDaily) { %>
+      <div id='icon-btn-archive' class='iconfont'>&#xf133;</div>
+    <% } %>
   </div>
   <div id='list-container'>
   </div>
@@ -190,6 +193,12 @@
     <% } %>
     <div class='bottom-shadow'></div>
   </div>
+  <div class='modal hidden' id='modal-archive'>
+    <p class='title'>过往谜题</p>
+    <div id='archive-container'>
+    </div>
+    <div class='bottom-shadow'></div>
+  </div>
   <div class='modal hidden' id='modal-options'>
     <p class='title'>选项</p>
     <div class='options-btns-list'>
@@ -214,7 +223,7 @@
   </div>
   <div class='modal hidden' id='modal-guide-today'>
     <p class='title'>📜</p>
-    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题，请前往 <a href='/'><strong>Medle 首页</strong></a>。如果想继续游玩，关闭本提示即可。</p>
+    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题 <strong>#<%= it.todayDaily %></strong>，请前往 <a href='/'><strong>Medle 首页</strong></a>。如果想继续游玩，关闭本提示即可。</p>
     <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
   </div>
 </div>
@@ -231,6 +240,7 @@ const tuneRevealBeatDur = <%= it.tuneRevealBeatDur %>;
 const tuneRevealOffset = <%= it.tuneRevealOffset %>;
 const isDaily = <%= it.isDaily %>;
 const guideToToday = <%= it.guideToToday %>;
+const todayDaily = <%~ JSON.stringify(it.todayDaily) %>;
 </script>
 <script src='/static/index.js'></script>
 
