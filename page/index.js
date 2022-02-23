@@ -171,23 +171,32 @@ const stopSound = ([name, id], fade) => {
 };
 
 const modalBackground = document.getElementById('modal-bg');
-let curModal = null;
-let curModalOnClose = undefined;
+let modalStack = [];
+let modalStackOnClose = [];
 
 const closeModal = () => {
-  if (curModal !== null) {
-    curModal.classList.add('hidden');
-    curModal = null;
+  if (modalStack.length === 0) return;
+  // Close the topmost modal
+  const el1 = modalStack.pop();
+  el1.classList.add('hidden');
+  const fn = modalStackOnClose.pop();
+  if (fn) fn();
+  // Hide the background, or show the new topmost modal
+  if (modalStack.length === 0) {
+    modalBackground.classList.add('hidden');
+  } else {
+    const el2 = modalStack[modalStack.length - 1];
+    el2.classList.remove('hidden');
   }
-  modalBackground.classList.add('hidden');
-  if (curModalOnClose) curModalOnClose();
 };
 const showModal = (id, onClose) => {
-  if (curModal !== null) closeModal();
-  curModal = document.getElementById(id);
-  curModal.classList.remove('hidden');
+  if (modalStack.length > 0)
+    modalStack[modalStack.length - 1].classList.add('hidden');
+  const el = document.getElementById(id);
+  el.classList.remove('hidden');
+  modalStack.push(el);
+  modalStackOnClose.push(onClose);
   modalBackground.classList.remove('hidden');
-  curModalOnClose = onClose;
 };
 modalBackground.addEventListener('mouseup', closeModal);
 
