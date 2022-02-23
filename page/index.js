@@ -590,11 +590,11 @@ if (isDaily) {
     const a = document.createElement('a');
     const id = i.toString().padStart(3, '0');
     const date = new Date('2022-02-21');
-    date.setDate(date.getDate() + i);
+    date.setDate(date.getDate() + (i - 1));
     a.innerHTML =
       date.getFullYear() + '.' +
       (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
-      (date.getDate() + 1).toString().padStart(2, '0') +
+      (date.getDate()).toString().padStart(2, '0') +
       ` — <strong>#${id}</strong>`;
     if (id === puzzleId) {
       a.classList.add('today');

@@ -548,6 +548,7 @@ body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 
   background: rgba(220, 220, 220, 80%);
   color: #222;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
   padding: 8px;
   border-radius: 8px;
   margin: 16px 0;
