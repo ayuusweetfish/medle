@@ -48,10 +48,12 @@ const servePuzzle = async (puzzleId, checkToday) => {
   }
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
+  puzzleContents.workDesc = etaConfig.e(puzzleContents.workDesc).replace(/\n/g, '<br>');
+
   const isDaily = !!puzzleId.match(/^[0-9]{3,}$/g);
   const today = todaysPuzzle();
   puzzleContents.guideToToday =
-    (checkToday && isDaily && puzzleId !== today);
+    (checkToday && isDaily && parseInt(puzzleId) < parseInt(today));
   puzzleContents.isDaily = isDaily;
   puzzleContents.todayDaily = today;
 
