@@ -404,12 +404,15 @@ const startGame = () => {
     }
     attInputs.push(input);
     attResults.push(result);
-    r = createRow(tuneDecos, listContainer, attResults.length);
-    r.show(false);
-    attRows.push(r);
+    succeeded = result.every((r) => r === 2);
+    const finished = (attResults.length === 5 || succeeded);
+    if (!finished) {
+      r = createRow(tuneDecos, listContainer, attResults.length);
+      r.show(false);
+      attRows.push(r);
+    }
     setTimeout(() => {
-      succeeded = result.every((r) => r === 2);
-      if (attResults.length === 5 || succeeded) {
+      if (finished) {
         // Send analytics
         const form = new FormData();
         form.append('puzzle', puzzleId);
