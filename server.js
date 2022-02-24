@@ -48,7 +48,7 @@ const servePuzzle = async (puzzleId, checkToday) => {
   }
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
-  const isDaily = puzzleId.match(/^[0-9]{3,}$/g);
+  const isDaily = !!puzzleId.match(/^[0-9]{3,}$/g);
   const today = todaysPuzzle();
   puzzleContents.guideToToday =
     (checkToday && isDaily && puzzleId !== today);
