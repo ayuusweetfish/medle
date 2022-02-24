@@ -429,6 +429,27 @@ body.dark .modal {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1ex;
+  overflow: hidden;
+}
+/* https://stackoverflow.com/a/14731123 */
+.modal p.title:before,
+.modal p.title:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+.modal p.title:before {
+  background: linear-gradient(270deg, rgba(128, 128, 128, 10%), rgba(128, 128, 128, 0));
+  right: 32px;
+  margin-left: -30%;
+}
+.modal p.title:after {
+  background: linear-gradient(90deg, rgba(128, 128, 128, 10%), rgba(128, 128, 128, 0));
+  left: 32px;
+  margin-right: -30%;
 }
 #modal-bg.hidden, .modal.hidden {
   pointer-events: none;
@@ -542,6 +563,11 @@ body.nota-solf .small-btn#btn-notation { background: rgba(255, 160, 0, 70%); }
 body.nota-solf .small-btn#btn-notation:active { background: rgba(235, 140, 0, 70%); }
 body.nota-aikin .small-btn#btn-notation { background: rgba(64, 192, 255, 70%); }
 body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 70%); }
+#repo-notes {
+  font-size: 13px;
+  margin-top: 6px;
+  display: inline-block;
+}
 
 #archive-container > a {
   display: block;

@@ -84,7 +84,7 @@
   </div>
 
   <div class='modal hidden' id='modal-intro'>
-    <p class='title'>- Medle 游戏规则 -</p>
+    <p class='title'>Medle 游戏规则</p>
     <p>猜出旋律中的每个音符。<p>
     <p>玩家不必具备音乐知识，Medle 可以是纯粹的数字游戏。</p>
     <p>音符用 1 至 7 的数字表示。每次猜测后，将针对每个音符给出提示。</p>
@@ -172,7 +172,7 @@
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-finish'>
-    <p class='title'>- Medle #<%= it.id %> -</p>
+    <p class='title'>Medle #<%= it.id %></p>
     <p><strong><%= it.workTitle %></strong> by <%= it.workAuthor %></p>
     <div id='answer-container'></div>
     <div class='list btn disabled' id='btn-play'>
@@ -218,7 +218,10 @@
       <div id='btn-notation' class='small-btn'></div>
     </div>
     <br>
-    <div style='color: #999'>&copy; Medle 2022</div>
+    <div style='color: #999'>
+      <span>&copy; Medle 2022</span><br>
+      <span id='repo-notes'><a href='https://github.com/kawa-yoiko/medle'>程序源码</a>依照木兰公共许可证分发</span>
+    </div>
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-guide-today'>
