@@ -238,6 +238,14 @@ body.nota-solf .bubble.solf-4 > div.content:before { content: 'fa'; }
 body.nota-solf .bubble.solf-5 > div.content:before { content: 'sol'; }
 body.nota-solf .bubble.solf-6 > div.content:before { content: 'la'; }
 body.nota-solf .bubble.solf-7 > div.content:before { content: 'si'; }
+body.nota-roman .bubble > div.content:before { font-size: 20px; }
+body.nota-roman .bubble.solf-1 > div.content:before { content: 'I'; }
+body.nota-roman .bubble.solf-2 > div.content:before { content: 'II'; }
+body.nota-roman .bubble.solf-3 > div.content:before { content: 'III'; }
+body.nota-roman .bubble.solf-4 > div.content:before { content: 'IV'; }
+body.nota-roman .bubble.solf-5 > div.content:before { content: 'V'; }
+body.nota-roman .bubble.solf-6 > div.content:before { content: 'VI'; }
+body.nota-roman .bubble.solf-7 > div.content:before { content: 'VII'; }
 body.nota-aikin .bubble > div.content:before { font-family: 'Medle Icons Collection - 0224'; }
 body.nota-aikin .bubble.solf-1 > div.content:before {
   content: '\f04b';
@@ -566,6 +574,8 @@ body.nota-num .small-btn#btn-notation { background: rgba(232, 232, 0, 70%); }
 body.nota-num .small-btn#btn-notation:active { background: rgba(196, 196, 0, 70%); }
 body.nota-solf .small-btn#btn-notation { background: rgba(255, 160, 0, 70%); }
 body.nota-solf .small-btn#btn-notation:active { background: rgba(235, 140, 0, 70%); }
+body.nota-roman .small-btn#btn-notation { background: rgba(232, 128, 255, 70%); }
+body.nota-roman .small-btn#btn-notation:active { background: rgba(212, 108, 235, 70%); }
 body.nota-aikin .small-btn#btn-notation { background: rgba(64, 192, 255, 70%); }
 body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 70%); }
 #repo-notes {

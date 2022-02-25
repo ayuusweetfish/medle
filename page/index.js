@@ -659,12 +659,12 @@ initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', false, (on) =>
 
 const btnNotation = document.getElementById('btn-notation');
 const updateNotation = (inc) => {
-  const notations = ['nota-num', 'nota-solf', 'nota-aikin'];
-  const notationNames = ['数字', '唱名', '图形'];
-  const current = (localStorage.notation === undefined ?
-      0 : parseInt(localStorage.notation));
+  const notations = ['nota-num', 'nota-solf', 'nota-roman', 'nota-aikin'];
+  const notationNames = ['数字', '唱名', '罗马', '图形'];
+  let current = notations.indexOf(localStorage.notation);
+  if (current === -1) current = 0;
   const nova = (current + (inc ? 1 : 0)) % notations.length;
-  localStorage.notation = nova;
+  localStorage.notation = notations[nova];
   document.body.classList.remove(notations[current]);
   document.body.classList.add(notations[nova]);
   btnNotation.innerText = notationNames[nova];
