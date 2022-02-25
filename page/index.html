@@ -224,11 +224,15 @@
     </div>
     <div class='bottom-shadow'></div>
   </div>
+  <% if (it.guideToToday) { %>
   <div class='modal hidden' id='modal-guide-today'>
     <p class='title'>📜</p>
-    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。如果想进入今天的每日谜题 <strong>#<%= it.todayDaily %></strong>，请前往 <a href='/'><strong>Medle 首页</strong></a>。如果想继续游玩，关闭本提示即可。</p>
+    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。</p>
+    <p>希望继续游玩，还是前往今天的每日谜题 <strong>#<%= it.todayDaily %></strong> 呢？</p>
+    <div id='guide-today-links'></div>
     <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
   </div>
+  <% } %>
 </div>
 <div id='modal-bg' class='hidden'></div>
 

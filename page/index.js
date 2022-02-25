@@ -569,8 +569,6 @@ document.addEventListener('keydown', function (e) {
 if (localStorage.first === undefined) {
   showModal('modal-intro');
   localStorage.first = '';
-} else if (guideToToday) {
-  showModal('modal-guide-today');
 }
 
 document.getElementById('icon-btn-help').addEventListener('click', () => {
@@ -582,6 +580,25 @@ document.getElementById('icon-btn-options').addEventListener('click', () => {
 });
 
 // Archive
+const puzzleLink = (index) => {
+  const a = document.createElement('a');
+  a.classList.add('puzzle-link');
+  const id = index.toString().padStart(3, '0');
+  const date = new Date('2022-02-21');
+  date.setDate(date.getDate() + (index - 1));
+  a.innerHTML =
+    date.getFullYear() + '.' +
+    (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
+    (date.getDate()).toString().padStart(2, '0') +
+    ` — <strong>#${id}</strong>`;
+  if (id === puzzleId) {
+    a.classList.add('current');
+    a.setAttribute('href', `javascript:closeModal()`);
+  } else {
+    a.setAttribute('href', `/${id}?past`);
+  }
+  return a;
+};
 if (isDaily) {
   document.getElementById('icon-btn-archive').addEventListener('click', () => {
     showModal('modal-archive');
@@ -590,22 +607,14 @@ if (isDaily) {
   const container = document.getElementById('archive-container');
   const latest = parseInt(todayDaily);
   for (let i = latest; i >= 1; i--) {
-    const a = document.createElement('a');
-    const id = i.toString().padStart(3, '0');
-    const date = new Date('2022-02-21');
-    date.setDate(date.getDate() + (i - 1));
-    a.innerHTML =
-      date.getFullYear() + '.' +
-      (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
-      (date.getDate()).toString().padStart(2, '0') +
-      ` — <strong>#${id}</strong>`;
-    if (id === puzzleId) {
-      a.classList.add('today');
-    } else {
-      a.setAttribute('href', `/${id}?past`);
-    }
-    container.appendChild(a);
+    container.appendChild(puzzleLink(i));
   }
+}
+if (guideToToday) {
+  const guideLinks = document.getElementById('guide-today-links');
+  guideLinks.appendChild(puzzleLink(puzzleId));
+  guideLinks.appendChild(puzzleLink(todayDaily));
+  showModal('modal-guide-today');
 }
 
 const initToggleButton = (ids, cfgKey, defaultVal, fn) => {

@@ -573,8 +573,12 @@ body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 
   margin-top: 6px;
   display: inline-block;
 }
+#repo-notes > a {
+  color: #58d;
+  text-decoration: none;
+}
 
-#archive-container > a {
+a.puzzle-link {
   display: block;
   background: rgba(220, 220, 220, 80%);
   color: #222;
@@ -586,23 +590,23 @@ body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 
   text-align: center;
   transition: background-color 0.2s ease;
 }
-#archive-container > a:not(.today):active {
+a.puzzle-link:not(.current):active {
   background: rgba(200, 200, 200, 80%);
 }
-body.dark #archive-container > a:not(.today) {
+body.dark a.puzzle-link:not(.current) {
   background: rgba(72, 72, 72, 80%);
   color: #fdfdfd;
 }
-body.dark #archive-container > a:not(.today):active {
+body.dark a.puzzle-link:not(.current):active {
   background: rgba(45, 45, 45, 80%);
 }
-#archive-container > a.today {
+a.puzzle-link.current {
   background: rgba(128, 216, 48, 80%);
   color: #222;
 }
-body.dark #archive-container > a.today {
+body.dark a.puzzle-link.current {
   background: rgba(128, 216, 48, 80%);
 }
-body.dark #archive-container > a.today:active {
+body.dark a.puzzle-link.current:active {
   background: rgba(108, 196, 28, 80%);
 }
