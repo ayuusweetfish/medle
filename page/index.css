@@ -35,6 +35,11 @@ body.dark {
   background: #222;
   color: #fdfdfd;
 }
+@media (prefers-color-scheme: dark) {
+  body:not(.loaded) {
+    background: #222;
+  }
+}
 
 #page-title {
   font-size: 24px;

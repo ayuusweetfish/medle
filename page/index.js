@@ -637,7 +637,9 @@ const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
     });
 };
 initToggleButton('btn-play-sfx', 'sfx', true, (on) => sfxOn = on);
-initToggleButton('btn-dark-theme', 'dark', false, (on) => {
+initToggleButton('btn-dark-theme', 'dark',
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
+(on) => {
   if (on) document.body.classList.add('dark');
   else document.body.classList.remove('dark');
 });
@@ -662,3 +664,5 @@ btnNotation.addEventListener('click', () => {
   updateNotation(true);
 });
 updateNotation(false);
+
+document.body.classList.add('loaded');
