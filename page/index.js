@@ -566,19 +566,6 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-if (localStorage.first === undefined) {
-  showModal('modal-intro');
-  localStorage.first = '';
-}
-
-document.getElementById('icon-btn-help').addEventListener('click', () => {
-  showModal('modal-intro');
-});
-
-document.getElementById('icon-btn-options').addEventListener('click', () => {
-  showModal('modal-options');
-});
-
 // Archive
 const puzzleLink = (index) => {
   const a = document.createElement('a');
@@ -616,6 +603,19 @@ if (guideToToday) {
   guideLinks.appendChild(puzzleLink(todayDaily));
   showModal('modal-guide-today');
 }
+
+if (localStorage.first === undefined) {
+  showModal('modal-intro');
+  localStorage.first = '';
+}
+
+document.getElementById('icon-btn-help').addEventListener('click', () => {
+  showModal('modal-intro');
+});
+
+document.getElementById('icon-btn-options').addEventListener('click', () => {
+  showModal('modal-options');
+});
 
 const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
   if (typeof ids === 'string') ids = [ids];
