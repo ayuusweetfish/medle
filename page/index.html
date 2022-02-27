@@ -17,7 +17,10 @@
   <div id='list-container'>
   </div>
   <div id='start-btn-container'>
-    <div id='text-loading' class='text-fading'>Loading… <span id='text-loading-progress'></span></div>
+    <div id='text-loading' class='text-fading'>
+      <span data-t='loading'></span>
+      <!-- space -->
+      <span id='text-loading-progress'></span></div>
     <div class='list btn hidden' id='btn-start'>
       <div class='bg'>
         <div class='bubble' onclick='startGame()'>
@@ -28,9 +31,9 @@
         <div class='bubble'><div class='content iconfont'>&#xf04b;</div></div>
       </div>
       <p id='text-tip' class='text-fading'>
-        <span>试试打开声音吧~</span>
-        <span>点按此前输入的圆圈，可以重新播放声音</span>
-        <span>推荐在夜晚使用深色主题</span>
+        <span data-t='tip-1'></span>
+        <span data-t='tip-2'></span>
+        <span data-t='tip-3'></span>
       </p>
     </div>
   </div>
@@ -88,13 +91,13 @@
   </div>
 
   <div class='modal hidden' id='modal-intro'>
-    <p class='title'>Medle 游戏规则</p>
-    <p>猜出旋律中的每个音符。<p>
-    <p>玩家不必具备音乐知识，Medle 可以是纯粹的数字游戏。</p>
-    <p>音符用 1 至 7 的数字表示。每次猜测后，将针对每个音符给出提示。</p>
+    <p class='title' data-t='rules'></p>
+    <p data-t='rule-01'></p>
+    <p data-t='rule-02'></p>
+    <p data-t='rule-03'></p>
     <div class='options-btns-list'>
-      <span>✨ 清晰显示</span>
-      <div id='btn-high-con-alt' class='small-btn'>OFF</div>
+      <span>✨ <span data-t='opt-high-con'></span></span>
+      <div id='btn-high-con-alt' class='small-btn'></div>
     </div>
     <div class='list intro'>
       <div class='bg'>
@@ -112,7 +115,7 @@
         <div class='bubble solf-5 none'><div class='content'></div></div>
       </div>
     </div>
-    <p style='text-align: center; color: #888'>音符“2”处于谜底中的正确位置。</p>
+    <p style='text-align: center; color: #888' data-t='rule-11'></p>
     <div class='list intro'>
       <div class='bg'>
         <div class='bubble none'><div class='content'></div></div>
@@ -129,9 +132,9 @@
         <div class='bubble solf-5 none'><div class='content'></div></div>
       </div>
     </div>
-    <p style='text-align: center; color: #888'>音符“3”出现在谜底中，但并不在猜测的位置上。</p>
+    <p style='text-align: center; color: #888' data-t='rule-12'></p>
     <br>
-    <p>若同一音符出现多次，则也会提示多次。</p>
+    <p data-t='rule-21'></p>
     <div class='list intro'>
       <div class='bg'>
         <div class='bubble maybe'><div class='content'></div></div>
@@ -150,9 +153,9 @@
         <div class='bubble solf-6 none'><div class='content'></div></div>
       </div>
     </div>
-    <p style='text-align: center; color: #888'>一个音符“1”在正确的位置；除此之外，谜底中还有两个“1”，但都不在猜测为“1”的位置上。</p>
+    <p style='text-align: center; color: #888' data-t='rule-31'></p>
     <br>
-    <p>游戏中出现的其余记号只影响发出的声音，不影响游戏规则。</p>
+    <p data-t='rule-41'></p>
     <div class='list intro'>
       <div class='bg'>
         <div class='bubble bingo'><div class='content'></div></div>
@@ -169,10 +172,10 @@
         <div class='bubble solf-5 none'><div class='content'></div></div>
       </div>
     </div>
-    <p style='text-align: center; color: #888'>除数字、颜色外的记号均不影响游戏。其含义留给有兴趣的玩家自行探索。</p>
+    <p style='text-align: center; color: #888' data-t='rule-51'></p>
     <br>
-    <p>一共有 5 次机会。游戏愉快~</p>
-    <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
+    <p data-t='rule-61'></p>
+    <p style='color: #999' data-t='daily-update'></p>
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-finish'>
@@ -191,17 +194,17 @@
     </div>
     <p><%~ it.workDesc %></p>
     <div id='btn-share'>
-      <span id='btn-share-text-share'>分享</span>
-      <span id='btn-share-text-shared'>✓ 已复制到剪贴板</span>
+      <span id='btn-share-text-share'><span class='iconfont' style='visibility: hidden'>&#x2714;</span><span data-t='btn-share'></span><span class='iconfont' style='visibility: hidden'>&#x2714;</span></span>
+      <span id='btn-share-text-shared'><span class='iconfont'>&#x2714;</span> <span data-t='btn-shared'></span></span>
     </div>
-    <p style='color: #999'>♪<% if (it.isDaily) { %>今日<% } %>选题<span style='margin: 0 8px'>|</span><%= it.curator %></p>
+    <p style='color: #999'><span class='iconfont'>&#x266a;</span><span data-t='curator<% if (it.isDaily) { %>-today<% } %>'></span><span style='margin: 0 8px'>|</span><%= it.curator %></p>
     <% if (it.isDaily) { %>
-      <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
+      <p style='color: #999' data-t='daily-update'></p>
     <% } %>
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-archive'>
-    <p class='title'>过往谜题</p>
+    <p class='title' data-t='archive'></p>
     <div id='archive-container'>
     </div>
     <div class='bottom-shadow'></div>
@@ -243,10 +246,10 @@
   <% if (it.guideToToday) { %>
   <div class='modal hidden' id='modal-guide-today'>
     <p class='title'>📜</p>
-    <p>正在访问的是一份过往的谜题 <strong>#<%= it.id %></strong>。</p>
-    <p>希望继续游玩，还是前往今天的每日谜题 <strong>#<%= it.todayDaily %></strong> 呢？</p>
+    <p><span data-t='guide-today-1-pfx'></span><strong>#<%= it.id %></strong><span data-t='guide-today-1-sfx'></span></p>
+    <p><span data-t='guide-today-2-pfx'></span><strong>#<%= it.todayDaily %></strong><span data-t='guide-today-2-sfx'></span></p>
     <div id='guide-today-links'></div>
-    <p style='color: #999'>北京时间每日零时更新谜题，记得回来呀！</p>
+    <p style='color: #999' data-t='daily-update'></p>
   </div>
   <% } %>
 </div>
