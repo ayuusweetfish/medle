@@ -136,6 +136,13 @@ const check = (answer, guess) => {
   return result;
 };
 
+const sendAnalytics = (contents) => {
+  const form = new FormData();
+  form.append('puzzle', puzzleId);
+  form.append('t', contents);
+  fetch('/analytics', { method: 'POST', body: form });
+};
+
 const audios = {};
 const paths = [['/static/samples/pop.wav']];
 for (let i = -12; i <= 24; i++)
@@ -225,6 +232,8 @@ const startGame = () => {
   startButton.classList.add('hidden');
   document.getElementById('start-btn-container').classList.add('no-pointer');
   textTip.classList.add('hidden');
+
+  sendAnalytics('start');
 
   const listContainer = document.getElementById('list-container');
   const btnsRow1 = document.getElementById('input-btns-row-1');
@@ -414,10 +423,7 @@ const startGame = () => {
     setTimeout(() => {
       if (finished) {
         // Send analytics
-        const form = new FormData();
-        form.append('puzzle', puzzleId);
-        form.append('att', attInputs.map((a) => a.join('')).join(','));
-        fetch('/analytics', { method: 'POST', body: form });
+        sendAnalytics('fin ' + attInputs.map((a) => a.join('')).join(','));
         // Reveal answer
         window.revealAnswer();
         showButtons(true);

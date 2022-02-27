@@ -93,7 +93,7 @@ const handler = async (req) => {
     if (url.pathname === '/analytics') {
       try {
         const body = await req.formData();
-        log(`analy ${body.get('puzzle')} ${body.get('att')}`);
+        log(`analy ${body.get('puzzle')} ${body.get('t')}`);
       } catch (e) {
         return new Response('', { status: 400 });
       }
