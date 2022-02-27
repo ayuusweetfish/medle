@@ -353,6 +353,7 @@ body.dark .tune-dot {
   position: fixed;
   left: 25%;
 }
+#text-tip > span { display: none; }
 .text-fading {
   pointer-events: none;
   transform: scale(1);
@@ -518,13 +519,15 @@ body.dark #btn-share:active {
 body.dark #btn-share.copied {
   background: #4b743a;
 }
+#btn-share:not(.copied) #btn-share-text-shared { display: none; }
+#btn-share.copied #btn-share-text-share { display: none; }
 
 .options-btns-list {
   display: table;
   width: 100%;
   margin: 12px 0;
 }
-.options-btns-list span {
+.options-btns-list > span {
   display: table-cell;
   text-align: start;
   vertical-align: middle;
@@ -578,6 +581,11 @@ body.nota-roman .small-btn#btn-notation { background: rgba(232, 128, 255, 70%); 
 body.nota-roman .small-btn#btn-notation:active { background: rgba(212, 108, 235, 70%); }
 body.nota-aikin .small-btn#btn-notation { background: rgba(64, 192, 255, 70%); }
 body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 70%); }
+.small-btn#btn-notation > span { display: none; }
+body.nota-num .small-btn#btn-notation > span#btn-notation-text-num { display: inline; }
+body.nota-solf .small-btn#btn-notation > span#btn-notation-text-solf { display: inline; }
+body.nota-roman .small-btn#btn-notation > span#btn-notation-text-roman { display: inline; }
+body.nota-aikin .small-btn#btn-notation > span#btn-notation-text-aikin { display: inline; }
 #repo-notes {
   font-size: 13px;
   margin-top: 6px;

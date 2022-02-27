@@ -215,14 +215,10 @@ const startButton = document.getElementById('btn-start');
 const textTip = document.getElementById('text-tip');
 
 // Display tip
-const tips = [
-  '试试打开声音吧~',
-  '点按此前输入的圆圈，可以重新播放声音',
-  '推荐在夜晚使用深色主题',
-];
+const tips = textTip.children;
 const tipIndex = ((+localStorage.tip || 0) + 1) % tips.length;
 localStorage.tip = tipIndex;
-textTip.innerText = tips[tipIndex];
+tips[tipIndex].style.display = 'inline';
 
 let gamePreloaded = false;
 let gameStarted = false;
@@ -443,7 +439,6 @@ const startGame = () => {
   const btnShare = document.getElementById('btn-share');
   new ClipboardJS(btnShare, {
     text: () => {
-      btnShare.innerText = '✓ 已复制到剪贴板';
       btnShare.classList.add('copied');
       const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/5\n`;
       const suffix = `https://medle.0-th.art/` +
@@ -488,7 +483,6 @@ const startGame = () => {
   };
 
   window.revealAnswer = () => {
-    btnShare.innerText = '分享';
     btnShare.classList.remove('copied');
 
     showModal('modal-finish', () => {
@@ -666,14 +660,12 @@ initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', false, (on) =>
 const btnNotation = document.getElementById('btn-notation');
 const updateNotation = (inc) => {
   const notations = ['nota-num', 'nota-solf', 'nota-roman', 'nota-aikin'];
-  const notationNames = ['数字', '唱名', '罗马', '图形'];
   let current = notations.indexOf(localStorage.notation);
   if (current === -1) current = 0;
   const nova = (current + (inc ? 1 : 0)) % notations.length;
   localStorage.notation = notations[nova];
   document.body.classList.remove(notations[current]);
   document.body.classList.add(notations[nova]);
-  btnNotation.innerText = notationNames[nova];
 };
 btnNotation.addEventListener('click', () => {
   updateNotation(true);
