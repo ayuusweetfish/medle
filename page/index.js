@@ -672,4 +672,41 @@ btnNotation.addEventListener('click', () => {
 });
 updateNotation(false);
 
+// Internationalization
+let curLang = 1;  // Defaults to English
+const btnLang = document.getElementById('btn-lang');
+
+const i18nEls = document.querySelectorAll('[data-t]');
+const updateInterfaceLanguage = () => {
+  const dict = window.languages[curLang][2];
+  for (const el of i18nEls) {
+    const key = el.dataset.t;
+    el.innerText = dict[key];
+  }
+  btnLang.innerText = window.languages[curLang][1];
+  localStorage.lang = window.languages[curLang][0];
+};
+
+// Find previously stored language or preferred language
+const langCode = (localStorage.lang || window.navigator.languages[0]).split('-');
+let bestMatch = 0;
+for (const [i, [code, name, dict]] of Object.entries(window.languages)) {
+  const codeParts = code.split('-');
+  // Compare components
+  let comps = 0;
+  for (comps = 0; comps < langCode.length && comps < codeParts.length; comps++)
+    if (langCode[comps] !== codeParts[comps]) break;
+  if (comps > bestMatch) {
+    bestMatch = comps;
+    curLang = +i;
+  }
+}
+updateInterfaceLanguage();
+
+btnLang.addEventListener('click', () => {
+  console.log(curLang);
+  curLang = (curLang + 1) % window.languages.length;
+  updateInterfaceLanguage();
+});
+
 document.body.classList.add('loaded');

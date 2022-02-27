@@ -207,32 +207,36 @@
     <div class='bottom-shadow'></div>
   </div>
   <div class='modal hidden' id='modal-options'>
-    <p class='title'>选项</p>
+    <p class='title' data-t='opt-title'></p>
     <div class='options-btns-list'>
-      <span>🎶 播放音效</span>
+      <span>🎶 <span data-t='opt-sfx'></span></span>
       <div id='btn-play-sfx' class='small-btn'></div>
     </div>
     <div class='options-btns-list'>
-      <span>🌙 深色主题</span>
+      <span>🌙 <span data-t='opt-dark'></span></span>
       <div id='btn-dark-theme' class='small-btn'></div>
     </div>
     <div class='options-btns-list'>
-      <span>✨ 清晰显示</span>
+      <span>✨ <span data-t='opt-high-con'></span></span>
       <div id='btn-high-con' class='small-btn'></div>
     </div>
     <div class='options-btns-list'>
-      <span>🔣 音符记号</span>
+      <span>🔣 <span data-t='opt-nota'></span></span>
       <div id='btn-notation' class='small-btn'>
-        <span id='btn-notation-text-num'>数字</span>
-        <span id='btn-notation-text-solf'>唱名</span>
-        <span id='btn-notation-text-roman'>罗马</span>
-        <span id='btn-notation-text-aikin'>图形</span>
+        <span id='btn-notation-text-num'><span data-t='opt-nota-num'></span></span>
+        <span id='btn-notation-text-solf'><span data-t='opt-nota-solf'></span></span>
+        <span id='btn-notation-text-roman'><span data-t='opt-nota-roman'></span></span>
+        <span id='btn-notation-text-aikin'><span data-t='opt-nota-aikin'></span></span>
       </div>
+    </div>
+    <div class='options-btns-list'>
+      <span>🌐 <span data-t='opt-lang'></span></span>
+      <div id='btn-lang' class='small-btn'></div>
     </div>
     <br>
     <div style='color: #999'>
       <span>&copy; Medle 2022</span><br>
-      <span id='repo-notes'><a href='https://github.com/kawa-yoiko/medle'>程序源码</a>依照木兰公共许可证分发</span>
+      <span id='repo-notes'><a href='https://github.com/kawa-yoiko/medle'><span data-t='opt-source'/></a><span data-t='opt-dist'/></span>
     </div>
     <div class='bottom-shadow'></div>
   </div>
@@ -250,6 +254,7 @@
 
 <script src='/static/howler.core.min.js'></script>
 <script src='/static/clipboard.min.js'></script>
+<script src='/static/languages.js'></script>
 <script>
 const puzzleId = <%~ JSON.stringify(it.id) %>;
 const tune = <%~ JSON.stringify(it.tune) %>;
