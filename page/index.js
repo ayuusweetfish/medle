@@ -710,7 +710,6 @@ for (const [i, [code, name, dict]] of Object.entries(window.languages)) {
 updateInterfaceLanguage();
 
 btnLang.addEventListener('click', () => {
-  console.log(curLang);
   curLang = (curLang + 1) % window.languages.length;
   updateInterfaceLanguage();
 });
