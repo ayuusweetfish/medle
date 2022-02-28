@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Medle Icons Collection - 220227';
+  font-family: 'Medle Icons Collection - 220228';
   src: url(/static/icons.woff2) format('woff2');
 }
 
@@ -25,7 +25,7 @@ html, body {
   user-select: none;
 }
 .iconfont {
-  font-family: 'Medle Icons Collection - 220227';
+  font-family: 'Medle Icons Collection - 220228';
 }
 a {
   color: #25a;
@@ -246,7 +246,7 @@ body.nota-roman .bubble.solf-4 > div.content:before { content: 'IV'; }
 body.nota-roman .bubble.solf-5 > div.content:before { content: 'V'; }
 body.nota-roman .bubble.solf-6 > div.content:before { content: 'VI'; }
 body.nota-roman .bubble.solf-7 > div.content:before { content: 'VII'; }
-body.nota-aikin .bubble > div.content:before { font-family: 'Medle Icons Collection - 220227'; }
+body.nota-aikin .bubble > div.content:before { font-family: 'Medle Icons Collection - 220228'; }
 body.nota-aikin .bubble.solf-1 > div.content:before {
   content: '\f04b';
   font-size: 24px;
@@ -308,7 +308,7 @@ body.dark .tune-dot {
 }
 
 .accidental {
-  font-family: 'Medle Icons Collection - 220227';
+  font-family: 'Medle Icons Collection - 220228';
   font-size: 14px;
   position: fixed;
   left: 20%;
