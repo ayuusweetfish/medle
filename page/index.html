@@ -180,8 +180,8 @@
   </div>
   <div class='modal hidden' id='modal-finish'>
     <p class='title'>Medle #<%= it.id %></p>
-    <p><span class='iconfont'>&#x1f3b5;</span> <strong><%= it.workTitle %></strong></p>
-    <p><span class='iconfont'>&#xf56b;</span> <%= it.workAuthor %></p>
+    <p><span class='iconfont'>&#x1f3b5;</span> <strong data-t='=title'></strong></p>
+    <p><span class='iconfont'>&#xf56b;</span> <span data-t='=author'></p>
     <div id='answer-container'></div>
     <div class='list btn disabled' id='btn-play'>
       <div class='bg'>
@@ -193,7 +193,7 @@
         <div class='bubble'><div class='content iconfont' id='btn-play-content'>&#xf141;</div></div>
       </div>
     </div>
-    <p><%~ it.workDesc %></p>
+    <p data-t='=desc'></p>
     <div id='btn-share'>
       <span id='btn-share-text-share'><span class='iconfont' style='visibility: hidden'>&#x2714;</span><span data-t='btn-share'></span><span class='iconfont' style='visibility: hidden'>&#x2714;</span></span>
       <span id='btn-share-text-shared'><span class='iconfont'>&#x2714;</span> <span data-t='btn-shared'></span></span>
@@ -269,6 +269,8 @@ const tuneRevealOffset = <%= it.tuneRevealOffset %>;
 const isDaily = <%= it.isDaily %>;
 const guideToToday = <%= it.guideToToday %>;
 const todayDaily = <%~ JSON.stringify(it.todayDaily) %>;
+
+const i18nVars = <%~ JSON.stringify(it.i18nVars) %>;
 </script>
 <script src='/static/index.js'></script>
 

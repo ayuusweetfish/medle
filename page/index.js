@@ -679,12 +679,18 @@ const btnLang = document.getElementById('btn-lang');
 const i18nEls = document.querySelectorAll('[data-t]');
 const updateInterfaceLanguage = () => {
   const dict = window.languages[curLang][2];
+  const langName = window.languages[curLang][0];
+  const langVars = i18nVars[langName];
   for (const el of i18nEls) {
     const key = el.dataset.t;
-    el.innerText = dict[key];
+    if (key[0] === '=') {
+      el.innerText = langVars[key.substring(1)];
+    } else {
+      el.innerText = dict[key];
+    }
   }
   btnLang.innerText = window.languages[curLang][1];
-  localStorage.lang = window.languages[curLang][0];
+  localStorage.lang = langName;
 };
 
 // Find previously stored language or preferred language
