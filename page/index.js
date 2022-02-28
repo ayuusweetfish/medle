@@ -229,7 +229,7 @@ const startGame = () => {
   document.getElementById('start-btn-container').classList.add('no-pointer');
   textTip.classList.add('hidden');
 
-  sendAnalytics('start');
+  sendAnalytics(`start ${localStorage.lang} ${localStorage.sfx} ${localStorage.dark} ${localStorage.highcon} ${localStorage.notation}`);
 
   const listContainer = document.getElementById('list-container');
   const btnsRow1 = document.getElementById('input-btns-row-1');
