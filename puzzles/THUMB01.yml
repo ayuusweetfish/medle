@@ -14,7 +14,13 @@ tunePitchBase: Eb4
 tuneRevealBeatDur: 192
 tuneRevealOffset: 816
 
-workTitle: The Seventh Night of July
-workAuthor: Itaru Sakai
-workDesc: 演出：The Band of the Royal Netherlands Air Force，指挥：Jan de Haan
+zh-Hans:
+  title: The Seventh Night of July
+  author: Itaru Sakai
+  desc: 演出：The Band of the Royal Netherlands Air Force，指挥：Jan de Haan
+en:
+  title: The Seventh Night of July
+  author: Itaru Sakai
+  desc: 演出：The Band of the Royal Netherlands Air Force，指挥：Jan de Haan
+
 curator: Ayu

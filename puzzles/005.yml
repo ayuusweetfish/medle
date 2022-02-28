@@ -13,7 +13,13 @@ tunePitchBase: A3
 tuneRevealBeatDur: 185
 tuneRevealOffset: 275
 
-workTitle: Heal the World
-workAuthor: Michael Jackson
-workDesc: "Heal the world\nMake it a better place\nFor you and for me, and the entire human race"
+zh-Hans:
+  title: Heal the World
+  author: Michael Jackson
+  desc: "Heal the world\nMake it a better place\nFor you and for me, and the entire human race"
+en:
+  title: Heal the World
+  author: Michael Jackson
+  desc: "Heal the world\nMake it a better place\nFor you and for me, and the entire human race"
+
 curator: Ayu

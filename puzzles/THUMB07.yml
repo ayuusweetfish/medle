@@ -14,7 +14,13 @@ tunePitchBase: Bb3
 tuneRevealBeatDur: 165
 tuneRevealOffset: 260
 
-workTitle: The Liberty Bell
-workAuthor: John Philip Sousa (arr. Jay Bocook)
-workDesc: 示范音频来自 JW Pepper
+zh-Hans:
+  title: The Liberty Bell
+  author: John Philip Sousa (arr. Jay Bocook)
+  desc: 示范音频来自 JW Pepper
+en:
+  title: The Liberty Bell
+  author: John Philip Sousa (arr. Jay Bocook)
+  desc: 示范音频来自 JW Pepper
+
 curator: Ayu

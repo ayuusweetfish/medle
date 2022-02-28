@@ -14,7 +14,13 @@ tunePitchBase: Ab3
 tuneRevealBeatDur: 220
 tuneRevealOffset: 3332
 
-workTitle: 进行曲“普罗旺斯之风”（March “Wind of Provence”）
-workAuthor: 田坂 直樹（Tasaka Naoki）
-workDesc: 演奏：WISH Wind Orchestra；指挥：甲斐 誠
+zh-Hans:
+  title: 进行曲“普罗旺斯之风”（March “Wind of Provence”）
+  author: 田坂 直樹（Tasaka Naoki）
+  desc: 演奏：WISH Wind Orchestra；指挥：甲斐 誠
+en:
+  title: 进行曲“普罗旺斯之风”（March “Wind of Provence”）
+  author: 田坂 直樹（Tasaka Naoki）
+  desc: 演奏：WISH Wind Orchestra；指挥：甲斐 誠
+
 curator: Ayu

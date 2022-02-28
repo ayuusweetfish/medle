@@ -13,7 +13,13 @@ tunePitchBase: A3
 tuneRevealBeatDur: 337
 tuneRevealOffset: 520
 
-workTitle: 溜冰圆舞曲（Les Patineurs）
-workAuthor: Émile Waldteufel
-workDesc: 演奏：Slovak State Philharmonic Orchestra；指挥：Alfred Walter
+zh-Hans:
+  title: 溜冰圆舞曲（Les Patineurs）
+  author: Émile Waldteufel
+  desc: 演奏：Slovak State Philharmonic Orchestra；指挥：Alfred Walter
+en:
+  title: The Skaters' Waltz (Les Patineurs)
+  author: Émile Waldteufel
+  desc: Performed by Slovak State Philharmonic Orchestra, conducted by Alfred Walter
+
 curator: Ayu

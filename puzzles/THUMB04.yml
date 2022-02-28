@@ -13,7 +13,13 @@ tunePitchBase: Eb4
 tuneRevealBeatDur: 250
 tuneRevealOffset: 694
 
-workTitle: 城市之光进行曲（Pearl of the City）
-workAuthor: Harm Evers
-workDesc: ""
+zh-Hans:
+  title: 城市之光进行曲（Pearl of the City）
+  author: Harm Evers
+  desc: ""
+en:
+  title: 城市之光进行曲（Pearl of the City）
+  author: Harm Evers
+  desc: ""
+
 curator: Ayu

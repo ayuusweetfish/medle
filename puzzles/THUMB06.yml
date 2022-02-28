@@ -14,7 +14,13 @@ tunePitchBase: Ab4
 tuneRevealBeatDur: 114
 tuneRevealOffset: 968
 
-workTitle: 阿巴拉契亚序曲（Appalachian Overture）
-workAuthor: James Barnes
-workDesc: ""
+zh-Hans:
+  title: 阿巴拉契亚序曲（Appalachian Overture）
+  author: James Barnes
+  desc: ""
+en:
+  title: 阿巴拉契亚序曲（Appalachian Overture）
+  author: James Barnes
+  desc: ""
+
 curator: Ayu

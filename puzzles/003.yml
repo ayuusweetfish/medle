@@ -13,7 +13,13 @@ tunePitchBase: F3
 tuneRevealBeatDur: 384
 tuneRevealOffset: 2426
 
-workTitle: 月河（Moon River）
-workAuthor: Henry Mancini（曲）；Johnny Mercer（词）；Audrey Hepburn（演唱）
-workDesc: "1961 年电影《蒂凡尼的早餐》插曲。"
+zh-Hans:
+  title: 月河（Moon River）
+  author: Henry Mancini（曲）；Johnny Mercer（词）；Audrey Hepburn（演唱）
+  desc: 1961 年电影《蒂凡尼的早餐》插曲。
+en:
+  title: Moon River
+  author: Henry Mancini (music); Johnny Mercer (lyrics); Audrey Hepburn (performance)
+  desc: A song from the 1961 film "Breakfast at Tiffany's".
+
 curator: Ayu

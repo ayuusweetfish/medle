@@ -13,7 +13,13 @@ tunePitchBase: Eb4
 tuneRevealBeatDur: 214
 tuneRevealOffset: 600
 
-workTitle: Do You Want to Build a Snowman?
-workAuthor: Kristen Anderson-Lopez, Robert Lopez（词曲）；Kristen Bell, Agatha Lee Monn, Katie Lopez（演唱）
-workDesc: 2013 年动画电影《冰雪奇缘》配乐。
+zh-Hans:
+  title: Do You Want to Build a Snowman?
+  author: Kristen Anderson-Lopez, Robert Lopez（词曲）；Kristen Bell, Agatha Lee Monn, Katie Lopez（演唱）
+  desc: 2013 年动画电影《冰雪奇缘》配乐。
+en:
+  title: Do You Want to Build a Snowman?
+  author: Kristen Anderson-Lopez, Robert Lopez (composition); Kristen Bell, Agatha Lee Monn, Katie Lopez (performance)
+  desc: A song from the 2013 animation film "Frozen".
+
 curator: Ayu

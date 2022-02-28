@@ -51,7 +51,6 @@ const servePuzzle = async (puzzleId, checkToday) => {
   const i18n = {};
   for (const lang of ['zh-Hans', 'en']) {
     const langContents = puzzleContents[lang];
-    langContents.desc = etaConfig.e(langContents.desc).replace(/\n/g, '<br>');
     i18n[lang] = langContents;
   }
   puzzleContents.i18nVars = i18n;

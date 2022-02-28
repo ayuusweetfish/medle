@@ -14,7 +14,13 @@ tunePitchBase: G4
 tuneRevealBeatDur: 310
 tuneRevealOffset: 3085
 
-workTitle: 雪花
-workAuthor: 张帅
-workDesc: 2022北京冬奥会开幕式主题曲，音频来自开幕式直播。
+zh-Hans:
+  title: 雪花
+  author: 张帅
+  desc: 2022 北京冬奥会开幕式主题曲，音频来自开幕式直播。
+en:
+  title: Snowflakes (雪花)
+  author: Zhang Shuai
+  desc: Theme song of the opening ceremony of the Beijing 2022 Winter Olympic Games. Recording taken from live performance at the ceremony.
+
 curator: Ayu
