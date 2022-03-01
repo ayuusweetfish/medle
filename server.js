@@ -26,6 +26,7 @@ const analytics = (req) => {
     const value = decodeURIComponent(s.substring(i + 1));
     dict[key] = value;
   }
+  if (!dict['lang']) return '';
   return `${dict['lang']} ${dict['sfx']} ${dict['dark']} ${dict['highcon']} ${dict['notation']}`;
 };
 
