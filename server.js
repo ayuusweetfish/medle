@@ -16,6 +16,19 @@ const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 const indexHtmlContents = new TextDecoder().decode(await Deno.readFile('page/index.html'));
 const indexTemplate = etaCompile(indexHtmlContents);
 
+const analytics = (req) => {
+  const cookies = req.headers.get('Cookie');
+  if (cookies === null) return '';
+  const dict = {};
+  for (const s of cookies.split(';')) {
+    const i = s.indexOf('=');
+    const key = decodeURIComponent(s.substring(0, i).trim());
+    const value = decodeURIComponent(s.substring(i + 1));
+    dict[key] = value;
+  }
+  return `${dict['lang']} ${dict['sfx']} ${dict['dark']} ${dict['highcon']} ${dict['notation']}`;
+};
+
 const midiPitch = (s) => {
   const i = s.charCodeAt(0) - 'A'.charCodeAt(0);
   const oct = s.charCodeAt(s.length - 1) - '0'.charCodeAt(0);
@@ -27,7 +40,10 @@ const midiPitch = (s) => {
 
 const noSuchPuzzle = () => new Response('No such puzzle > <\n', { status: 404 });
 
-const servePuzzle = async (puzzleId, checkToday) => {
+const servePuzzle = async (req, puzzleId, checkToday) => {
+  const today = todaysPuzzle();
+  if (puzzleId === undefined) puzzleId = today;
+
   const file = `puzzles/${puzzleId}.yml`;
   if (!existsSync(file)) return noSuchPuzzle();
 
@@ -56,13 +72,12 @@ const servePuzzle = async (puzzleId, checkToday) => {
   puzzleContents.i18nVars = i18n;
 
   const isDaily = !!puzzleId.match(/^[0-9]{3,}$/g);
-  const today = todaysPuzzle();
   puzzleContents.guideToToday =
     (checkToday && isDaily && parseInt(puzzleId) < parseInt(today));
   puzzleContents.isDaily = isDaily;
   puzzleContents.todayDaily = today;
 
-  log(`puzzle ${puzzleId}`);
+  log(`puzzle ${puzzleId} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,
@@ -76,7 +91,7 @@ const handler = async (req) => {
   const url = new URL(req.url);
   if (req.method === 'GET') {
     if (url.pathname === '/') {
-      return servePuzzle(todaysPuzzle(), false);
+      return servePuzzle(req, undefined, false);
     }
     if (url.pathname.startsWith('/static/')) {
       const fileName = url.pathname.substring('/static/'.length);
@@ -91,14 +106,14 @@ const handler = async (req) => {
       const puzzleId = url.pathname.substring(1);
       if (!debug && parseInt(puzzleId) > todaysPuzzleIndex())
         return noSuchPuzzle();
-      return servePuzzle(puzzleId, url.search !== '?past');
+      return servePuzzle(req, puzzleId, url.search !== '?past');
     }
   } else if (req.method === 'POST') {
     // Analytics
     if (url.pathname === '/analytics') {
       try {
         const body = await req.formData();
-        log(`analy ${body.get('puzzle')} ${body.get('t')}`);
+        log(`analy ${body.get('puzzle')} ${body.get('t')} ${analytics(req)}`);
       } catch (e) {
         return new Response('', { status: 400 });
       }

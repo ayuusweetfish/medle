@@ -214,6 +214,37 @@ const loadingProgress = document.getElementById('text-loading-progress');
 const startButton = document.getElementById('btn-start');
 const textTip = document.getElementById('text-tip');
 
+// Back up local storage with cookies
+const clearCookies = () => {
+  const items = document.cookie.split(';');
+  for (const s of items) {
+    const i = s.indexOf('=');
+    const key = decodeURIComponent(s.substring(0, i).trim());
+    const value = decodeURIComponent(s.substring(i + 1));
+    document.cookie = `${encodeURIComponent(key)}=; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
+  }
+};
+const cookieToLocalStorage = () => {
+  localStorage.clear();
+  const items = document.cookie.split(';');
+  for (const s of items) {
+    const i = s.indexOf('=');
+    const key = decodeURIComponent(s.substring(0, i).trim());
+    const value = decodeURIComponent(s.substring(i + 1));
+    localStorage[key] = value;
+  }
+};
+const localStorageToCookie = () => {
+  clearCookies();
+  for (const [key, value] of Object.entries(localStorage)) {
+    document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}; max-age=2592000`;
+  }
+};
+
+if (localStorage.length === 0 && document.cookie) {
+  cookieToLocalStorage();
+}
+
 // Display tip
 const tips = textTip.children;
 const tipIndex = ((+localStorage.tip || 0) + 1) % tips.length;
@@ -229,7 +260,7 @@ const startGame = () => {
   document.getElementById('start-btn-container').classList.add('no-pointer');
   textTip.classList.add('hidden');
 
-  sendAnalytics(`start ${localStorage.lang} ${localStorage.sfx} ${localStorage.dark} ${localStorage.highcon} ${localStorage.notation}`);
+  sendAnalytics('start');
 
   const listContainer = document.getElementById('list-container');
   const btnsRow1 = document.getElementById('input-btns-row-1');
@@ -637,11 +668,13 @@ const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
   };
   if (localStorage[cfgKey] === undefined)
     localStorage[cfgKey] = (defaultVal ? '1' : '0');
+  localStorageToCookie();
   update(localStorage[cfgKey] === '1');
   for (const btn of btns)
     btn.addEventListener('click', (e) => {
       const on = (localStorage[cfgKey] !== '1');
       localStorage[cfgKey] = (on ? '1' : '0');
+      localStorageToCookie();
       update(on);
     });
 };
@@ -664,6 +697,7 @@ const updateNotation = (inc) => {
   if (current === -1) current = 0;
   const nova = (current + (inc ? 1 : 0)) % notations.length;
   localStorage.notation = notations[nova];
+  localStorageToCookie();
   document.body.classList.remove(notations[current]);
   document.body.classList.add(notations[nova]);
 };
@@ -691,6 +725,7 @@ const updateInterfaceLanguage = () => {
   }
   btnLang.innerText = window.languages[curLang][1];
   localStorage.lang = langName;
+  localStorageToCookie();
 };
 
 // Find previously stored language or preferred language
@@ -713,5 +748,7 @@ btnLang.addEventListener('click', () => {
   curLang = (curLang + 1) % window.languages.length;
   updateInterfaceLanguage();
 });
+
+localStorageToCookie();
 
 document.body.classList.add('loaded');
