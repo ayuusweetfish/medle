@@ -15,7 +15,6 @@ const tuneDecos = tune.map((note) => {
   }
   return r;
 });
-const tuneChromatic = !tuneDecos.every((r) => (r & (DECO_SHARP | DECO_FLAT)) === 0);
 const tuneAnswer = tune.map(([a, b]) => (a + 6) % 7 + 1);
 
 const SCALE = [0, 2, 4, 5, 7, 9, 11];
@@ -145,8 +144,21 @@ const sendAnalytics = (contents) => {
 
 const audios = {};
 const paths = [['/static/samples/pop.wav']];
+
+const notesReachable = {};
+const octaves = [0];
+const accidentals = [0];
+if (!tuneDecos.every((r) => (r & DECO_8VA) === 0)) octaves.push(12);
+if (!tuneDecos.every((r) => (r & DECO_8VB) === 0)) octaves.push(-12);
+if (!tuneDecos.every((r) => (r & DECO_SHARP) === 0)) accidentals.push(1);
+if (!tuneDecos.every((r) => (r & DECO_FLAT) === 0)) accidentals.push(-1);
+for (const a of octaves)
+  for (const b of accidentals)
+    for (const c of SCALE)
+      notesReachable[a + b + c] = true;
+
 for (let i = -12; i <= 24; i++)
-  if (tuneChromatic || SCALE.indexOf((i + 12) % 12) !== -1)
+  if (notesReachable[i])
     paths.push([
       `/static/samples/pf-${tunePitchBase + i}.ogg`,
       `/static/samples/pf-${tunePitchBase + i}.mp3`,
