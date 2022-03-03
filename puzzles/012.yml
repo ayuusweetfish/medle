@@ -1,26 +1,24 @@
 tune:
-  - [3+, 1]
-  - [2#+, 1]
-  - [3+, 1]
-  - [2#+, 1]
-  - [3+, 1]
-  - [7, 1]
-  - [2+, 1]
-  - [1+, 1]
-  - [6, 2]
-tuneBeatDur: 250
-tunePitchBase: C4
+  - [3, 8]
+  - [5, 7]
+  - [5, 1]
+  - [1, 4]
+  - [2, 4]
+  - [3, 4]
+  - [1, 4]
+tuneBeatDur: 140
+tunePitchBase: Eb4
 
-tuneRevealBeatDur: 265
-tuneRevealOffset: 373
+tuneRevealBeatDur: 153
+tuneRevealOffset: 4992
 
 zh-Hans:
-  title: 献给爱丽丝（Für Elise）
-  author: 贝多芬（Ludwig van Beethoven）
-  desc: 贝多芬的知名钢琴曲作品，但是“爱丽丝”的身份至今仍无定论。演奏者为郎朗。
+  title: 号手的梦想（Bugler's Dream）
+  author: Leo Arnaud
+  desc: 自 1964 年奥地利因斯布鲁克冬奥会起，美国广播公司（ABC）使用此曲作为奥运会广播的主题曲。此后常常与 John Williams 创作的《奥林匹克号角与主题曲》（Olympic Fanfare and Theme）连续演奏，至今已成为奥林匹克运动会的一大标志。
 en:
-  title: Für Elise
-  author: Ludwig van Beethoven
-  desc: A well-known piano piece by Beethoven. The identity of "Elise" is currently unknown. Performed by Lang Lang.
+  title: Bugler's Dream
+  author: Leo Arnaud
+  desc: Since the Innsbruck 1964 Winter Olympics, ABC started using this composition as the theme to the Olympic broadcasts. Later, after John Williams composed "Olympic Fanfare and Theme", the two compositions have been frequently played successively, and have since become a prominent symbol of the Olympic Games.
 
 curator: Ayu

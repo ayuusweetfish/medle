@@ -1,0 +1,28 @@
+tune:
+  - [5, 3]
+  - [3, 1]
+  - [2, 2]
+  - [1, 2]
+  - [5, 8]
+  - [1, 4]
+  - [2, 2]
+  - [3, 2]
+  - [5-, 8]
+tuneBeatDur: 120
+tunePitchBase: G4
+
+tuneRevealBeatDur: 122
+tuneRevealOffset: 3889
+
+zh-Hans:
+  title: 学习雷锋好榜样
+  author: 生茂（曲）；吴洪源（词）
+  desc: 1963 年 3 月 5 日，毛泽东题词“向雷锋同志学习”。当日中午，北京军区战友文工团的两位词曲作者为下午的宣传活动迅速创作了此曲。
+en:
+  title: Learn From Lei Feng's Good Example (学习雷锋好榜样)
+  author: Shengmao (music); Wu Hongyuan (lyrics)
+  desc: |-
+    Lei Feng is a renowned historical figure symbolizing altruism, professional dedication, and social contribution.
+    On 5 March 1963, Mao Zedong's handwritten slogan "Learn from Comrade Lei Feng" was published. The song was soon composed on the same day.
+
+curator: Ayu
