@@ -1,0 +1,26 @@
+tune:
+  - [3, 1]
+  - [5, 1]
+  - [1+, 2]
+  - [2, 1]
+  - [5, 1]
+  - [7, 2]
+  - [1+, 2]
+  - [3+, 2]
+  - [1+, 2]
+tuneBeatDur: 150
+tunePitchBase: G4
+
+tuneRevealBeatDur: 143
+tuneRevealOffset: 7668
+
+zh-Hans:
+  title: 魔笛（节选）
+  author: 莫扎特（Wolfgang Amadeus Mozart）
+  desc: 歌剧《魔笛》选段。大都会歌剧院 1991 年版本，由 James Levine 指挥。
+en:
+  title: The Magic Flute (Die Zauberflöte) (excerpt)
+  author: Wolfgang Amadeus Mozart
+  desc: Excerpt from the opera "The Magic Flute". Metropolitan Opera 1991, conducted by James Levine.
+
+curator: Ayu
