@@ -3,8 +3,7 @@
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <link rel='stylesheet' href='/static/index.css'>
-  <link rel='stylesheet' href='/static/nota-alpha.css'>
-</head><body class='scale-<%= it.scale %>'>
+</head><body>
 
 <div id='container'>
   <div id='page-title'>Medle #<%= it.id %></div>
@@ -257,6 +256,10 @@
   <% } %>
 </div>
 <div id='modal-bg' class='hidden'></div>
+
+<style>
+<%~ it.acciStyles %>
+</style>
 
 <script src='/static/howler.core.min.js'></script>
 <script src='/static/clipboard.min.js'></script>

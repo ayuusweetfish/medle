@@ -30,11 +30,14 @@ const analytics = (req) => {
   return `${dict['lang']} ${dict['sfx']} ${dict['dark']} ${dict['highcon']} ${dict['notation']}`;
 };
 
+const NOTE_OFFS = [9, 11, 0, 2, 4, 5, 7];
+const SCALE_OFFS = [0, 2, 4, 5, 7, 9, 11];
+
 const midiPitch = (s) => {
   const i = s.charCodeAt(0) - 'A'.charCodeAt(0);
   const oct = s.charCodeAt(s.length - 1) - '0'.charCodeAt(0);
   return 12 +
-    [9, 11, 0, 2, 4, 5, 7][i] +
+    NOTE_OFFS[i] +
     oct * 12 +
     (s[1] === '#' ? 1 : s[1] === 'b' ? -1 : 0);
 };
@@ -63,11 +66,31 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
     if (noteName.indexOf('#') !== -1) noteValue += 0.1;
     note[0] = noteValue;
   }
+
+  // Accidentals in absolute notation
   const tunePitchBase = puzzleContents.tunePitchBase;
+  const acciStyles = [];
+  const note = tunePitchBase.charCodeAt(0) - 'A'.charCodeAt(0);
+  const acci = (tunePitchBase[1] === 'b' ? -1 : 
+                tunePitchBase[1] === '#' ? 1 : 0);
+  for (let s = 1; s <= 7; s++) {
+    acciStyles.push(`body.nota-alpha .fg > .bubble.solf-${s} > div.content:before { content: '${String.fromCharCode('A'.charCodeAt(0) + (note + s - 1) % 7)}'; }`);
+  }
+  for (let s = 1; s <= 7; s++) {
+    const value = NOTE_OFFS[note] + acci + SCALE_OFFS[s - 1];
+    const diff = (value - NOTE_OFFS[(note + s - 1) % 7] + 12) % 12;
+    let accis = undefined;
+    if (diff === 1) accis = ['\\266f', '\\266e', '\\2715'];
+    else if (diff === 11) accis = ['\\266d', '\\266d\\266d', '\\266e'];
+    if (accis) {
+      acciStyles.push(`body.nota-alpha .bubble:not(.outline).solf-${s} > * > .accidental::before { content: '${accis[0]}'; }`);
+      acciStyles.push(`body.nota-alpha .bubble:not(.outline).solf-${s} > .flat > .accidental::before { content: '${accis[1]}'; }`);
+      acciStyles.push(`body.nota-alpha .bubble:not(.outline).solf-${s} > .sharp > .accidental::before { content: '${accis[2]}'; }`);
+    }
+  }
+  puzzleContents.acciStyles = acciStyles.join('\n');
+
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
-  puzzleContents.scale = tunePitchBase[0] +
-    (tunePitchBase[1] === 'b' ? 'b' : 
-     tunePitchBase[1] === '#' ? 'h' : '');
 
   const i18n = {};
   for (const lang of ['zh-Hans', 'en']) {
