@@ -239,11 +239,11 @@ const textTip = document.getElementById('text-tip');
 // Back up local storage with cookies
 const clearCookies = () => {
   const items = document.cookie.split(';');
-  for (const s of items) {
+  if (items) for (const s of items) {
     const i = s.indexOf('=');
     const key = decodeURIComponent(s.substring(0, i).trim());
     const value = decodeURIComponent(s.substring(i + 1));
-    document.cookie = `${encodeURIComponent(key)}=; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
+    document.cookie = `${encodeURIComponent(key)}=; samesite=strict; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
   }
 };
 const cookieToLocalStorage = () => {
@@ -259,7 +259,7 @@ const cookieToLocalStorage = () => {
 const localStorageToCookie = () => {
   clearCookies();
   for (const [key, value] of Object.entries(localStorage)) {
-    document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}; max-age=2592000`;
+    document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}; samesite=strict; max-age=2592000`;
   }
 };
 
