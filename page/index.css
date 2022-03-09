@@ -294,6 +294,9 @@ body.nota-aikin .fg > .bubble.solf-7 > div.content:before { content: '\f041'; }
 body.dark .tune-dot {
   background: #fdfdfd;
 }
+body.nota-alpha .tune-dot {
+  opacity: 0;
+}
 .tune-dot.ottava {
   top: -8%;
 }
