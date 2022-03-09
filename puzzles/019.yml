@@ -1,0 +1,25 @@
+tune:
+  - [3, 1]
+  - [1, 1]
+  - [6, 1]
+  - [5, 2]
+  - [3, 1]
+  - [1, 2]
+  - [6-, 1]
+  - [2, 2]
+tuneBeatDur: 280
+tunePitchBase: F4
+
+tuneRevealBeatDur: 295
+tuneRevealOffset: 380
+
+zh-Hans:
+  title: 大家集合吧
+  author: 岩田恭明
+  desc: 任天堂推出的游戏《集合啦！动物森友会》主题曲。
+en:
+  title: Welcome Horizons (みんなあつまれ)
+  author: Iwata Yasuaki (岩田 恭明)
+  desc: 'Main theme of the Nintendo game "Animal Crossing: New Horizons".'
+
+curator: Huxley
