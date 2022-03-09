@@ -413,10 +413,11 @@ const startGame = () => {
         replayTimers.push(timer);
       }
     }
-    const t = setTimeout(() => {
+    const timer = setTimeout(() => {
       curReplay = -1;
       replayTimers.splice(0);
     }, tuneDur * tuneBeatDur + 20);
+    replayTimers.push(timer);
   };
   window.replay = replay;
 
@@ -528,8 +529,7 @@ const startGame = () => {
       for (let j = 1; j < ts.length; j++) {
         const t = setTimeout(
           () => {
-            answerRow.pop(i);
-            r.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
+            answerRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
             answerRow.style(i, 'bingo');
           },
           ts[j] * tuneRevealBeatDur + tuneRevealOffset - 100);
