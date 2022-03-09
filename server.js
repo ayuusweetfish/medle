@@ -122,6 +122,9 @@ const handler = async (req) => {
     if (url.pathname === '/') {
       return servePuzzle(req, undefined, false);
     }
+    if (url.pathname === '/favicon.ico') {
+      return serveFile(req, 'favicon.png');
+    }
     if (url.pathname.startsWith('/static/')) {
       const fileName = url.pathname.substring('/static/'.length);
       return serveFile(req, 'page/' + fileName);
