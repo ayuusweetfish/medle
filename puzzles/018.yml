@@ -6,7 +6,7 @@ tune:
   - [2, 1]
   - [3, 2, 1, 3]
   - [4, 3]
-  - [4, 2, 1]
+  - [4, 3]
   - [3, 3]
 tuneBeatDur: 250
 tunePitchBase: G4
