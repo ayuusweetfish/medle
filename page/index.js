@@ -15,15 +15,17 @@ const tuneDecos = tune.map((note) => {
   }
   return r;
 });
-const tuneAnswer = tune.map(([a, b]) => (a + 6) % 7 + 1);
+const tuneAnswer = tune.map((x) => (x[0] + 6) % 7 + 1);
 
 const SCALE = [0, 2, 4, 5, 7, 9, 11];
 
 let tuneDur = 0;
 for (const v of tune) {
-  const t = v[1];
-  v[1] = tuneDur;
-  tuneDur += t;
+  for (let i = 1; i < v.length; i++) {
+    const t = v[i];
+    v[i] = tuneDur;
+    tuneDur += t;
+  }
 }
 
 let sfxOn;
@@ -86,13 +88,15 @@ const createRow = (decos, parentEl, rowIndex) => {
     bgDivs[i].classList.remove(s);
     fgDivs[i].classList.remove(s);
   };
-  o.pop = (i) => {
+  o.pop = (i, keep) => {
     fgDivs[i].classList.add('large');
     bgDivs[i].classList.add('large');
     setTimeout(() => {
       fgDivs[i].classList.remove('large');
       bgDivs[i].classList.remove('large');
-    }, 200);
+    }, isFinite(keep) ?
+      Math.min(Math.max(200, keep - 100), keep / 2) :
+      200);
   };
   o.show = (b) => {
     if (b) {
@@ -349,11 +353,15 @@ const startGame = () => {
   initialRow.show(false);
   attRows.push(initialRow);
 
-  for (const [i, [a, b]] of Object.entries(tune)) {
-    setTimeout(() => {
-      initialRow.fill(i, undefined);
-      playSound('pop');
-    }, b * tuneBeatDur + 20);
+  for (let i = 0; i < N; i++) {
+    const ts = tune[i];
+    for (let j = 1; j < ts.length; j++) {
+      setTimeout(() => {
+        if (j === 1) initialRow.fill(i);
+        else initialRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
+        playSound('pop');
+      }, ts[j] * tuneBeatDur + 20);
+    }
   }
   setTimeout(() => {
     for (let i = 0; i < N; i++) initialRow.clear(i);
@@ -388,19 +396,22 @@ const startGame = () => {
         curInput : attInputs[attemptIndex]);
     const row = attRows[attemptIndex];
     const result = attResults[attemptIndex];
-    for (const [i, [a, b]] of Object.entries(tune)) {
-      const t = setTimeout(() => {
-        row.pop(i);
-        if (input[i] !== undefined) {
-          const pop = (result && result[i] !== 2);
-          playForPos(i, input[i], pop ? 0.2 : 1);
-          if (pop) playSound('pop');
-        } else {
-          stopPfSound();
-          playSound('pop');
-        }
-      }, b * tuneBeatDur + 20);
-      replayTimers.push(t);
+    for (let i = 0; i < N; i++) {
+      const ts = tune[i];
+      for (let j = 1; j < ts.length; j++) {
+        const timer = setTimeout(() => {
+          row.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
+          if (input[i] !== undefined) {
+            const pop = (result && result[i] !== 2);
+            playForPos(i, input[i], pop ? 0.2 : 1);
+            if (pop) playSound('pop');
+          } else {
+            stopPfSound();
+            playSound('pop');
+          }
+        }, ts[j] * tuneBeatDur + 20);
+        replayTimers.push(timer);
+      }
     }
     const t = setTimeout(() => {
       curReplay = -1;
@@ -438,17 +449,20 @@ const startGame = () => {
     const input = curInput.splice(0);
     const result = check(tuneAnswer, input);
     const previousRow = r;
-    for (const [i, [a, b]] of Object.entries(tune)) {
+    for (let i = 0; i < N; i++) {
+      const ts = tune[i];
       const r = previousRow;
-      setTimeout(() => {
-        r.pop(i);
-        if (result[i] === 0) r.style(i, 'none');
-        if (result[i] === 1) r.style(i, 'maybe');
-        if (result[i] === 2) r.style(i, 'bingo');
-        const pop = (result[i] !== 2);
-        playForPos(i, input[i], pop ? 0.2 : 1);
-        if (pop) playSound('pop');
-      }, 500 + b * tuneBeatDur);
+      for (let j = 1; j < ts.length; j++) {
+        setTimeout(() => {
+          r.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
+          if (result[i] === 0) r.style(i, 'none');
+          if (result[i] === 1) r.style(i, 'maybe');
+          if (result[i] === 2) r.style(i, 'bingo');
+          const pop = (result[i] !== 2);
+          playForPos(i, input[i], pop ? 0.2 : 1);
+          if (pop) playSound('pop');
+        }, 500 + ts[j] * tuneBeatDur);
+      }
     }
     attInputs.push(input);
     attResults.push(result);
@@ -510,13 +524,17 @@ const startGame = () => {
   let revealBubbleTimers = [];
   const createBubbleTimers = () => {
     for (let i = 0; i < N; i++) {
-      const t = setTimeout(
-        () => {
-          answerRow.pop(i);
-          answerRow.style(i, 'bingo');
-        },
-        tune[i][1] * tuneRevealBeatDur + tuneRevealOffset - 100);
-      revealBubbleTimers.push(t);
+      const ts = tune[i];
+      for (let j = 1; j < ts.length; j++) {
+        const t = setTimeout(
+          () => {
+            answerRow.pop(i);
+            r.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
+            answerRow.style(i, 'bingo');
+          },
+          ts[j] * tuneRevealBeatDur + tuneRevealOffset - 100);
+        revealBubbleTimers.push(t);
+      }
     }
   };
   const stopBubbleTimers = () => {
