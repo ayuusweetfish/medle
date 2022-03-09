@@ -63,17 +63,23 @@ const createRow = (decos, parentEl, rowIndex) => {
     // Decoration?
     if (decos[i] & DECO_8VA) div(el5a, ['tune-dot', 'ottava']);
     if (decos[i] & DECO_8VB) div(el5a, ['tune-dot', 'ottava-bassa']);
-    if (decos[i] & DECO_FLAT) div(el5a, ['accidental', 'flat']);
-    if (decos[i] & DECO_SHARP) div(el5a, ['accidental', 'sharp']);
+    if (decos[i] & DECO_FLAT) el5a.classList.add('flat');
+    if (decos[i] & DECO_SHARP) el5a.classList.add('sharp');
+    div(el5a, 'accidental');
   }
 
   o.fill = (i, s) => {
     bgDivs[i].classList.remove('hidden');
     fgDivs[i].classList.remove('hidden');
     bgDivs[i].classList.remove('outline');
-    for (let s = 1; s <= 7; s++)
+    for (let s = 1; s <= 7; s++) {
       fgDivs[i].classList.remove(`solf-${s}`);
-    if (s !== undefined) fgDivs[i].classList.add(`solf-${s}`);
+      bgDivs[i].classList.remove(`solf-${s}`);
+    }
+    if (s !== undefined) {
+      fgDivs[i].classList.add(`solf-${s}`);
+      bgDivs[i].classList.add(`solf-${s}`);
+    }
   };
   o.clear = (i) => {
     bgDivs[i].classList.remove('hidden');
@@ -722,7 +728,7 @@ initToggleButton(['btn-high-con', 'btn-high-con-alt'], 'highcon', false, (on) =>
 
 const btnNotation = document.getElementById('btn-notation');
 const updateNotation = (inc) => {
-  const notations = ['nota-num', 'nota-solf', 'nota-roman', 'nota-aikin'];
+  const notations = ['nota-num', 'nota-solf', 'nota-alpha', 'nota-roman', 'nota-aikin'];
   let current = notations.indexOf(localStorage.notation);
   if (current === -1) current = 0;
   const nova = (current + (inc ? 1 : 0)) % notations.length;

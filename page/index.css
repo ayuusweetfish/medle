@@ -223,31 +223,33 @@ body.dark .list.btn.disabled .bubble > div.content {
   pointer-events: none;
 }
 
-body.nota-num .bubble.solf-1 > div.content:before { content: '1'; }
-body.nota-num .bubble.solf-2 > div.content:before { content: '2'; }
-body.nota-num .bubble.solf-3 > div.content:before { content: '3'; }
-body.nota-num .bubble.solf-4 > div.content:before { content: '4'; }
-body.nota-num .bubble.solf-5 > div.content:before { content: '5'; }
-body.nota-num .bubble.solf-6 > div.content:before { content: '6'; }
-body.nota-num .bubble.solf-7 > div.content:before { content: '7'; }
-body.nota-solf .bubble > div.content:before { font-size: 20px; }
-body.nota-solf .bubble.solf-1 > div.content:before { content: 'do'; }
-body.nota-solf .bubble.solf-2 > div.content:before { content: 're'; }
-body.nota-solf .bubble.solf-3 > div.content:before { content: 'mi'; }
-body.nota-solf .bubble.solf-4 > div.content:before { content: 'fa'; }
-body.nota-solf .bubble.solf-5 > div.content:before { content: 'sol'; }
-body.nota-solf .bubble.solf-6 > div.content:before { content: 'la'; }
-body.nota-solf .bubble.solf-7 > div.content:before { content: 'si'; }
-body.nota-roman .bubble > div.content:before { font-size: 20px; }
-body.nota-roman .bubble.solf-1 > div.content:before { content: 'I'; }
-body.nota-roman .bubble.solf-2 > div.content:before { content: 'II'; }
-body.nota-roman .bubble.solf-3 > div.content:before { content: 'III'; }
-body.nota-roman .bubble.solf-4 > div.content:before { content: 'IV'; }
-body.nota-roman .bubble.solf-5 > div.content:before { content: 'V'; }
-body.nota-roman .bubble.solf-6 > div.content:before { content: 'VI'; }
-body.nota-roman .bubble.solf-7 > div.content:before { content: 'VII'; }
-body.nota-aikin .bubble > div.content:before { font-family: 'Medle Icons Collection - 220228'; }
-body.nota-aikin .bubble.solf-1 > div.content:before {
+body.nota-num .fg > .bubble.solf-1 > div.content:before { content: '1'; }
+body.nota-num .fg > .bubble.solf-2 > div.content:before { content: '2'; }
+body.nota-num .fg > .bubble.solf-3 > div.content:before { content: '3'; }
+body.nota-num .fg > .bubble.solf-4 > div.content:before { content: '4'; }
+body.nota-num .fg > .bubble.solf-5 > div.content:before { content: '5'; }
+body.nota-num .fg > .bubble.solf-6 > div.content:before { content: '6'; }
+body.nota-num .fg > .bubble.solf-7 > div.content:before { content: '7'; }
+body.nota-solf .fg > .bubble > div.content:before { font-size: 20px; }
+body.nota-solf .fg > .bubble.solf-1 > div.content:before { content: 'do'; }
+body.nota-solf .fg > .bubble.solf-2 > div.content:before { content: 're'; }
+body.nota-solf .fg > .bubble.solf-3 > div.content:before { content: 'mi'; }
+body.nota-solf .fg > .bubble.solf-4 > div.content:before { content: 'fa'; }
+body.nota-solf .fg > .bubble.solf-5 > div.content:before { content: 'sol'; }
+body.nota-solf .fg > .bubble.solf-6 > div.content:before { content: 'la'; }
+body.nota-solf .fg > .bubble.solf-7 > div.content:before { content: 'si'; }
+body.nota-alpha .fg > .bubble > div.content:before { font-size: 20px; }
+/* +++ Alphabetic notation note names: see `nota-alpha.css` +++ */
+body.nota-roman .fg > .bubble > div.content:before { font-size: 20px; }
+body.nota-roman .fg > .bubble.solf-1 > div.content:before { content: 'I'; }
+body.nota-roman .fg > .bubble.solf-2 > div.content:before { content: 'II'; }
+body.nota-roman .fg > .bubble.solf-3 > div.content:before { content: 'III'; }
+body.nota-roman .fg > .bubble.solf-4 > div.content:before { content: 'IV'; }
+body.nota-roman .fg > .bubble.solf-5 > div.content:before { content: 'V'; }
+body.nota-roman .fg > .bubble.solf-6 > div.content:before { content: 'VI'; }
+body.nota-roman .fg > .bubble.solf-7 > div.content:before { content: 'VII'; }
+body.nota-aikin .fg > .bubble > div.content:before { font-family: 'Medle Icons Collection - 220228'; }
+body.nota-aikin .fg > .bubble.solf-1 > div.content:before {
   content: '\f04b';
   font-size: 24px;
   transform: rotate(-90deg);
@@ -255,7 +257,7 @@ body.nota-aikin .bubble.solf-1 > div.content:before {
   position: relative;
   top: -2px;
 }
-body.nota-aikin .bubble.solf-2 > div.content:before {
+body.nota-aikin .fg > .bubble.solf-2 > div.content:before {
   content: '\1f319';
   font-size: 24px;
   transform: rotate(-70deg);
@@ -263,8 +265,8 @@ body.nota-aikin .bubble.solf-2 > div.content:before {
   position: relative;
   top: -2px;
 }
-body.nota-aikin .bubble.solf-3 > div.content:before { content: '\f219'; }
-body.nota-aikin .bubble.solf-4 > div.content:before {
+body.nota-aikin .fg > .bubble.solf-3 > div.content:before { content: '\f219'; }
+body.nota-aikin .fg > .bubble.solf-4 > div.content:before {
   content: '\f0d8';
   font-size: 34px;
   transform: rotate(45deg);
@@ -273,9 +275,9 @@ body.nota-aikin .bubble.solf-4 > div.content:before {
   top: -3px;
   left: 3px;
 }
-body.nota-aikin .bubble.solf-5 > div.content:before { content: '\1f7e4'; }
-body.nota-aikin .bubble.solf-6 > div.content:before { content: '\f0c8'; }
-body.nota-aikin .bubble.solf-7 > div.content:before { content: '\f041'; }
+body.nota-aikin .fg > .bubble.solf-5 > div.content:before { content: '\1f7e4'; }
+body.nota-aikin .fg > .bubble.solf-6 > div.content:before { content: '\f0c8'; }
+body.nota-aikin .fg > .bubble.solf-7 > div.content:before { content: '\f041'; }
 
 .tune-dot {
   width: 3px;
@@ -316,18 +318,28 @@ body.dark .tune-dot {
   transform: rotate(5deg) translate(-50%, -50%);
 }
 .accidental::before {
+  content: '';
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-.accidental.flat::before {
+.content.flat > .accidental::before {
   content: '\266d';
 }
-.accidental.sharp::before {
+.content.sharp > .accidental::before {
   content: '\266f';
 }
-.list .bubble.outline > div > div.accidental::before {
+.list .bubble.outline > * > .accidental::before {
+  opacity: 0;
+}
+.list .bubble.outline > .flat > .accidental::before {
+  content: '\266d';
   opacity: 0.4;
 }
+.list .bubble.outline > .sharp > .accidental::before {
+  content: '\266f';
+  opacity: 0.4;
+}
+/* +++ Alphabetic notation accidentals: see `nota-alpha.css` +++ */
 
 #list-container {
   margin-top: 32px;
@@ -577,6 +589,8 @@ body.nota-num .small-btn#btn-notation { background: rgba(232, 232, 0, 70%); }
 body.nota-num .small-btn#btn-notation:active { background: rgba(196, 196, 0, 70%); }
 body.nota-solf .small-btn#btn-notation { background: rgba(255, 160, 0, 70%); }
 body.nota-solf .small-btn#btn-notation:active { background: rgba(235, 140, 0, 70%); }
+body.nota-alpha .small-btn#btn-notation { background: rgba(255, 120, 120, 70%); }
+body.nota-alpha .small-btn#btn-notation:active { background: rgba(235, 100, 100, 70%); }
 body.nota-roman .small-btn#btn-notation { background: rgba(232, 128, 255, 70%); }
 body.nota-roman .small-btn#btn-notation:active { background: rgba(212, 108, 235, 70%); }
 body.nota-aikin .small-btn#btn-notation { background: rgba(64, 192, 255, 70%); }
@@ -584,6 +598,7 @@ body.nota-aikin .small-btn#btn-notation:active { background: rgba(44, 172, 235, 
 .small-btn#btn-notation > span { display: none; }
 body.nota-num .small-btn#btn-notation > span#btn-notation-text-num { display: inline; }
 body.nota-solf .small-btn#btn-notation > span#btn-notation-text-solf { display: inline; }
+body.nota-alpha .small-btn#btn-notation > span#btn-notation-text-alpha { display: inline; }
 body.nota-roman .small-btn#btn-notation > span#btn-notation-text-roman { display: inline; }
 body.nota-aikin .small-btn#btn-notation > span#btn-notation-text-aikin { display: inline; }
 #repo-notes {

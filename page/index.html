@@ -3,7 +3,8 @@
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <link rel='stylesheet' href='/static/index.css'>
-</head><body>
+  <link rel='stylesheet' href='/static/nota-alpha.css'>
+</head><body class='scale-<%= it.scale %>'>
 
 <div id='container'>
   <div id='page-title'>Medle #<%= it.id %></div>
@@ -40,10 +41,10 @@
   <div id='btns-container'>
     <div class='list btn hidden' id='input-btns-row-1'>
       <div class='bg'>
-        <div class='bubble' onclick='input(1)'><div class='content'></div></div>
-        <div class='bubble' onclick='input(2)'><div class='content'></div></div>
-        <div class='bubble' onclick='input(3)'><div class='content'></div></div>
-        <div class='bubble' onclick='input(4)'><div class='content'></div></div>
+        <div class='bubble solf-1' onclick='input(1)'><div class='content'><div class='accidental'></div></div></div>
+        <div class='bubble solf-2' onclick='input(2)'><div class='content'><div class='accidental'></div></div></div>
+        <div class='bubble solf-3' onclick='input(3)'><div class='content'><div class='accidental'></div></div></div>
+        <div class='bubble solf-4' onclick='input(4)'><div class='content'><div class='accidental'></div></div></div>
       </div>
       <div class='fg'>
         <div class='bubble solf-1'><div class='content'></div></div>
@@ -74,9 +75,9 @@
     </div>
     <div class='list btn hidden must' id='input-btns-row-2'>
       <div class='bg'>
-        <div class='bubble' onclick='input(5)'><div class='content'></div></div>
-        <div class='bubble' onclick='input(6)'><div class='content'></div></div>
-        <div class='bubble' onclick='input(7)'><div class='content'></div></div>
+        <div class='bubble solf-5' onclick='input(5)'><div class='content'><div class='accidental'></div></div></div>
+        <div class='bubble solf-6' onclick='input(6)'><div class='content'><div class='accidental'></div></div></div>
+        <div class='bubble solf-7' onclick='input(7)'><div class='content'><div class='accidental'></div></div></div>
         <div class='bubble nohidden' onclick='input(-1)'>
           <div id='input-btn-del-bg' class='content'></div>
         </div>
@@ -229,6 +230,7 @@
       <div id='btn-notation' class='small-btn'>
         <span id='btn-notation-text-num'><span data-t='opt-nota-num'></span></span>
         <span id='btn-notation-text-solf'><span data-t='opt-nota-solf'></span></span>
+        <span id='btn-notation-text-alpha'><span data-t='opt-nota-alpha'></span></span>
         <span id='btn-notation-text-roman'><span data-t='opt-nota-roman'></span></span>
         <span id='btn-notation-text-aikin'><span data-t='opt-nota-aikin'></span></span>
       </div>

@@ -63,7 +63,11 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
     if (noteName.indexOf('#') !== -1) noteValue += 0.1;
     note[0] = noteValue;
   }
+  const tunePitchBase = puzzleContents.tunePitchBase;
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
+  puzzleContents.scale = tunePitchBase[0] +
+    (tunePitchBase[1] === 'b' ? 'b' : 
+     tunePitchBase[1] === '#' ? 'h' : '');
 
   const i18n = {};
   for (const lang of ['zh-Hans', 'en']) {
