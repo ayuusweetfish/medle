@@ -601,9 +601,17 @@ const startGame = () => {
     if (!buttonsVisible) return;
     // Do not use e.keyCode for better compatibility with numpads
     if (e.key.length === 1) {
-      const code = e.key.charCodeAt(0) - 48;
-      if (code >= 1 && code <= 7)
-        window.input(code);
+      // Numeric
+      const num = e.key.charCodeAt(0) - 48;
+      if (num >= 1 && num <= 7) window.input(num);
+      // Alphabetic
+      if (localStorage.notation === 'nota-alpha') {
+        const alpha = e.key.charCodeAt(0) - 97;
+        if (alpha >= 0 && alpha <= 6) {
+          const note = tuneNoteBase.charCodeAt(0) - 65;
+          window.input((alpha - note + 7) % 7 + 1);
+        }
+      }
     } else if (e.key === 'Backspace') {
         window.input(-1);
     } else if (e.key === 'Enter') {

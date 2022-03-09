@@ -90,6 +90,7 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
   }
   puzzleContents.acciStyles = acciStyles.join('\n');
 
+  puzzleContents.tuneNoteBase = puzzleContents.tunePitchBase[0];
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
   const i18n = {};
