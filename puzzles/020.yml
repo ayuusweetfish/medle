@@ -1,0 +1,25 @@
+tune:
+  - [1, 1]
+  - [3, 3]
+  - [4, 2]
+  - [5, 6]
+  - [3, 1]
+  - [5, 3]
+  - [6, 2]
+  - [2, 6]
+tuneBeatDur: 150
+tunePitchBase: Ab4
+
+tuneRevealBeatDur: 137 # 146 BPM, triplet swing
+tuneRevealOffset: 320
+
+zh-Hans:
+  title: 柠檬树（Lemon Tree）
+  author: Peter Freudenthaler（创作）；傻瓜花园（演出）
+  desc: 德国流行摇滚乐队 Fool's Garden（傻瓜花园）的歌曲，收录于 1995 的专辑《Dish of the Day》中。
+en:
+  title: Lemon Tree
+  author: Peter Freudenthaler (composition); Fool's Garden (performance)
+  desc: A song by the German pop rock band Fool's Garden, from their 1995 album "Dish of the Day".
+
+curator: Ayu
