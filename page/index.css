@@ -512,6 +512,9 @@ body.dark .modal .bottom-shadow {
 #btn-play {
   margin-bottom: 24px;
 }
+#reveal-desc > br {
+  margin-bottom: 5px;
+}
 #btn-share {
   padding: 8px;
   background: #cbf4ba;
