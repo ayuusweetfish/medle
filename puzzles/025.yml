@@ -1,0 +1,23 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [4#, 1]
+  - [5, 1]
+  - [6, 1]
+  - [5, 1]
+tuneBeatDur: 225
+tunePitchBase: G4
+
+tuneRevealBeatDur: 266
+tuneRevealOffset: 320
+
+zh-Hans:
+  title: 一步之遥（Por una Cabeza）
+  author: 卡洛斯·加德尔（Carlos Gardel）（曲）；亚法多·勒佩拉（Alfredo Le Pera）（词）
+  desc: 著名西班牙语探戈音乐。在许多电影中出现，包括《闻香识女人》、《辛德勒的名单》、《真实的谎言》等。录音来自 The Tango Project。
+en:
+  title: Por una Cabeza
+  author: Carlos Gardel (music); Alfredo Le Pera (lyrics)
+  desc: A renowned Spanish tango song. Featured in multiple films including "Scent of a Woman", "Schindler's List", and "True Lies". Recording from The Tango Project.
+
+curator: Huxley
