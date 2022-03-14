@@ -1,0 +1,25 @@
+tune:
+  - [6, 3]
+  - [6, 3]
+  - [6, 4]
+  - [5, 4]
+  - [3, 10]
+  - [3, 2]
+  - [5, 4]
+  - [4, 2]
+tuneBeatDur: 150
+tunePitchBase: Bb4
+
+tuneRevealBeatDur: 163
+tuneRevealOffset: 1037
+
+zh-Hans:
+  title: My Shot
+  author: Lin-Manuel Miranda（曲、词）
+  desc: 音乐剧《汉密尔顿》选段。这段旋律主题在剧中被多次使用，如歌曲《History Has Its Eyes On You》和《The World Was Wide Enough》中都出现过。
+en:
+  title: My Shot
+  author: Lin-Manuel Miranda (music, lyrics)
+  desc: Excerpt from the musical "Hamilton". The melodic theme is used multiple times throughout the performance, appearing in songs such as "History Has Its Eyes On You" and "The World Was Wide Enough".
+
+curator: Huxley
