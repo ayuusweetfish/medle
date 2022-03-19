@@ -1,0 +1,25 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [5-, 2]
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 1]
+tuneBeatDur: 240
+tunePitchBase: Gb4
+
+tuneRevealBeatDur: 208
+tuneRevealOffset: 6713
+
+zh-Hans:
+  title: 蓝色狂想曲
+  author: 乔治·格什温（George Gershwin）
+  desc: 乐曲原为钢琴与爵士乐队所作，融合了古典与爵士音乐元素。录音为交响乐改编版本，由纽约爱乐乐团演奏，艾伦·吉尔伯特（Alan Gilbert）指挥。
+en:
+  title: Rhapsody in Blue
+  author: George Gershwin
+  desc: Originally composed for solo piano and jazz band, combining elements from classical and jazz music. The recording is an orchestral arrangement performed by New York Philharmonic, conducted by Alan Gilbert.
+
+curator: Huxley
