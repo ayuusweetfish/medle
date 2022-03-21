@@ -754,7 +754,7 @@ updateNotation(false);
 
 // Internationalization
 let curLang = 1;  // Defaults to English
-const btnLang = document.getElementById('btn-lang');
+const btnLangs = [document.getElementById('btn-lang'), document.getElementById('btn-lang-alt')];
 
 const i18nEls = document.querySelectorAll('[data-t]');
 const updateInterfaceLanguage = () => {
@@ -769,7 +769,8 @@ const updateInterfaceLanguage = () => {
       el.innerText = dict[key];
     }
   }
-  btnLang.innerText = window.languages[curLang][1];
+  for (const btnLang of btnLangs)
+    btnLang.innerText = window.languages[curLang][1];
   localStorage.lang = langName;
   localStorageToCookie();
 };
@@ -790,10 +791,11 @@ for (const [i, [code, name, dict]] of Object.entries(window.languages)) {
 }
 updateInterfaceLanguage();
 
-btnLang.addEventListener('click', () => {
-  curLang = (curLang + 1) % window.languages.length;
-  updateInterfaceLanguage();
-});
+for (const btnLang of btnLangs)
+  btnLang.addEventListener('click', () => {
+    curLang = (curLang + 1) % window.languages.length;
+    updateInterfaceLanguage();
+  });
 
 localStorageToCookie();
 
