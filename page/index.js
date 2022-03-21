@@ -17,6 +17,8 @@ const tuneDecos = tune.map((note) => {
 });
 const tuneAnswer = tune.map((x) => (x[0] + 6) % 7 + 1);
 
+const attemptsLimit = (N >= 10 ? 6 : 5);
+
 const SCALE = [0, 2, 4, 5, 7, 9, 11];
 
 let tuneDur = 0;
@@ -315,7 +317,7 @@ const startGame = () => {
 
   let buttonsVisible = false;
   const pickVisibleButtons = () => {
-    if (attResults.length === 5 || succeeded) {
+    if (attResults.length === attemptsLimit || succeeded) {
       btnsRow1.classList.add('hidden');
       btnsRow2.classList.add('hidden');
       btnsRow2.classList.add('must');
@@ -474,7 +476,7 @@ const startGame = () => {
     attInputs.push(input);
     attResults.push(result);
     succeeded = result.every((r) => r === 2);
-    const finished = (attResults.length === 5 || succeeded);
+    const finished = (attResults.length === attemptsLimit || succeeded);
     if (!finished) {
       r = createRow(tuneDecos, listContainer, attResults.length);
       r.show(false);
@@ -504,7 +506,7 @@ const startGame = () => {
   new ClipboardJS(btnShare, {
     text: () => {
       btnShare.classList.add('copied');
-      const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/5\n`;
+      const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/${attemptsLimit}\n`;
       const suffix = `https://medle.0-th.art/` +
         (puzzleId === todayDaily ? '' : puzzleId);
       return prefix +
