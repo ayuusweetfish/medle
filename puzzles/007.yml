@@ -8,6 +8,7 @@ tune:
   - [6, 4]
 tuneBeatDur: 250
 tunePitchBase: Db5
+metronome: [0, 4]
 
 tuneRevealBeatDur: 312
 tuneRevealOffset: 2750

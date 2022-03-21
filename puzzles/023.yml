@@ -12,6 +12,7 @@ tunePitchBase: Ab4
 
 tuneRevealBeatDur: 137 # 146 BPM, triplet swing
 tuneRevealOffset: 320
+metronome: [1, 6]
 
 zh-Hans:
   title: 柠檬树（Lemon Tree）

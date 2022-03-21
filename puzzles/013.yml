@@ -10,6 +10,7 @@ tune:
   - [5-, 8]
 tuneBeatDur: 120
 tunePitchBase: G4
+metronome: [0, 8]
 
 tuneRevealBeatDur: 122
 tuneRevealOffset: 3889

@@ -22,6 +22,11 @@ const attemptsLimit = (N >= 10 ? 6 : 5);
 const SCALE = [0, 2, 4, 5, 7, 9, 11];
 
 let tuneDur = 0;
+let metronomeOffset = 0;
+if (metronome[0] < 0) {
+  metronomeOffset = tuneDur = -metronome[0];
+  metronome[0] = 0;
+}
 for (const v of tune) {
   for (let i = 1; i < v.length; i++) {
     const t = v[i];
@@ -552,7 +557,7 @@ const startGame = () => {
             answerRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
             answerRow.style(i, 'bingo');
           },
-          ts[j] * tuneRevealBeatDur + tuneRevealOffset - 100);
+          (ts[j] - metronomeOffset) * tuneRevealBeatDur + tuneRevealOffset - 100);
         revealBubbleTimers.push(t);
       }
     }

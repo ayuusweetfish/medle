@@ -11,6 +11,7 @@ tune:
   - [3, 2]
 tuneBeatDur: 240
 tunePitchBase: Ab3
+metronome: [0, 6]
 
 tuneRevealBeatDur: 272
 tuneRevealOffset: 6457

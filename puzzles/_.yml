@@ -2,6 +2,7 @@ tune:
   - [1, 1]
 tuneBeatDur: 
 tunePitchBase: 
+metronome: [0, 4]
 
 tuneRevealBeatDur: 
 tuneRevealOffset: 

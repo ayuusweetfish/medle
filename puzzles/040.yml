@@ -6,9 +6,10 @@ tune:
   - [6, 1]
   - [1+, 6]
   - [3, 2]
-  - [5, 2]
+  - [5, 4]
 tuneBeatDur: 250
 tunePitchBase: F4
+metronome: [-2, 4]
 
 tuneRevealBeatDur: 260
 tuneRevealOffset: 400

@@ -10,6 +10,7 @@ tune:
   - [3, 3]
 tuneBeatDur: 250
 tunePitchBase: A3
+metronome: [0, 3]
 
 tuneRevealBeatDur: 318
 tuneRevealOffset: 2144
