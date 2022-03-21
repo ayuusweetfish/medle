@@ -506,6 +506,11 @@ body.dark .modal .bottom-shadow {
   transform: translateX(-50%) scale(0.8);
 }
 
+#modal-finish > p#reveal-title *:not(.iconfont),
+#modal-finish > p#reveal-author *:not(.iconfont),
+#modal-finish > p#reveal-desc {
+  user-select: text;
+}
 #answer-container {
   margin: 10px 0 15px 0;
 }
