@@ -222,6 +222,10 @@
       <div id='btn-play-sfx' class='small-btn'></div>
     </div>
     <div class='options-btns-list'>
+      <span>⏱ <span data-t='opt-metronome'></span></span>
+      <div id='btn-metronome' class='small-btn'></div>
+    </div>
+    <div class='options-btns-list'>
       <span>🌙 <span data-t='opt-dark'></span></span>
       <div id='btn-dark-theme' class='small-btn'></div>
     </div>
@@ -275,6 +279,7 @@ const tune = <%~ JSON.stringify(it.tune) %>;
 const tuneBeatDur = <%= it.tuneBeatDur %>;
 const tunePitchBase = <%= it.tunePitchBase %>;
 const tuneNoteBase = '<%= it.tuneNoteBase %>';
+const metronome = <%= JSON.stringify(it.metronome) %>;
 const tuneRevealBeatDur = <%= it.tuneRevealBeatDur %>;
 const tuneRevealOffset = <%= it.tuneRevealOffset %>;
 const isDaily = <%= it.isDaily %>;

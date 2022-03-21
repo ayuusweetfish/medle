@@ -31,6 +31,7 @@ for (const v of tune) {
 }
 
 let sfxOn;
+let metronomeOn;
 
 const createRow = (decos, parentEl, rowIndex) => {
   const o = {};
@@ -155,7 +156,7 @@ const sendAnalytics = (contents) => {
 };
 
 const audios = {};
-const paths = [['/static/samples/pop.wav']];
+const paths = [['/static/samples/pop.wav'], ['/static/samples/beat.wav']];
 
 const notesReachable = {};
 const octaves = [0];
@@ -190,6 +191,7 @@ const preloadSounds = (callback) => {
 
 const playSound = (name, vol) => {
   if (!sfxOn) return;
+  if (name === 'beat' && !metronomeOn) return;
   const id = audios[name].play();
   audios[name].volume(vol !== undefined ? vol : 1, id);
   return [name, id];
@@ -370,6 +372,9 @@ const startGame = () => {
         playSound('pop');
       }, ts[j] * tuneBeatDur + 20);
     }
+    for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
+      setTimeout(() => playSound('beat'), t * tuneBeatDur + 20);
+    }
   }
   setTimeout(() => {
     for (let i = 0; i < N; i++) initialRow.clear(i);
@@ -418,6 +423,10 @@ const startGame = () => {
             playSound('pop');
           }
         }, ts[j] * tuneBeatDur + 20);
+        replayTimers.push(timer);
+      }
+      for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
+        const timer = setTimeout(() => playSound('beat'), t * tuneBeatDur + 20);
         replayTimers.push(timer);
       }
     }
@@ -471,6 +480,9 @@ const startGame = () => {
           playForPos(i, input[i], pop ? 0.2 : 1);
           if (pop) playSound('pop');
         }, 500 + ts[j] * tuneBeatDur);
+      }
+      for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
+        setTimeout(() => playSound('beat'), 500 + t * tuneBeatDur);
       }
     }
     attInputs.push(input);
@@ -725,6 +737,7 @@ const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
     });
 };
 initToggleButton('btn-play-sfx', 'sfx', true, (on) => sfxOn = on);
+initToggleButton('btn-metronome', 'metronome', false, (on) => metronomeOn = on);
 initToggleButton('btn-dark-theme', 'dark',
   window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
 (on) => {
