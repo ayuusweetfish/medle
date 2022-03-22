@@ -22,11 +22,6 @@ const attemptsLimit = (N >= 10 ? 6 : 5);
 const SCALE = [0, 2, 4, 5, 7, 9, 11];
 
 let tuneDur = 0;
-let metronomeOffset = 0;
-if (metronome[0] < 0) {
-  metronomeOffset = tuneDur = -metronome[0];
-  metronome[0] = 0;
-}
 for (const v of tune) {
   for (let i = 1; i < v.length; i++) {
     const t = v[i];
@@ -37,6 +32,8 @@ for (const v of tune) {
 
 let sfxOn;
 let metronomeOn;
+const metronomeOffset =
+  () => (metronomeOn && metronome[0] < 0 ? -metronome[0] : 0);
 
 const createRow = (decos, parentEl, rowIndex) => {
   const o = {};
@@ -375,16 +372,17 @@ const startGame = () => {
         if (j === 1) initialRow.fill(i);
         else initialRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
         playSound('pop');
-      }, ts[j] * tuneBeatDur + 20);
+      }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
     }
     for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-      setTimeout(() => playSound('beat'), t * tuneBeatDur + 20);
+      setTimeout(() => playSound('beat'),
+        (t + metronomeOffset()) * tuneBeatDur + 20);
     }
   }
   setTimeout(() => {
     for (let i = 0; i < N; i++) initialRow.clear(i);
     initialRow.fast(false);
-  }, tuneDur * tuneBeatDur);
+  }, (tuneDur + metronomeOffset()) * tuneBeatDur);
   setTimeout(() => showButtons(true), tuneDur * tuneBeatDur + 1000);
 
   // Replay
@@ -427,18 +425,19 @@ const startGame = () => {
             stopPfSound();
             playSound('pop');
           }
-        }, ts[j] * tuneBeatDur + 20);
+        }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
         replayTimers.push(timer);
       }
       for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-        const timer = setTimeout(() => playSound('beat'), t * tuneBeatDur + 20);
+        const timer = setTimeout(() => playSound('beat'),
+          (t + metronomeOffset()) * tuneBeatDur + 20);
         replayTimers.push(timer);
       }
     }
     const timer = setTimeout(() => {
       curReplay = -1;
       replayTimers.splice(0);
-    }, tuneDur * tuneBeatDur + 20);
+    }, (tuneDur + metronomeOffset()) * tuneBeatDur + 20);
     replayTimers.push(timer);
   };
   window.replay = replay;
@@ -484,10 +483,11 @@ const startGame = () => {
           const pop = (result[i] !== 2);
           playForPos(i, input[i], pop ? 0.2 : 1);
           if (pop) playSound('pop');
-        }, 500 + ts[j] * tuneBeatDur);
+        }, 500 + (ts[j] + metronomeOffset()) * tuneBeatDur);
       }
       for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-        setTimeout(() => playSound('beat'), 500 + t * tuneBeatDur);
+        setTimeout(() => playSound('beat'),
+          500 + (t + metronomeOffset()) * tuneBeatDur);
       }
     }
     attInputs.push(input);
@@ -510,7 +510,7 @@ const startGame = () => {
         for (let i = 0; i < N; i++) r.clear(i);
         showButtons(true);
       }
-    }, 500 + tuneDur * tuneBeatDur + 1000);
+    }, 500 + (tuneDur + metronomeOffset()) * tuneBeatDur + 1000);
   };
 
   const answerContainer = document.getElementById('answer-container');
@@ -557,7 +557,7 @@ const startGame = () => {
             answerRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
             answerRow.style(i, 'bingo');
           },
-          (ts[j] - metronomeOffset) * tuneRevealBeatDur + tuneRevealOffset - 100);
+          ts[j] * tuneRevealBeatDur + tuneRevealOffset - 100);
         revealBubbleTimers.push(t);
       }
     }
