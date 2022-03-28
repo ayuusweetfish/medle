@@ -106,7 +106,7 @@ const createRow = (decos, parentEl, rowIndex) => {
       fgDivs[i].classList.remove('large');
       bgDivs[i].classList.remove('large');
     }, isFinite(keep) ?
-      Math.min(Math.max(200, keep - 100), keep / 2) :
+      Math.min(200, Math.max(100, keep / 2)) :
       200);
   };
   o.show = (b) => {

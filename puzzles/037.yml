@@ -1,0 +1,30 @@
+tune:
+  - [6-, 8, -6]
+  - [7-, 8, -6]
+  - [1, 8, -7]
+  - [7-, 8, -7]
+  - [6-, 8, 2]
+  - [1, 8, -6]
+  - [2, 8, -6]
+  - [3, 8, 2]
+tuneBeatDur: 300
+tunePitchBase: F4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 441
+tuneRevealOffset: -70
+
+zh-Hans:
+  title: D 大调第一交响曲
+  author: 古斯塔夫·马勒（Gustav Mahler）
+  desc: |-
+    马勒的第一部交响曲作品，也称为《巨人》（Titan）。
+    节选自第三乐章，将法国民歌《雅克弟兄》（即中文歌曲《两只老虎》）的旋律改为小调，作为猎人送葬行列的主题。由皇家利物浦爱乐乐团演出，查尔斯·马克拉斯指挥。
+en:
+  title: Symphony No. 1 in D
+  author: Gustav Mahler
+  desc: |-
+    Mahler's first symphonic work, also titled "Titan".
+    Excerpt from the third movement, where the melody of "Frère Jacques" is transposed to a minor scale as a theme for a hunter's funeral procession. Performed by Royal Liverpool Philharmonic Orchestra, conducted by Sir Charles Mackerras.
+
+curator: Huxley
