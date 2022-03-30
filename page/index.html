@@ -201,6 +201,9 @@
       </div>
     </div>
     <p id='reveal-desc' data-t='=desc'></p>
+    <% if (it['zh-Hans'].image) { %>
+      <img src='/reveal/<%= it.id %>.jpg' data-t='=image'>
+    <% } %>
     <div id='btn-share'>
       <span id='btn-share-text-share'><span class='iconfont' style='visibility: hidden'>&#x2714;</span><span data-t='btn-share'></span><span class='iconfont' style='visibility: hidden'>&#x2714;</span></span>
       <span id='btn-share-text-shared'><span class='iconfont'>&#x2714;</span> <span data-t='btn-shared'></span></span>

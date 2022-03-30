@@ -782,7 +782,10 @@ const updateInterfaceLanguage = () => {
   for (const el of i18nEls) {
     const key = el.dataset.t;
     if (key[0] === '=') {
-      el.innerText = langVars[key.substring(1)];
+      if (el.tagName === 'IMG')
+        el.alt = langVars[key.substring(1)];
+      else
+        el.innerText = langVars[key.substring(1)];
     } else {
       el.innerText = dict[key];
     }
