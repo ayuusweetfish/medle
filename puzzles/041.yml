@@ -3,7 +3,7 @@ tune:
   - [7, 4]
   - [6, 4, 4, 4]
   - [6, 1]
-  - [6#, 1]
+  - [7b, 1]
   - [7, 2]
 tuneBeatDur: 200
 tunePitchBase: C3
