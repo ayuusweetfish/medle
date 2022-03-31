@@ -1,0 +1,24 @@
+tune:
+  - [5, 4, 4, 4]
+  - [7, 4]
+  - [6, 4, 4, 4]
+  - [6, 1]
+  - [6#, 1]
+  - [7, 2]
+tuneBeatDur: 200
+tunePitchBase: C3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 203
+tuneRevealOffset: 77
+
+zh-Hans:
+  title: 想像（Imagine）
+  author: 约翰·列侬（John Lennon）
+  desc: 英国音乐人约翰·列侬同名专辑中的歌曲，呼吁听众想象一个更加和平美好的世界。选段来自歌曲前奏。
+en:
+  title: Imagine
+  author: John Lennon
+  desc: A song from the album of the same title by the English musician John Lennon, encouraging listeners to imagine a better and more peaceful world. Excerpt from the intro section.
+
+curator: Huxley
