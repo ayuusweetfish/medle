@@ -345,6 +345,16 @@ body.nota-alpha .tune-dot {
 }
 /* Alphabetic notation accidentals: automatically generated */
 
+.list .bubble.appo {
+/*
+  flex-basis: 40px;
+  transform: translate(6.6px, -3px) scale(0.95);
+*/
+  flex-basis: 36px;
+  transform: translate(10px);
+  opacity: 0.8;
+}
+
 #list-container {
   margin-top: 32px;
 }

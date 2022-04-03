@@ -64,6 +64,7 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
     if (noteName.indexOf('+') !== -1) noteValue += 7;
     if (noteName.indexOf('b') !== -1) noteValue -= 0.1;
     if (noteName.indexOf('#') !== -1) noteValue += 0.1;
+    if (noteName.indexOf('*') !== -1) noteValue += 100;
     note[0] = noteValue;
   }
 

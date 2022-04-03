@@ -3,13 +3,19 @@ const DECO_8VA = 1;
 const DECO_8VB = 2;
 const DECO_SHARP = 4;
 const DECO_FLAT = 8;
+const DECO_APPO = 16;
 const tuneDecos = tune.map((note) => {
-  const a = note[0];
+  let a = note[0];
   let r = 0;
+  if (a >= 100) {
+    r |= DECO_APPO;
+    a -= 100;
+    note[0] = a;
+  }
   if (a < 1) r |= DECO_8VB;
   if (a > 7) r |= DECO_8VA;
-  if (Math.round(a) !== a) {
-    const i = Math.round(a);
+  const i = Math.round(a);
+  if (i !== a) {
     note[0] = i;
     r |= (a < i ? DECO_FLAT : DECO_SHARP);
   }
@@ -70,6 +76,10 @@ const createRow = (decos, parentEl, rowIndex) => {
     if (decos[i] & DECO_8VB) div(el5a, ['tune-dot', 'ottava-bassa']);
     if (decos[i] & DECO_FLAT) el5a.classList.add('flat');
     if (decos[i] & DECO_SHARP) el5a.classList.add('sharp');
+    if (decos[i] & DECO_APPO) {
+      el4a.classList.add('appo');
+      el4b.classList.add('appo');
+    }
     div(el5a, 'accidental');
   }
 
@@ -310,7 +320,14 @@ const startGame = () => {
       ((tuneDecos[pos] & DECO_SHARP) ? 1 :
        (tuneDecos[pos] & DECO_FLAT) ? -1 : 0);
     stopPfSound();
+    vol = (vol === undefined ? 1 : vol);
+    if (tuneDecos[pos] & DECO_APPO) vol *= 0.5;
     curPfSound = playSound(`pf-${pitch}`, vol);
+  };
+  const playPopForPos = (pos, vol) => {
+    vol = (vol === undefined ? 1 : vol);
+    if (tuneDecos[pos] & DECO_APPO) vol *= 0.3;
+    playSound('pop', vol);
   };
 
   const curInput = [];
@@ -371,7 +388,7 @@ const startGame = () => {
       setTimeout(() => {
         if (j === 1) initialRow.fill(i);
         else initialRow.pop(i, (ts[j + 1] - ts[j]) * tuneBeatDur);
-        playSound('pop');
+        playPopForPos(i);
       }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
     }
     for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
@@ -420,10 +437,10 @@ const startGame = () => {
           if (input[i] !== undefined) {
             const pop = (result && result[i] !== 2);
             playForPos(i, input[i], pop ? 0.2 : 1);
-            if (pop) playSound('pop');
+            if (pop) playPopForPos(i);
           } else {
             stopPfSound();
-            playSound('pop');
+            playPopForPos(i);
           }
         }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
         replayTimers.push(timer);
@@ -482,7 +499,7 @@ const startGame = () => {
           if (result[i] === 2) r.style(i, 'bingo');
           const pop = (result[i] !== 2);
           playForPos(i, input[i], pop ? 0.2 : 1);
-          if (pop) playSound('pop');
+          if (pop) playPopForPos(i);
         }, 500 + (ts[j] + metronomeOffset()) * tuneBeatDur);
       }
       for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
