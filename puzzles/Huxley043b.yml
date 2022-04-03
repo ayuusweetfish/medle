@@ -1,0 +1,30 @@
+tune:
+  - [1-, 8, -7]
+  - [5-, 8, -7]
+  - [1, 8, -7]
+  - [2, 8, 2]
+  - [2, 0.25]
+  - [3, 0.75]
+  - [2, 1]
+  - [1, 1]
+tuneBeatDur: 259
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 259
+tuneRevealOffset: 0
+
+zh-Hans:
+  title: 呼气（Exhale）
+  author: 莉娜·雷恩（Lena Raine）
+  desc: |-
+    2018 年游戏《蔚蓝》（Celeste）主线剧情片尾曲。
+    游戏通过登山的经历，探索了焦虑、抑郁、恐慌、身份认同等多方面的议题。
+en:
+  title: Exhale
+  author: Lena Raine
+  desc: |-
+    Music from the 2018 video game "Celeste", played during the ending of the main story.
+    Through a mountain-climbing experience, the game explores various topics including anxiety, depression, panic attacks, identity, etc.
+
+curator: Huxley
