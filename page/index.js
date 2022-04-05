@@ -660,6 +660,12 @@ const startGame = () => {
 preloadSounds((loaded, total) => {
   loadingProgress.innerText = `${loaded}/${total}`;
   if (loaded === total) {
+    // Set pitch bend
+    if (tunePitchBend !== 1) {
+      for (const [k, v] of Object.entries(audios))
+        if (k.startsWith('pf-')) v.rate(tunePitchBend);
+    }
+    // Show buttons
     loadingContainer.classList.add('hidden');
     startButton.classList.remove('hidden');
     gamePreloaded = true;

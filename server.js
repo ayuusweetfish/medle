@@ -35,11 +35,17 @@ const SCALE_OFFS = [0, 2, 4, 5, 7, 9, 11];
 
 const midiPitch = (s) => {
   const i = s.charCodeAt(0) - 'A'.charCodeAt(0);
-  const oct = s.charCodeAt(s.length - 1) - '0'.charCodeAt(0);
+  const acci = (s[1] === '#' ? 1 : s[1] === 'b' ? -1 : 0);
+  const oct = s.charCodeAt(acci === 0 ? 1 : 2) - '0'.charCodeAt(0);
   return 12 +
     NOTE_OFFS[i] +
     oct * 12 +
-    (s[1] === '#' ? 1 : s[1] === 'b' ? -1 : 0);
+    acci;
+};
+const bend = (s) => {
+  const i = s.indexOf('/');
+  if (i === -1) return 1;
+  return parseFloat(s.substring(i + 1)) / 440;
 };
 
 const noSuchPuzzle = () => new Response('No such puzzle > <\n', { status: 404 });
@@ -92,6 +98,7 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
   puzzleContents.acciStyles = acciStyles.join('\n');
 
   puzzleContents.tuneNoteBase = puzzleContents.tunePitchBase[0];
+  puzzleContents.tunePitchBend = bend(puzzleContents.tunePitchBase);
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
   const i18n = {};
