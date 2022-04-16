@@ -1,0 +1,34 @@
+tune:
+  - [5-, 2]
+  - [1, 3]
+  - [5-, 1]
+  - [1, 2]
+  - [2, 4]
+  - [5-, 2]
+  - [3, 3]
+  - [4, 1]
+  - [5, 2]
+  - [5, 6]
+tuneBeatDur: 175
+tunePitchBase: Bb4
+metronome: [2, 6]
+
+tuneRevealBeatDur: 175
+tuneRevealOffset: 279
+
+zh-Hans:
+  title: 鸽子与少年（ハトと少年）
+  author: 久石让
+  desc: |-
+    吉卜力工作室于 1986 年推出的动画电影《天空之城》中的一段小号独奏插曲。
+    选段为森田一浩的管乐队改编版，由东京佼成管乐团演出，时任康文指挥。
+  image: 电影画面。
+en:
+  title: Pazu's Fanfare (ハトと少年; lit. "the pigeon and the teenager")
+  author: Joe Hisaishi
+  desc: |-
+    A trumpet solo from the 1986 animated film "Laputa: Castle in the Sky" by Studio Ghibli.
+    Excerpt from the wind band rearrangement by Morita Kazuhiro. Performed by Tokyo Kosei Wind Orchestra, conducted by Tokitou Yasufumi.
+  image: Screen from the film.
+
+curator: Ayu
