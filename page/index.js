@@ -470,6 +470,7 @@ const startGame = () => {
   let r = initialRow;
 
   window.input = (i) => {
+    if (attResults.length === attemptsLimit || succeeded) return;
     stopReplay();
     if (i === -1 && curInput.length > 0) {
       curInput.pop();
