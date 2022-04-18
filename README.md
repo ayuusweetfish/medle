@@ -3,9 +3,9 @@
 [**medle.0-th.art**](https://medle.0-th.art/)
 
 旋律猜谜游戏，每日更新~  
-Daily melody-guessing game (available in en/zh)
+Daily melody puzzle game (available in en/zh)
 
-## \[zh\] 服务端程序
+## [zh] 服务端程序
 
 安装 [Deno](https://deno.land/) (1.19.0)，然后执行命令
 
@@ -17,7 +17,7 @@ deno run --allow-net --allow-read --allow-env server.js
 
 钢琴声音来自 [Salamander Grand Piano](https://sfzinstruments.github.io/pianos/salamander)；字体来自 [Varela Round](https://fonts.google.com/specimen/Varela+Round)、[Font Awesome](https://fontawesome.com/) 与 [Rounded M+](http://jikasei.me/font/rounded-mplus/about.html)。上述资源以及谜题中音乐的作者对作品保留其声明的权利。
 
-## \[en\] The Server Application
+## [en] The Server Application
 
 Install [Deno](https://deno.land/) (1.19.0), and then run
 
