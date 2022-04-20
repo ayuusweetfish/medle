@@ -1,0 +1,30 @@
+tune:
+  - [3+, 1]
+  - [2+, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [5, 1]
+  - [6, 1]
+  - [7, 1]
+tuneBeatDur: 1200
+tunePitchBase: D4
+metronome: [0, 1]
+
+tuneRevealBeatDur: 1704
+tuneRevealOffset: 300
+
+zh-Hans:
+  title: D大调卡农与吉格
+  author: 约翰·帕赫贝尔（Johann Pachelbel）
+  desc: |-
+    “卡农”指一种曲式，其中不同声部在不同时机进入，演奏相同的旋律。此曲第一乐章为最著名的以“卡农”为题的乐曲。
+    录音来自大西景太的动画作品《帕赫贝尔卡农》。
+en:
+  title: Canon and Gigue in D major
+  author: Johann Pachelbel
+  desc: |-
+    "Canon" refers to a musical structure where multiple voices play the same melody, but start at different times. The first movement of this piece is the most famous music with "canon" in the title.
+    The recording taken from the animation titled "Pachelbel's Canon" by Onishi Keita.
+
+curator: Ayu
