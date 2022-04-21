@@ -1,7 +1,7 @@
-import { serve } from 'https://deno.land/std@0.126.0/http/server.ts';
-import { serveFile } from 'https://deno.land/std@0.126.0/http/file_server.ts';
-import { existsSync } from 'https://deno.land/std@0.126.0/fs/mod.ts';
-import { parse as parseYaml } from 'https://deno.land/std@0.126.0/encoding/yaml.ts';
+import { serve } from 'https://deno.land/std@0.136.0/http/server.ts';
+import { serveFile } from 'https://deno.land/std@0.136.0/http/file_server.ts';
+import { existsSync } from 'https://deno.land/std@0.136.0/fs/mod.ts';
+import { parse as parseYaml } from 'https://deno.land/std@0.136.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
 
 const log = (msg) => {
@@ -154,7 +154,7 @@ const handler = async (req) => {
       try {
         const body = await req.formData();
         log(`analy ${body.get('puzzle')} ${body.get('t')} ${analytics(req)}`);
-      } catch (e) {
+      } catch {
         return new Response('', { status: 400 });
       }
       return new Response('', { status: 200 });
@@ -165,4 +165,4 @@ const handler = async (req) => {
 
 const port = 2220;
 log(`http://localhost:${port}/`);
-const server = serve(handler, { port });
+await serve(handler, { port });

@@ -7,7 +7,7 @@ Daily melody puzzle game (available in en/zh)
 
 ## [zh] 服务端程序
 
-安装 [Deno](https://deno.land/) (1.19.0)，然后执行命令
+安装 [Deno](https://deno.land/) (1.21.0)，然后执行命令
 
 ```sh
 deno run --allow-net --allow-read --allow-env server.js
@@ -19,7 +19,7 @@ deno run --allow-net --allow-read --allow-env server.js
 
 ## [en] The Server Application
 
-Install [Deno](https://deno.land/) (1.19.0), and then run
+Install [Deno](https://deno.land/) (1.21.0), and then run
 
 ```sh
 deno run --allow-net --allow-read --allow-env server.js
