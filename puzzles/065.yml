@@ -1,0 +1,25 @@
+tune:
+  - [1, 4]
+  - [2, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [5, 2]
+  - [5, 2]
+tuneBeatDur: 200
+tunePitchBase: G4/442
+metronome: [0, 2]
+
+tuneRevealBeatDur: 182
+tuneRevealOffset: 1660
+
+zh-Hans:
+  title: 康康舞曲，来自《天堂与地狱》
+  author: 雅克·奥芬巴赫（Jacques Offenbach）
+  desc: 康康舞（cancan）是源于法国的舞蹈形式。1858 年首演的法国轻歌剧《天堂与地狱》中的此段舞曲即是最著名的康康舞曲。
+en:
+  title: Cancan, from "Orpheus in the Underworld"
+  author: Jacques Offenbach
+  desc: The cancan is a dance of French origin. The French operetta "Orpheus in the Underworld", premiered in 1858, has the most famous music section for the cancan.
+
+curator: Ayu
