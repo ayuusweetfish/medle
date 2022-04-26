@@ -1,27 +1,27 @@
 tune:
-  - [5-, 2]
-  - [3, 4]
-  - [1, 3]
+  - [6, 1]
+  - [6, 1]
+  - [5, 1]
+  - [6, 2]
+  - [3, 1]
+  - [1, 1]
   - [2, 1]
-  - [3, 4]
-  - [1, 4]
-  - [2, 4]
-  - [5-, 4]
-  - [5-, 4]
-tuneBeatDur: 120
-tunePitchBase: E4
-metronome: [2, 4]
+  - [5, 2]
+  - [5, 2]
+tuneBeatDur: 240
+tunePitchBase: B3
+metronome: [-1, 4]
 
-tuneRevealBeatDur: 125  # 120 BPM
-tuneRevealOffset: 133
+tuneRevealBeatDur: 262
+tuneRevealOffset: 1533
 
 zh-Hans:
-  title: 生日祝福歌
-  author: 任浩铭（作曲）；任斌（编曲）；格格（词、演唱）
-  desc: 2017 年发行的单曲。
+  title: 求佛
+  author: 陈超（曲、词）；誓言/辛世延（演唱）
+  desc: 2006 年发布的网络歌曲。
 en:
-  title: 生日祝福歌 (Song of Birthday Wishes)
-  author: Ren Haoming (composition); Ren Bin (arrangement); 格格 (lyrics; performance)
-  desc: A single released in 2017.
+  title: 求佛 (Buddhist Prayer)
+  author: Chen Chao (music, lyrics); Xin Shiyan (performance)
+  desc: A song released on the Internet in 2006.
 
 curator: Ralph
