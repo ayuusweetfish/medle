@@ -1,19 +1,19 @@
 tune:
-  - [5-, 2]
-  - [3, 4]
-  - [1, 3]
-  - [2, 1]
-  - [3, 4]
+  - [3-, 2]
   - [1, 4]
-  - [2, 4]
-  - [5-, 4]
-  - [5-, 4]
+  - [6-, 3]
+  - [7-, 1]
+  - [1, 4]
+  - [6-, 4]
+  - [7-, 4]
+  - [5, 4]
+  - [5, 4]
 tuneBeatDur: 120
 tunePitchBase: E4
 metronome: [2, 4]
 
 tuneRevealBeatDur: 125  # 120 BPM
-tuneRevealOffset: 133
+tuneRevealOffset: 4133
 
 zh-Hans:
   title: 生日祝福歌
