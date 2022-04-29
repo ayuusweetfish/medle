@@ -1,0 +1,26 @@
+tune:
+  - [5-, 2]
+  - [6-, 2]
+  - [6-, 2]
+  - [6-, 1]
+  - [6-, 2]
+  - [6-, 1]
+  - [6-, 2]
+  - [6-, 2]
+tuneBeatDur: 135
+tunePitchBase: Eb5
+metronome: [0, 4]
+
+tuneRevealBeatDur: 125  # 120 BPM
+tuneRevealOffset: 6019
+
+zh-Hans:
+  title: Rage Your Dream
+  author: m.o.v.e
+  desc: 动画《头文字D》的片尾曲。由日本乐队m.o.v.e成员共同创作，其中木村贵志（“t-kimura”）作曲，濑川素公（“motsu”）作词，益田祐里（“yuri”）演唱。
+en:
+  title: Rage Your Dream
+  author: m.o.v.e
+  desc: An ending song of the animation series "Initial D". Produced by the members of the Japanese band m.o.v.e (composed by Takashi "t-kimura" Kimura, lyrics by Mototaka "motsu" Segawa, performed by Yuri "yuri" Masuda).
+
+curator: 速冻饺子
