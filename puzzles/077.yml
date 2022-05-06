@@ -1,0 +1,25 @@
+tune:
+  - [5, 8, -7]
+  - [6, 8, -7]
+  - [3, 8, -7]
+  - [5, 8, -6]
+  - [6, 1]
+  - [2, 1]
+  - [6b, 8]
+tuneBeatDur: 197
+tunePitchBase: F4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 197
+tuneRevealOffset: 4238
+
+zh-Hans:
+  title: Tom and Jerry
+  author: 斯科特·布拉德利（Scott Bradley）
+  desc: 动画片《猫和老鼠》片头曲。
+en:
+  title: Tom and Jerry
+  author: Scott Bradley
+  desc: Opening song to the animated series "Tom and Jerry".
+
+curator: 速冻饺子
