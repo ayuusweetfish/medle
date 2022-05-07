@@ -1,25 +1,28 @@
 tune:
-  - [5, 8, -7]
-  - [6, 8, -7]
-  - [3, 8, -7]
-  - [5, 8, -6]
-  - [6, 1]
-  - [2, 1]
-  - [6b, 8]
-tuneBeatDur: 197
-tunePitchBase: F4
-metronome: [0, 2]
+  - [3, 4]
+  - [2, 2]
+  - [4, 2]
+  - [3, 4]
+  - [1, 4]
+  - [1, 2]
+  - [5, 2]
+  - [5, 2]
+  - [4, 2]
+  - [2, 8]
+tuneBeatDur: 275
+tunePitchBase: Bb4
+metronome: [0, 4]
 
-tuneRevealBeatDur: 197
-tuneRevealOffset: 4238
+tuneRevealBeatDur: 323  # 93 BPM
+tuneRevealOffset: 5166
 
 zh-Hans:
-  title: Tom and Jerry
-  author: 斯科特·布拉德利（Scott Bradley）
-  desc: 动画片《猫和老鼠》片头曲。
+  title: 听妈妈的话
+  author: 周杰伦（曲、词、演唱）
+  desc: 2006 年专辑《依然范特西》中的歌曲。
 en:
-  title: Tom and Jerry
-  author: Scott Bradley
-  desc: Opening song to the animated series "Tom and Jerry".
+  title: Listen to Mom
+  author: Jay Chou (composition, lyrics, performance)
+  desc: A song from the 2006 album "Still Fantasy".
 
-curator: 速冻饺子
+curator: Ayu
