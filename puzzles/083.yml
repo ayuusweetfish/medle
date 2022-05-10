@@ -1,0 +1,27 @@
+tune:
+  - [5-, 2]
+  - [3, 2]
+  - [3, 1]
+  - [2#, 3]
+  - [3, 2]
+  - [4#, 2]
+  - [5, 2]
+  - [1#, 6]
+  - [2, 6]
+tuneBeatDur: 200
+tunePitchBase: F4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 200 # 150 BPM
+tuneRevealOffset: 1251
+
+zh-Hans:
+  title: 乌鸦
+  author: 许嵩（词、曲、演唱）；郑楠（编曲）
+  desc: 2021年5月14日发布的专辑《呼吸之野》中的首支歌曲。
+en:
+  title: Crow (乌鸦)
+  author: Vae Xu (music, lyrics, performance); Bernard Zheng (arrangement)
+  desc: The first song from the album "呼吸之野" ("Breathing Wild"), released on 14 May 2021.
+
+curator: Ralph
