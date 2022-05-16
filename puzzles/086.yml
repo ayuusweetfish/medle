@@ -1,0 +1,26 @@
+tune:
+  - [1+, 2]
+  - [7, 2]
+  - [5, 2]
+  - [3, 2]
+  - [2, 1]
+  - [3, 1]
+  - [5, 1]
+  - [3, 5]
+tuneBeatDur: 275
+tunePitchBase: Db4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 306 # 98 BPM
+tuneRevealOffset: 2432
+
+zh-Hans:
+  title: 玫瑰少年
+  author: 蔡依林（曲、词、演唱）；蒋行杰（曲）；陈信宏/阿信（词）
+  desc: 2018 年专辑《Ugly Beauty》中的歌曲。曲名“玫瑰少年”指的是 2000 年因性别霸凌而亡的台湾中学生叶永鋕。
+en:
+  title: Womxnly (玫瑰少年)
+  author: Jolin Tsai (music, lyrics, performance); Razor Chiang (music); Chen "Ashin" Hsin-hung (lyrics)
+  desc: A song from the 2018 studio album "Ugly Beauty". The "Rose" in the Chinese title refers to Yeh Yung-chih, a high school student in Taiwan who lost life to gender-based violence.
+
+curator: Ayu
