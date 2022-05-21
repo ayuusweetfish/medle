@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [5, 2]
+  - [6, 3]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [4, 2]
+  - [5, 3]
+tuneBeatDur: 210
+tunePitchBase: Db4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 194 # 154 BPM
+tuneRevealOffset: 4474
+
+zh-Hans:
+  title: Zzz
+  author: 前⼭⽥健⼀（曲、词）
+  desc: 动画《日常》片尾曲。由佐咲纱花（Sasaki Sayaka）演唱，选段来自前奏。
+en:
+  title: Zzz
+  author: Maeyamada "Hyadain" Kenichi (music, lyrics)
+  desc: The ending theme of the animated series "Nichijou". Vocal by Sasaki Sayaka; excerpt from the intro section.
+
+curator: Ayu
