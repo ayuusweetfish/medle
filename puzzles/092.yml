@@ -1,0 +1,26 @@
+tune:
+  - [3, 2]
+  - [5, 1]
+  - [2, 2]
+  - [1, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [7-, 1]
+  - [5-, 2]
+tuneBeatDur: 300
+tunePitchBase: Db5
+metronome: [0, 3]
+
+tuneRevealBeatDur: 333 # 180 BPM
+tuneRevealOffset: 354
+
+zh-Hans:
+  title: Nighty Night / ナイティナイト（晚安）
+  author: mafumafu（曲、词、演唱）
+  desc: 创作歌手 Mafumafu（まふまふ）于 2019 年发布的歌曲。
+en:
+  title: Nighty Night (ナイティナイト)
+  author: mafumafu (music, lyrics, vocals)
+  desc: A song published in 2019 by the musician Mafumafu (まふまふ).
+
+curator: Ekubo
