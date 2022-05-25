@@ -1,0 +1,27 @@
+tune:
+  - [6-, 4]
+  - [1, 4]
+  - [4, 4]
+  - [6, 4]
+  - [5, 2]
+  - [6, 2]
+  - [5, 2]
+  - [4, 1]
+  - [3, 5]
+tuneBeatDur: 119
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 119 # 252 BPM
+tuneRevealOffset: 2777
+
+zh-Hans:
+  title: Another Day of Sun
+  author: Justin Hurwitz（曲）；Benj Pasek、Justin Paul（词）
+  desc: 2016 年歌舞电影《爱乐之城》开场音乐。
+en:
+  title: Another Day of Sun
+  author: Justin Hurwitz (music); Benj Pasek, Justin Paul (lyrics)
+  desc: The opening number of the 2016 musical film "La La Land".
+
+curator: Ayu
