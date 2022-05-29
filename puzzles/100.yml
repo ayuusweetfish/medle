@@ -1,0 +1,25 @@
+tune:
+  - [1, 2]
+  - [7, 2]
+  - [1+, 2]
+  - [2+, 3]
+  - [1+, 1]
+  - [1+, 2]
+  - [5, 5]
+tuneBeatDur: 300
+tunePitchBase: D4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 338
+tuneRevealOffset: 1921
+
+zh-Hans:
+  title: 我歌唱的理由有很多
+  author: 金承志
+  desc: 为上海彩虹室内合唱团十周年团庆所作的歌曲。
+en:
+  title: For Many a Reason I Sing (我歌唱的理由有很多)
+  author: Jin Chengzhi
+  desc: A song composed for the tenth anniversary of the Shanghai Rainbow Chamber Singers.
+
+curator: Huxley
