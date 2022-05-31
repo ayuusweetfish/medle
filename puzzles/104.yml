@@ -1,0 +1,31 @@
+tune:
+  - [5-, 1]
+  - [5, 4]
+  - [4, 2]
+  - [3, 1]
+  - [3, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 2]
+tuneBeatDur: 270
+tunePitchBase: G4
+metronome: [1, 2]
+
+tuneRevealBeatDur: 310
+tuneRevealOffset: 580
+
+zh-Hans:
+  title: American Pie
+  author: 唐·麦克林（Don McLean）
+  desc: |-
+    1971 年同名专辑中的歌曲。
+    “（生活）正变得不再诗意。不知你是否认可，但它某种意义上是一首有关伦理的歌曲。”
+en:
+  title: American Pie
+  author: Don McLean
+  desc: |-
+    A song from the 1971 album of the same name.
+    "[Life] is becoming less idyllic. I don't know whether you consider that wrong or right but it is a morality song in a sense."
+
+curator: sakura
