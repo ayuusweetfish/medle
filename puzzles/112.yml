@@ -1,0 +1,28 @@
+tune:
+  - [3, 2]
+  - [2, 2]
+  - [1, 2]
+  - [2, 8]
+  - [2, 1]
+  - [3, 1]
+  - [4, 2]
+  - [3, 2]
+  - [2, 2]
+  - [3, 6]
+tuneBeatDur: 180
+tunePitchBase: Bb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 190
+tuneRevealOffset: 174
+
+zh-Hans:
+  title: 向日葵的约定（ひまわりの約束）
+  author: 秦基博
+  desc: 2014 年动画电影《哆啦A梦：伴我同行》主题曲。
+en:
+  title: Promise of a Sunflower (ひまわりの約束)
+  author: Hata Motohiro
+  desc: Theme song of the 2014 animation film "Stand by Me Doraemon".
+
+curator: Ayu
