@@ -1,0 +1,26 @@
+tune:
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [3, 1]
+tuneBeatDur: 343
+tunePitchBase: F4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 343 # 175 BPM
+tuneRevealOffset: 2810
+
+zh-Hans:
+  title: 以父之名
+  author: 周杰伦（曲、演唱）；黄俊郎（词）
+  desc: 2003 年专辑《叶惠美》中的歌曲。
+en:
+  title: In The Name of The Father
+  author: Jay Chou (composition, vocals); Alang Huang (lyrics)
+  desc: A song from the 2003 album "Yeh Hui-Mei".
+
+curator: Ayu
