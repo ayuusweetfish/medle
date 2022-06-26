@@ -1,0 +1,27 @@
+tune:
+  - [1+, 4]
+  - [6, 4]
+  - [4, 3]
+  - [5, 1]
+  - [6, 4]
+  - [7, 2, 1, 1, 2]
+  - [6, 1]
+  - [5, 1]
+  - [3, 4]
+tuneBeatDur: 250
+tunePitchBase: D4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 319
+tuneRevealOffset: 2516
+
+zh-Hans:
+  title: 同一首歌
+  author: 孟卫东（曲）；陈哲、迎节（词）
+  desc: 为1990年北京亚运会创作的歌曲。原曲由刘畅演唱；录音为毛阿敏演唱。
+en:
+  title: 同一首歌 (The Same Song)
+  author: Meng Weidong (music); Chen Zhe, Hu Yingjie (lyrics)
+  desc: A song composed for the 1990 Beijing Asian Games. Original vocals by Liu Chang; vocals in the recording by Mao Amin.
+
+curator: Ayu

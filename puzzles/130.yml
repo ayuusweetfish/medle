@@ -1,0 +1,28 @@
+tune:
+  - [3, 2]
+  - [5, 1]
+  - [1+, 1]
+  - [2+, 2]
+  - [3+, 2]
+  - [1, 1]
+  - [3, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 2]
+tuneBeatDur: 375
+tunePitchBase: B3
+metronome: [0, 2]
+
+tuneRevealBeatDur: 417 # 72 BPM
+tuneRevealOffset: 1660
+
+zh-Hans:
+  title: 这世界那么多人
+  author: Akiyama Sayuri（曲）；王海涛（词）
+  desc: 2021 年电影《我要我们在一起》主题曲，由莫文蔚演唱。
+en:
+  title: 这世界那么多人
+  author: Akiyama Sayuri (music); Wang Haitao (lyrics)
+  desc: Theme of the 2021 film "Love Will Tear Us Apart", with vocals by Karen Mok.
+
+curator: Ayu
