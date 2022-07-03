@@ -1,0 +1,26 @@
+tune:
+  - [1, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [1, 1]
+  - [3, 1]
+  - [2, 1]
+  - [5-, 1]
+tuneBeatDur: 286
+tunePitchBase: Eb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 286
+tuneRevealOffset: 2321
+
+zh-Hans:
+  title: 洋基歌（Yankee Doodle）
+  author: 佚名
+  desc: 原本为西欧民谣；英军将此曲填词用以嘲讽美国独立前的殖民地居民，但又被后者接受并修改以示反讽。现亦为知名儿歌。
+en:
+  title: Yankee Doodle
+  author: Unknown
+  desc: Originally a western Europe folk tune, the British military officers gave it lyrics to mock the colonial residents before the American Revolutionary War, but the latter adopted the song as a symbol of defiance and sarcasm. Currently also a well-known nursery rhyme.
+
+curator: Ayu
