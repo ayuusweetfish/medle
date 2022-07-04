@@ -1,3 +1,4 @@
+(() => {
 const N = tune.length;
 const DECO_8VA = 1;
 const DECO_8VB = 2;
@@ -331,6 +332,7 @@ const showModal = (id, onClose) => {
   modalBackground.classList.remove('hidden');
 };
 modalBackground.addEventListener('mouseup', closeModal);
+window.closeModal = closeModal;
 
 const loadingContainer = document.getElementById('text-loading');
 const loadingProgress = document.getElementById('text-loading-progress');
@@ -742,6 +744,7 @@ const startGame = () => {
     }
   });
 };
+window.startGame = startGame;
 
 preloadSounds((loaded, total) => {
   loadingProgress.innerText = `${loaded}/${total}`;
@@ -930,3 +933,4 @@ for (const btnLang of btnLangs)
 localStorageToCookie();
 
 document.body.classList.add('loaded');
+})();

@@ -3,7 +3,11 @@
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <title>Medle #<%= it.id %></title>
+  <% if (it.packaged) { %>
+  <link rel='stylesheet' href='/build/<%~ it.packaged.indexCss %>'>
+  <% } else { %>
   <link rel='stylesheet' href='/static/index.css'>
+  <% } %>
 </head><body>
 
 <div id='container'>
@@ -275,8 +279,6 @@
 <%~ it.acciStyles %>
 </style>
 
-<script src='/static/clipboard.min.js'></script>
-<script src='/static/languages.js'></script>
 <script>
 const puzzleId = <%~ JSON.stringify(it.id) %>;
 const tune = <%~ JSON.stringify(it.tune) %>;
@@ -293,6 +295,12 @@ const todayDaily = <%~ JSON.stringify(it.todayDaily) %>;
 
 const i18nVars = <%~ JSON.stringify(it.i18nVars) %>;
 </script>
+<% if (it.packaged) { %>
+<script src='/build/<%~ it.packaged.indexJs %>'></script>
+<% } else { %>
+<script src='/static/clipboard.min.js'></script>
+<script src='/static/languages.js'></script>
 <script src='/static/index.js'></script>
+<% } %>
 
 </body></html>

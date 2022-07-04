@@ -3,18 +3,64 @@ import { serveFile } from 'https://deno.land/std@0.136.0/http/file_server.ts';
 import { existsSync } from 'https://deno.land/std@0.136.0/fs/mod.ts';
 import { parse as parseYaml } from 'https://deno.land/std@0.136.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
+import { minify as terserMinify } from 'https://esm.sh/terser@5.14.1';
+import { minify as cssoMinify } from 'https://unpkg.com/csso@5.0.3/dist/csso.esm.js';
 
 const log = (msg) => {
   console.log(`${(new Date()).toISOString()} ${msg}`);
 };
 const debug = (Deno.env.get('DEBUG') === '1');
 
+// Built-in minification
+// deno run --allow-read --allow-write --allow-env server.js build
+if (Deno.args[0] === 'build') {
+  await Deno.remove('build', { recursive: true });
+  await Deno.mkdir('build');
+  const hash = (s) => {
+    let hash = 0;
+    for (let i = 0; i < s.length; i++)
+      hash = (hash * 31 + s.charCodeAt(i)) | 0;
+    return hash.toString(16).padStart(8, '0');
+  };
+  // JS
+  const jsContents = await Promise.all([
+    'clipboard.min.js',
+    'languages.js',
+    'index.js',
+  ].map(async (file) => await Deno.readTextFile('page/' + file)));
+  const jsMinified = (await terserMinify(
+    jsContents, { format: { comments: false } }
+  )).code;
+  const jsHash = hash(jsMinified);
+  await Deno.writeTextFile(`build/index.min.${jsHash}.js`, jsMinified);
+  // CSS
+  const cssContents = await Deno.readTextFile('page/index.css');
+  const cssMinified = cssoMinify(await Deno.readTextFile('page/index.css')).css;
+  const cssHash = hash(cssMinified);
+  await Deno.writeTextFile(`build/index.min.${cssHash}.css`, cssMinified);
+  Deno.exit();
+}
+
 const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
 const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 
-const indexHtmlContents = new TextDecoder().decode(await Deno.readFile('page/index.html'));
+const packaged = existsSync('build') ? {} : false;
+if (packaged) {
+  for (const entry of Deno.readDirSync('build')) {
+    if (entry.name.endsWith('.js')) packaged.indexJs = entry.name;
+    if (entry.name.endsWith('.css')) packaged.indexCss = entry.name;
+  }
+}
+
+const indexHtmlContents = await Deno.readTextFile('page/index.html');
 const indexTemplate = etaCompile(indexHtmlContents);
+
+const serveFileCached = async (req, path) => {
+  const resp = await serveFile(req, path);
+  resp.headers.set('Cache-Control', 'public, max-age=2592000');
+  return resp;
+};
 
 const analytics = (req) => {
   const cookies = req.headers.get('Cookie');
@@ -114,6 +160,8 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
   puzzleContents.isDaily = isDaily;
   puzzleContents.todayDaily = today;
 
+  puzzleContents.packaged = packaged;
+
   log(`puzzle ${puzzleId} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
@@ -131,15 +179,22 @@ const handler = async (req) => {
       return servePuzzle(req, undefined, false);
     }
     if (url.pathname === '/favicon.ico') {
-      return serveFile(req, 'favicon.png');
+      return serveFileCached(req, 'favicon.png');
+    }
+    if (url.pathname === '/index.js') {
+      return 
+    }
+    if (url.pathname.startsWith('/build/')) {
+      const fileName = url.pathname.substring('/build/'.length);
+      return serveFileCached(req, 'build/' + fileName);
     }
     if (url.pathname.startsWith('/static/')) {
       const fileName = url.pathname.substring('/static/'.length);
-      return serveFile(req, 'page/' + fileName);
+      return serveFileCached(req, 'page/' + fileName);
     }
     if (url.pathname.startsWith('/reveal/')) {
       const fileName = url.pathname.substring('/reveal/'.length);
-      return serveFile(req, 'puzzles/reveal/' + fileName);
+      return serveFileCached(req, 'puzzles/reveal/' + fileName);
     }
     // Custom puzzle
     if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
