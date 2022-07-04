@@ -229,6 +229,7 @@ const createSound = (urls) => {
     if (id === undefined)
       for (const id in s) o.stop(id);
     else if (s[id]) {
+      s[id].nSource.stop();
       s[id].nSource.disconnect();
       s[id].nGain.disconnect();
       delete s[id];
