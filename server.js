@@ -1,7 +1,7 @@
-import { serve } from 'https://deno.land/std@0.136.0/http/server.ts';
-import { serveFile } from 'https://deno.land/std@0.136.0/http/file_server.ts';
-import { existsSync } from 'https://deno.land/std@0.136.0/fs/mod.ts';
-import { parse as parseYaml } from 'https://deno.land/std@0.136.0/encoding/yaml.ts';
+import { serve } from 'https://deno.land/std@0.146.0/http/server.ts';
+import { serveFile } from 'https://deno.land/std@0.146.0/http/file_server.ts';
+import { existsSync } from 'https://deno.land/std@0.146.0/fs/mod.ts';
+import { parse as parseYaml } from 'https://deno.land/std@0.146.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
 import { minify as terserMinify } from 'https://esm.sh/terser@5.14.1';
 import { minify as cssoMinify } from 'https://unpkg.com/csso@5.0.3/dist/csso.esm.js';
@@ -40,7 +40,7 @@ if (Deno.args[0] === 'build') {
   await Deno.writeTextFile(`build/index.min.${jsHash}.js`, jsMinified);
   // CSS
   const cssContents = await Deno.readTextFile('page/index.css');
-  const cssMinified = cssoMinify(await Deno.readTextFile('page/index.css')).css;
+  const cssMinified = cssoMinify(cssContents).css;
   const cssHash = hash(cssMinified);
   await Deno.writeTextFile(`build/index.min.${cssHash}.css`, cssMinified);
   Deno.exit();
@@ -50,7 +50,8 @@ const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
 const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 
-const packaged = existsSync('build') ? {} : false;
+const packaged = (existsSync('build') &&
+  Deno.env.get('NOBUILD') !== '1') ? {} : false;
 if (packaged) {
   for (const entry of Deno.readDirSync('build')) {
     if (entry.name.endsWith('.js')) packaged.indexJs = entry.name;
