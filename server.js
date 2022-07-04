@@ -14,7 +14,11 @@ const debug = (Deno.env.get('DEBUG') === '1');
 // Built-in minification
 // deno run --allow-read --allow-write --allow-env server.js build
 if (Deno.args[0] === 'build') {
-  await Deno.remove('build', { recursive: true });
+  try {
+    await Deno.remove('build', { recursive: true });
+  } catch (e) {
+    if (!(e instanceof Deno.errors.NotFound)) throw e;
+  }
   await Deno.mkdir('build');
   const hash = (s) => {
     let hash = 0;
