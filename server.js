@@ -24,6 +24,7 @@ if (Deno.args[0] === 'build') {
     let hash = 0;
     for (let i = 0; i < s.length; i++)
       hash = (hash * 31 + s.charCodeAt(i)) | 0;
+    hash = (hash + 0x80000000) % 0x80000000;
     return hash.toString(16).padStart(8, '0');
   };
   // JS
