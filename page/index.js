@@ -189,11 +189,96 @@ for (let i = -12; i <= 24; i++)
       `/static/samples/pf-${tunePitchBase + i}.mp3`,
     ]);
 
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+const createSound = (urls) => {
+  const o = {};
+
+  o.eventHandlers = {load: [], end: []};
+  const emit = (name) => {
+    for (const fn of o.eventHandlers[name]) fn();
+    o.eventHandlers[name].splice(0);
+  };
+  o.once = (name, fn) => o.eventHandlers[name].push(fn);
+
+  var buf = null;
+  const tryFetch = (i) => {
+    fetch(urls[i]).then((resp) => {
+      resp.arrayBuffer().then((dataBuf) => {
+        audioCtx.decodeAudioData(dataBuf,
+          (pcmBuf) => {
+            buf = pcmBuf;
+            emit('load');
+          },
+          () => {
+            if (i + 1 < urls.length) tryFetch(i + 1);
+            // XXX: Throw an exception otherwise?
+          }
+        );
+      });
+    });
+  };
+  tryFetch(0);
+
+  o.duration = () => buf.duration;
+
+  var count = 0;
+  var s = {};
+  o.stop = (id) => {
+    if (id === undefined)
+      for (const id in s) o.stop(id);
+    else if (s[id]) {
+      s[id].nSource.disconnect();
+      s[id].nGain.disconnect();
+      delete s[id];
+    }
+  };
+  o.play = () => {
+    const id = count++;
+    const nSource = audioCtx.createBufferSource();
+    nSource.buffer = buf;
+    nSource.start();
+    nSource.onended = () => {
+      emit('end');
+      o.stop(id);
+    };
+    const nGain = audioCtx.createGain();
+    nSource.connect(nGain);
+    nGain.connect(audioCtx.destination);
+    s[id] = {
+      nSource: nSource,
+      nGain: nGain,
+    };
+    return id;
+  };
+
+  o.volume = (vol, id) => {
+    if (vol === undefined) {
+      if (!s[id]) return 0;
+      return s[id].nGain.gain.value;
+    }
+    s[id].nGain.gain.value = vol;
+  };
+  o.fade = (from, to, dur, id) => {
+    if (id === undefined) {
+      for (const id in s) o.fade(from, to, dur, id);
+      return;
+    }
+    if (!s[id]) return;
+    const g = s[id].nGain.gain;
+    const t = audioCtx.currentTime;
+    g.setValueAtTime(from, t);
+    g.linearRampToValueAtTime(to, t + dur / 1000);
+  };
+
+  return o;
+};
+
 const preloadSounds = (callback) => {
   let count = 0;
   for (const pathList of paths) {
     const name = pathList[0].split('/').pop().split('.')[0];
-    const audio = new Howl({src: pathList});
+    const audio = createSound(pathList);
     audio.once('load', () => {
       callback(++count, paths.length);
     });
@@ -596,15 +681,10 @@ const startGame = () => {
 
     if (!answerAudioLoading) {
       answerAudioLoading = true;
-      answerAudio = new Howl({src: [`/reveal/${puzzleId}.mp3`]});
+      answerAudio = createSound([`/reveal/${puzzleId}.mp3`]);
       answerAudio.once('load', () => {
         btnPlay.classList.remove('disabled');
         updatePlayButtonText();
-      });
-      answerAudio.on('end', () => {
-        playing = false;
-        updatePlayButtonText();
-        stopBubbleTimers();
       });
     }
 
@@ -628,6 +708,11 @@ const startGame = () => {
         () => answerAudio.fade(1, 0, 100),
         answerAudio.duration() * 1000 - 120);
       createBubbleTimers();
+      answerAudio.once('end', () => {
+        playing = false;
+        updatePlayButtonText();
+        stopBubbleTimers();
+      });
     }
     playing = !playing;
     updatePlayButtonText();
