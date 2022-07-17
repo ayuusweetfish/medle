@@ -1,0 +1,27 @@
+tune:
+  - [3+, 1]
+  - [5+, 1]
+  - [4+, 1]
+  - [3+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [7, 1]
+  - [1+, 1]
+  - [5, 1]
+tuneBeatDur: 700
+tunePitchBase: D4
+metronome: [-1, 3]
+
+tuneRevealBeatDur: 803
+tuneRevealOffset: 10728
+
+zh-Hans:
+  title: Gymnopédie No. 1
+  author: 埃里克·萨蒂（Erik Satie）
+  desc: 法国作曲家萨蒂的作品 Trois Gymnopédies（“Gymnopédies”译作《裸体歌舞》或《金诺佩蒂》）之一。由 Philippe Entremont 演奏。
+en:
+  title: Gymnopédie No. 1
+  author: Erik Satie
+  desc: One of the "Trois Gymnopédies" by the French composer Satie. Performed by Philippe Entremont.
+
+curator: daodao
