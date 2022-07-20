@@ -1,0 +1,28 @@
+tune:
+  - [5-, 2]
+  - [3, 4]
+  - [2, 1]
+  - [1, 1]
+  - [2, 3]
+  - [3, 13]
+  - [5-, 2]
+  - [3, 4]
+  - [2, 1]
+  - [1, 3, 4]
+tuneBeatDur: 160
+tunePitchBase: F4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 183 # 164 BPM
+tuneRevealOffset: 396
+
+zh-Hans:
+  title: In My Secret Life
+  author: Leonard Cohen、Sharon Robinson
+  desc: 加拿大创作歌手里奥纳德·科恩的歌曲，收录于 2001 年专辑《十首新歌》（Ten New Songs）。
+en:
+  title: In My Secret Life
+  author: Leonard Cohen, Sharon Robinson
+  desc: A song by the Canadian singer-songwriter Leonard Cohen, from the 2001 album "Ten New Songs".
+
+curator: sakura
