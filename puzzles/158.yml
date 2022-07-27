@@ -1,28 +1,26 @@
 tune:
-  - [2, 3]
-  - [2, 3]
-  - [1#, 4]
-  - [6-, 4]
-  - [5-, 2, 2]
-  - [6-, 2]
-  - [5-, 2]
-  - [5, 4]
-  - [2, 2]
+  - [2, 1]
   - [3, 2]
-tuneBeatDur: 150
-tunePitchBase: C5
-metronome: [8, 4]
+  - [7-, 1]
+  - [1, 3]
+  - [2, 1]
+  - [1, 2]
+  - [5-, 2]
+  - [4-, 3]
+tuneBeatDur: 300
+tunePitchBase: G4
+metronome: [5, 2]
 
-tuneRevealBeatDur: 150 # 200 BPM
-tuneRevealOffset: 5995
+tuneRevealBeatDur: 364 # 165 BPM
+tuneRevealOffset: 6984
 
 zh-Hans:
-  title: 城市
-  author: 张悬
-  desc: 2009 年专辑《城市》中的歌曲。
+  title: 世界不会轻易崩塌
+  author: 陈圣仑（曲、词）；郭小峰（编曲）；吕易秋（词）
+  desc: 打扰一下（EXCUSE ME）乐团演唱的歌曲，发行于 2017 年。
 en:
-  title: A City (城市)
-  author: Deserts Xuan (張懸)
-  desc: A song from the 2009 album "A City".
+  title: The World Would Not Easily Collapse (世界不会轻易崩塌)
+  author: Chen Shenglun (music, lyrics); Guo Xiaofeng (arrangement); Lyu Yiqiu (lyrics)
+  desc: A song performed by the band "EXCUSE ME" (打扰一下), released in 2017.
 
-curator: daodao
+curator: Ralph
