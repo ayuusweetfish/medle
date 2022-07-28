@@ -1,0 +1,26 @@
+tune:
+  - [3, 3]
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [2, 1]
+  - [1, 4]
+  - [5-, 4]
+tuneBeatDur: 220
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 250
+tuneRevealOffset: 694
+
+zh-Hans:
+  title: 城市之光进行曲（Pearl of the City）
+  author: Harm Evers
+  desc: ""
+en:
+  title: 城市之光进行曲（Pearl of the City）
+  author: Harm Evers
+  desc: ""
+
+curator: Ayu

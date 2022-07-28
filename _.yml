@@ -1,0 +1,19 @@
+tune:
+  - [1, 1]
+tuneBeatDur: 
+tunePitchBase: 
+metronome: [0, 4]
+
+tuneRevealBeatDur: 
+tuneRevealOffset: 
+
+zh-Hans:
+  title: 
+  author: 
+  desc: 
+en:
+  title: 
+  author: 
+  desc: 
+
+curator: 

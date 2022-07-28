@@ -1,0 +1,28 @@
+tune:
+  - [1, 1]
+  - [6-, 1]
+  - [3, 4]
+  - [4, 1]
+  - [2, 1]
+  - [6, 4]
+  - [1+, 2]
+  - [7, 2]
+  - [6, 2]
+  - [3, 2]
+tuneBeatDur: 240
+tunePitchBase: Ab3
+metronome: [0, 6]
+
+tuneRevealBeatDur: 272
+tuneRevealOffset: 6457
+
+zh-Hans:
+  title: 音乐会曲作品 94（Morceau de concert, Op. 94）
+  author: 卡米耶·圣-桑（Camille Saint-Saëns）
+  desc: 为圆号与管弦乐队而作的协奏曲。录音是由 Bernhard Scully 与 Joanne Minnetti 演奏的圆号与钢琴二重奏改编。
+en:
+  title: Morceau de concert, Op. 94
+  author: Camille Saint-Saëns
+  desc: A concerto composed for the French horn and the orchestra. The recording is a horn and piano duet arrangement, performed by Bernhard Scully and Joanne Minnetti.
+
+curator: Antares

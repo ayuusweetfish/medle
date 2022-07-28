@@ -1,0 +1,31 @@
+tune:
+  - [6, 1]
+  - [3, 1]
+  - [1, 1]
+  - [6-, 1]
+  - [4, 1]
+  - [3, 1.3]
+  - [1, 1.3]
+  - [7-, 1.3]
+  - [6-, 1]
+tuneBeatDur: 800
+tunePitchBase: Bb4
+metronome: [99999, 1]
+
+tuneRevealBeatDur: 1420
+tuneRevealOffset: 9938
+
+zh-Hans:
+  title: 大地之歌（Das Lied von der Erde）
+  author: 古斯塔夫·马勒（Gustav Mahler）
+  desc: |-
+    奥地利作曲家马勒基于中国古诗创作的声乐交响曲，诗歌来自汉斯·贝特格基于法语和德语译本整理的诗集《中国笛》。选段来自第一乐章《人间饮酒悲歌》，原诗为李白《悲歌行》。
+    由以色列爱乐乐团演奏，伦纳德·伯恩斯坦指挥。
+en:
+  title: Das Lied von der Erde ("The Song of the Earth")
+  author: Gustav Mahler
+  desc: |-
+    An orchestral song cycle by the Austro-Bohemian composer Mahler, based on the anchient Chinese poetry collection "Die chinesische Flöte" by Hans Bethge. Excerpt taken from the first movement, based on Li Bai's "悲歌行" (the Sorrowful Song).
+    Performed by the Israel Philharmonic Orchestra, conducted by Leonard Bernstein.
+
+curator: Ayu

@@ -1,0 +1,26 @@
+tune:
+  - [6-, 3]
+  - [3, 3]
+  - [6-, 1]
+  - [7-, 3]
+  - [1, 1]
+  - [2, 2]
+  - [2, 2]
+  - [5, 3]
+tuneBeatDur: 207
+tunePitchBase: D4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 207 # 145 BPM
+tuneRevealOffset: 13519
+
+zh-Hans:
+  title: 后海冲浪手
+  author: 付菡
+  desc: 摇滚乐队后海大鲨鱼的歌曲，收录于 2016 年专辑《心要野》。
+en:
+  title: Beijing Surfers (后海冲浪手)
+  author: Fu Han
+  desc: A song by the rock band Queen Sea Big Shark, from the 2016 album "Beijing Surfers' Adventure".
+
+curator: hotpot

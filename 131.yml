@@ -1,0 +1,27 @@
+tune:
+  - [3, 16, -13]
+  - [4, 16, -13]
+  - [5, 16, -14]
+  - [4, 3]
+  - [3, 3]
+  - [2, 10]
+  - [3, 3]
+  - [2, 3]
+  - [1, 2]
+tuneBeatDur: 132
+tunePitchBase: D4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 132 # 227 BPM
+tuneRevealOffset: 1043
+
+zh-Hans:
+  title: ラブ・ストーリーは突然に（爱情故事突如其来）
+  author: 小田和正（曲、词）
+  desc: 由同名漫画改编的电视剧《东京爱情故事》主题曲。
+en:
+  title: ラブ・ストーリーは突然に (Sudden Love Story)
+  author: Oda Kazumasa (music, lyrics)
+  desc: Theme of "Tokyo Love Story", a television drama adapted from the manga of the same name.
+
+curator: hotpot

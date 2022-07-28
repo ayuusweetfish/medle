@@ -1,0 +1,31 @@
+tune:
+  - [1, 3]
+  - [5-, 1]
+  - [1, 3]
+  - [5-, 1]
+  - [1, 1]
+  - [5-, 1]
+  - [1, 1]
+  - [3, 1]
+  - [5, 4]
+tuneBeatDur: 240
+tunePitchBase: G4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 244
+tuneRevealOffset: 64
+
+zh-Hans:
+  title: 一首小夜曲（Eine kleine Nachtmusik）
+  author: 莫扎特（Wolfgang Amadeus Mozart）
+  desc: |-
+    原为弦乐五重奏作品，不过常常由弦乐团演奏。
+    由维也纳爱乐乐团演出，卡尔·伯姆指挥。
+en:
+  title: Eine kleine Nachtmusik
+  author: Wolfgang Amadeus Mozart
+  desc: |-
+    Originally composed for the string quintet, but often performed by string orchestras. The German title literally translates to "a little night music".
+    Performed by the Vienna Philharmonic, conducted by Karl Böhm.
+
+curator: Ayu

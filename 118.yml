@@ -1,0 +1,28 @@
+tune:
+  - [6-, 1]
+  - [4, 1]
+  - [3, 2]
+  - [2, 2]
+  - [7-, 2]
+  - [7-, 1]
+  - [2, 1]
+  - [7-, 2]
+  - [6-, 2]
+  - [5-, 2]
+tuneBeatDur: 250
+tunePitchBase: F4
+metronome: [1, 2]
+
+tuneRevealBeatDur: 261 # 230 BPM
+tuneRevealOffset: 2877
+
+zh-Hans:
+  title: Amore Mio（我的爱人）
+  author: José Luis Roma（曲、词）；Thalía（演唱）
+  desc: 墨西哥歌手坦莉雅（Thalía）于 2014 年发布的同名专辑中的歌曲。
+en:
+  title: Amore Mio (My Love)
+  author: José Luis Roma (music, lyrics); Thalía (vocals)
+  desc: A song from the album of the same name by the Mexican artist Thalía rleased in 2014.
+
+curator: sakura

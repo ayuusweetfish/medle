@@ -1,0 +1,31 @@
+tune:
+  - [3, 2]
+  - [6, 2]
+  - [3, 2]
+  - [2, 2]
+  - [1, 2]
+  - [7-, 1]
+  - [6-, 1]
+  - [7-, 2]
+  - [3-, 2]
+tuneBeatDur: 130
+tunePitchBase: A4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 108
+tuneRevealOffset: 50
+
+zh-Hans:
+  title: 卡门（Carmen）序曲
+  author: 乔治·比才（Georges Bizet）
+  desc: |-
+    🔊 前后段音响差距大，请勿过度调大音量。
+    法国作曲家乔治·比才创作的歌剧《卡门》中的序曲。由伦敦交响乐团演奏，克劳迪奥·阿巴多（Claudio Abbado）指挥。
+en:
+  title: Carmen — Overture
+  author: Georges Bizet
+  desc: |-
+    🔊 Please do not turn up the volume by too much. The later phrases are louder then the beginning.
+    The overture from the opera "Carmen", by the French composer Georges Bizet. Performed by the London Symphony Orchestra, conducted by Claudio Abbado.
+
+curator: Ayu

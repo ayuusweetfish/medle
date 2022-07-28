@@ -1,0 +1,27 @@
+tune:
+  - [6-, 2]
+  - [1, 2]
+  - [2, 2]
+  - [3, 1]
+  - [2, 1]
+  - [5, 2]
+  - [3, 1]
+  - [2, 1]
+  - [3, 2]
+tuneBeatDur: 238
+tunePitchBase: G4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 238 # 126 BPM
+tuneRevealOffset: 7639
+
+zh-Hans:
+  title: 寿限夢
+  author: 野田洋次郎
+  desc: 日本摇滚乐队 RADWIMPS 于 2011 年发行的乐曲，歌词内容与日本大学入学考试相关。
+en:
+  title: Jugemu (寿限夢)
+  author: Noda Yojiro
+  desc: A song by the Japanese rock band Radwimps, released in 2011. The lyrics are related to the test for university admissions of Japan.
+
+curator: Ayu

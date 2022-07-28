@@ -1,0 +1,29 @@
+tune:
+  - [5, 2]
+  - [3, 1]
+  - [5, 1]
+  - [1+, 4]
+  - [6, 2]
+  - [1+, 2]
+  - [5, 4]
+tuneBeatDur: 400
+tunePitchBase: Eb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 510
+tuneRevealOffset: 442
+
+zh-Hans:
+  title: 送别
+  author: John Pond Ordway（曲）；李叔同（词）
+  desc: |-
+    美国音乐家约翰·奥德威的歌曲《梦见家和母亲》（Dreaming of Home and Mother）由日本音乐教育家犬童球溪配以日文歌词并题为《旅愁》；李叔同据此创作了中文歌词并题为《送别》。
+    录音为西北民族大学合唱团演唱的周鑫泉改编作品《城南送别》。
+en:
+  title: 送别 (Farewell Song)
+  author: John Pond Ordway (music); Li Shutong (lyrics)
+  desc: |-
+    Originally "Dreaming of Home and Mother" by the American musician John Ordway, the song had its Japanese lyrics titled "Ryoshuu" (Loneliness on a Journey) by Inudou Kyuukei, which inspired the Chinese lyrics by Li Shutong.
+    Recording performed by Northwest University for Nationalities Choir, adapted by Jenny H. Chou.
+
+curator: Salpinx

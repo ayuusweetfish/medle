@@ -1,0 +1,26 @@
+tune:
+  - [3, 2]
+  - [5, 1]
+  - [3, 1]
+  - [2, 2]
+  - [1, 2]
+  - [6-, 1]
+  - [1, 2]
+  - [2, 5]
+tuneBeatDur: 150
+tunePitchBase: Gb4
+metronome: [4, 4]
+
+tuneRevealBeatDur: 156 # 192 BPM
+tuneRevealOffset: 12
+
+zh-Hans:
+  title: 打上花火（烟火绽放）
+  author: 米津玄师（曲、词）；DAOKO（演唱）
+  desc: 歌手 DAOKO 与米津玄师合作的歌曲。2017 年电影动画《烟花，应该和谁看》主题曲。
+en:
+  title: 打上花火 (Fireworks)
+  author: Yonezu Kenshi (music, lyrics); DAOKO (performance)
+  desc: A collaborated song by DAOKO and Yonezu Kenshi. The theme of the 2017 animated film "Fireworks".
+
+curator: Ayu

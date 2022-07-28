@@ -1,0 +1,41 @@
+tune:
+  - [1+, 743] # re-aligned appoggiatura
+  - [7, 685]  # re-aligned appoggiatura
+  - [5, 546]
+  - [3, 464]
+  - [7, 757]  # re-aligned for better phrasing
+  - [6, 799]
+  - [1+, 807]
+  - [7, 871]
+  - [6, 100]
+tuneBeatDur: 1
+tunePitchBase: C4
+metronome: [99999, 1]
+
+tuneRevealBeatDur: 1
+tuneRevealOffset: 9752
+
+#  9752
+# 10304 (552)
+# 11180 (876)
+# 11726 (546)
+# 12190 (464)
+# 12957 (767)
+# 13746 (789)
+# 14553 (807)
+# 15424 (871)
+
+zh-Hans:
+  title: 春之祭（Le Sacre du printemps）
+  author: 伊戈尔·斯特拉文斯基（Igor Stravinsky）
+  desc: |-
+    俄罗斯作曲家斯特拉文斯基创作的芭蕾舞剧音乐，是现代主义的开创作品之一，极具影响力。
+    由伦敦交响乐团演出，西蒙·拉特尔爵士（Sir Simon Rattle）指挥。
+en:
+  title: The Rite of Spring (Le Sacre du printemps)
+  author: Igor Stravinsky
+  desc: |-
+    Concert music for ballet, composed by the Russian composer Stravinsky. Highly influential as one of the founding works of modernist music.
+    Performed by London Symphony Orchestra, directed by Sir Simon Rattle.
+
+curator: Ayu

@@ -1,0 +1,26 @@
+tune:
+  - [1-, 1]
+  - [5-, 1]
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [5-, 1]
+  - [3, 1]
+  - [5-, 1]
+tuneBeatDur: 250
+tunePitchBase: G3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 210
+tuneRevealOffset: 150
+
+zh-Hans:
+  title: 无伴奏大提琴组曲第1号
+  author: J·S·巴赫（Johann Sebastian Bach）
+  desc: 巴赫为大提琴创作的独奏曲，作品编号BWV 1007。选自其中的第一乐章“前奏曲”。由马友友演奏。
+en:
+  title: Cello Suite No. 1
+  author: Johann Sebastian Bach
+  desc: A suite composed by Bach for the solo cello, numbered BWV 1007. Excerpt from the first movement, "Prélude". Performed by Yo-Yo Ma.
+
+curator: Ayu

@@ -1,0 +1,26 @@
+tune:
+  - [5, 3]
+  - [5, 1]
+  - [6, 3]
+  - [6, 1]
+  - [5, 2]
+  - [3, 1]
+  - [5, 1]
+  - [7-, 4]
+tuneBeatDur: 191
+tunePitchBase: G4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 191
+tuneRevealOffset: 2940
+
+zh-Hans:
+  title: La Diva de l'Empire（帝国女神）
+  author: Erik Satie（曲）；Dominique Bonnaud，Numa Blès（词）
+  desc: 作于 1904 年的法国歌曲，由 Paulette Darty 演唱；体现了美国爵士音乐在欧洲的早期影响。
+en:
+  title: La Diva de l'Empire (The Diva of the Empire)
+  author: Erik Satie (music); Dominique Bonnaud, Numa Blès (lyrics)
+  desc: A French song composed in 1904 with vocals by Paulette Darty, exhibiting early influences of American jazz music on European composers.
+
+curator: sakura

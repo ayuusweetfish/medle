@@ -1,0 +1,27 @@
+tune:
+  - [6, 1]
+  - [6, 1]
+  - [5, 1]
+  - [6, 2]
+  - [3, 1]
+  - [1, 1]
+  - [2, 1]
+  - [5, 2]
+  - [5, 2]
+tuneBeatDur: 240
+tunePitchBase: B3
+metronome: [-1, 4]
+
+tuneRevealBeatDur: 262
+tuneRevealOffset: 1533
+
+zh-Hans:
+  title: 求佛
+  author: 陈超（曲、词）；誓言/辛世延（演唱）
+  desc: 2006 年发布的网络歌曲。
+en:
+  title: 求佛 (Buddhist Prayer)
+  author: Chen Chao (music, lyrics); Xin Shiyan (performance)
+  desc: A song released on the Internet in 2006.
+
+curator: Ralph

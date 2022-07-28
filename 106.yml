@@ -1,0 +1,27 @@
+tune:
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [6, 1]
+  - [5#, 1]
+  - [6, 1]
+  - [3, 1]
+tuneBeatDur: 400
+tunePitchBase: Bb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 422
+tuneRevealOffset: 6900
+
+zh-Hans:
+  title: 《六月：船歌》，来自《四季》
+  author: 柴可夫斯基（Pyotr Ilyich Tchaikovsky）
+  desc: 描绘一年中不同月份的十二首短小钢琴曲之一。
+en:
+  title: '"June: Barcarolle", from "Seasons"'
+  author: Pyotr Ilyich Tchaikovsky
+  desc: One of the 12 short piano pieces depicting months of the year.
+
+curator: Ayu

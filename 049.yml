@@ -1,0 +1,29 @@
+tune:
+  - [7-, 2]
+  - [6-, 2]
+  - [1, 3]
+  - [2, 3]
+  - [1, 2]
+  - [7-, 2]
+  - [1, 2]
+  - [7-, 3]
+  - [6-, 3]
+  - [3-, 10]
+tuneBeatDur: 160
+tunePitchBase: D4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 174  # 86 BPM
+tuneRevealOffset: 6691
+
+zh-Hans:
+  title: 夜航星
+  author: moonik蛛蛛（作曲）；Yu H.（编曲）；黑金雨（作词）；不才（演唱）
+  desc: 动画《我的三体之章北海传》片尾曲。动画改编自刘慈欣的科幻小说《三体》系列。
+en:
+  title: Night Voyager
+  author: moonik蛛蛛 (composition); Yu H. (production); 黑金雨 (lyrics); 不才 (performance)
+  desc: |-
+    Ending song of the animated series "The Three-Body Problem in Minecraft: The Legend of Zhang Beihai", adapted from the science fiction series, "Remembrance of Earth's Past" trilogy, by Liu Cixin.
+
+curator: Huxley

@@ -1,0 +1,26 @@
+tune:
+  - [4-, 2]
+  - [3, 2]
+  - [2, 2]
+  - [3, 1]
+  - [4, 1]
+  - [4, 1]
+  - [6, 2]
+  - [5, 1, 2]
+tuneBeatDur: 323
+tunePitchBase: G4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 323 # 93 BPM
+tuneRevealOffset: 5355
+
+zh-Hans:
+  title: 醉鬼的敬酒曲
+  author: 金承志
+  desc: 选自《星河旅馆》合唱套曲，由金承志创作，上海彩虹室内合唱团演唱。这部套曲由十三首歌曲构成，除了彩虹擅长的多声部合唱之外，音乐中还加入了采样、人声旁白、丰富的乐器演奏。《醉鬼的敬酒曲》为套曲的倒数第二首作品。
+en:
+  title: A Toast from the Drunk
+  author: Jin Chengzhi
+  desc: Selected from the chorus cycle “The Star River Tavern”, composed by Chengzhi Jin, performed by Shanghai Rainbow Chamber Singers. This cycle consists of 13 songs. Besides the usual mixed chorus, other elements are added to the music, including spoken narration and rich instrumentation. “A Toast from the Drunk” is the second-to-last song of the cycle.
+
+curator: aliceZ

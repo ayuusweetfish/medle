@@ -1,0 +1,32 @@
+tune:
+  - [5-, 1]
+  - [3, 2]
+  - [3, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [5, 3]
+  - [7-, 3]
+tuneBeatDur: 360
+tunePitchBase: Ab4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 432
+tuneRevealOffset: 2180
+
+zh-Hans:
+  title: 乘着歌声的翅膀（Auf Flügeln des Gesanges）
+  author: 费利克斯·门德尔松（Felix Mendelssohn）
+  desc: |-
+    歌词为德国诗人海涅的诗作，门德尔松为其谱曲。由 Barbara Bonney 演唱。
+    “紫罗兰微笑地耳语/仰望着那满天星辰
+    玫瑰花悄悄地倾诉/她芬芳的童话”
+en:
+  title: On Wings of Song (Auf Flügeln des Gesanges)
+  author: Felix Mendelssohn
+  desc: |-
+    A poem by the German poet Heinrich Heine. Set to music by Mendelssohn. Performed by Barbara Bonney.
+    “The violets giggle and caress, and gaze up at the stars;
+    Secretly the roses tell each other fragrant fairy-stories.”
+
+curator: Ayu

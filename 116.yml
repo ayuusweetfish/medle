@@ -1,0 +1,27 @@
+tune:
+  - [5-, 1]
+  - [1, 1]
+  - [1, 3]
+  - [2, 1]
+  - [3, 1]
+  - [5, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 2]
+tuneBeatDur: 400
+tunePitchBase: A3
+metronome: [0, 2]
+
+tuneRevealBeatDur: 488
+tuneRevealOffset: 120
+
+zh-Hans:
+  title: 红蜻蜓（赤とんぼ）
+  author: 山田耕筰（曲）；三木露风（词）
+  desc: 著名日本童谣，作于 20 世纪 20 年代。描绘夕阳西下时看到红蜻蜓而产生的思乡之情。录音为民谣组合 Humbert Humbert 演唱的版本。
+en:
+  title: Red Dragonfly (赤とんぼ; Akatonbo)
+  author: Yamada Kohsaku (music); Miki Rofuu (lyrics)
+  desc: A famous Japanese children's song composed in the 1920s. A nostalgic depiction of a red dragonfly seen at sunset. Recording performed by the folk duo Humbert Humbert.
+
+curator: Ayu

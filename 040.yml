@@ -1,0 +1,28 @@
+tune:
+  - [1+, 2]
+  - [7, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [1+, 6]
+  - [3, 2]
+  - [5, 4]
+tuneBeatDur: 250
+tunePitchBase: F4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 260
+tuneRevealOffset: 400
+
+zh-Hans:
+  title: Maria Elena
+  author: Xavier Cugat
+  desc: 王家卫执导的电影《阿飞正传》配乐。参与演出的包括张国荣，其于 19 年前的今天逝世。
+  image: 电影画面。
+en:
+  title: Maria Elena
+  author: Xavier Cugat
+  desc: Music from the film "Days of Being Wild" directed by Wong Kar-wai. The film featured Leslie Cheung, who passed way 19 years ago on the same date as today.
+  image: Screens from the film.
+
+curator: hotpot

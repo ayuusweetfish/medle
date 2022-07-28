@@ -1,0 +1,27 @@
+tune:
+  - [5-, 2]
+  - [1, 2]
+  - [2, 2]
+  - [3, 2]
+  - [4, 2]
+  - [5, 2]
+  - [4, 1]
+  - [3, 1]
+  - [2, 2]
+tuneBeatDur: 200
+tunePitchBase: G3
+metronome: [2, 8]
+
+tuneRevealBeatDur: 207
+tuneRevealOffset: 253
+
+zh-Hans:
+  title: 哥德堡变奏曲（变奏三十）
+  author: Johann Sebastian Bach
+  desc: 巴赫作品 BWV 988《哥德堡变奏曲》中的最后一首变奏。演奏者为 Glenn Gould。
+en:
+  title: Goldberg Variations, Variatio 30
+  author: Johann Sebastian Bach
+  desc: From Bach's work, BWV 988 "Goldberg Variations". This is the last variation in the composition. Performed by Glenn Gould.
+
+curator: Ayu

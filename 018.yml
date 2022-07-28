@@ -1,0 +1,31 @@
+tune:
+  - [3-, 1]
+  - [6-, 2]
+  - [7-, 1]
+  - [1, 2]
+  - [2, 1]
+  - [3, 2, 1, 3]
+  - [4, 3]
+  - [4, 3]
+  - [3, 3]
+tuneBeatDur: 250
+tunePitchBase: G4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 264
+tuneRevealOffset: 6130
+
+zh-Hans:
+  title: 伏尔塔瓦河（Vltava；德语：Die Moldau）
+  author: 贝德里赫·斯美塔那（Bedřich Smetana）
+  desc: |-
+    捷克作曲家斯美塔那的交响诗套曲《我的祖国》第二章。
+    由柏林爱乐乐团演奏，卡拉扬（Herbert von Karajan）指挥，1985 年录制。
+en:
+  title: The Moldau (Vltava)
+  author: Bedřich Smetana
+  desc: |-
+    The second piece in the symphonic cycle "Má vlast" (My Fatherland) by the Czech composer Smetana.
+    Performed by Berliner Philharmoniker, conducted by Herbert von Karajan in 1985.
+
+curator: Antares

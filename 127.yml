@@ -1,0 +1,27 @@
+tune:
+  - [6, 1]
+  - [6, 1]
+  - [6, 1]
+  - [5, 1]
+  - [4, 1]
+  - [3, 1]
+  - [1, 1]
+  - [3, 4]
+  - [2, 4]
+tuneBeatDur: 375
+tunePitchBase: C4
+metronome: [-1, 2]
+
+tuneRevealBeatDur: 418
+tuneRevealOffset: 8107
+
+zh-Hans:
+  title: 雪花的快乐
+  author: 周鑫泉（曲）；徐志摩（词）
+  desc: 为徐志摩同名诗作创作的合唱歌曲。由台大合唱团演唱，连芳贝指挥。
+en:
+  title: 雪花的快乐 (The Joy of the Snowflake)
+  author: Jenny H. Chou (lyrics); Xu Zhimo (lyrics)
+  desc: A piece for the chorus composed for the homonymous poem by Xu Zhimo. Performed by NTU Chorus, conducted by Fang-Pei Tracy Lien.
+
+curator: Ayu

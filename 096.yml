@@ -1,0 +1,28 @@
+tune:
+  - [3+, 2]
+  - [2+, 2, 2]
+  - [1+, 2, 2]
+  - [6, 2, 2]
+  - [3, 2]
+  - [5, 3]
+  - [6, 3]
+  - [3, 2]
+  - [5, 3]
+  - [6, 5]
+tuneBeatDur: 140
+tunePitchBase: F3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 147 # 102 BPM
+tuneRevealOffset: 749
+
+zh-Hans:
+  title: Plastic Love（プラスティック・ラブ）
+  author: 竹内玛莉亚（曲、词、演唱）
+  desc: 1984 年专辑《VARIETY》中的歌曲，于 2017 年起在互联网上广泛流行。
+en:
+  title: Plastic Love (プラスティック・ラブ)
+  author: Takeuchi Mariya (music, lyrics, vocals)
+  desc: A song from the 1984 album "VARIETY" that became widely spread on the Internet starting in 2017.
+
+curator: sakura

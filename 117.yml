@@ -1,0 +1,27 @@
+tune:
+  - [5-, 1]
+  - [6-, 1]
+  - [1, 2]
+  - [1, 1]
+  - [7-, 1]
+  - [1, 2]
+  - [2, 1]
+  - [3, 1]
+  - [3, 4]
+tuneBeatDur: 250
+tunePitchBase: Eb4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 276.5 # 108.5 BPM
+tuneRevealOffset: 4824
+
+zh-Hans:
+  title: 轻轻地告诉你
+  author: 毕晓世（曲、词）；杨钰莹（演唱）
+  desc: 收录于 1993 年发行的专辑《月亮船》中的歌曲。
+en:
+  title: 轻轻地告诉你 (Tell you gently)
+  author: Bi Xiaoshi (music, lyrics); Yang Yuying (vocals)
+  desc: A song from the album "月亮船" (Moon Boat) released in 1993.
+
+curator: sakura

@@ -1,0 +1,26 @@
+tune:
+  - [3+, 4]
+  - [2+, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [1+, 1]
+  - [2+, 3]
+  - [5, 1]
+  - [5, 4]
+tuneBeatDur: 250
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 385
+tuneRevealOffset: 210
+
+zh-Hans:
+  title: 苏维埃社会主义共和国联盟国歌
+  author: 亚历山大·亚历山德罗夫（曲）；谢尔盖·米哈尔科夫，葛布列·艾尔瑞杰斯坦，瓦西里·列别捷夫-库马奇（词）
+  desc: 苏联国歌，1944 年至 1991 年采用。依首句歌词也有通称《牢不可破的联盟》。
+en:
+  title: State Anthem of the Soviet Union
+  author: Alexander Alexandrov (music); Sergey Mikhalkov, Gabriel El-Registan, Vasily Lebedev-Kumach (lyrics)
+  desc: State anthem of the USSR between 1944 and 1991.
+
+curator: J.A.M

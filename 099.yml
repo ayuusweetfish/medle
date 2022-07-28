@@ -1,0 +1,26 @@
+tune:
+  - [3, 2]
+  - [3, 2]
+  - [3, 1]
+  - [2, 3]
+  - [2, 2]
+  - [3b, 1]
+  - [2, 3]
+  - [1, 4]
+tuneBeatDur: 130
+tunePitchBase: C4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 115 # 130 BPM
+tuneRevealOffset: 290
+
+zh-Hans:
+  title: 杯子歌（Cups）
+  author: A. P. Carter, Luisa Gerstein, Heloise Tunstall-Behrens
+  desc: 2012 年音乐喜剧电影《完美音调》插曲。由 Anna Kendrick 演唱。
+en:
+  title: Cups
+  author: A. P. Carter, Luisa Gerstein, Heloise Tunstall-Behrens
+  desc: Music from the 2012 musical comedy "Pitch Perfect". Vocals by Anna Kendrick.
+
+curator: Ayu

@@ -1,0 +1,30 @@
+tune:
+  - [3, 1]
+  - [5, 1]
+  - [6, 1]
+  - [1+, 1]
+  - [7, 2]
+  - [6, 1]
+  - [3, 1]
+  - [5, 1]
+tuneBeatDur: 450
+tunePitchBase: Eb4
+metronome: [-1, 4]
+
+tuneRevealBeatDur: 450
+tuneRevealOffset: 13874
+
+zh-Hans:
+  title: 我有一个恋爱
+  author: 冉天豪（曲）；徐志摩（词）
+  desc: |-
+    选自台湾作曲家冉天豪合唱作品《风雪恋星——徐志摩诗四首》之《我有一个恋爱》。徐志摩的热情在此诗中透露难得的清澈平静；谱曲中着重干净简单的钢琴和弦进行，让人声自然流淌。
+    由厦门六中合唱团演出，高至凡指挥。
+en:
+  title: I Have a Love Affair (我有一个恋爱)
+  author: Jan Tien-hao (music); Xu Zhimo (lyrics)
+  desc: |-
+    A choral piece by the composer Jan Tien-hao from Taiwan based on lyrics by Xu Zhimo, who as a passionate poet expresses the rare clarity and calmness in this poem. The music focuses on clear and simple chord progressions on the piano with naturally flowing voices.
+    Performed by Xiamen No.6 High School Youth Choir, conducted by Gao Zhifan.
+
+curator: aliceZ

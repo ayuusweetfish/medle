@@ -1,0 +1,30 @@
+tune:
+  - [3, 4]
+  - [3, 3]
+  - [3, 1]
+  - [3, 4]
+  - [4, 4]
+  - [3, 4]
+  - [1, 4]
+  - [3, 4]
+tuneBeatDur: 160
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 255
+tuneRevealOffset: 155
+
+zh-Hans:
+  title: 练习曲作品 25 第 11 号（“冬风”）
+  author: 肖邦（Frédéric Chopin）
+  desc: |-
+    ※ 前后段力度差距大，请勿过度调大音量。
+    法裔波兰作曲家与钢琴家肖邦的钢琴练习曲作品。通称“冬风练习曲”，对演奏技巧的要求极高。由中国钢琴家沈文裕演奏。
+en:
+  title: Étude Op. 25, No. 11 ("Winter Wind")
+  author: Frédéric Chopin
+  desc: |-
+    ※ The later phrases are louder then the first one. Please do not turn up the volume by too much.
+    A piano study by the French-Polish composer and pianist Chopin. Commonly known as the "Winter Wind". Requires a high level of virtuosity. Performed by the Chinese pianist Shen Wenyu.
+
+curator: Huxley

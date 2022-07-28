@@ -1,0 +1,26 @@
+tune:
+  - [2, 2]
+  - [1, 3]
+  - [4, 2]
+  - [4, 1]
+  - [4, 1]
+  - [4, 1]
+  - [3, 2]
+  - [1, 2]
+tuneBeatDur: 200
+tunePitchBase: D4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 220
+tuneRevealOffset: 4862
+
+zh-Hans:
+  title: 妈妈咪呀！（Mamma Mia!）
+  author: Benny Andersson, Björn Ulvaeus, Stig Anderson（创作）；ABBA（演出）
+  desc: 瑞典流行乐队阿巴（ABBA）的知名歌曲，后为凯瑟琳·约翰逊（Catherine Johnson）创作的同名音乐剧所采用。
+en:
+  title: Mamma Mia!
+  author: Benny Andersson, Björn Ulvaeus, Stig Anderson (composition); ABBA (performance)
+  desc: A widespread song by the Swedish pop group ABBA. Featured in the musical of the same title by Catherine Johnson.
+
+curator: Ayu

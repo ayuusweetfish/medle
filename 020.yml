@@ -1,0 +1,25 @@
+tune:
+  - [6, 2]
+  - [1+, 1]
+  - [1+, 3]
+  - [6, 2]
+  - [5, 2]
+  - [1+, 1]
+  - [3, 3]
+tuneBeatDur: 200
+tunePitchBase: B3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 210
+tuneRevealOffset: 7162
+
+zh-Hans:
+  title: 好大一棵树
+  author: 松山千春、伍嘉冀（曲）；邹友开（词）
+  desc: 歌词原为纪念胡耀邦离世而作的一首诗，曲调基于日本歌手松山千春的歌曲《在苍天和大地之间》。此版本由那英于 1991 年赈灾义演中演唱。
+en:
+  title: So Giant a Tree (好大一棵树)
+  author: Matsuyama Chiharu, Wu Jiaji (music); Zou Youkai (lyrics)
+  desc: The lyrics were originally a poem in memory of Hu Yaobang, a leading figure of China. The melody is based on the song "Between the Sky and the Earth" by the Japanese singer Matsuyama Chiharu. The recording is a cover by Na Ying during a charity performance in 1991.
+
+curator: hotpot

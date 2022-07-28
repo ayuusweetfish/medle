@@ -1,0 +1,24 @@
+tune:
+  - [6-, 8, -7]
+  - [1, 8, -7]
+  - [3, 8, -7]
+  - [1, 8, -7]
+  - [7-, 8, -7]
+  - [6-, 8, 3]
+tuneBeatDur: 226
+tunePitchBase: Ab4
+metronome: [-2, 2]
+
+tuneRevealBeatDur: 226 # 133 BPM
+tuneRevealOffset: 2246
+
+zh-Hans:
+  title: Just Blue
+  author: Space
+  desc: 来自Space乐队1978年同名专辑，1981年至今为电视节目《动物世界》片头曲。
+en:
+  title: Just Blue
+  author: Space
+  desc: From the 1978 album of the same name by the band Space. The opening music to the television programme "Animal World" by China Central Television.
+
+curator: sakura

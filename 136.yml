@@ -1,0 +1,28 @@
+tune:
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [7-, 1]
+  - [1, 2]
+  - [7-, 1]
+  - [6-, 1, 4]
+  - [5, 2]
+  - [4, 2]
+  - [3, 2]
+tuneBeatDur: 400
+tunePitchBase: A4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 403
+tuneRevealOffset: 15297
+
+zh-Hans:
+  title: 幽默曲，作品 101 之 7
+  author: 安东宁·德沃夏克（Antonín Dvořák）
+  desc: 捷克民族乐派作曲家德沃夏克的短小钢琴作品。
+en:
+  title: Humoresque Op. 101 No. 7
+  author: Antonín Dvořák
+  desc: A short piano piece by the Czech nationalist composer Dvořák.
+
+curator: Huxley

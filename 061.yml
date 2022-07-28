@@ -1,0 +1,27 @@
+tune:
+  - [1+, 3]
+  - [1+, 4]
+  - [7, 1]
+  - [1+, 1]
+  - [2+, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [1+, 3]
+  - [1+, 3]
+tuneBeatDur: 300
+tunePitchBase: Bb3
+metronome: [0, 3]
+
+tuneRevealBeatDur: 372
+tuneRevealOffset: 130
+
+zh-Hans:
+  title: Memory
+  author: Andrew Lloyd Webber（曲）；T. S. Eliot, Trevor Nunn（词）
+  desc: 1981 年首演的音乐剧《猫》唱段。
+en:
+  title: Memory
+  author: Andrew Lloyd Webber (music); T. S. Eliot, Trevor Nunn (lyrics)
+  desc: A song from the musical "Cats", premiered in 1981.
+
+curator: Ayu

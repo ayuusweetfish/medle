@@ -1,0 +1,26 @@
+tune:
+  - [1, 1]
+  - [2, 2]
+  - [6, 1]
+  - [5, 2]
+  - [3, 1]
+  - [1, 1]
+  - [2, 2]
+  - [5-, 2]
+tuneBeatDur: 450
+tunePitchBase: Eb4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 706
+tuneRevealOffset: 221
+
+zh-Hans:
+  title: 第一号军乐队组曲
+  author: 古斯塔夫·霍尔斯特（Gustav Holst）
+  desc: 当代管乐队的奠基作之一。节选自第一乐章“恰空舞曲”（Chaconne）。由东京佼成管乐团演出，下野龙也指挥。
+en:
+  title: First Suite for Military Band
+  author: Gustav Holst
+  desc: One of the founding works for contemporary wind bands. Excerpt from the first movement, "Chaconne". Performed by Tokyo Kosei Wind Orchestra, conducted by Shimono Tatsuya.
+
+curator: Ayu

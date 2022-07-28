@@ -1,0 +1,32 @@
+tune:
+  - [3, 4]
+  - [3, 1]
+  - [2, 1]
+  - [1, 4]
+  - [3, 1]
+  - [6, 1]
+  - [5, 2]
+  - [2, 4]
+tuneBeatDur: 260
+tunePitchBase: Bb3
+metronome: [0, 3]
+
+tuneRevealBeatDur: 280
+tuneRevealOffset: 6852
+
+zh-Hans:
+  title: 世界末日（The End of the World）
+  author: Arthur Kent（曲）；Sylvia Dee（词）；Skeeter Davis（演唱）
+  desc: |-
+    美国乡村歌手史琪特·戴维丝演唱的歌曲，自 1962 年发行以来出现了许多翻唱版本。
+    “难道它们不知道这已是世界末日
+    因为你不再爱我”
+en:
+  title: The End of the World
+  author: Arthur Kent (composition); Sylvia Dee (lyrics); Skeeter Davis (performance)
+  desc: |-
+    A song performed by the American country music singer Skeeter Davis. The song has spawned a number of covers since its release in 1962.
+    “Don’t they know it’s the end of the world
+    Cause you don’t love me anymore”
+
+curator: Ayu

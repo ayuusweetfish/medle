@@ -1,0 +1,26 @@
+tune:
+  - [1, 1]
+  - [5, 3]
+  - [6, 1]
+  - [5, 3]
+  - [5-, 1]
+  - [1, 2]
+  - [2, 1]
+  - [1, 2]
+tuneBeatDur: 200
+tunePitchBase: Bb3
+metronome: [1, 4]
+
+tuneRevealBeatDur: 183  # 82 BPM / 4
+tuneRevealOffset: 22
+
+zh-Hans:
+  title: 雨声残响（雨き声残響）
+  author: Orangestar
+  desc: 音乐人 Orangestar 于 2014 年发布的歌曲，由虚拟歌手 IA 演唱。
+en:
+  title: Echo of a Rainy Voice (雨き声残響)
+  author: Orangestar
+  desc: A song published in 2014 by the musician Orangestar, performed by the virtual singer IA.
+
+curator: 柯基

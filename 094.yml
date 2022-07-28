@@ -1,0 +1,28 @@
+tune:
+  - [6-, 4]
+  - [3, 4, 4, 3]
+  - [4, 1]
+  - [3, 10]
+  - [3, 2]
+  - [4, 2]
+  - [5, 2]
+  - [6, 6, 2]
+  - [5, 4, 4]
+  - [3, 4]
+tuneBeatDur: 125
+tunePitchBase: F4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 135
+tuneRevealOffset: 403
+
+zh-Hans:
+  title: 太阳照常升起（The Sun Also Rises）
+  author: 久石让
+  desc: 由姜文执导的电影《太阳照常升起》（2007）配乐，后又用于其执导的《让子弹飞》（2010）中。
+en:
+  title: The Sun Also Rises
+  author: Joe Hisaishi
+  desc: Music from the 2007 film "The Sun Also Rises" directed by Jiang Wen, and featured again in Jiang's 2010 film "Let the Bullets Fly".
+
+curator: Huxley

@@ -1,0 +1,28 @@
+tune:
+  - [3, 4]
+  - [2, 2]
+  - [4, 2]
+  - [3, 4]
+  - [1, 4]
+  - [1, 2]
+  - [5, 2]
+  - [5, 2]
+  - [4, 2]
+  - [2, 8]
+tuneBeatDur: 275
+tunePitchBase: Bb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 323  # 93 BPM
+tuneRevealOffset: 5166
+
+zh-Hans:
+  title: 听妈妈的话
+  author: 周杰伦（曲、词、演唱）
+  desc: 2006 年专辑《依然范特西》中的歌曲。
+en:
+  title: Listen to Mom
+  author: Jay Chou (composition, lyrics, performance)
+  desc: A song from the 2006 album "Still Fantasy".
+
+curator: Ayu

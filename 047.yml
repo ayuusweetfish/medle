@@ -1,0 +1,33 @@
+tune:
+  - [3, 1]
+  - [1+, 3]
+  - [3, 1]
+  - [7, 3]
+  - [3, 1]
+  - [6, 2]
+  - [5, 1]
+  - [4, 1]
+  - [5, 3]
+tuneBeatDur: 280
+tunePitchBase: C4
+metronome: [1, 2]
+
+tuneRevealBeatDur: 286  # 105 BPM
+tuneRevealOffset: 10460
+
+zh-Hans:
+  title: 更迭的四季（めぐる季節）
+  author: 久石让（曲）；吉元由美（词）；井上杏美（演唱）
+  desc: |-
+    宫崎骏执导的 1989 年动画电影《魔女宅急便》插曲。
+    “浅红的繁花盛景，知晓痛楚的春季
+    转瞬即逝地飘零，触碰到风儿的指尖”
+en:
+  title: Turning Seasons (めぐる季節)
+  author: Joe Hisaishi (music); Yoshimoto Yumi (lyrics); Inoue Azumi (performance)
+  desc: |-
+    Insert song from the 1989 animation film "Kiki's Delivery Service", directed by Miyazaki Hayao.
+    "A blushing floral landscape, a sorrow-bearing spring;
+    Fleetingly falling away, touching the wind's fingertips"
+
+curator: Ayu
