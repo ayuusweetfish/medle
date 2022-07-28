@@ -1,0 +1,27 @@
+tune:
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [5, 1]
+  - [3, 1]
+  - [6, 1]
+  - [5, 1]
+  - [6, 1]
+  - [3, 1]
+tuneBeatDur: 300
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 333 # 90 BPM
+tuneRevealOffset: 2650
+
+zh-Hans:
+  title: 三年二班
+  author: 周杰伦（曲）；方文山（词）；洪敬尧（编曲）
+  desc: 2003 年 7 月 31 日发行的专辑《叶惠美》中的歌曲。
+en:
+  title: Class 3-2
+  author: Jay Chou (composition); Vincent Fang (lyrics); Eric Hung (arrangement)
+  desc: A song from the album "Yeh Hui-Mei", released on 31 July 2003.
+
+curator: Ralph
