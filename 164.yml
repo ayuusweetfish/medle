@@ -1,0 +1,28 @@
+tune:
+  - [3, 3.3, 0.7]
+  - [5, 3.3, 0.7, 1.3]
+  - [4, 0.7]
+  - [3, 1.3]
+  - [4, 2]
+  - [3, 0.7, 1.3, 0.7]
+  - [2, 3.3]
+  - [1, 0.7, 1.3]
+  - [4, 2]
+  - [3, 4.7]
+tuneBeatDur: 220
+tunePitchBase: A4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 242 # 124 BPM / 4
+tuneRevealOffset: 7899
+
+zh-Hans:
+  title: めんどくさいのうた（麻烦的歌）
+  author: 关取花
+  desc: 日本创作歌手関取花（Sekitori Hana）的歌曲，收录于 2018 年专辑《朝》。
+en:
+  title: めんどくさいのうた (Song of Troubles)
+  author: Sekitori Hana
+  desc: A song by the Japanese singer-songwriter Sekitori Hana (関取花), from the 2018 album "朝" (Morning).
+
+curator: Machine.Z

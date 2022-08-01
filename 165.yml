@@ -1,0 +1,31 @@
+tune:
+  - [5-, 4]
+  - [1, 6]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 2]
+  - [6-, 1]
+  - [7-, 1]
+  - [5-, 4]
+  - [3, 4]
+tuneBeatDur: 200
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 192
+tuneRevealOffset: 4506
+
+zh-Hans:
+  title: The Seventh Night of July（七夕）
+  author: 酒井格
+  desc: |-
+    七夕传说的音乐演绎。与中国传统农历不同，现代日本于公历七月七日庆祝七夕。
+    由荷兰皇家空军乐队演奏，Jan de Haan 指挥。
+en:
+  title: 'The Seventh Night of July: Tanabata'
+  author: Itaru Sakai
+  desc: |-
+    A musical interpretation of the Tanabata legend. The festival is celebrated in modern Japan on 7 July, and in China according to the Chinese lunisolar calendar.
+    Performed by the Band of the Royal Netherlands Air Force, conducted by Jan de Haan.
+
+curator: Ayu

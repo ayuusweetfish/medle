@@ -1,0 +1,28 @@
+tune:
+  - [3, 2]
+  - [1, 1, 3]
+  - [6-, 2]
+  - [5, 3]
+  - [4, 3]
+  - [3, 2]
+  - [2, 3]
+  - [1, 3]
+  - [2, 2]
+  - [1, 4]
+tuneBeatDur: 175
+tunePitchBase: F4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 200 # 150 BPM / 4
+tuneRevealOffset: 20875
+
+zh-Hans:
+  title: 百年孤寂
+  author: 江志仁、陈伟文（曲）；林夕（词）
+  desc: 由王菲演唱的歌曲，收录于 1999 年专辑《只爱陌生人》。
+en:
+  title: 百年孤寂 (Hundred Years of Solitude)
+  author: C.Y. Kong, Adrian Chan (music); Albert Leung (lyrics)
+  desc: A song with vocals by Faye Wong, from the 1999 album "Lovers & Strangers" (只愛陌生人).
+
+curator: Machine.Z
