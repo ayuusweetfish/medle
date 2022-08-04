@@ -1,0 +1,27 @@
+tune:
+  - [3, 2]
+  - [3, 2]
+  - [3, 2]
+  - [1, 1]
+  - [2, 2]
+  - [2, 1]
+  - [1, 1]
+  - [6-, 1]
+  - [5-, 1, 1]
+tuneBeatDur: 330
+tunePitchBase: Gb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 353 # 85 BPM / 2
+tuneRevealOffset: 5642
+
+zh-Hans:
+  title: Aliens（外星人）
+  author: 堀込泰行（曲、词）
+  desc: KIRINJI 乐队于 2000 年发行的单曲，收录于同年发行的专辑《3》。
+en:
+  title: Aliens
+  author: Horigome Yasuyuki (music, lyrics)
+  desc: A single released in 2000 by the band KIRINJI, also included in the album "3" released in the same year.
+
+curator: daodao
