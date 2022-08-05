@@ -1,0 +1,26 @@
+tune:
+  - [6-, 2]
+  - [3, 2, 2, 2, 6]
+  - [2, 2]
+  - [1, 3]
+  - [2, 1]
+  - [1, 2]
+  - [7-, 2]
+  - [6-, 8]
+tuneBeatDur: 152
+tunePitchBase: D4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 152
+tuneRevealOffset: 29
+
+zh-Hans:
+  title: 兰花草
+  author: 陈贤德、张弼（曲）；胡适（词）
+  desc: 1979 年由银霞首次演唱的歌曲，歌词由胡适 1921 年诗作《希望》修改而得。
+en:
+  title: 兰花草 (Orchid)
+  author: 陈贤德 (Chen Hsien-Te), 张弼 (Chang Pi) (music) ; Hu Shi (lyrics)
+  desc: A song first performed by 银霞 (Yin Hsia), with lyrics based on the poem "希望" (Hope) by Hu Shi in 1921.
+
+curator: Ayu
