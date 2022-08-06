@@ -1,0 +1,27 @@
+tune:
+  - [6b-, 1]
+  - [5-, 3]
+  - [5, 8]
+  - [5-, 1]
+  - [4-, 3]
+  - [4, 6]
+  - [3, 3]
+  - [2, 1]
+  - [1, 6]
+tuneBeatDur: 275
+tunePitchBase: B4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 325 # 185 BPM
+tuneRevealOffset: 9009
+
+zh-Hans:
+  title: SWEET MEMORIES
+  author: 大村雅朗（曲）；松本隆（词）
+  desc: 2015 年为纪念松本隆词作家生涯 45 周年发行的翻唱专辑《在风街相遇吧》（風街であひませう）中的歌曲，由小山田壮平 & Yellow Train 演唱。
+en:
+  title: SWEET MEMORIES
+  author: Oomura Masaaki (music); Matsumoto Takashi (lyrics)
+  desc: A song from the cover album "Kazemachi de Aimasho", in tribute to the 45th anniversary of Takashi's career as a lyricist. Performed by Oyamada Sohei & Yellow Train.
+
+curator: daodao
