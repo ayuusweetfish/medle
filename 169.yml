@@ -1,0 +1,28 @@
+tune:
+  - [5-, 2]
+  - [1, 2]
+  - [1, 2]
+  - [5, 2]
+  - [5, 4]
+  - [4, 4]
+  - [2, 2, 1]
+  - [3, 3]
+  - [4, 2]
+  - [3, 2]
+tuneBeatDur: 240
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 258 # 116 BPM
+tuneRevealOffset: 1405
+
+zh-Hans:
+  title: 千山万水
+  author: 周杰伦（曲）；方文山（词）
+  desc: 为北京 2008 年夏季奥运会创作的歌曲。
+en:
+  title: Thousands of miles (千山萬水)
+  author: Jay Chou (composition); Vincent Fang (lyrics)
+  desc: A song composed for the Beijing 2008 Summer Olympics.
+
+curator: Ayu
