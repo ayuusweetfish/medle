@@ -1,0 +1,27 @@
+tune:
+  - [3, 4]
+  - [5, 4]
+  - [1, 7, 1]
+  - [4, 1]
+  - [3, 2]
+  - [2, 2]
+  - [1, 1]
+  - [7-, 1]
+  - [2, 5]
+tuneBeatDur: 234
+tunePitchBase: E4
+metronome: [8, 2]
+
+tuneRevealBeatDur: 234 # 128 BPM / 2
+tuneRevealOffset: 5627
+
+zh-Hans:
+  title: Dreams
+  author: Dolores O'Riordan，Noel Hogan
+  desc: 爱尔兰摇滚乐队小红莓（The Cranberries）的首支单曲，发行于 1992 年。
+en:
+  title: Dreams
+  author: Dolores O'Riordan, Noel Hogan
+  desc: The debut single of the Irish rock band "the Cranberries", released in 1992.
+
+curator: daodao
