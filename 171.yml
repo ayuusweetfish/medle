@@ -1,0 +1,28 @@
+tune:
+  - [5-, 2]
+  - [1, 3]
+  - [3, 1]
+  - [5, 4]
+  - [4, 2]
+  - [3, 2]
+  - [2, 2, -1]
+  - [1#, 2]
+  - [4, 1]
+  - [6, 2]
+tuneBeatDur: 200
+tunePitchBase: C4
+metronome: [2, 2]
+
+tuneRevealBeatDur: 170
+tuneRevealOffset: 813
+
+zh-Hans:
+  title: 爱之喜（Liebesfreud）
+  author: 弗里茨·克莱斯勒（Fritz Kreisler）
+  desc: 选自《三首古老的维也纳舞曲》，为小提琴与钢琴合奏乐曲。录音中由 Fritz Kreisler 演奏小提琴，Franz Rupp 演奏钢琴。
+en:
+  title: Liebesfreud
+  author: Fritz Kreisler
+  desc: From "3 Old Viennese Dances". A duet piece for the violin and the piano. Fritz Kreisler plays the violin in the recording, with Franz Rupp playing the piano.
+
+curator: Ayu
