@@ -1,0 +1,28 @@
+tune:
+  - [3, 2]
+  - [5, 2]
+  - [6, 4]
+  - [5, 2]
+  - [3, 2]
+  - [2, 3, -1]
+  - [3, 2]
+  - [1, 2]
+  - [6-, 2]
+  - [1, 4]
+tuneBeatDur: 197
+tunePitchBase: D4
+metronome: [4, 4]
+
+tuneRevealBeatDur: 197
+tuneRevealOffset: 18305
+
+zh-Hans:
+  title: 达达拉女工的主题歌（エボシ タタラうた）
+  author: 久石让
+  desc: 吉卜力工作室 1997 年动画电影《幽灵公主》插曲。
+en:
+  title: The Tatara Women Work Song (エボシ タタラうた)
+  author: Joe Hisaishi
+  desc: An insert tune from Studio Ghibli's 1997 animated film "Princess Mononoke".
+
+curator: Ayu
