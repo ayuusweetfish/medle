@@ -1,0 +1,38 @@
+tune:
+  # - [3, 2]
+  # - [5, 1.4]
+  # - [3, 0.6]
+  # - [6, 2]
+  # - [6, 2]
+  # - [6, 1.4]
+  # - [5, 0.6]
+  # - [3, 1.4]
+  # - [1, 0.6]
+  # - [2, 4]
+  - [6-, 1.4, 0.6]
+  - [3, 1.4, 0.6]
+  - [2, 1.4]
+  - [1, 0.6, 1.4, 0.6, 1.4, 0.6]
+  - [2, 1.4]
+  - [3, 0.6]
+  - [2, 1.4]
+  - [1, 0.6, 1.4, 0.6]
+  - [2, 2]
+  - [1, 2]
+tuneBeatDur: 200
+tunePitchBase: Db4
+metronome: [4, 2]
+
+tuneRevealBeatDur: 176.47 # 170 BPM / 2
+tuneRevealOffset: 19192 # 2959
+
+zh-Hans:
+  title: 希区柯克（ヒッチコック）
+  author: n-buna
+  desc: 日本双人摇滚乐队 Yorushika（ヨルシカ）于 2018 年发行的迷你专辑《败犬不需要安可》中的歌曲。
+en:
+  title: Hitchcock (ヒッチコック)
+  author: n-buna
+  desc: A song by the Japanese rock duo Yorushika (ヨルシカ), from their mini-album "A Loser Doesn't Need an Encore" released in 2018.
+
+curator: Ayu
