@@ -1,0 +1,33 @@
+tune:
+  # - [1, 2]
+  # - [2, 1]
+  # - [3, 13]
+  # - [3b*, 0.5]
+  # - [2, 1.5]
+  # - [1, 1]
+  # - [2, 13]
+  - [6, 2]
+  - [5, 1]
+  - [5, 2]
+  - [3, 11]
+  - [2, 2]
+  - [1, 1]
+  - [2, 2]
+  - [3, 11]
+tuneBeatDur: 160
+tunePitchBase: A4
+metronome: [4, 4]
+
+tuneRevealBeatDur: 180 # 166.6 BPM / 2
+tuneRevealOffset: 11951
+
+zh-Hans:
+  title: 乡村路带我回家（Take Me Home, Country Roads）
+  author: Bill Danoff，Taffy Nivert，John Denver
+  desc: 美国民谣歌手约翰·丹佛（John Denver）的代表作之一，发行于 1971 年。
+en:
+  title: Take Me Home, Country Roads
+  author: Bill Danoff, Taffy Nivert, John Denver
+  desc: A representative work of the American country music artist John Denver, released in 1971.
+
+curator: Ayu
