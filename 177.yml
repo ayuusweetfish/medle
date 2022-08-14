@@ -1,0 +1,32 @@
+tune:
+  - [3, 15, 1]
+  - [5, 16]
+  - [1, 15, 1]
+  - [3, 16]
+  - [6-, 15, 1]
+  - [1, 8]
+  - [2, 4]
+  - [3, 4]
+  - [3, 12]
+  - [2, 4, 16]
+tuneBeatDur: 95
+tunePitchBase: Bb4
+metronome: [0, 8]
+
+tuneRevealBeatDur: 111.75
+tuneRevealOffset: 109
+
+zh-Hans:
+  title: Concerto d'Amore（爱之协奏曲）
+  author: Jacob de Haan
+  desc: |-
+    知名管乐作曲家哈恩的管乐作品。作品将同一个音乐主题在包括巴洛克、流行乐、爵士等多种风格下展开演绎。
+    由 Hal Leonard Europe 交响管乐队演奏。
+en:
+  title: Concerto d'Amore
+  author: Jacob de Haan
+  desc: |-
+    A piece for the wind band by the renowned wind music composer Jacob de Haan. The piece renders and develops a common motif in different styles spanning baroque, pop, and jazz.
+    Performed by Hal Leonard Europe Concert Band.
+
+curator: Ayu
