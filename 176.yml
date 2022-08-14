@@ -1,0 +1,27 @@
+tune:
+  - [6, 3]
+  - [5, 1]
+  - [4, 1]
+  - [3, 1]
+  - [3, 1]
+  - [2, 1]
+  - [2, 1]
+  - [1#, 1]
+  - [2, 2]
+tuneBeatDur: 180
+tunePitchBase: Db5
+metronome: [0, 6]
+
+tuneRevealBeatDur: 132
+tuneRevealOffset: 5331
+
+zh-Hans:
+  title: 降D大调圆舞曲，作品64之1
+  author: 肖邦（Frédéric Chopin）
+  desc: 作曲家与钢琴家肖邦创作的著名钢琴曲，法语标题为“Valse du petit chien（小狗圆舞曲）”。来自中国国家交响乐团2007年演奏录音。
+en:
+  title: Waltz in D-flat major, Op. 64, No. 1
+  author: Frédéric Chopin
+  desc: A piano piece by the composer and pianist Chopin, commonly known in English as the "Minute Waltz" (where "minute" stands for "small"). The French title reads "Valse du petit chien" ("Waltz of the puppy"). Recording from China National Symphony Orchestra's performance in 2007.
+
+curator: Ayu
