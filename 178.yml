@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [3+, 1]
+  - [2+, 1]
+  - [6, 2]
+  - [7, 1]
+  - [2+, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 2]
+tuneBeatDur: 550
+tunePitchBase: F4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 682
+tuneRevealOffset: 93
+
+zh-Hans:
+  title: 花之歌（Blumenlied）
+  author: Gustav Lange
+  desc: 19 世纪德国作曲家古斯塔夫·兰格创作的钢琴曲，由長井充演奏。
+en:
+  title: Flower Song (Blumenlied)
+  author: Gustav Lange
+  desc: A piano piece by the 19th-century German composer Lange. Performed by Nagai Mitsuru.
+
+curator: Ayu
