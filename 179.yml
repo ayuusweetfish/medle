@@ -1,0 +1,26 @@
+tune:
+  - [3, 12, -10]
+  - [6-, 12, -11]
+  - [1, 12, -10]
+  - [3, 12, -11]
+  - [1, 12, -10]
+  - [6-, 12, -11]
+  - [4, 12, -10]
+  - [6-, 12, 1]
+tuneBeatDur: 132
+tunePitchBase: Eb4
+metronome: [0, 3]
+
+tuneRevealBeatDur: 132 # 151 BPM / 3
+tuneRevealOffset: 118
+
+zh-Hans:
+  title: Lost Horse
+  author: Asaf Avidan
+  desc: 来自以色列的创作歌手阿萨夫·阿维丹于 2020 年发布的歌曲。
+en:
+  title: Lost Horse
+  author: Asaf Avidan
+  desc: A song released in 2020 by the singer-songwriter Asaf Avidan from Israel.
+
+curator: daodao
