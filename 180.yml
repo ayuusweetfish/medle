@@ -1,0 +1,27 @@
+tune:
+  - [1+, 4]
+  - [1+, 6]
+  - [2+, 4]
+  - [1+, 2]
+  - [7, 2]
+  - [5, 1]
+  - [6, 2]
+  - [3, 1]
+  - [5, 6]
+tuneBeatDur: 125
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 117 # 128 BPM / 4
+tuneRevealOffset: 1183
+
+zh-Hans:
+  title: SHAKE
+  author: 小森田实（曲）；森浩美（词）
+  desc: 日本乐队 SMAP 于 1996 年发布的单曲。
+en:
+  title: SHAKE
+  author: Komorita Minoru (music); Mori Hiromi (lyrics)
+  desc: A single released by the Japanese band SMAP in 1996.
+
+curator: Ayu
