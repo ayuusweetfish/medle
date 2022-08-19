@@ -1,0 +1,28 @@
+tune:
+  - [1, 1]
+  - [2, 1]
+  - [5, 2]
+  - [3, 2]
+  - [2, 2]
+  - [3, 2]
+  - [2, 1]
+  - [1, 1]
+  - [6-, 2]
+  - [1, 2]
+tuneBeatDur: 250
+tunePitchBase: C4
+metronome: [2, 2]
+
+tuneRevealBeatDur: 250 # 120 BPM / 2
+tuneRevealOffset: 3532
+
+zh-Hans:
+  title: 宝贝 (In a Day)
+  author: 张悬
+  desc: 收录于歌手张悬 2006 年专辑《My Life Will…》中，张悬 13 岁时开始创作这首歌曲。
+en:
+  title: Bao bei / 寶貝 (In a Day)
+  author: Deserts Chang (張懸)
+  desc: A song from Deserts Chang's 2006 album "My Life Will…". Chang was 13 years old when she started writing the song.
+
+curator: Ayu
