@@ -480,7 +480,9 @@ const startGame = () => {
       }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
     }
     for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-      setTimeout(() => playSound('beat'),
+      const stress = (!metronome[2] ||
+        (t - metronome[0]) % (metronome[1] * metronome[2]) == 0);
+      setTimeout(() => playSound('beat', stress ? 1 : 0.25),
         (t + metronomeOffset()) * tuneBeatDur + 20);
     }
   }
