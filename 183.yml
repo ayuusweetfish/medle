@@ -1,0 +1,26 @@
+tune:
+  - [1, 8, -7]
+  - [3, 8, -7]
+  - [5, 8, -7]
+  - [1+, 8, -7]
+  - [3+, 8, -7]
+  - [5, 8, -7]
+  - [1+, 8, -7]
+  - [3+, 8, 1]
+tuneBeatDur: 208
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 208
+tuneRevealOffset: 177
+
+zh-Hans:
+  title: C 大调前奏曲与赋格
+  author: J·S·巴赫（Johann Sebastian Bach）
+  desc: 巴赫编写的《平均律键盘曲集》第一卷中的第一首乐曲，作品编号 BWV 846。由 Martha Goldstein 在羽管键琴上演奏。
+en:
+  title: Prelude and Fugue in C major
+  author: Johann Sebastian Bach
+  desc: The first piece in the first book of Bach's "The Well-Tempered Clavier", catalogued and numbered BWV 846. Performed on the harpsichord by Martha Goldstein.
+
+curator: Ayu

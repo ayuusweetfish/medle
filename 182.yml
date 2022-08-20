@@ -1,0 +1,28 @@
+tune:
+  - [1+, 3]
+  - [3+, 15]
+  - [2+, 1]
+  - [3+, 1]
+  - [4+, 2]
+  - [2+, 1]
+  - [1+, 2]
+  - [7, 2]
+  - [3+, 3]
+  - [6, 4]
+tuneBeatDur: 180
+tunePitchBase: Bb3
+metronome: [0, 2, 5]
+
+tuneRevealBeatDur: 196 # 153 BPM / 2
+tuneRevealOffset: 1950
+
+zh-Hans:
+  title: Lace
+  author: Christopher Larkin
+  desc: 预计于 2022 至 2023 年发行的游戏《空洞骑士：丝之歌》的配乐。
+en:
+  title: Lace
+  author: Christopher Larkin
+  desc: 'Music from the video game "Hollow Knight: Silksong", expected to be released between 2022 and 2023.'
+
+curator: Ayu

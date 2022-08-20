@@ -1,0 +1,28 @@
+tune:
+  - [5, 2, 2, 2]
+  - [2, 1, 1]
+  - [2, 2]
+  - [2, 2]
+  - [7-, 2]
+  - [1, 2]
+  - [1, 2]
+  - [1, 2]
+  - [3, 4]
+  - [5, 6]
+tuneBeatDur: 160
+tunePitchBase: F4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 168.5 # 89 BPM / 4
+tuneRevealOffset: 766
+
+zh-Hans:
+  title: Seasons of Love
+  author: Jonathan Larson
+  desc: 来自 1996 年百老汇摇滚音乐剧《吉屋出租》中的歌曲。
+en:
+  title: Seasons of Love
+  author: Jonathan Larson
+  desc: A song from the 1996 Broadway rock musical "Rent".
+
+curator: Ayu
