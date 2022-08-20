@@ -187,9 +187,6 @@ const handler = async (req) => {
     if (url.pathname === '/favicon.ico') {
       return serveFileCached(req, 'favicon.png');
     }
-    if (url.pathname === '/index.js') {
-      return 
-    }
     if (url.pathname.startsWith('/build/')) {
       const fileName = url.pathname.substring('/build/'.length);
       return serveFileCached(req, 'build/' + fileName);
