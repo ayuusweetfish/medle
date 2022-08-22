@@ -202,7 +202,7 @@ const createSound = (urls) => {
   };
   o.once = (name, fn) => o.eventHandlers[name].push(fn);
 
-  var buf = null;
+  let buf = null;
   const tryFetch = (i) => {
     fetch(urls[i]).then((resp) => {
       resp.arrayBuffer().then((dataBuf) => {
@@ -223,8 +223,9 @@ const createSound = (urls) => {
 
   o.duration = () => buf.duration;
 
-  var count = 0;
-  var s = {};
+  let count = 0;
+  let overallPlaybackRate = 1;
+  const s = {};
   o.stop = (id) => {
     if (id === undefined)
       for (const id in s) o.stop(id);
@@ -239,6 +240,7 @@ const createSound = (urls) => {
     const id = count++;
     const nSource = audioCtx.createBufferSource();
     nSource.buffer = buf;
+    nSource.playbackRate = overallPlaybackRate;
     nSource.start();
     nSource.onended = () => {
       emit('end');
@@ -271,6 +273,10 @@ const createSound = (urls) => {
     const t = audioCtx.currentTime;
     g.setValueAtTime(from, t);
     g.linearRampToValueAtTime(to, t + dur / 1000);
+  };
+  o.rate = (rate) => {
+    // Only overall setting is necessary, and only applies to new instances
+    overallPlaybackRate = rate;
   };
 
   return o;
