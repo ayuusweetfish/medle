@@ -1,0 +1,26 @@
+tune:
+  - [6, 1]
+  - [6, 1]
+  - [3, 1]
+  - [6, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [3, 1]
+  - [5, 1]
+tuneBeatDur: 242
+tunePitchBase: Db4/441
+metronome: [0, 4]
+
+tuneRevealBeatDur: 242
+tuneRevealOffset: 7363
+
+zh-Hans:
+  title: 云宫迅音（西游记序曲）
+  author: 许镜清
+  desc: 1986年播出的电视剧《西游记》片头曲。乐曲原本没有标题，民间为其取名为《云宫迅音》，得到了作曲家许镜清的认可。
+en:
+  title: 云宫迅音（Immortal Sound Above Cloud Palace）
+  author: Xu Jingqing
+  desc: Opening theme of the television drama "Journey to the West", which was adapted from the Chinese classic novel of the same title and first broadcast in 1986. The title was given by the audience and was appreciated by the composer Xu.
+
+curator: ys
