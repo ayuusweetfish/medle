@@ -1,0 +1,34 @@
+tune:
+  - [1, 1]
+  - [2, 1]
+  - [5, 2]
+  - [3, 1]
+  - [2, 2]
+  - [1, 2]
+  - [5, 3]
+  - [3, 1]
+  - [2, 3]
+  - [1, 1, 5]
+tuneBeatDur: 150
+tunePitchBase: Db4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 125 # 120 BPM / 4
+tuneRevealOffset: 15250
+
+zh-Hans:
+  title: Euphoria
+  author: じん（Jin）
+  desc: |-
+    第 30 届国际信息学奥林匹克（IOI）主题曲。竞赛于 2018 年在日本筑波市举办。
+    “我们曾伫立在同一个世界上啊。”
+  image: 歌曲封面。
+en:
+  title: Euphoria
+  author: じん (Jin)
+  desc: |-
+    Theme of the 30th International Olympiad in Informatics (IOI), held in Tsukuba, Japan in 2018.
+    "We once stood in the same world."
+  image: Cover image of the song.
+
+curator: 十三月/Hitomi

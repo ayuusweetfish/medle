@@ -1,0 +1,29 @@
+tune:
+  - [1, 1]
+  - [1, 1]
+  - [6, 4]
+  - [5, 6]
+  - [5, 1]
+  - [5, 1]
+  - [5, 1]
+  - [5, 1]
+  - [4, 1, 1]
+  - [5, 5]
+tuneBeatDur: 240
+tunePitchBase: G4
+metronome: [3, 4, 4]
+
+tuneRevealBeatDur: 316 # 95 BPM / 2
+tuneRevealOffset: 11713
+
+zh-Hans:
+  title: Distant Dreamer
+  author: Aimee Duffy、Bernard Butler
+  desc: 2022 年播出的电视动画《JOJO的奇妙冒险 石之海》片尾曲，由来自威尔士的创作歌手 Duffy 演唱。
+en:
+  title: Distant Dreamer
+  author: Aimee Duffy, Bernard Butler
+  desc: |
+    Ending theme of the television animation series "JoJo's Bizarre Adventure: Stone Ocean", aired in 2022. Vocals by the Welsh singer-songwriter Duffy.
+
+curator: CyanD
