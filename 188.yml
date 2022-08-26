@@ -1,0 +1,27 @@
+tune:
+  - [3, 1]
+  - [5, 1]
+  - [4, 1]
+  - [6, 1]
+  - [5, 1]
+  - [1+, 1]
+  - [3+, 1]
+  - [6+, 1]
+  - [5+, 1]
+tuneBeatDur: 399
+tunePitchBase: Eb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 399
+tuneRevealOffset: 1733
+
+zh-Hans:
+  title: 《罗马假日》主题曲
+  author: Georges Auric
+  desc: 1953 年上映的电影《罗马假日》的主题音乐。
+en:
+  title: Main title, from "Roman Holiday"
+  author: Georges Auric
+  desc: Theme from the 1953 film "Roman Holiday".
+
+curator: Ayu
