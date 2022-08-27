@@ -1,0 +1,32 @@
+tune:
+  - [1+, 2]
+  - [6, 3]
+  - [4, 1]
+  - [1#, 2]
+  - [2, 4]
+  - [2+, 2]
+  - [7, 3]
+  - [5, 1]
+  - [2#, 2]
+  - [3, 4]
+tuneBeatDur: 300
+tunePitchBase: A4
+metronome: [0, 2, 3]
+
+tuneRevealBeatDur: 373
+tuneRevealOffset: 14559
+
+zh-Hans:
+  title: 《特里斯坦与伊索尔德》序曲
+  author: 理查德·瓦格纳（Richard Wagner）
+  desc: |-
+    瓦格纳创作的首演于 1865 年的德语歌剧《特里斯坦与伊索尔德》（Tristan und Isolde）第一幕前的序曲。
+    由 Daniel Barenboim 指挥西东合集管弦乐团（West–Eastern Divan Orchestra）演奏。
+en:
+  title: Tristan und Isolde — Prelude
+  author: Richard Wagner
+  desc: |-
+    The prelude from Wagner's German opera "Tristan und Isolde", premiered in 1865; played before the first act.
+    Performed by West–Eastern Divan Orchestra, conducted by Daniel Barenboim.
+
+curator: Ayu
