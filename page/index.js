@@ -379,7 +379,7 @@ if (localStorage.length === 0 && document.cookie) {
 
 // Display tip
 const tips = textTip.children;
-const tipIndex = ((+localStorage.tip || 0) + 1) % tips.length;
+const tipIndex = ((+localStorage.tip || -1) + 1) % tips.length;
 localStorage.tip = tipIndex;
 tips[tipIndex].style.display = 'inline';
 
