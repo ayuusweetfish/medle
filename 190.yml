@@ -1,0 +1,25 @@
+tune:
+  - [5, 1]
+  - [5+, 4]
+  - [3+, 3]
+  - [5#, 1]
+  - [2+, 1]
+  - [3+, 1]
+  - [2+, 6]
+tuneBeatDur: 600
+tunePitchBase: Db4
+metronome: [-1, 3, 3]
+
+tuneRevealBeatDur: 720
+tuneRevealOffset: 87
+
+zh-Hans:
+  title: 月光（Clair de lune）
+  author: 克洛德·德彪西（Claude Debussy）
+  desc: 钢琴作品《贝加马斯克组曲》中的第三乐章。由郎朗演奏。
+en:
+  title: Clair de lune
+  author: Claude Debussy
+  desc: The third movement from the piano suite, "Suite bergamasque". Performed by Lang Lang.
+
+curator: Ayu
