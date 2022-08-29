@@ -1,0 +1,28 @@
+tune:
+  - [5-, 1, 3]
+  - [5-, 2]
+  - [1, 1]
+  - [2, 6]
+  - [5-, 1, 1, 1]
+  - [5, 4]
+  - [3, 3]
+  - [2, 1]
+  - [3, 1]
+  - [2, 7]
+tuneBeatDur: 220
+tunePitchBase: Ab4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 259 # 58 BPM / 4
+tuneRevealOffset: 4499
+
+zh-Hans:
+  title: 弯弯的月亮
+  author: 李海鹰（曲、词）
+  desc: 音乐电视片《大地情语》插曲，创作于 1989 年，由刘欢演唱。
+en:
+  title: 弯弯的月亮 (A Crescent Moon)
+  author: Li Haiying (music, lyrics)
+  desc: Insert song from the musical television film "大地情语" (Love Words of Earth), composed in 1989, with vocals by Liu Huan.
+
+curator: Ayu
