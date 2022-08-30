@@ -1,0 +1,30 @@
+tune:
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [4, 1]
+  - [3, 1]
+  - [1, 1]
+  - [2, 1]
+tuneBeatDur: 472
+tunePitchBase: F4
+metronome: [0, 1, 3]
+
+tuneRevealBeatDur: 472 # 127 BPM
+tuneRevealOffset: 8499
+
+zh-Hans:
+  title: 8月31日
+  author: DECO*27
+  desc: 音乐人 DECO*27 于 2014 年 8 月 30 日发布的歌曲，由虚拟歌手初音未来演唱。
+  image: 歌曲视频中的插画。
+en:
+  title: 8月31日 (August 31th)
+  author: DECO*27
+  desc: A song published on 30 August 2014 by the musician DECO*27, with vocals by the virtual singer Hatsune Miku.
+  image: An illustration from the video of the song.
+
+curator: Ayu
