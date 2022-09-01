@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 2]
+  - [4, 2]
+  - [3, 1]
+  - [2, 3]
+  - [1, 1]
+  - [5-, 3, 1]
+  - [3, 3]
+  - [1, 1, 3]
+tuneBeatDur: 247
+tunePitchBase: G4
+metronome: [4, 4]
+
+tuneRevealBeatDur: 247
+tuneRevealOffset: 7162
+
+zh-Hans:
+  title: 不想去远方
+  author: 卢广仲（曲、词）
+  desc: 2011 年专辑《慢灵魂》中的歌曲。
+en:
+  title: 不想去远方
+  author: Crowd Lu (music, lyrics)
+  desc: A song from the album "慢靈魂" (Slow Soul), released in 2011.
+
+curator: Ayu
