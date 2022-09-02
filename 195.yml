@@ -1,0 +1,25 @@
+tune:
+  - [5-, 2]
+  - [1, 1]
+  - [1, 2]
+  - [3, 1]
+  - [6, 2]
+  - [3, 1]
+  - [5, 3]
+tuneBeatDur: 162
+tunePitchBase: D4
+metronome: [0, 3]
+
+tuneRevealBeatDur: 162
+tuneRevealOffset: 8061
+
+zh-Hans:
+  title: 哆啦A梦之歌（ドラえもんのうた）
+  author: 菊池俊辅（曲）；楠部工（词）
+  desc: 《哆啦A梦》短篇动画自1979年到2005年期间的片头曲。录音为最初的版本，由大杉久美子演唱。
+en:
+  title: Doraemon's Song (ドラえもんのうた)
+  author: Kikuchi Shunsuke (music); Kusube Takumi (lyrics)
+  desc: The opening theme of the "Doraemon" short animated series during 1979–2005. The recording is the very first version, with vocals by Osugi Kumiko.
+
+curator: Ayu
