@@ -1,0 +1,32 @@
+tune:
+  - [1+, 2]
+  - [5, 2]
+  - [3, 1]
+  - [4, 1]
+  - [5, 2]
+  - [3, 1]
+  - [4, 1]
+  - [5, 2]
+  - [1+, 2]
+  - [5, 2]
+tuneBeatDur: 147
+tunePitchBase: F4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 147
+tuneRevealOffset: 120
+
+zh-Hans:
+  title: F大调第二勃兰登堡协奏曲
+  author: J·S·巴赫（Johann Sebastian Bach）
+  desc: |-
+    1977年9月5日发射的旅行者1号携带的给外星人的金色唱片中的第一首音乐。
+    由慕尼黑巴赫管弦乐团（Münchener Bach-Orchester）演奏，卡尔·李希特（Karl Richter）指挥。
+en:
+  title: Brandenburg Concerto No. 2 in F Major
+  author: Johann Sebastian Bach
+  desc: |-
+    The first musical track in the Voyager Golden Record, carried by Voyager 1 (launched 5 September 1977) for the extraterrestrial lives.
+    Performed by the Munich Bach Orchestra, conducted by Karl Richter.
+
+curator: sakura
