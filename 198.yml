@@ -1,0 +1,27 @@
+tune:
+  - [1+, 2]
+  - [1+, 3]
+  - [7, 1]
+  - [5, 4]
+  - [5, 6]
+  - [7, 2]
+  - [7, 3]
+  - [6, 1]
+  - [4, 12]
+tuneBeatDur: 200
+tunePitchBase: Ab4
+metronome: [6, 4, 4]
+
+tuneRevealBeatDur: 214
+tuneRevealOffset: 2733
+
+zh-Hans:
+  title: 我的太阳（'O Sole Mio）
+  author: Eduardo di Capua、Alfredo Mazzucchi（曲）；Giovanni Capurro（词）
+  desc: 创作于 1898 年的歌曲，歌词为意大利那不勒斯语。由意大利男高音歌唱家卢恰诺·帕瓦罗蒂（Luciano Pavarotti）演唱。
+en:
+  title: "'O Sole Mio"
+  author: Eduardo di Capua, Alfredo Mazzucchi (music); Giovanni Capurro (lyrics)
+  desc: A song composed in 1898 with lyrics in the Neapolitan language of Italy. Performed by the Italian tenor Luciano Pavarotti.
+
+curator: Ayu
