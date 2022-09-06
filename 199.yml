@@ -1,0 +1,26 @@
+tune:
+  - [5, 1]
+  - [6, 3]
+  - [3, 2]
+  - [1, 1]
+  - [6-, 2]
+  - [1, 1]
+  - [3, 2]
+  - [2, 4]
+tuneBeatDur: 175
+tunePitchBase: Bb4
+metronome: [1, 3, 4]
+
+tuneRevealBeatDur: 149 # 134 BPM / 3
+tuneRevealOffset: 15093
+
+zh-Hans:
+  title: 左手右手
+  author: 吴军（曲）、卢永强（词）
+  desc: 2009 年动画电影《喜羊羊与灰太狼之虎虎生威》插曲。由杨沛宜演唱。
+en:
+  title: 左手右手 (Left Hand, Right Hand)
+  author: Wu Jun (music); Lou Wing Keng (lyrics)
+  desc: "Insert song from the 2010 animated film “Desert Trek: The Adventure of the Lost Totem”. Vocals by Linda Yang Peiyi."
+
+curator: Ayu
