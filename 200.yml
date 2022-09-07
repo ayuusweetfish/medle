@@ -1,0 +1,25 @@
+tune:
+  - [6, 1]
+  - [5, 1]
+  - [3, 3]
+  - [5, 1]
+  - [1, 1]
+  - [3, 1]
+  - [2, 2]
+tuneBeatDur: 350
+tunePitchBase: F4
+metronome: [2, 2, 2]
+
+tuneRevealBeatDur: 362
+tuneRevealOffset: 3747
+
+zh-Hans:
+  title: 我们的田野
+  author: 张文纲（曲）；管桦（词）
+  desc: 儿童组曲《夏天旅行之歌》中的第三曲，创作于 1953 年。录音版本由北京市少年宫合唱团演唱。
+en:
+  title: 我们的田野 (Our Farmland)
+  author: Zhang Wengang (music); Guan Hua (lyrics)
+  desc: The third song from the children's song suite "夏天旅行之歌" (Tunes of Summer Travels), composed in 1953. Recording performed by Beijing Children's Palace Choir (北京市少年宫合唱团).
+
+curator: Ayu
