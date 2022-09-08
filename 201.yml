@@ -1,0 +1,32 @@
+tune:
+  - [5, 1, 1, 1]
+  - [3+, 3]
+  - [2+, 1]
+  - [2+, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [1+, 1]
+  - [5, 1]
+  - [3, 1]
+  - [1, 3]
+tuneBeatDur: 500
+tunePitchBase: C4
+metronome: [3, 2, 4]
+
+tuneRevealBeatDur: 584
+tuneRevealOffset: 18135
+
+zh-Hans:
+  title: Danny Boy（丹尼男孩）
+  author: 爱尔兰传统小调（曲）；Frederic Weatherly（词）
+  desc: |-
+    英格兰词作家威德里创作于 1910–1913 年的民歌，曲调为来自爱尔兰民间的《伦敦德里小调》（Londonderry Air）。
+    录音版本由 Paul Bateman 为管弦乐团编曲，Daniel Hope 担任小提琴独奏。
+en:
+  title: Danny Boy
+  author: Irish traditional tune (music); Frederic Weatherly (lyrics)
+  desc: |-
+    A ballad written by the English lyricist Weatherly in 1910–1913 to the Irish traditional tune "Londonderry Air".
+    Recording version arranged for the orchestra by Paul Bateman, with Daniel Hope playing the solo violin.
+
+curator: Ayu
