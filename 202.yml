@@ -1,0 +1,28 @@
+tune:
+  - [5-, 9, -7]
+  - [5, 8, -6]
+  - [3, 8, -7]
+  - [2, 8, -6]
+  - [1, 7, 2, 1]
+  - [2, 9]
+  - [2, 2]
+  - [3, 2]
+  - [2, 1]
+  - [1, 2]
+tuneBeatDur: 187.5
+tunePitchBase: D4
+metronome: [2, 4, 4]
+
+tuneRevealBeatDur: 187.5 # 80 BPM / 4
+tuneRevealOffset: 144
+
+zh-Hans:
+  title: Hello, shooting-star
+  author: K.MASAKI（曲）；YUKA（词）
+  desc: 2015 年动画《暗杀教室》片尾曲，由日本双人组合沐月（moumoon）创作并演唱。
+en:
+  title: Hello, shooting-star
+  author: K.MASAKI (music); YUKA (lyrics)
+  desc: Ending theme of the 2015 anime series "Assassination Classroom", composed and performed by the Japanese duo "moumoon".
+
+curator: Ayu
