@@ -1,0 +1,27 @@
+tune:
+  - [3+, 1]
+  - [2+, 2]
+  - [1+, 1]
+  - [6, 12]
+  - [3+, 1]
+  - [2+, 2]
+  - [1+, 1]
+  - [6, 2]
+  - [5, 3]
+tuneBeatDur: 201
+tunePitchBase: E4
+metronome: [5, 4, 4]
+
+tuneRevealBeatDur: 201
+tuneRevealOffset: 3291
+
+zh-Hans:
+  title: We Are the World（天下一家）
+  author: Michael Jackson、Lionel Richie
+  desc: 1985 年创作的慈善歌曲，由美国 45 位歌星联合演唱录制。
+en:
+  title: We Are the World
+  author: Michael Jackson, Lionel Richie
+  desc: A charity single composed in 1985 and recorded by a supergroup of 45 American singers.
+
+curator: Ayu
