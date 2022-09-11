@@ -1,0 +1,28 @@
+tune:
+  - [5-, 3]
+  - [6-, 1]
+  - [7b-, 2]
+  - [6, 5, 2]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 3]
+  - [3, 1]
+  - [1, 1]
+  - [6-, 4]
+tuneBeatDur: 232
+tunePitchBase: Eb4
+metronome: [4, 4, 4]
+
+tuneRevealBeatDur: 232
+tuneRevealOffset: 4203
+
+zh-Hans:
+  title: Misty
+  author: Johnny Burke（曲）；Erroll Garner（词）
+  desc: 创作于 1954 年的爵士经典曲。由 Johnny Mathis 演唱，收录于其 1959 年的专辑《Heavenly》。
+en:
+  title: Misty
+  author: Johnny Burke (music); Erroll Garner (lyrics)
+  desc: A jazz standard composed in 1954. Vocals by Johnny Mathis, whose 1959 album "Heavenly" included the song.
+
+curator: Ayu
