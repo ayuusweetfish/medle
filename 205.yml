@@ -1,0 +1,26 @@
+tune:
+  - [3+, 1]
+  - [1+, 2]
+  - [5, 3]
+  - [5#, 2]
+  - [6, 1]
+  - [4+, 2]
+  - [4+, 1]
+  - [6, 4]
+tuneBeatDur: 160
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 150
+tuneRevealOffset: 4888
+
+zh-Hans:
+  title: 《地面主题》，来自《超级马力欧兄弟》
+  author: 近藤浩治
+  desc: 1985 年发布的红白机游戏《超级马力欧兄弟》（Super Mario Bros.）中的第一首主题曲。
+en:
+  title: “Ground Theme”, from Super Mario Bros.
+  author: Kondo Koji
+  desc: The first theme music track from the 1985 NES game "Super Mario Bros.".
+
+curator: Ayu
