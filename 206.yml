@@ -1,0 +1,27 @@
+tune:
+  - [3, 1]
+  - [6, 1]
+  - [6, 2]
+  - [6, 2]
+  - [3, 1]
+  - [3, 1]
+  - [3, 1]
+  - [5, 1, 1]
+  - [6, 2]
+tuneBeatDur: 187.5
+tunePitchBase: Ab3
+metronome: [-3, 2, 4]
+
+tuneRevealBeatDur: 187.5 # 160 BPM / 2
+tuneRevealOffset: 2060
+
+zh-Hans:
+  title: Happy
+  author: Pharrell Williams（曲、词）
+  desc: 2013 年动画电影《神偷奶爸2》插曲。
+en:
+  title: Happy
+  author: Pharrell Williams (music, lyrics)
+  desc: An insert song from the 2013 animated film “Despicable Me 2”.
+
+curator: Ayu
