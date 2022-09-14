@@ -1,0 +1,32 @@
+tune:
+  - [7, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [3, 2]
+  - [6, 2]
+  - [5#, 1]
+  - [6, 1]
+  - [7, 1]
+  - [6, 1, 4]
+tuneBeatDur: 180
+tunePitchBase: E4
+metronome: [4, 4]
+
+tuneRevealBeatDur: 168
+tuneRevealOffset: 13363
+
+zh-Hans:
+  title: 回旋曲（Rondeau），来自《摩尔人复仇记》（Abdelazer）
+  author: 亨利·珀塞尔（Henry Purcell）
+  desc: |-
+    巴洛克时期英格兰作曲家珀塞尔为戏剧《摩尔人复仇记》创作的配乐。
+    录音来自 Voices of Music Brandenburg Concerto project。
+en:
+  title: Rondeau, from "Abdelazer"
+  author: Henry Purcell
+  desc: |-
+    Indicental music for the play "Abdelazer" (also known as "the Moor's Revenge") composed by Purcell, the English composer in the Baroque era.
+    Recording from Voices of Music Brandenburg Concerto project.
+
+curator: Ayu
