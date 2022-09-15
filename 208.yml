@@ -1,0 +1,27 @@
+tune:
+  - [5, 2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [6, 3, 2]
+  - [1+, 2]
+  - [7, 2, 2]
+  - [6, 1, 1, 2]
+  - [5, 3]
+tuneBeatDur: 153
+tunePitchBase: A3
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 153 # 196 BPM / 2
+tuneRevealOffset: 174
+
+zh-Hans:
+  title: Un Poco Loco（一点疯狂）
+  author: Germaine Franco、Adrian Molina
+  desc: 2017 年动画电影《寻梦环游记》（Coco）插曲。
+en:
+  title: Un Poco Loco
+  author: Germaine Franco, Adrian Molina
+  desc: Insert song from the 2017 animated film "Coco".
+
+curator: Ayu
