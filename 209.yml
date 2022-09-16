@@ -1,0 +1,28 @@
+tune:
+  - [6, 3, 1, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [3+, 3]
+  - [3, 1, 1]
+  - [5#, 1]
+  - [4#, 1]
+  - [3, 1]
+  - [6, 3]
+tuneBeatDur: 150
+tunePitchBase: C4
+metronome: [0, 4, 2]
+
+tuneRevealBeatDur: 114
+tuneRevealOffset: 383
+
+zh-Hans:
+  title: 第 24 首随想曲
+  author: 尼科罗·帕格尼尼（Niccolò Paganini）
+  desc: 著名的小提琴独奏乐曲，由意大利小提琴大师帕格尼尼所作。由希拉里·哈恩（Hilary Hahn）演奏。
+en:
+  title: Caprice No. 24
+  author: Niccolò Paganini
+  desc: A famous piece for the solo violin, composed by the Italian violin virtuoso Paganini. Performed by Hilary Hahn.
+
+curator: Ayu
