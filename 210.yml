@@ -1,0 +1,28 @@
+tune:
+  - [5, 2, 3]
+  - [6, 1]
+  - [5, 2]
+  - [4, 2]
+  - [3, 2]
+  - [2, 2]
+  - [3, 3]
+  - [2, 1]
+  - [1, 2]
+  - [2, 4]
+tuneBeatDur: 250
+tunePitchBase: A4
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 312
+tuneRevealOffset: 75
+
+zh-Hans:
+  title: Tomorrow Belongs To Me
+  author: John Kander（曲）、Fred Ebb（词）
+  desc: 1966 年百老汇音乐剧《歌厅》（Cabaret）第一幕中的歌曲。由 Joel Grey 演唱。
+en:
+  title: Tomorrow Belongs To Me
+  author: John Kander (music), Fred Ebb (lyrics)
+  desc: A song from the 1966 Broadway musical "Cabaret", appearing in the first act. Performed by Joel Grey.
+
+curator: Ayu
