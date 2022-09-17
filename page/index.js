@@ -423,6 +423,11 @@ const startGame = () => {
     if (tuneDecos[pos] & DECO_APPO) vol *= 0.3;
     playSound('pop', vol);
   };
+  const playBeat = (t) => {
+    const stress = (!metronome[2] ||
+      (t - metronome[0]) % (metronome[1] * metronome[2]) == 0);
+    playSound('beat', stress ? 1 : 0.25);
+  };
 
   const curInput = [];
   const attInputs = [];
@@ -486,9 +491,7 @@ const startGame = () => {
       }, (ts[j] + metronomeOffset()) * tuneBeatDur + 20);
     }
     for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-      const stress = (!metronome[2] ||
-        (t - metronome[0]) % (metronome[1] * metronome[2]) == 0);
-      setTimeout(() => playSound('beat', stress ? 1 : 0.25),
+      setTimeout(() => playBeat(t),
         (t + metronomeOffset()) * tuneBeatDur + 20);
     }
   }
@@ -542,7 +545,7 @@ const startGame = () => {
         replayTimers.push(timer);
       }
       for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-        const timer = setTimeout(() => playSound('beat'),
+        const timer = setTimeout(() => playBeat(t),
           (t + metronomeOffset()) * tuneBeatDur + 20);
         replayTimers.push(timer);
       }
@@ -600,7 +603,7 @@ const startGame = () => {
         }, 500 + (ts[j] + metronomeOffset()) * tuneBeatDur);
       }
       for (let t = metronome[0]; t < tuneDur; t += metronome[1]) {
-        setTimeout(() => playSound('beat'),
+        setTimeout(() => playBeat(t),
           500 + (t + metronomeOffset()) * tuneBeatDur);
       }
     }
