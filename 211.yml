@@ -1,0 +1,28 @@
+tune:
+  - [5, 1]
+  - [6, 1]
+  - [5, 1]
+  - [3, 1]
+  - [1, 1]
+  - [5-, 1]
+  - [5, 1]
+  - [6, 1]
+  - [5, 1]
+  - [3, 1]
+tuneBeatDur: 164
+tunePitchBase: G4
+metronome: [0, 3]
+
+tuneRevealBeatDur: 164
+tuneRevealOffset: 2120
+
+zh-Hans:
+  title: 海盗和孩子们（SpongeBob SquarePants Theme）
+  author: Stephen Hillenburg、Derek Drymon
+  desc: 1999 年起播出的喜剧动画剧集《海绵宝宝》（SpongeBob SquarePants）片头曲。
+en:
+  title: SpongeBob SquarePants Theme Song
+  author: Stephen Hillenburg, Derek Drymon
+  desc: Opening theme of the animated comedy series "SpongeBob SquarePants", which debuted in 1999.
+
+curator: Ayu
