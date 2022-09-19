@@ -1,0 +1,26 @@
+tune:
+  - [5, 1]
+  - [3, 1]
+  - [1, 1]
+  - [7b-, 1]
+  - [6, 1]
+  - [5, 1]
+  - [2+, 1]
+  - [1+, 1]
+tuneBeatDur: 360
+tunePitchBase: A3
+metronome: [3, 2]
+
+tuneRevealBeatDur: 400 # 75 BPM / 2
+tuneRevealOffset: 5248
+
+zh-Hans:
+  title: 结婚钻戒
+  author: 卢广仲、陈绮贞（曲）；陈绮贞、讨海人（词）
+  desc: 收录于台湾创作歌手 2016 年发行的专辑《What a Folk !!!!!!》的歌曲。
+en:
+  title: Wedding Ring (結婚鑽戒)
+  author: Crowd Lu, Cheer Chen (music); Cheer Chen, Fisherman (討海人) (lyrics)
+  desc: A song from the album "What a Folk !!!!!!" by the singer-songwriter Crowd Lu (盧廣仲), released in 2016.
+
+curator: daodao

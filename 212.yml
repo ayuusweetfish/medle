@@ -1,0 +1,28 @@
+tune:
+  - [3, 3]
+  - [6, 1]
+  - [2, 3]
+  - [5, 1]
+  - [2, 3]
+  - [5, 1]
+  - [1, 1]
+  - [7-, 1]
+  - [5-, 1]
+  - [3-, 1]
+tuneBeatDur: 216
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 216 # 139 BPM / 2
+tuneRevealOffset: 2204
+
+zh-Hans:
+  title: 拼凑的断音（ツギハギスタッカート）
+  author: toa（とあ）
+  desc: 2015 年发行的合作专辑《212》中的歌曲，由歌手 nameless 演唱；原曲歌手为虚拟歌手初音未来。
+en:
+  title: Patchwork Staccato (ツギハギスタッカート)
+  author: toa (とあ)
+  desc: A song from the 2015 collaboration album “212” with “nameless” as the vocalist. Original vocals by the virtual singer Hatsune Miku.
+
+curator: Ayu
