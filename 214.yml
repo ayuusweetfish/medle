@@ -1,0 +1,27 @@
+tune:
+  - [7, 1, 1]
+  - [6, 1]
+  - [5#, 1]
+  - [6, 1]
+  - [7, 3]
+  - [7, 1, 1]
+  - [6, 1]
+  - [7, 1]
+  - [1+, 4]
+tuneBeatDur: 278
+tunePitchBase: Ab4
+metronome: [5, 2, 4]
+
+tuneRevealBeatDur: 278 # 108 BPM / 2
+tuneRevealOffset: 4930
+
+zh-Hans:
+  title: 星星月亮
+  author: 曾轶可（曲、词）；曲世聪（编曲）
+  desc: 2014年发行的单曲，收录于次年发行的专辑《25岁的晴和雨》中。
+en:
+  title: 星星月亮 (Stars and Moon)
+  author: Zeng "Yico" Yike (music, lyrics); Qu Shicong (arrangement)
+  desc: A single released in 2014 and included in the album "25歲的晴和雨" released in 2015.
+
+curator: Machine.Z
