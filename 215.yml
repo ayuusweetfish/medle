@@ -1,0 +1,28 @@
+tune:
+  - [6-, 1, 1, 1]
+  - [1, 1]
+  - [2, 1]
+  - [1, 2]
+  - [6-, 1]
+  - [6-, 1]
+  - [6-, 2]
+  - [1, 1]
+  - [2, 1]
+  - [1, 2]
+tuneBeatDur: 268
+tunePitchBase: E4
+metronome: [-1, 2, 4]
+
+tuneRevealBeatDur: 268 # 112 BPM / 2
+tuneRevealOffset: 2508
+
+zh-Hans:
+  title: Summertime Sadness
+  author: Lana Del Rey、Rick Nowels
+  desc: 来自美国创作歌手拉娜·德雷 2012 年专辑《向死而生》（Born to Die）的歌曲。
+en:
+  title: Summertime Sadness
+  author: Lana Del Rey, Rick Nowels
+  desc: A song from the 2012 album "Born to Die" by the American singer-songwriter Lana Del Rey.
+
+curator: Machine.Z
