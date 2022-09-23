@@ -1,0 +1,25 @@
+tune:
+  - [1, 1, 1]
+  - [3, 1, 1]
+  - [5, 1, 1]
+  - [3, 2]
+  - [1+, 1, 1]
+  - [4#, 1, 1]
+  - [5, 2]
+tuneBeatDur: 400
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 471
+tuneRevealOffset: 7686
+
+zh-Hans:
+  title: G 大调交响曲，第 94 号
+  author: 弗朗茨·约瑟夫·海顿（Franz Joseph Haydn）
+  desc: 被称为“惊愕交响曲”。选段来自第二乐章，由伦敦爱乐乐团演奏，乔治·索尔蒂（Sir Georg Solti）指挥。
+en:
+  title: Symphony No. 94 in G major
+  author: Franz Joseph Haydn
+  desc: Known as "the Surprise Symphony". Excerpt from the second movement, performed by London Philharmonic Orchestra, conducted by Georg Solti.
+
+curator: Ayu
