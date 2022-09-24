@@ -1,0 +1,26 @@
+tune:
+  - [5-, 2]
+  - [4, 3]
+  - [3, 3]
+  - [2, 2]
+  - [2, 4]
+  - [1, 2]
+  - [1, 4]
+  - [5-, 2]
+tuneBeatDur: 119
+tunePitchBase: Eb4
+metronome: [2, 8]
+
+tuneRevealBeatDur: 119 # 63 BPM / 8
+tuneRevealOffset: 476
+
+zh-Hans:
+  title: 词不达意
+  author: Peter Svensson（曲）；刘志远（编曲）；小寒（词）
+  desc: 林忆莲演唱的歌曲，收录于 2006 年专辑《呼吸》。改编自瑞典羊毛衫乐队（The Cardigans）的歌曲《Communication》。
+en:
+  title: 詞不達意
+  author: Peter Svensson (music); Liu Zhiyuan (arrangement); Xiaohan (lyrics)
+  desc: A song with vocals by Sandy Lam (林憶蓮), included in the 2006 album "Breathe" (呼吸). An adaptation of "Communication" by the Swedish band, The Cardigans.
+
+curator: Machine.Z

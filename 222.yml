@@ -1,0 +1,26 @@
+tune:
+  - [5, 2]
+  - [1, 1]
+  - [1, 5]
+  - [5, 2]
+  - [1, 1]
+  - [1, 2]
+  - [2, 2]
+  - [3, 5]
+tuneBeatDur: 286
+tunePitchBase: G4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 286 # 105 BPM / 2
+tuneRevealOffset: 9391
+
+zh-Hans:
+  title: 九月结束时叫醒我（Wake Me Up When September Ends）
+  author: Billie Joe Armstrong、Mike Dirnt、Tré Cool
+  desc: 美国摇滚乐队绿日乐队（Green Day）的一首歌曲，收录于 2004 年专辑《美式笨瓜》（American Idiot）。由乐队主唱比利·乔·阿姆斯特朗创作，以纪念自己幼时过世的父亲。
+en:
+  title: Wake Me Up When September Ends
+  author: Billie Joe Armstrong, Mike Dirnt, Tré Cool
+  desc: A song by the American rock band Green Day, from the 2004 album "American Idiot". Written by the lead vocalist Armstrong about his father who passed away when he was little.
+
+curator: sakura
