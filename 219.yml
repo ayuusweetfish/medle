@@ -1,0 +1,27 @@
+tune:
+  - [6, 4]
+  - [5, 2]
+  - [4#, 2]
+  - [5, 9]
+  - [5-, 3]
+  - [4, 6]
+  - [3, 6]
+  - [2#, 5]
+  - [3, 7]
+tuneBeatDur: 120
+tunePitchBase: F4
+metronome: [-4, 6, 4]
+
+tuneRevealBeatDur: 140 # 143 BPM / 3
+tuneRevealOffset: 9099
+
+zh-Hans:
+  title: THANATOS -IF I CAN'T BE YOURS-
+  author: 鹭巢诗郎（曲）；MASH（词）
+  desc: 1997 年动画电影《新世纪福音战士剧场版 Air/真心为你》片尾曲。
+en:
+  title: THANATOS -IF I CAN'T BE YOURS-
+  author: 鷺巣詩郎 (Sagisu Shiro) (music); MASH (lyrics)
+  desc: Ending theme of the 1997 animated film "The End of Evangelion".
+
+curator: daodao
