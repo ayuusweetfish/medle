@@ -1,0 +1,25 @@
+tune:
+  - [5-, 1]
+  - [3, 1]
+  - [2, 2]
+  - [1, 2]
+  - [7-, 3]
+  - [6-, 1]
+  - [1, 4]
+tuneBeatDur: 285
+tunePitchBase: Eb4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 285
+tuneRevealOffset: 888
+
+zh-Hans:
+  title: 大人中
+  author: 卢广仲（曲）；卢广仲、讨海人、威廉霍华（词）
+  desc: 台湾独立歌手卢广仲于 2014 年发行的单曲。
+en:
+  title: 大人中 (Adult)
+  author: Crowd Lu (music); Crowd Lu, 討海人, 威廉霍華 (lyrics)
+  desc: A single released in 2014 by the independent musician Crowd Lu from Taiwan.
+
+curator: daodao
