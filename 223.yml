@@ -1,0 +1,27 @@
+tune:
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [5, 1]
+  - [6, 1]
+  - [5, 1]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 1]
+tuneBeatDur: 274
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 274
+tuneRevealOffset: 2599
+
+zh-Hans:
+  title: 茉莉花
+  author: 中国民歌
+  desc: 源于清代乾隆年间的中国民间小调。录音版本由龚琳娜演唱。
+en:
+  title: 茉莉花 (Jasmine Flower)
+  author: Chinese folk tune
+  desc: A Chinese folk song that dates back to the Qing dynasty (18th century). Recorded vocals by Gong Linna.
+
+curator: Ayu
