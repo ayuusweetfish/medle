@@ -1,0 +1,26 @@
+tune:
+  - [3, 6]
+  - [3, 2]
+  - [2, 2]
+  - [2, 1]
+  - [4, 2]
+  - [3, 2]
+  - [2, 1]
+  - [1, 4]
+tuneBeatDur: 300
+tunePitchBase: C5
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 326
+tuneRevealOffset: 158
+
+zh-Hans:
+  title: 第2号丹戎舞曲（Danzón No. 2）
+  author: 阿图罗·马奎兹（Arturo Márquez）
+  desc: 墨西哥作曲家阿图罗·马奎兹于1994年完成创作的管弦乐作品，音乐风格来自墨西哥传统舞蹈。由古斯塔沃·杜达梅尔（Gustavo Dudamel）指挥洛杉矶爱乐乐团演奏。
+en:
+  title: Danzón No. 2
+  author: Arturo Márquez
+  desc: An orchesral piece completed in 1994 by the Mexican composer Arturo Márquez, in the style of a traditional Mexican dance. Performed by Los Angeles Philharmonic, conducted by Gustavo Dudamel.
+
+curator: Ayu
