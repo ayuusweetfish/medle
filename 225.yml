@@ -1,0 +1,28 @@
+tune:
+  - [6-, 6, 4]
+  - [7-, 4]
+  - [1, 4]
+  - [3, 24]
+  - [2#, 6]
+  - [1, 3]
+  - [7-, 3]
+  - [1, 6]
+  - [6-, 6]
+  - [3, 12]
+tuneBeatDur: 77
+tunePitchBase: C5
+metronome: [18, 6, 4]
+
+tuneRevealBeatDur: 77 # 130 BPM / 6
+tuneRevealOffset: 569
+
+zh-Hans:
+  title: 天方夜谭（Arabian Nights）
+  author: Alan Menken（曲）；Howard Ashman、Tim Rice（词）
+  desc: 迪士尼 1992 年动画电影《阿拉丁》开场歌曲，由 Bruce Adler 演唱。
+en:
+  title: Arabian Nights
+  author: Alan Menken (music); Howard Ashman, Tim Rice (lyrics)
+  desc: The opening tune to Disney's 1992 animated film "Aladdin", with vocals by Bruce Adler.
+
+curator: Ayu
