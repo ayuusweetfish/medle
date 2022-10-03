@@ -1,0 +1,31 @@
+tune:
+  - [1+, 2]
+  - [7, 2]
+  - [3, 2]
+  - [6, 2]
+  - [5, 2]
+  - [1, 2]
+  - [2, 5]
+  - [3, 1]
+  - [4, 4]
+tuneBeatDur: 400
+tunePitchBase: G3
+metronome: [0, 2, 6]
+
+tuneRevealBeatDur: 459
+tuneRevealOffset: 5799
+
+zh-Hans:
+  title: 动物狂欢节，第十三乐章《天鹅》
+  author: 卡米耶·圣-桑（Camille Saint-Saëns）
+  desc: |-
+    创作于 1886 年的管弦乐作品，但直至作曲家去世后的 1922 年才公开演出全曲。
+    由马友友演奏大提琴，Kathryn Stott 演奏钢琴。
+en:
+  title: "The Carnival of the Animals: XIII. The Swan"
+  author: Camille Saint-Saëns
+  desc: |-
+    An orchestral work composed in 1886, with the first public performance in 1922, the year after the composer's death.
+    Cello performed by Yo-yo Ma, piano performed by Kathryn Stott.
+
+curator: Ayu
