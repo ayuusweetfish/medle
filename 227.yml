@@ -1,0 +1,27 @@
+tune:
+  - [6-, 2]
+  - [1, 3]
+  - [6b, 1]
+  - [5, 5]
+  - [1, 1]
+  - [2#, 2]
+  - [3, 4]
+  # A transition from non-swing to swing in the recording,
+  # but swing in the puzzle
+tuneBeatDur: 140
+tunePitchBase: G4
+metronome: [0, 3, 4]
+
+tuneRevealBeatDur: 140
+tuneRevealOffset: 6730
+
+zh-Hans:
+  title: 詹姆斯·邦德主题曲（James Bond Theme）
+  author: Monty Norman
+  desc: 詹姆斯·邦德是英国小说家伊恩·佛莱明（Ian Fleming）创作的虚构角色，以代号007为人所熟知。1962年以来Eon制片公司在其基础上改编的25部电影都使用了这一音乐主题。
+en:
+  title: James Bond Theme
+  author: Monty Norman
+  desc: James Bond is a fictional character created by the British novelist Ian Fleming, also known by the code number 007. The music has featured in all 25 film adaptations produced by Eon Productions since 1962.
+
+curator: Ayu
