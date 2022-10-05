@@ -1,0 +1,28 @@
+tune:
+  - [1, 4]
+  - [1+, 4]
+  - [7, 2]
+  - [5, 1]
+  - [6, 1]
+  - [7, 2]
+  - [1+, 4]
+  - [1, 2]
+  - [6, 4]
+  - [5, 4]
+tuneBeatDur: 250
+tunePitchBase: Ab3
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 339
+tuneRevealOffset: 4429
+
+zh-Hans:
+  title: Over the Rainbow（彩虹之上）
+  author: Harold Arlen（曲）；Yip Harburg（词）
+  desc: 1939 年电影《绿野仙踪》（The Wizard of Oz）中的民谣歌曲，由茱蒂·嘉兰（Judy Garland）演唱，其在电影中饰演主角桃乐丝·盖尔（Dorothy Gale）。
+en:
+  title: Over the Rainbow
+  author: Harold Arlen (music); Yip Harburg (lyrics)
+  desc: A ballad from the 1939 film "The Wizard of Oz", sung by Judy Garland in her starring role as Dorothy Gale.
+
+curator: Ayu
