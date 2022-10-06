@@ -1,0 +1,28 @@
+tune:
+  - [1, 2, 1]
+  - [6-, 1]
+  - [5-, 3]
+  - [6-, 1]
+  - [1, 8]
+  - [1, 2, 1]
+  - [6-, 1]
+  - [5-, 3]
+  - [6-, 1]
+  - [2, 6]
+tuneBeatDur: 300
+tunePitchBase: E4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 343 # 87.5 BPM / 2
+tuneRevealOffset: 9248
+
+zh-Hans:
+  title: 但愿人长久
+  author: 梁弘志（曲）；苏轼（词）
+  desc: 以北宋词人苏轼作品《水调歌头·明月几时有》为歌词改编创作的歌曲，由邓丽君演唱，收录于 1982 年发行的诗词歌曲专辑《淡淡幽情》。
+en:
+  title: 但愿人长久 (May all be blessed always)
+  author: Vincent Liang Hung-Chih (music); Su Shi (lyrics)
+  desc: A song adapted from the work of Su Shi, a composer of Ci poetry from the Northern Song Dynasty of China. Original vocals by Teresa Teng and included in "淡淡幽情" (Light Exquisite Feeling), the album of classical Chinese poetry released in 1982.
+
+curator: Ayu
