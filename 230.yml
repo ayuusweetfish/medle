@@ -1,0 +1,28 @@
+tune:
+  - [1, 1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [1, 1]
+  - [1, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 2, 1]
+tuneBeatDur: 234
+tunePitchBase: Gb4
+metronome: [1, 2, 4]
+
+tuneRevealBeatDur: 234 # 128 BPM
+tuneRevealOffset: 12771
+
+zh-Hans:
+  title: Ooh La La
+  author: Lukasz Gottwald、Joshua Coleman、Henry Walter、Bonnie McKee、Jacob Kasher Hindlin、Lola Blanc、Fransisca Hall
+  desc: 2013 年动画喜剧片《蓝精灵2》主题曲，由 Britney Spears 演唱。
+en:
+  title: Ooh La La
+  author: Lukasz Gottwald, Joshua Coleman, Henry Walter, Bonnie McKee, Jacob Kasher Hindlin, Lola Blanc, Fransisca Hall
+  desc: Theme of the 2013 animated comedy film "The Smurfs 2", with vocals by Britney Spears.
+
+curator: Ayu
