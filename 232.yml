@@ -1,0 +1,28 @@
+tune:
+  - [3, 4]
+  - [5, 4]
+  - [3+, 2]
+  - [3+, 2]
+  - [3+, 2]
+  - [3+, 2]
+  - [3+, 3]
+  - [1+, 3]
+  - [6, 2]
+  - [2+, 4]
+tuneBeatDur: 144
+tunePitchBase: Gb3
+metronome: [8, 4]
+
+tuneRevealBeatDur: 144 # 104 BPM / 4
+tuneRevealOffset: 302
+
+zh-Hans:
+  title: 没有什么不同
+  author: 曲婉婷（曲、词）；张峡浩（编曲）
+  desc: 中国内地歌手曲婉婷创作并演唱的歌曲，收录于 2012 年发行的专辑《我的歌声里》。
+en:
+  title: Not That Different (没有什么不同)
+  author: Qu Wanting (曲婉婷) (music, lyrics); Sean.Z (张峡浩) (arrangement)
+  desc: A song composed and performed by Qu Wanting from the Chinese mainland, from the 2012 album “Everything in the World” (Asian version titled “我的歌声里”).
+
+curator: Ayu
