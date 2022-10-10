@@ -1,0 +1,27 @@
+tune:
+  - [1, 3]
+  - [3, 1]
+  - [5, 12]
+  - [3, 3]
+  - [6, 1]
+  - [5, 4]
+  - [3, 3]
+  - [1, 1]
+  - [5-, 4]
+tuneBeatDur: 121
+tunePitchBase: Eb4
+metronome: [4, 4, 4]
+
+tuneRevealBeatDur: 121
+tuneRevealOffset: 3758 # 5573 - 121 * 15
+
+zh-Hans:
+  title: 第1号圆号协奏曲
+  author: 理查德·施特劳斯（Richard Strauss）
+  desc: 德国作曲家施特劳斯为圆号与管弦乐队创作的作品，作于 1882-83 年间。由 Charles Olivieri-Munroe 指挥俄罗斯国家爱乐乐团演奏，Radek Baborak 担任圆号手。
+en:
+  title: Horn Concerto No. 1
+  author: Richard Strauss
+  desc: A piece for the horn and the orchestra, composed in 1882-83 by the German composer Strauss. Performed by National Philharmonic of Russia, with Radek Baborak playing the horn and Charles Olivieri-Munroe as the conductor.
+
+curator: Ayu
