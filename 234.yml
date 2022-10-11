@@ -1,0 +1,27 @@
+tune:
+  - [5-, 2]
+  - [3, 1]
+  - [1, 1]
+  - [4-, 1]
+  - [2, 1]
+  - [7-, 1]
+  - [5-, 1]
+  - [4, 1]
+  - [7-, 1]
+tuneBeatDur: 200
+tunePitchBase: Db4
+metronome: [-2, 3, 2]
+
+tuneRevealBeatDur: 162
+tuneRevealOffset: 685
+
+zh-Hans:
+  title: 伊比利亚（Iberia）
+  author: 伊萨克·阿尔贝尼斯（Isaac Albéniz）
+  desc: 《Iberia》是西班牙作曲家阿尔贝尼斯于 1905—09 年间创作的钢琴组曲。选段来自第一册中的《圣玛丽亚港》（El Puerto），由 Alicia de Larrocha 演奏。
+en:
+  title: Iberia
+  author: Isaac Albéniz
+  desc: “Iberia” is a suite for piano composed in 1905—09 by the Spanish composer Isaac Albéniz. Excerpt from “El Puerto” from Book 1, performed by Alicia de Larrocha.
+
+curator: Ayu
