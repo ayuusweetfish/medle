@@ -1,0 +1,29 @@
+tune:
+  - [6, 8, -5]
+  - [1+, 8, -7]
+  - [5, 8, 4]
+  - [6, 2]
+  - [1+, 4]
+  - [3, 2]
+  - [5, 2]
+  - [6, 1]
+  - [1+, 1]
+  - [5, 4]
+tuneBeatDur: 125
+tunePitchBase: D4
+metronome: [0, 4, 2]
+
+tuneRevealBeatDur: 100
+tuneRevealOffset: 598
+
+zh-Hans:
+  title: 新春乐
+  author: 茅沅
+  desc: 取材自河北民歌创作而成的小提琴独奏曲。录音版本为管弦乐改编，由深圳交响乐团演奏，吕思清担任小提琴独奏，张国勇指挥。
+  # 2012 中央电视台新春音乐会
+en:
+  title: 新春乐 (New Year’s Joy / Spring Carols)
+  author: 茅沅 (Mao Yuan)
+  desc: A solo violin piece inspired by a folk song from Hebei. The recorded version is an orchestral arrangement, performed by the Shenzhen Symphony Orchestra, with Lü Siqing as the violin soloist and Zhang Guoyong as the conductor.
+
+curator: m
