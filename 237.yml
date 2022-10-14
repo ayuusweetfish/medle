@@ -1,0 +1,25 @@
+tune:
+  - [6, 1]
+  - [7, 1]
+  - [1+, 10]
+  - [2+, 4]
+  - [3+, 2]
+  - [4+, 2]
+  - [5+, 4]
+tuneBeatDur: 275
+tunePitchBase: C4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 323
+tuneRevealOffset: 16390
+
+zh-Hans:
+  title: 查拉图斯特拉如是说（Also sprach Zarathustra）
+  author: 理查德·施特劳斯（Richard Strauss）
+  desc: 德国作曲家施特劳斯于1896年创作的一部交响诗，其灵感来自于弗里德里希·尼采的同名哲学小说。选段来自全曲序章，在1986年电影《2001太空漫游》中出现，由维也纳爱乐乐团演奏。
+en:
+  title: Thus Spake Zarathustra (Also sprach Zarathustra)
+  author: Richard Strauss
+  desc: "A symphonic poem composed by the German composer Strauss in 1896, inspired by the homonymous philosophical fiction by Friedrich Nietzsche. The excerpt from the beginning of the piece was featured in the 1896 film “2001: A Space Odyssey”, performed by Wiener Philharmoniker."
+
+curator: Ayu
