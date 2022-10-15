@@ -1,0 +1,31 @@
+tune:
+  - [5-, 2]
+  - [6-, 1]
+  - [1, 3]
+  - [3, 1]
+  - [5, 10]
+  - [6, 2]
+  - [6, 1]
+  - [6, 1]
+  - [5, 6]
+tuneBeatDur: 277
+tunePitchBase: F4
+metronome: [3, 3, 4]
+
+tuneRevealBeatDur: 277 # 217 BPM
+tuneRevealOffset: 5991
+
+zh-Hans:
+  title: 多么美好的世界（What A Wonderful World）
+  author: Bob Thiele、George David Weiss
+  desc: |-
+    由美国小号手、歌手路易斯·阿姆斯特朗（Louis Armstrong）演唱的单曲，于 1967 年发行。
+    “Love baby, love. That’s the secret, yeah.”
+en:
+  title: What A Wonderful World
+  author: Bob Thiele, George David Weiss
+  desc: |-
+    A single performed by the American trumpeter and vocalist Louis Armstrong, released in 1967.
+    “Love baby, love. That’s the secret, yeah.”
+
+curator: Ayu
