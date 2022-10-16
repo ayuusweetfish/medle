@@ -1,0 +1,26 @@
+tune:
+  - [3, 6]
+  - [1, 3]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 4]
+  - [1, 2]
+  - [1+, 4]
+tuneBeatDur: 135
+tunePitchBase: A4
+metronome: [0, 6]
+
+tuneRevealBeatDur: 126
+tuneRevealOffset: 5530
+
+zh-Hans:
+  title: A小调钢琴协奏曲，作品54
+  author: 罗伯特·舒曼（Robert Schumann）
+  desc: 德国浪漫主义时期作曲家舒曼为钢琴与管弦乐队创作的作品。分为三个乐章，选段来自第三乐章开头，由莱比锡布商大厦管弦乐团（Gewandhausorchester）演出，Martha Argerich 演奏钢琴，Riccardo Chailly 指挥。
+en:
+  title: Piano Concerto in A minor, Op. 54
+  author: Robert Schumann
+  desc: A piece for the piano and the orchestra by the German composer Schumann from the Romantic period. Excerpt from the final movement out of 3, performed by the Leipzig Gewandhaus Orchestra with Martha Argerich as the pianist and Riccardo Chailly as the conductor.
+
+curator: Ayu
