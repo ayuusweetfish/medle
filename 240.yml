@@ -1,0 +1,32 @@
+tune:
+  - [6-, 4]
+  - [6-, 2]
+  - [3, 2]
+  - [3, 2]
+  - [3, 2]
+  - [7-, 3]
+  - [1, 1]
+  - [7-, 2]
+  - [6-, 6]
+  # Dorian, but the tonic is assigned La
+tuneBeatDur: 175
+tunePitchBase: G4
+metronome: [0, 6]
+
+tuneRevealBeatDur: 234
+tuneRevealOffset: 5433
+
+zh-Hans:
+  title: 斯卡布罗集市（Scarborough Fair）
+  author: 英格兰传统民歌
+  desc: |-
+    英国地区广为流传的民歌，现存歌词（“Parsley, sage, rosemary, and thyme”）源自19世纪的版本。歌曲描述一位年轻男子希望传信请求以前的爱人完成一系列不可能的任务，此后两人将重归于好。
+    录音版本由美国民谣摇滚组合 Simon & Garfunkel 演唱。
+en:
+  title: Scarborough Fair
+  author: Traditional English ballad
+  desc: |-
+    A widespread ballad in the area of England. The current lyrics (“Parsley, sage, rosemary, and thyme”) date to 19th-century versions. The song tells a story in which a young man would like to ask his former lover to complete a number of impossible tasks.
+    Recorded version performed by the American folk rock duo, Simon & Garfunkel.
+
+curator: Ayu
