@@ -1,0 +1,32 @@
+tune:
+  - [5, 1]
+  - [6, 1]
+  - [1+, 2]
+  - [6, 2]
+  - [5, 2]
+  - [3, 1]
+  - [5, 1]
+  - [6, 1]
+  - [1+, 1]
+  - [5, 4]
+tuneBeatDur: 150
+tunePitchBase: C5
+metronome: [0, 4]
+
+tuneRevealBeatDur: 152
+tuneRevealOffset: 2506
+
+zh-Hans:
+  title: 牧童短笛
+  author: 贺绿汀
+  desc: |-
+    创作于1934年的钢琴曲，将西方复调创作手法与中国民族风格结合，传达出人民对战争的厌恶与对美好生活的向往，在世界范围内获得了影响力。
+    由沈文裕演奏。
+en:
+  title: The Cowherd's Flute (牧童短笛)
+  author: He Luting (贺绿汀)
+  desc: |-
+    A piano piece composed in 1934, combining Western polyphonic composition techniques with the Chinese traditional style to convey the people's resentment against war and their wish for a better life. The piece achieved influence worldwide in its time.
+    Performed by the Chinese pianist Shen Wenyu.
+
+curator: Ayu
