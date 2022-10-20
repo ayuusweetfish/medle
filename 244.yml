@@ -1,0 +1,27 @@
+tune:
+  - [5-, 1]
+  - [3, 3]
+  - [3, 3]
+  - [3, 5, 1]
+  - [3, 2, 1]
+  - [4, 2]
+  - [3, 1]
+  - [3, 3]
+  - [6-, 2]
+tuneBeatDur: 360
+tunePitchBase: Ab3
+metronome: [1, 3, 2]
+
+tuneRevealBeatDur: 481
+tuneRevealOffset: 905
+
+zh-Hans:
+  title: 爱之梦（Liebestraum）其三
+  author: 弗朗茨·李斯特（Franz Liszt）
+  desc: 《爱之梦》是匈牙利作曲家李斯特为三首诗所作的夜曲，由钢琴独奏。其中第三首据德国诗人符利拉德（Ferdinand Freiligrath）的《尽其所能爱的去爱》（O lieb, so lang du lieben kannst）创作。由 Martha Goldstein 演奏。
+en:
+  title: Liebestraum (Dreams of Love) No. 3
+  author: Franz Liszt
+  desc: Liebesträume is a set of nocturnes for the solo piano based on three poems. No. 3 is based on "Love as long as you can" (O lieb, so lang du lieben kannst) by the German poet Ferdinand Freiligrath. Performed by Martha Goldstein.
+
+curator: Ayu
