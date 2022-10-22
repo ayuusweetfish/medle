@@ -1,0 +1,28 @@
+tune:
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [5-, 1]
+  - [1, 1]
+  - [3, 1, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2, 2]
+  - [1, 1]
+tuneBeatDur: 270
+tunePitchBase: G4
+metronome: [-2, 2, 4]
+
+tuneRevealBeatDur: 270  # 111 BPM / 2
+tuneRevealOffset: 4906
+
+zh-Hans:
+  title: 月が泣いてる（月亮在哭泣）
+  author: 辻亚弥乃（曲、词、演唱）
+  desc: 日本创作歌手辻亚弥乃（つじあやの；Tsuji Ayano）创作并演唱的歌曲。收录于 2003 年发行的专辑《恋恋风歌》。
+en:
+  title: 月が泣いてる (The Moon is crying)
+  author: Tsuji Ayano (つじあやの) (composition, lyrics, performance)
+  desc: A song composed and recorded by the Japanese singer-songwriter Tsuji Ayano. Included in the album “Renren Fuuka” (恋恋風歌) released in 2003.
+
+curator: kuyuyuko
