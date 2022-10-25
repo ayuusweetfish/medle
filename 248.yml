@@ -1,0 +1,32 @@
+tune:
+  - [7-, 1]
+  - [1, 2]
+  - [7-, 1]
+  - [6-, 1]
+  - [7-, 3]
+  - [7-, 1]
+  - [1, 2]
+  - [6-, 2]
+  - [3, 2]
+tuneBeatDur: 350
+tunePitchBase: Bb4
+metronome: [1, 4]
+
+tuneRevealBeatDur: 395
+tuneRevealOffset: 9009
+# https://www.youtube.com/watch?v=DKc7wlfDQU8
+
+zh-Hans:
+  title: 魔王（Erlkönig）
+  author: 弗朗茨·舒伯特（Franz Schubert）
+  desc: |-
+    奥地利作曲家舒伯特创作的艺术歌曲，以德国诗人歌德（Johann Wolfgang von Goethe）的同名诗歌为背景。
+    由 Dietrich Fischer-Dieskau 演唱，Gerald Moore 演奏钢琴。
+en:
+  title: Erlkönig
+  author: Franz Schubert
+  desc: |-
+    A Lied (art song) composed by the Austrian composer Schubert, setting the poem of the same name by the German poet Johann Wolfgang von Goethe.
+    Vocals by Dietrich Fischer-Dieskau, with Gerald Moore as the pianist.
+
+curator: Ayu
