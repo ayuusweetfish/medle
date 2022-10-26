@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [3+, 1, 1]
+  - [2+, 1]
+  - [1+, 1, 1]
+  - [7, 1]
+  - [6, 1]
+  - [5#, 1]
+  - [6, 1]
+  - [7, 1]
+  - [3, 1, 1]
+tuneBeatDur: 250
+tunePitchBase: D4
+metronome: [4, 3, 2]
+
+tuneRevealBeatDur: 217
+tuneRevealOffset: 75
+
+zh-Hans:
+  title: 钟（La campanella）
+  author: 尼科罗·帕格尼尼（Niccolò Paganini）
+  desc: 意大利小提琴家帕格尼尼创作的《B小调小提琴协奏曲》中的第三乐章，后由多位其他作曲家改变为不同版本，例如李斯特的钢琴独奏改编。
+en:
+  title: La campanella (“The little bell”)
+  author: Niccolò Paganini
+  desc: The third movement from Violin Concerto No. 2 in B minor by the Italian violinist Paganini. Arrangements were later made by other composers, including Liszt's arrangement for the solo piano.
+
+curator: Ayu
