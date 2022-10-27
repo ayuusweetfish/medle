@@ -1,0 +1,27 @@
+tune:
+  - [2#, 1]
+  - [3, 2]
+  - [1, 2]
+  - [2, 2]
+  - [2#, 1]
+  - [3, 2, -1]
+  - [2#, 2, 1]
+  - [3, 1]
+  - [5, 3]
+tuneBeatDur: 171
+tunePitchBase: Ab4/437
+metronome: [0, 4]
+
+tuneRevealBeatDur: 171
+tuneRevealOffset: 6026
+
+zh-Hans:
+  title: Steamboat Bill
+  author: Wilfred Jackson、Bert Lewis
+  desc: 歌舞杂耍表演组合莱顿兄弟（Leighton Brothers）于 1910 年创作的歌曲。迪士尼公司制作的动画片《汽船威利号》中使用了此段音乐。影片于 1928 年首映，是世界上第一部有声动画片。
+en:
+  title: Steamboat Bill
+  author: Wilfred Jackson, Bert Lewis
+  desc: A 1910 song by the Leighton Brothers, a vaudeville group. The melody was featured in Walt Disney Studio’s animated film “Steamboat Willie”, which premiered in 1928 and was the world’s first cartoon with synchronized sound.
+
+curator: Ayu
