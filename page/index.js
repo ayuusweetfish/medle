@@ -240,7 +240,8 @@ const createSound = (urls) => {
     const id = count++;
     const nSource = audioCtx.createBufferSource();
     nSource.buffer = buf;
-    nSource.playbackRate = overallPlaybackRate;
+    nSource.playbackRate.setValueAtTime(
+      overallPlaybackRate, audioCtx.currentTime);
     nSource.start();
     nSource.onended = () => {
       emit('end');
