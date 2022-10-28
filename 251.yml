@@ -1,0 +1,26 @@
+tune:
+  - [5, 2, 2]
+  - [3, 2, 8]
+  - [5, 4]
+  - [4, 14]
+  - [4, 2, 1]
+  - [3, 2, 9]
+  - [1, 4]
+  - [1#, 4]
+tuneBeatDur: 160
+tunePitchBase: Bb4
+metronome: [2, 2, 4]
+
+tuneRevealBeatDur: 212
+tuneRevealOffset: 6310 # 6734 - 2 beats
+
+zh-Hans:
+  title: What Is This Thing Called Love?
+  author: Cole Porter
+  desc: 1929 年音乐剧《Wake Up and Dream》中的歌曲。录音版本由美国爵士歌手埃拉·菲茨杰拉德（Ella Fitzgerald）演唱。
+en:
+  title: What Is This Thing Called Love?
+  author: Cole Porter
+  desc: A song from the 1929 musical "Wake Up and Dream". Vocals in the recorded version by the American jazz singer Ella Fitzgerald.
+
+curator: Ayu
