@@ -1,0 +1,31 @@
+tune:
+  - [6-, 2]
+  - [1, 1]
+  - [3, 2]
+  - [2, 2]
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 2]
+tuneBeatDur: 175
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 163
+tuneRevealOffset: 104
+
+zh-Hans:
+  title: 管乐第六组曲（Sixth Suite for Band）
+  author: 阿尔弗雷德·里德（Alfred Reed）
+  desc: |-
+    美国作曲家里德为管乐队创作的组曲。
+    选段来自第三乐章“Halloween Hobgoblin”，由 Otonowa Wind Symphonica 演奏。
+en:
+  title: Sixth Suite for Band
+  author: Alfred Reed
+  desc: |-
+    A suite composed for the wind band by the American composer Reed.
+    Excerpt from the third movement “Halloween Hobgoblin”, performed by Otonowa Wind Symphonica.
+
+curator: Ayu
