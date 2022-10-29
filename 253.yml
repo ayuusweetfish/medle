@@ -1,0 +1,27 @@
+tune:
+  - [3, 0.8, 1.2]
+  - [4, 0.8]
+  - [5, 1.2]
+  - [2, 2, 4]
+  - [1+, 6]
+  - [3, 0.8, 1.2]
+  - [4, 0.8]
+  - [5, 1.2]
+  - [1, 2]
+tuneBeatDur: 150
+tunePitchBase: Eb4
+metronome: [-3, 2, 4]
+
+tuneRevealBeatDur: 136 # 220 BPM / 2
+tuneRevealOffset: 5074
+
+zh-Hans:
+  title: 怪兽电力公司（Monsters, Inc.）
+  author: 兰迪·纽曼（Randy Newman）
+  desc: 迪士尼 2001 年动画喜剧电影《怪兽电力公司》主题曲。
+en:
+  title: Monsters, Inc.
+  author: Randy Newman
+  desc: Theme of Disney's 2001 animated comedy film "Monsters, Inc."
+
+curator: Ayu
