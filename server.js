@@ -1,10 +1,9 @@
-import { serve } from 'https://deno.land/std@0.146.0/http/server.ts';
-import { serveFile } from 'https://deno.land/std@0.146.0/http/file_server.ts';
-import { existsSync } from 'https://deno.land/std@0.146.0/fs/mod.ts';
-import { parse as parseYaml } from 'https://deno.land/std@0.146.0/encoding/yaml.ts';
+import { serve } from 'https://deno.land/std@0.161.0/http/server.ts';
+import { serveFile } from 'https://deno.land/std@0.161.0/http/file_server.ts';
+import { parse as parseYaml } from 'https://deno.land/std@0.161.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
-import { minify as terserMinify } from 'https://esm.sh/terser@5.14.1';
-import { minify as cssoMinify } from 'https://unpkg.com/csso@5.0.3/dist/csso.esm.js';
+import { minify as terserMinify } from 'https://esm.sh/terser@5.15.1';
+import { minify as cssoMinify } from 'https://unpkg.com/csso@5.0.5/dist/csso.esm.js';
 
 const log = (msg) => {
   console.log(`${(new Date()).toISOString()} ${msg}`);
@@ -50,14 +49,20 @@ const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
 const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 
-const packaged = (existsSync('build') &&
-  Deno.env.get('NOBUILD') !== '1') ? {} : false;
-if (packaged) {
-  for (const entry of Deno.readDirSync('build')) {
-    if (entry.name.endsWith('.js')) packaged.indexJs = entry.name;
-    if (entry.name.endsWith('.css')) packaged.indexCss = entry.name;
+let packaged = {}
+if (Deno.env.get('NOBUILD') !== '1') {
+  try {
+    for await (const entry of Deno.readDir('build')) {
+      if (entry.name.endsWith('.js')) packaged.indexJs = entry.name;
+      if (entry.name.endsWith('.css')) packaged.indexCss = entry.name;
+    }
+  } catch (err) {
+    if (err instanceof Deno.errors.NotFound) { }
+    throw err;
   }
 }
+if (packaged.indexJs === undefined || packaged.indexCss === undefined)
+  packaged = false;
 
 const indexHtmlContents = await Deno.readTextFile('page/index.html');
 const indexTemplate = etaCompile(indexHtmlContents);
@@ -107,11 +112,17 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
   if (puzzleId === undefined) puzzleId = today;
 
   const file = `puzzles/${puzzleId}.yml`;
-  if (!existsSync(file)) return noSuchPuzzle();
 
-  const puzzleContents = parseYaml(
-    new TextDecoder().decode(await Deno.readFile(file))
-  );
+  let puzzleContents;
+  try {
+    puzzleContents = parseYaml(
+      new TextDecoder().decode(await Deno.readFile(file))
+    );
+  } catch (err) {
+    if (err instanceof Deno.errors.NotFound)
+      return noSuchPuzzle();
+    throw error;
+  }
 
   puzzleContents.id = puzzleId;
 
