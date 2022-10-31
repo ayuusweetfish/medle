@@ -45,6 +45,16 @@ if (Deno.args[0] === 'build') {
   Deno.exit();
 }
 
+const persistEndpoint = Deno.env.get('PERS');
+const persistLog = (line) => {
+  log(line);
+  if (persistEndpoint)
+    fetch(persistEndpoint, {
+      method: 'POST',
+      body: `${(new Date()).toISOString()} ${line}`,
+    });
+};
+
 const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
 const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
@@ -179,7 +189,7 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
 
   puzzleContents.packaged = packaged;
 
-  log(`puzzle ${puzzleId} ${analytics(req)}`);
+  persistLog(`puzzle ${puzzleId} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,
@@ -222,7 +232,7 @@ const handler = async (req) => {
     if (url.pathname === '/analytics') {
       try {
         const body = await req.formData();
-        log(`analy ${body.get('puzzle')} ${body.get('t')} ${analytics(req)}`);
+        persistLog(`analy ${body.get('puzzle')} ${body.get('t')} ${analytics(req)}`);
       } catch {
         return new Response('', { status: 400 });
       }
