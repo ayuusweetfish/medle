@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html><head>
+<html lang='<%= it.lang %>'><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <% let metaDescription = it.lang === "zh-Hans" ? "旋律猜谜游戏，每日更新~" : "Daily melody puzzle game"; _%>
+  <meta name='description' content='<%= metaDescription %>'>
+  <meta property='og:title' content='<% if (it.isLanding) { %>Medle<% } else { %>Medle #<%= it.id %><% } %>'>
+  <meta property='og:type' content='website'>
+  <meta property='og:image' content='https://medle.0-th.art/static/icon-large.png'>
+  <meta property='og:url' content='https://medle.0-th.art/<%= it.isLanding ? "" : it.id %>'>
+  <meta property='og:description' content='<%= metaDescription %>'>
+  <meta property='og:locale' content='<%= it.lang %>'>
+  <% for (const lang of it.availLangs) if (lang !== it.lang) { _%>
+    <meta property='og:locale:alternate' content='<%= lang %>'>
+  <% } _%>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <title>Medle #<%= it.id %></title>
-  <% if (it.packaged) { %>
-  <link rel='stylesheet' href='/build/<%~ it.packaged.indexCss %>'>
-  <% } else { %>
-  <link rel='stylesheet' href='/static/index.css'>
-  <% } %>
+  <% if (it.packaged) { _%>
+    <link rel='stylesheet' href='/build/<%~ it.packaged.indexCss %>'>
+  <% } else { _%>
+    <link rel='stylesheet' href='/static/index.css'>
+  <% } _%>
+  <link rel='preload' href='/static/VarelaRound.woff2' as='font' type='font/woff2' crossorigin>
+  <link rel='preload' href='/static/icons.woff2' as='font' type='font/woff2' crossorigin>
 </head><body>
 
 <div id='container'>
@@ -15,7 +28,7 @@
   <div id='icon-btns-container'>
     <div id='icon-btn-help'>?</div>
     <div id='icon-btn-options' class='iconfont'>&#xf013;</div>
-    <% if (it.isDaily) { %>
+    <% if (it.isDaily) { _%>
       <div id='icon-btn-archive' class='iconfont'>&#x1f4c6;</div>
     <% } %>
   </div>
@@ -263,7 +276,7 @@
     </div>
     <div class='bottom-shadow'></div>
   </div>
-  <% if (it.guideToToday) { %>
+  <% if (it.guideToToday) { _%>
   <div class='modal hidden' id='modal-guide-today'>
     <p class='title'>📜</p>
     <p><span data-t='guide-today-1-pfx'></span><strong>#<%= it.id %></strong><span data-t='guide-today-1-sfx'></span></p>
@@ -271,7 +284,7 @@
     <div id='guide-today-links'></div>
     <p style='color: #999' data-t='daily-update'></p>
   </div>
-  <% } %>
+  <%_ } %>
 </div>
 <div id='modal-bg' class='hidden'></div>
 
@@ -294,6 +307,7 @@ const guideToToday = <%= it.guideToToday %>;
 const todayDaily = <%~ JSON.stringify(it.todayDaily) %>;
 
 const i18nVars = <%~ JSON.stringify(it.i18nVars) %>;
+const headerLang = '<%= it.lang %>';
 </script>
 <% if (it.packaged) { %>
 <script src='/build/<%~ it.packaged.indexJs %>'></script>

@@ -77,15 +77,17 @@ if (packaged.indexJs === undefined || packaged.indexCss === undefined)
 const indexHtmlContents = await Deno.readTextFile('page/index.html');
 const indexTemplate = etaCompile(indexHtmlContents);
 
+const availLangs = ['zh-Hans', 'en'];
+
 const serveFileCached = async (req, path) => {
   const resp = await serveFile(req, path);
   resp.headers.set('Cache-Control', 'public, max-age=2592000');
   return resp;
 };
 
-const analytics = (req) => {
+const getCookies = (req) => {
   const cookies = req.headers.get('Cookie');
-  if (cookies === null) return '';
+  if (cookies === null) return {};
   const dict = {};
   for (const s of cookies.split(';')) {
     const i = s.indexOf('=');
@@ -93,6 +95,11 @@ const analytics = (req) => {
     const value = decodeURIComponent(s.substring(i + 1));
     dict[key] = value;
   }
+  return dict;
+};
+
+const analytics = (req) => {
+  const dict = getCookies(req);
   if (!dict['lang']) return '';
   return `${dict['lang']} ${dict['sfx']} ${dict['dark']} ${dict['highcon']} ${dict['notation']}`;
 };
@@ -115,9 +122,36 @@ const bend = (s) => {
   return parseFloat(s.substring(i + 1)) / 440;
 };
 
+const negotiateLang = (accept, supported) => {
+  const list = accept.split(',').map((s) => {
+    s = s.trim();
+    let q = 1;
+    const pos = s.indexOf(';q=');
+    if (pos !== -1) {
+      const parsed = parseFloat(s.substring(pos + 3));
+      if (isFinite(parsed)) q = parsed;
+      s = s.substring(0, pos).trim();
+    }
+    return { lang: s, q };
+  });
+
+  let bestScore = 0;
+  let bestLang = supported[0];
+  for (const l of supported) {
+    for (const { lang, q } of list) {
+      if (lang.substring(0, 2) === l.substring(0, 2)) {
+        const score = q + (lang === l ? 0.2 : 0);
+        if (score > bestScore)
+          [bestScore, bestLang] = [score, l];
+      }
+    }
+  }
+  return bestLang;
+}
+
 const noSuchPuzzle = () => new Response('No such puzzle > <\n', { status: 404 });
 
-const servePuzzle = async (req, puzzleId, checkToday) => {
+const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
   const today = todaysPuzzle();
   if (puzzleId === undefined) puzzleId = today;
 
@@ -175,11 +209,18 @@ const servePuzzle = async (req, puzzleId, checkToday) => {
   puzzleContents.tunePitchBase = midiPitch(puzzleContents.tunePitchBase);
 
   const i18n = {};
-  for (const lang of ['zh-Hans', 'en']) {
+  for (const lang of availLangs) {
     const langContents = puzzleContents[lang];
     i18n[lang] = langContents;
   }
   puzzleContents.i18nVars = i18n;
+
+  puzzleContents.lang =
+    negotiateLang(getCookies(req)['lang'] ||
+      req.headers.get('Accept-Language') || '',
+      availLangs);
+  puzzleContents.availLangs = availLangs;
+  puzzleContents.isLanding = isLanding;
 
   const isDaily = !!puzzleId.match(/^[0-9]{3,}$/g);
   puzzleContents.guideToToday =
@@ -203,7 +244,7 @@ const handler = async (req) => {
   const url = new URL(req.url);
   if (req.method === 'GET') {
     if (url.pathname === '/') {
-      return servePuzzle(req, undefined, false);
+      return servePuzzle(req, undefined, false, true);
     }
     if (url.pathname === '/favicon.ico') {
       return serveFileCached(req, 'favicon.png');
@@ -225,7 +266,7 @@ const handler = async (req) => {
       const puzzleId = url.pathname.substring(1);
       if (!debug && parseInt(puzzleId) > todaysPuzzleIndex())
         return noSuchPuzzle();
-      return servePuzzle(req, puzzleId, url.search !== '?past');
+      return servePuzzle(req, puzzleId, url.search !== '?past', false);
     }
   } else if (req.method === 'POST') {
     // Analytics

@@ -896,7 +896,10 @@ btnNotation.addEventListener('click', () => {
 updateNotation(false);
 
 // Internationalization
-let curLang = 1;  // Defaults to English
+// Previously stored language or preferred language
+let curLang = window.languages.map((el) => el[0])
+  .indexOf(localStorage.lang || headerLang);
+
 const btnLangs = [document.getElementById('btn-lang'), document.getElementById('btn-lang-alt')];
 
 const i18nEls = document.querySelectorAll('[data-t]');
@@ -917,24 +920,10 @@ const updateInterfaceLanguage = () => {
   }
   for (const btnLang of btnLangs)
     btnLang.innerText = window.languages[curLang][1];
+  document.documentElement.lang = langName;
   localStorage.lang = langName;
   localStorageToCookie();
 };
-
-// Find previously stored language or preferred language
-const langCode = (localStorage.lang || window.navigator.languages[0]).split('-');
-let bestMatch = 0;
-for (const [i, [code, name, dict]] of Object.entries(window.languages)) {
-  const codeParts = code.split('-');
-  // Compare components
-  let comps = 0;
-  for (comps = 0; comps < langCode.length && comps < codeParts.length; comps++)
-    if (langCode[comps] !== codeParts[comps]) break;
-  if (comps > bestMatch) {
-    bestMatch = comps;
-    curLang = +i;
-  }
-}
 updateInterfaceLanguage();
 
 for (const btnLang of btnLangs)
