@@ -1,0 +1,25 @@
+tune:
+  - [1+, 3]
+  - [7, 1]
+  - [6, 1]
+  - [5, 1]
+  - [3, 1]
+  - [1+, 1]
+  - [7, 1]
+tuneBeatDur: 350
+tunePitchBase: Ab4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 371
+tuneRevealOffset: 279
+
+zh-Hans:
+  title: 玫瑰人生（La Vie en rose）
+  author: Louiguy（曲）；Édith Piaf（词）
+  desc: 法国歌手艾迪特·皮雅芙于 1945–1946 年创作并演唱的歌曲，几十年来翻唱与改编版本众多。
+en:
+  title: La Vie en rose
+  author: Louiguy (music); Édith Piaf (lyrics)
+  desc: A song written and performed by the French singer Édith Piaf, with a large number of covers and adaptations over the decades.
+
+curator: Ayu
