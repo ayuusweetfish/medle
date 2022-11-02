@@ -1,0 +1,29 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [3, 1]
+  - [4, 1]
+  - [3, 1]
+  - [1+, 1]
+  - [6, 2]
+tuneBeatDur: 200
+tunePitchBase: C4
+metronome: [-1, 2]
+
+tuneRevealBeatDur: 200
+tuneRevealOffset: 3406
+
+zh-Hans:
+  title: 自由探戈（Libertango）
+  author: 阿斯托尔·皮亚佐拉（Ástor Pantaleón Piazzolla）
+  desc: |-
+    阿根廷作曲家、班多钮手风琴（bandoneon）演奏家皮亚佐拉于 1974 年发布的作品。标题由西班牙语“自由”（libertad）与“探戈”（tango）联接而成，象征皮亚佐拉从古典探戈到新探戈（tango nuevo）的转变。
+    由莫斯科城市交响乐团演出，Yuri Medyanik 演奏班多钮琴、Rodion Petrov 演奏小提琴，Sergey Zhilin 指挥。
+en:
+  title: Libertango
+  author: Ástor Pantaleón Piazzolla
+  desc: |-
+    A composition by the Argentine tango composer and bandoneon player Astor Piazzolla in 1974. The title is a portmanteau of "libertad" ("liberty" in Spanish) and "tango", symbolizing Piazzolla's break from classical tango to tango nuevo.
+    Performed by the Moscow City Symphony, with Yuri Medyanik as the bandoneon soloist and Rodion Petrov as the violin soloist, conducted by Sergey Zhilin.
+
+curator: Ayu
