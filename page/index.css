@@ -14,6 +14,12 @@
   src: url(/static/icons.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'FxEmojis';
+  font-display: swap;
+  src: url(/static/emoji.woff2) format('woff2');
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -22,7 +28,7 @@ html, body {
   background: #fdfdfd;
 }
 * {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', 'FxEmojis', sans-serif;
   user-select: none;
 }
 .iconfont {
