@@ -1,0 +1,27 @@
+tune:
+  - [6, 2]
+  - [7, 2]
+  - [6, 2]
+  - [2+, 1]
+  - [7, 1]
+  - [6, 2]
+  - [3, 2]
+  - [3, 2]
+  - [2, 2]
+tuneBeatDur: 200
+tunePitchBase: E5
+metronome: [0, 4]
+
+tuneRevealBeatDur: 218
+tuneRevealOffset: 5378
+
+zh-Hans:
+  title: 水上游戏（Jeux d'eau）
+  author: 莫里斯·拉威尔（Maurice Ravel）
+  desc: 法国作曲家拉威尔作于 1901 年的钢琴独奏乐曲。由 Stewart Goodyear 演奏。
+en:
+  title: Water Games (Jeux d'eau)
+  author: Maurice Ravel
+  desc: A piece for solo piano composed by the French musician Ravel in 1901. Performed by Stewart Goodyear.
+
+curator: Ayu
