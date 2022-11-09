@@ -1,0 +1,27 @@
+tune:
+  - [1+, 3]
+  - [6, 3]
+  - [4, 3]
+  - [4, 1]
+  - [5, 2]
+  - [6, 2]
+  - [7, 3]
+  - [1+, 3]
+  - [2+, 4]
+tuneBeatDur: 178
+tunePitchBase: C4
+metronome: [-2, 4]
+
+tuneRevealBeatDur: 178 # 168 BPM / 2
+tuneRevealOffset: 11767
+
+zh-Hans:
+  title: Sunny Days
+  author: 乔·拉波索（Joe Raposo）
+  desc: 美国儿童教育电视节目《芝麻街》片头曲。
+en:
+  title: Sunny Days
+  author: Joe Raposo
+  desc: Opening song to the American children's educational television series "Sesame Street".
+
+curator: Ayu
