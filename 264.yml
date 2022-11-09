@@ -1,0 +1,30 @@
+tune:
+  - [3+, 1]
+  - [2+, 2]
+  - [1+, 1]
+  - [7, 2]
+  - [6, 1]
+  - [5, 2]
+  - [3+, 1]
+  - [3+, 1]
+tuneBeatDur: 200
+tunePitchBase: C4
+metronome: [1, 3]
+
+tuneRevealBeatDur: 188
+tuneRevealOffset: 3379
+
+zh-Hans:
+  title: 砍斫圆舞曲（The Celebrated Chop Waltz）
+  author: Euphemia Allen
+  desc: |-
+    也被称为“筷子”（Chopsticks），是 1877 年由 16 岁的欧菲米亚·艾伦创作的钢琴曲，借助笔名 Arthur de Lulli 出版。根据作曲家的说明，弹奏旋律时双手应当呈竖直姿势，如同砍斫（chop）一般。
+    由郎朗演奏。
+en:
+  title: The Celebrated Chop Waltz
+  author: Euphemia Allen
+  desc: |-
+    Also known as “Chopsticks”, a piano piece composed by the 16-year-old Euphemia Allen in 1877, published under the pen name Arthur de Lulli. The composer specifies that the melody should be played with hands held in the vertical orientation, in a chopping motion.
+    Performed by Lang Lang.
+
+curator: Ayu
