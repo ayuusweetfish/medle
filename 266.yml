@@ -1,0 +1,29 @@
+tune:
+  - [5, 3]
+  - [3+, 9]
+  - [2+, 3]
+  - [2+, 12, 12, -20]
+  - [1+, 12, 12, -20]
+  - [7, 12, 12, 4]
+  - [7, 4]
+  - [6, 4]
+  - [5, 4, 24]
+  - [4, 9]
+tuneBeatDur: 45
+tunePitchBase: G4
+metronome: [15, 12]
+
+tuneRevealBeatDur: 40
+tuneRevealOffset: 10913
+# https://youtu.be/Ta5q9_UBL4w?t=209
+
+zh-Hans:
+  title: 序曲，来自《阿尔及尔的意大利女郎》
+  author: 焦阿基诺·罗西尼（Gioachino Rossini）
+  desc: 首演于 1813 年的意大利喜歌剧（operatic dramma giocoso）《阿尔及尔的意大利女郎》（L'italiana in Algeri）的序曲。
+en:
+  title: Overture to “L'italiana in Algeri”
+  author: Gioachino Rossini
+  desc: Overture from “The Italian Girl in Algiers” (L'italiana in Algeri), the Italian opera (operatic dramma giocoso) which premiered in 1813.
+
+curator: Ayu
