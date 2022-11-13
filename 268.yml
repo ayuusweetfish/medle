@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [4#, 1]
+  - [5, 1]
+  - [3+, 1]
+  - [7, 1]
+  - [2+, 1]
+  - [1+, 1]
+tuneBeatDur: 250
+tunePitchBase: G4
+metronome: [3, 4]
+
+tuneRevealBeatDur: 255
+tuneRevealOffset: 82 # 848 - 3 ticks
+# https://imslp.org/wiki/Special:ImagefromIndex/300231/paow
+# https://www.youtube.com/watch?v=YWQn47DCOq0
+
+zh-Hans:
+  title: 喷泉（La Fontaine）
+  author: 卡尔·博姆（Carl Bohm）
+  desc: 德国作曲家卡尔·博姆于 1877 年出版的钢琴独奏乐曲。
+en:
+  title: The Fountain (La Fontaine)
+  author: Carl Bohm
+  desc: A piece for the solo piano, composed by the German composer Carl Bohm and published in 1877.
+
+curator: Ayu
