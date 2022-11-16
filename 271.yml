@@ -1,0 +1,33 @@
+tune:
+  - [3, 1]
+  - [5, 1]
+  - [2, 2]
+  - [3, 2]
+  - [5, 2]
+  - [3, 1]
+  - [5, 1]
+  - [1+, 2]
+  - [3, 2]
+  - [5, 2]
+tuneBeatDur: 150
+tunePitchBase: G4
+metronome: [-2, 4, 2]
+
+tuneRevealBeatDur: 135
+tuneRevealOffset: 5920
+# https://y.qq.com/n/ryqq/songDetail/0008WbNG16JqBH
+
+zh-Hans:
+  title: 步步高
+  author: 吕文成
+  desc: |-
+    广东音乐家吕文成为高胡创作的音乐，富有地方民乐特色。
+    录音来自太平洋影音公司 1998 年发行的唱片《广东音乐 平湖秋月》。
+en:
+  title: Higher Step by Step (步步高)
+  author: Lyu Wencheng (吕文成)
+  desc: |-
+    A piece for the Gao Hu (soprano Er-Hu) with rich features of local folk music by the musician Lyu Wencheng from Guandgong, China.
+    Recording from the 1998 album "广东音乐 平湖秋月" (Cantonese music — Autumn Moon over a Calm Lake) by Pacific Audio & Video Co. (太平洋影音公司).
+
+curator: sakura

@@ -1,0 +1,29 @@
+tune:
+  - [3+, 2]
+  - [1+, 1, 1, 2]
+  - [3+, 2]
+  - [1+, 6, -4]
+  - [2+, 5, 4, -3]
+  - [3+, 2, -1]
+  - [5+, 3]
+  - [1+, 2, -1]
+  - [2+, 2]
+  - [6, 1, 4]
+tuneBeatDur: 175
+tunePitchBase: C4
+metronome: [0, 4, 2]
+
+tuneRevealBeatDur: 181
+tuneRevealOffset: 8916
+# https://music.163.com/#/song?id=288858
+
+zh-Hans:
+  title: 龙船调
+  author: 土家族民歌
+  desc: 发源于湖北省西南部利川市一带，是土家族以彩龙船为道具庆祝节日时演唱的一首灯歌。录音由宋祖英演唱。
+en:
+  title: The Dragon Boat Tune (龙船调)
+  author: Folk tune of the Bifzixkar (土家族; Tujia)
+  desc: Originating from the southwestern region of Hubei Provice of China, a folk tune sung by the Tujia people at festival celebrations with colourful dragon boats. Recorded version performed by Song Zuying (宋祖英).
+
+curator: sakura
