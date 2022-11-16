@@ -1,0 +1,34 @@
+tune:
+  - [1+, 2]
+  - [1+, 1]
+  - [6, 1]
+  - [5, 3, 1]
+  - [7b, 1]
+  - [7b, 1]
+  - [7b, 1]
+  - [5, 1]
+  - [4, 1]
+  - [2, 2, 1]
+tuneBeatDur: 400
+tunePitchBase: C4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 418
+tuneRevealOffset: 580
+# https://youtu.be/7HWLL5XPLkk?t=189
+# https://youtu.be/7bJ0p_89rrA?t=183
+
+zh-Hans:
+  title: 吉他与管弦小乐团协奏曲
+  author: 海托尔·维拉-罗伯斯（Heitor Villa-Lobos）
+  desc: |-
+    巴西作曲家、指挥家、大提琴手与古典吉他手维拉-罗伯斯创作于 1951 年的作品，为西班牙的吉他演奏家安德烈斯·塞戈维亚（Andrés Segovia）而作。
+    由乌拉圭吉他手 Eduardo Fernández 与英国室内乐团演奏，Enrique García Asensio 指挥。
+en:
+  title: Concerto for Guitar and Small Orchestra
+  author: Heitor Villa-Lobos
+  desc: |-
+    A piece by the Brazilian composer, conductor, cellist and classical guitarist Villa-Lobos, composed in 1951 and dedicated to the Spanish guitarist Andrés Segovia.
+    Performed by the Uruguayan guitarist Eduardo Fernández with English Chamber Orchestra, conducted by Enrique García Asensio.
+
+curator: Ayu
