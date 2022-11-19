@@ -1,0 +1,28 @@
+tune:
+  - [6, 0.8]
+  - [5, 1.2]
+  - [1+, 2.8]
+  - [6, 1.2]
+  - [5, 0.8]
+  - [3b*, 0.25]
+  - [2, 0.95]
+  - [1, 2]
+  - [1, 2]
+tuneBeatDur: 261
+tunePitchBase: Eb4
+metronome: [2.8, 2, 2]
+
+tuneRevealBeatDur: 261 # 115 BPM / 2
+tuneRevealOffset: 26146
+# https://youtu.be/0hG-2tQtdlE
+
+zh-Hans:
+  title: 你我是朋友（You've Got a Friend in Me）
+  author: 兰迪·纽曼（Randy Newman）
+  desc: 由皮克斯动画工作室制作的计算机动画电影《玩具总动员》（Toy Story）的主题曲。影片于 1995 年上映。
+en:
+  title: You've Got a Friend in Me
+  author: Randy Newman
+  desc: The theme song from the 1995 computer-animated film “Toy Story” by Pixar Animation Studios.
+
+curator: Ayu

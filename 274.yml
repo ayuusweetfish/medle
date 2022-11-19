@@ -1,0 +1,31 @@
+tune:
+  - [4, 4, 4, -7]
+  - [6, 4, 4, -7]
+  - [7, 4, 4, 1]
+  - [3+, 1]
+  - [2+, 2]
+  - [7, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [5, 1]
+  - [3, 1]
+tuneBeatDur: 214
+tunePitchBase: C4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 214 # 140 BPM / 2
+tuneRevealOffset: 2006
+# The Legend of Zelda: Ocarina of Time
+# https://www.youtube.com/watch?v=ziUSQKcURBE
+# https://youtu.be/sIiEi96USlo?t=2195
+
+zh-Hans:
+  title: 迷失森林（迷いの森）
+  author: 近藤浩治
+  desc: 任天堂公司于 1998 年发行的数字游戏《塞尔达传说 时之笛》中的一首背景音乐。
+en:
+  title: Lost Woods (迷いの森)
+  author: Kondo Koji
+  desc: "A background music track from the video game “The Legend of Zelda: Ocarina of Time”, released by Nintendo in 1998."
+
+curator: Ayu

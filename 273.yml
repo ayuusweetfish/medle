@@ -1,0 +1,32 @@
+tune:
+  - [3-, 4]
+  - [5-, 3]
+  - [6-, 1]
+  - [1, 3]
+  - [2, 1]
+  - [6-, 1]
+  - [1, 1]
+  - [5-, 2]
+tuneBeatDur: 275
+tunePitchBase: G5
+metronome: [0, 4]
+
+tuneRevealBeatDur: 340
+tuneRevealOffset: 310
+# https://music.163.com/#/song?id=5266634
+# https://music.douban.com/subject/30486001/
+
+zh-Hans:
+  title: 梁山伯与祝英台小提琴协奏曲
+  author: 何占豪、陈钢
+  desc: |-
+    由上海音乐学院的学生何占豪和陈钢以越剧《梁山伯与祝英台》为基础、为西洋管弦乐团创作的乐曲，于 1959 年首演，由时年 18 岁的俞丽拿担任小提琴独奏。
+    选段来自尾声“化蝶”。由俞丽拿与上海交响乐团演奏。
+en:
+  title: The Butterfly Lovers' (梁山伯与祝英台) Violin Concerto
+  author: He Zhanhao (何占豪), Chen Gang (陈钢)
+  desc: |-
+    A musical composition for the Western-style orchestra based on the Chinese legend and Yue opera, “The Butterfly Lovers”, by the students of the Shanghai Conservatory of Music. The work premiered in 1959 with the 18-year-old Yu Lina as the violin soloist.
+    Excerpt from the final section “into butterflies”, performed by Yu Lina with the Shanghai Symphony Orchestra.
+
+curator: Ayu
