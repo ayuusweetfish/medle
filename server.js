@@ -165,7 +165,7 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
   } catch (err) {
     if (err instanceof Deno.errors.NotFound)
       return noSuchPuzzle();
-    throw error;
+    throw err;
   }
 
   puzzleContents.id = puzzleId;
