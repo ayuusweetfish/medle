@@ -1,0 +1,31 @@
+tune:
+  - [6, 1.2]
+  - [2, 2]
+  - [1, 6]
+  - [4, 2]
+  - [5, 0.8]
+  - [6, 1.2]
+  - [1+, 0.8]
+  - [3+, 1.2]
+  - [2+, 0.8]
+  - [1+, 1.2, 2]
+tuneBeatDur: 183
+tunePitchBase: Ab3
+metronome: [2, 2, 4]
+
+tuneRevealBeatDur: 183
+tuneRevealOffset: 25078
+# https://youtu.be/IOrxFY14D8w?t=43
+# https://youtu.be/wEk-kYfSZF8?t=43
+# https://open.spotify.com/album/4ZZvKnA1YJ2KcwjMmHBinq
+
+zh-Hans:
+  title: 我有许多值得感激的（I've Got Plenty To Be Thankful For）
+  author: 欧文·柏林（Irving Berlin）
+  desc: 1942 年美国音乐电影《假期饭店》（Holiday Inn）中的歌曲，由宾·克罗斯比（Bing Crosby）演唱。
+en:
+  title: I've Got Plenty To Be Thankful For
+  author: Irving Berlin
+  desc: A song from the 1942 American musical film “Holiday Inn”, with vocals by Bing Crosby.
+
+curator: Ayu

@@ -1,0 +1,26 @@
+tune:
+  - [5, 8, 8, -15]
+  - [6, 8, 8, -15]
+  - [5, 8, 8, -14]
+  - [3, 8, 8, 2]
+  - [4, 2]
+  - [2, 2]
+  - [3, 5]
+tuneBeatDur: 127
+tunePitchBase: G4
+metronome: [2, 4, 4]
+
+tuneRevealBeatDur: 127
+tuneRevealOffset: 3831
+# https://youtu.be/k8R9-AtX_vA
+
+zh-Hans:
+  title: 旺卡的欢迎歌（Wonka's Welcome Song）
+  author: 丹尼·叶夫曼（Danny Elfman）
+  desc: 2005 年上映的电影《查理和巧克力工厂》（Charlie and the Chocolate Factory）中的插曲。电影改编自 1964 年英国小说家罗尔德·达尔（Roald Dahl）的同名小说。
+en:
+  title: Wonka's Welcome Song
+  author: Danny Elfman
+  desc: Insert tune from the 2005 film “Charlie and the Chocolate Factory”, adapted from the 1964 novel of the same title by the British novelist Roald Dahl.
+
+curator: Ayu
