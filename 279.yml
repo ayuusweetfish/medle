@@ -1,0 +1,27 @@
+tune:
+  - [1, 16, -14]
+  - [2, 16, -15]
+  - [3, 16, -14]
+  - [3, 16, -15]
+  - [2, 1]
+  - [1, 2]
+  - [2, 3]
+  - [1, 14]
+tuneBeatDur: 185
+tunePitchBase: Ab4
+metronome: [1, 2, 4]
+
+tuneRevealBeatDur: 185
+tuneRevealOffset: 5805
+# https://youtu.be/x6zypc_LhnM
+
+zh-Hans:
+  title: 莱纳斯与露西（Linus and Lucy）
+  author: 文斯·葛拉迪（Vince Guaraldi）
+  desc: 美国漫画家查尔斯·舒尔茨（Charles Schulz）创作的《花生漫画》改编动画中的主题曲，由美国爵士钢琴手葛拉迪创作并演奏。
+en:
+  title: Linus and Lucy
+  author: Vince Guaraldi
+  desc: Theme music from the animation adaptations of the comic “Peanuts” by the American cartoonist Charles Schulz. Composed and performed by the American jazz pianist Guaraldi.
+
+curator: Ayu

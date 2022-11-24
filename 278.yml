@@ -1,0 +1,33 @@
+tune:
+  - [1+, 2]
+  - [1+, 2]
+  - [7, 2]
+  - [7, 2]
+  - [6, 1, 2]
+  - [6, 1]
+  - [6, 1]
+  - [5, 1]
+  - [5, 2]
+  - [4, 1, 2]
+tuneBeatDur: 240
+tunePitchBase: A4
+metronome: [6, 2, 4]
+
+tuneRevealBeatDur: 267 # (27678-21804)/22
+tuneRevealOffset: 21804
+# https://youtu.be/2UxC8AW_EKE
+
+zh-Hans:
+  title: 路漫漫（Дорогой длинною）
+  author: 鲍里斯·福明（Бори́с Фоми́н）（曲）；康斯坦丁·波德列夫斯基（Константи́н Подре́вский）（词）
+  desc: |-
+    作于 1924 年的俄罗斯抒情民谣；1968 年由基尼·拉斯金（Gene Raskin）进行英文填词，题为《往日时光》（Those Were the Days）。
+    由斯洛文尼亚歌手 Marie-Anne Izmajlov 与俄罗斯国家电影交响乐团演出。
+en:
+  title: By the Long Road (Дорогой длинною)
+  author: Boris Fomin (music); Konstantin Podrevsky (lyrics)
+  desc: |-
+    A Russian romance song composed in 1924. In 1968, Gene Raskin set English lyrics to the tune with the title “Those Were the Days”.
+    Performed by the Slovenian vocalist Marie-Anne Izmajlov with Russian State Symphony Cinema Orchestra.
+
+curator: Ayu
