@@ -1,0 +1,34 @@
+tune:
+  - [5, 4]
+  - [3, 2]
+  - [1#, 2]
+  - [2, 4]
+  - [6, 4]
+  - [5-, 4]
+  - [4, 4, 1]
+  - [3, 1, 3]
+tuneBeatDur: 225
+tunePitchBase: Eb4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 231 # 7407 / 32
+tuneRevealOffset: 8075
+# https://youtu.be/gJAiozsAipk
+# Cl. solo: ?t=125
+
+zh-Hans:
+  title: 单簧管协奏曲，降E大调，作品36
+  author: 弗朗兹·克罗默尔（František Kramář）
+  desc: |-
+    捷克作曲家、小提琴家克罗默尔创作的乐曲，出版于 1803 年。
+    选段来自全曲开头；后续的单簧管独奏同样由这一旋律引入。
+    由贵阳交响乐团演奏，唐伟国担任单簧管独奏，杨洋担任指挥。
+en:
+  title: Clarinet Concerto in E-flat Major, Op. 36
+  author: Franz Krommer (František Kramář)
+  desc: |-
+    A piece composed by the Czech composer Krommer, published in 1803.
+    Excerpt from the beginning, where the same melodic theme later also introduced the solo clarinet.
+    Performed by Guiyang Symphony Orchestra, with Tang Weiguo as the Clarinetist and Yang Yang as the conductor.
+
+curator: Ayu
