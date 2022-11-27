@@ -1,0 +1,31 @@
+tune:
+  - [3, 1]
+  - [5, 1]
+  - [6, 4]
+  - [1+, 1]
+  - [7, 2]
+  - [5, 1]
+  # ad lib in track 2 "Old Friends"; syncopation in track 1 "My Dear Frodo".
+  - [3, 3.5]
+  - [4*, 0.25]
+  - [3*, 0.25]
+  - [2, 4]
+tuneBeatDur: 325
+tunePitchBase: B3
+metronome: [2, 4]
+
+tuneRevealBeatDur: 385 # 6932 / 18
+tuneRevealOffset: 10077
+# https://youtu.be/JfEcgke5WCg?t=51
+# https://youtu.be/JfEcgke5WCg?t=479
+
+zh-Hans:
+  title: 旧友（Old Friends）
+  author: 霍华德·肖（Howard Shore）
+  desc: 2012 年上映的奇幻冒险史诗电影《霍比特人：意外之旅》配乐。电影改编自英国作家 J·R·R·托尔金于 1937 年发表的同名小说。
+en:
+  title: Old Friends
+  author: Howard Shore
+  desc: "Music from the 2012 epic high fantasy adventure film “The Hobbit: An Unexpected Journey”, adapted from the 1937 novel “The Hobbit” by the British writer J. R. R. Tolkien."
+
+curator: Ayu
