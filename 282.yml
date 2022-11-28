@@ -1,0 +1,31 @@
+tune:
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 12]
+  - [3, 8, 8, 8, -22]
+  - [4, 8, 8, 8, -22]
+  - [5, 8, 8, 8, 4, 4, 12]
+tuneBeatDur: 110
+tunePitchBase: D5
+metronome: [-4, 4, 4]
+
+tuneRevealBeatDur: 111.34 # 4899 / 44
+tuneRevealOffset: 5526
+# https://youtu.be/mjpFi9bn1do
+
+zh-Hans:
+  title: 触技曲（Toccata），来自《奥菲欧》（L’Orfeo）
+  author: 克劳迪奥·蒙特威尔第（Claudio Monteverdi）
+  desc: |-
+    意大利作曲家蒙特威尔第于 1607 年创作的歌剧《奥菲欧》中的器乐曲；这部早期歌剧被认为是文艺复兴时期走向巴洛克时期的奠基。
+    由 Jordi Savall 指挥演出。
+en:
+  title: Toccata, from “L’Orfeo”
+  author: Claudio Monteverdi
+  desc: |-
+    An instrumental piece from the early opera “L’Orfeo” composed by the Italian composer Monteverdi in 1607, which is considered a fundamental work of the transition from the Renaissance era to the Baroque.
+    Performance directed by Jordi Savall.
+
+curator: Ayu
