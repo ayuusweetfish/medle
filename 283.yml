@@ -1,0 +1,30 @@
+tune:
+  - [6, 3]
+  - [7, 1]
+  - [1+, 2]
+  - [2+, 2]
+  - [3+, 2]
+  - [1+, 2]
+  - [7, 4]
+  - [5#, 2]
+  - [3, 6]
+tuneBeatDur: 160
+tunePitchBase: G3
+metronome: [0, 6, 2]
+
+tuneRevealBeatDur: 171 # 2047 / /12
+tuneRevealOffset: 4675
+# https://youtu.be/eTWCSakLUKo
+# IMSLP records F major but audio is in G major
+# https://imslp.org/wiki/Greensleeves_to_a_Ground_(Anonymous)
+
+zh-Hans:
+  title: Greensleeves to a Ground
+  author: 佚名
+  desc: 英格兰传统民谣，最早记载于 16 世纪。由 Jordi Savall 指挥国家古乐合奏团（Le Concert des Nations）演奏。
+en:
+  title: Greensleeves to a Ground
+  author: Unknown
+  desc: A traditional English folk tune, dating from as early as the 16th century. Performed by Le Concert des Nations, directed by Jordi Savall.
+
+curator: Ayu
