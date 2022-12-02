@@ -1,0 +1,29 @@
+tune:
+  - [5, 2, 2, 12]
+  - [3, 2, 10]
+  - [3, 4]
+  - [2, 4]
+  - [1, 4, 2]
+  - [6-, 2]
+  - [1, 3, 3]
+  - [2, 2]
+  - [2, 4]
+  - [1, 4]
+tuneBeatDur: 110
+tunePitchBase: C4
+metronome: [4, 8, 2]
+
+tuneRevealBeatDur: 121 # 124 BPM / 4
+tuneRevealOffset: 546
+# https://youtu.be/XTHm55sTajg
+
+zh-Hans:
+  title: 你是我的眼
+  author: 萧煌奇（曲、词）；陈飞午（编曲）
+  desc: 台湾音乐人萧煌奇创作并演唱的歌曲，讲述自己在视力障碍的生活中获得的温暖与乐观。收录于 2002 年发行的同名专辑。
+en:
+  title: You are my eyes (你是我的眼)
+  author: Ricky Hsiao Huang-chi (music, lyrics); Kenjo Tan Keng-Joo (arrangement)
+  desc: A song composed and performed by the musician Ricky from Taiwan. The song narrates the warmth and optimism throughout the musician’s life with visual impairment. Included in the homonymous album released in 2002.
+
+curator: Ayu
