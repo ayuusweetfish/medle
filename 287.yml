@@ -1,0 +1,28 @@
+tune:
+  - [6, 1]
+  - [5, 1]
+  - [1, 2]
+  - [1+, 2]
+  - [6-, 2]
+  - [1+, 2]
+  - [5-, 2]
+  - [7, 2]
+  - [7, 2]
+tuneBeatDur: 167
+tunePitchBase: Gb3
+metronome: [2, 4]
+
+tuneRevealBeatDur: 167
+tuneRevealOffset: 2667
+# https://commons.wikimedia.org/wiki/File:Der_Flohwalzer.wav
+
+zh-Hans:
+  title: 跳蚤圆舞曲（Flohwalzer）
+  author: 佚名
+  desc: 一首简单的钢琴曲，是常见的初学者曲目。乐曲在世界各地有不同名称，如在日本被称为《踩到猫儿》（ねこふんじゃった，台湾亦采用此译名）、在俄罗斯被称为《狗跳圆舞曲》（Собачий Вальс），在英国则被称为《筷子》（Chopsticks）。
+en:
+  title: Flohwalzer
+  author: Unknown
+  desc: A simple beginner’s piano piece. The piece has different names around the world, being known as “Stepped on a Cat” (ねこふんじゃった) in Japan and Taiwan (with the Chinese Mainland adapting “Flea Waltz” from the original German name); as “Dog Waltz” (Собачий Вальс) in Russia; and as “Chopsticks” in the United Kingdom, among many others.
+
+curator: Ayu
