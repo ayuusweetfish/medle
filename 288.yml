@@ -1,0 +1,33 @@
+tune:
+  - [1, 3]
+  - [5-, 1]
+  - [3, 3]
+  - [1, 1]
+  - [5, 2]
+  - [5, 4, 2]
+  - [6, 2]
+  - [6, 4, 2]
+  - [5, 2]
+  - [5, 4, 2]
+tuneBeatDur: 300
+tunePitchBase: C5
+metronome: [0, 4, 2]
+
+tuneRevealBeatDur: 386 # 12697 / 32, adjusted down
+tuneRevealOffset: 184
+# https://commons.wikimedia.org/wiki/File:Mozart_-_12_Variations_K._265_-_Stefano_Ligoratti.mp3
+
+zh-Hans:
+  title: 《妈妈请听我说》12段变奏曲
+  author: 莫扎特（Wolfgang Amadeus Mozart）
+  desc: |-
+    创作于约 1781 年的钢琴独奏曲，基于当时法国流行的歌曲《妈妈请听我说》（Ah vous dirai-je, Maman）改编，包含一个主题段落与 12 段变奏。
+    由 Stefano Ligoratti 演奏。
+en:
+  title: Twelve Variations on “Ah vous dirai-je, Maman”
+  author: Wolfgang Amadeus Mozart
+  desc: |-
+    A piece for the solo piano composed around 1781, based on the French song “Oh! Shall I tell you, Mama”, comprising a theme and 12 variations following it.
+    Performed by Stefano Ligoratti.
+
+curator: Ayu
