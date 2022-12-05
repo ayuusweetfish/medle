@@ -1,0 +1,29 @@
+tune:
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [5, 2]
+  - [3, 1]
+  - [1, 2]
+  - [5, 2]
+  - [4, 2]
+  - [2, 3]
+tuneBeatDur: 225
+tunePitchBase: G4
+metronome: [4, 2, 4]
+
+tuneRevealBeatDur: 252 # 5035 / 20
+tuneRevealOffset: 3065
+# https://music.163.com/#/song?id=4879255
+
+zh-Hans:
+  title: 我的邻居龙猫（となりのトトロ）
+  author: 久石让
+  desc: 吉卜力工作室 1988 年动画电影《龙猫》中的音乐。电影中也有井上杏美演唱的带有歌词的版本。
+en:
+  title: My Neighbor Totoro (となりのトトロ)
+  author: Joe Hisaishi
+  desc: Music from Studio Ghibli's 1988 animated film "My Neighbor Totoro". A version with lyrics performed by Inoue Azumi also appears in the film.
+
+curator: Ayu
