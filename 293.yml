@@ -1,0 +1,35 @@
+tune:
+  - [1+, 3]
+  - [5, 1]
+  - [6, 1]
+  - [3, 1]
+  - [5, 4]
+  - [1, 2, 2]
+  - [3, 2]
+  - [7, 2]
+  - [6, 4]
+  - [5, 2]
+tuneBeatDur: 350
+tunePitchBase: Eb4
+metronome: [0, 2, 3]
+
+tuneRevealBeatDur: 399 # 6060 + 9915 / 24; adjusted
+tuneRevealOffset: 6308
+# https://youtu.be/-p31S56FGaI
+# https://imslp.org/wiki/Serenata,_Op.6_(Toselli,_Enrico)
+# https://music.163.com/#/song?id=1304732707 (replaced due to being transposed)
+
+zh-Hans:
+  title: 小夜曲（Serenata），作品 6 号
+  author: 恩里科·托塞利（Enrico Toselli）
+  desc: |-
+    也被称为“叹息小夜曲”。意大利作曲家托塞利根据西尔韦斯特里（Alfredo Silvestri）的一首诗谱写的歌曲。
+    由不来梅咖啡馆乐团（Bremer Kaffeehaus-Orchester）演奏。
+en:
+  title: Serenata, Op. 6
+  author: Enrico Toselli
+  desc: |-
+    Also known as Serenata “Rimpianto”, a song by the Italian composer Toselli based on a poem by Alfredo Silvestri.
+    Performed by Bremer Kaffeehaus-Orchester.
+
+curator: sakura

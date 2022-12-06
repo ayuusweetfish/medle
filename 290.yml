@@ -1,0 +1,28 @@
+tune:
+  - [5, 2]
+  - [3, 1]
+  - [2, 11]
+  - [1, 2]
+  - [2, 2]
+  - [3, 2]
+  - [2, 2]
+  - [1, 1]
+  - [6-, 5]
+tuneBeatDur: 170
+tunePitchBase: Db4
+metronome: [4, 4, 4]
+
+tuneRevealBeatDur: 170 # 10884 / 64
+tuneRevealOffset: 2961
+# https://youtu.be/qX7pFYH9O04
+
+zh-Hans:
+  title: 春天啊，来吧（春よ、来い）
+  author: 松任谷 由实
+  desc: NHK 同名晨间剧的主题曲，由日本创作歌手松任谷由实创作并演唱，发行于 1994 年。
+en:
+  title: Spring, Come (春よ、来い)
+  author: Matsutoya Yumi (松任谷 由実)
+  desc: Theme music of NHK’s Asadora (Morning Drama) of the same title. Composed and performed by the singer-songwriter Matsutoya and released in 1994.
+
+curator: Ayu
