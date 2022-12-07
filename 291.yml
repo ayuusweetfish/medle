@@ -1,0 +1,29 @@
+tune:
+  - [7-, 3]
+  - [6, 3]
+  - [5, 3]
+  - [4, 3]
+  - [3, 3]
+  - [2#, 3]
+  - [3, 3]
+  - [3, 5]
+  - [2, 1]
+  - [4, 4]
+tuneBeatDur: 202
+tunePitchBase: A4
+metronome: [-3, 3, 4]
+
+tuneRevealBeatDur: 202 # 6661 / 33
+tuneRevealOffset: 15823
+# https://music.163.com/#/song?id=1476334
+
+zh-Hans:
+  title: （就像）从头来过 / (Just Like) Starting Over
+  author: 约翰·列侬（John Lennon）
+  desc: 英国音乐人约翰·列侬与妻子小野洋子于 1980 年发行的专辑《双重幻想曲》（Double Fantasy）中的歌曲。
+en:
+  title: (Just Like) Starting Over
+  author: John Lennon
+  desc: A song from the 1980 album “Double Fantasy” by the English musician John Lennon with his spouse Ono Yoko.
+
+curator: Ayu
