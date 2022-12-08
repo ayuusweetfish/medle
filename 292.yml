@@ -1,0 +1,29 @@
+tune:
+  - [5, 3, -1]
+  - [6, 2]
+  - [3, 1]
+  - [2, 1]
+  - [3, 2]
+  - [5, 1]
+  - [3, 1]
+  - [6-, 1]
+  - [1, 1]
+  - [2, 1]
+tuneBeatDur: 475
+tunePitchBase: F4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 566 # 9666 + 9224 / 16 (adjusted)
+tuneRevealOffset: 9616
+# https://music.163.com/#/song?id=5279416
+
+zh-Hans:
+  title: 我的祖国
+  author: 刘炽（曲）；乔羽（词）
+  desc: 1956 年长春电影制片厂电影《上甘岭》插曲，中国著名女高音歌唱家郭兰英代表作之一。
+en:
+  title: 我的祖国 (My Native Land)
+  author: Liu Chi (刘炽) (music); Qiao Yu (乔羽) (lyrics)
+  desc: Insert song from the 1956 film “Battle on Shangganling Mountain” (上甘岭) by Changchun Film Studio in China. A representative piece of the renowned Chinese soprano vocalist Guo Lanying (郭兰英)
+
+curator: Ayu
