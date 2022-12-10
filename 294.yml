@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 2, 2, 1]
+  - [6, 1]
+  - [4, 1]
+  - [6, 1]
+  - [5, 1]
+  - [4, 1]
+  - [3, 2]
+tuneBeatDur: 200
+tunePitchBase: Db4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 161 # 2572 / 16
+tuneRevealOffset: 5480
+# https://youtu.be/kCsmvK06SCA
+
+zh-Hans:
+  title: 卡玛吉调式（Raga Khamaj）
+  author: 拉维·香卡（Ravi Shankar）
+  desc: 来自印度民族音乐家、锡塔琴（सितार，Sitar）演奏家拉维·香卡的演出。谜题中的音名是使印度调式拉格（Raga）中的旋律在七声大调音阶中的对应。
+en:
+  title: Raga Khamaj
+  author: Ravi Shankar
+  desc: Excerpt from a performance by the Indian composer and sitarist Ravi Shankar. The melody in the puzzle is adapted from the Indian Raga system to the seven-note major scale.
+
+curator: Ayu
