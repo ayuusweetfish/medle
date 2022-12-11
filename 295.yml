@@ -1,0 +1,29 @@
+tune:
+  - [3-, 1]
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 2]
+  - [2, 1]
+  - [1, 1]
+  - [2, 2]
+tuneBeatDur: 227
+tunePitchBase: F4
+metronome: [1, 4]
+
+tuneRevealBeatDur: 227 # 2046 / 9
+tuneRevealOffset: 67
+# https://youtu.be/cb5QQO-TgbY
+# https://newsletter.replay.cafe/issues/re-play-cafe-issue-10-1220670
+
+zh-Hans:
+  title: Long Yellow Road
+  author: 秋吉敏子
+  desc: 出生于日据时期中国东北辽阳的日裔美国爵士音乐家秋吉敏子 1961 年的作品。由作曲家本人与其配偶，美国中音萨克斯手列夫·塔巴茨金（Lew Tabackin）共同演奏。
+en:
+  title: Long Yellow Road
+  author: Akiyoshi Toshiko (秋吉敏子)
+  desc: A piece by the Japanese–American jazz musician Akiyoshi Toshiko, born in Northeast China’s Liaoyang during the Japanese occupation, released in 1961. Performed by the composer with her spouse Lew Tabackin, the American tenor saxophonist.
+
+curator: Ayu
