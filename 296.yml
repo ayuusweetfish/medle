@@ -1,0 +1,29 @@
+tune:
+  - [5, 2]
+  - [6, 1]
+  - [5, 5]
+  - [4, 1]
+  - [3, 2]
+  - [2, 3]
+  - [1, 10]
+  - [4, 3, 5]
+  - [3, 1]
+  - [2, 3]
+tuneBeatDur: 180
+tunePitchBase: A3
+metronome: [-3, 3, 4]
+
+tuneRevealBeatDur: 202 # 9761 / 48 adjusted
+tuneRevealOffset: 12960
+# https://youtu.be/1y2SIIeqy34
+
+zh-Hans:
+  title: 花儿都到哪里去了？（Where Have All the Flowers Gone?）
+  author: 皮特·西格（Pete Seeger）
+  desc: 美国民谣歌手皮特·西格创作于 1955 年的歌曲。旋律的灵感源于爱尔兰民谣，歌词则来源于东欧地区哥萨克人的民歌。
+en:
+  title: Where Have All the Flowers Gone?
+  author: Pete Seeger
+  desc: A song composed by the American folk singer Pete Seeger in 1955. The melody was borrowed from an Irish melody, while the lyrics were inspired by a folk song of the Cossack people from the Eastern European region.
+
+curator: Ayu
