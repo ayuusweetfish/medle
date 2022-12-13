@@ -1,0 +1,28 @@
+tune:
+  - [1, 1]
+  - [6-, 1]
+  - [1, 1]
+  - [3, 1]
+  - [6, 1]
+  - [1+, 1]
+  - [7, 1]
+  - [6, 1]
+  - [5#, 1]
+tuneBeatDur: 200
+tunePitchBase: Eb3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 115 # 919 / 8
+tuneRevealOffset: 103
+# https://youtu.be/9rDGc69FQcY
+
+zh-Hans:
+  title: 视唱曲（Solfeggietto）
+  author: 卡尔·菲利普·埃马努埃尔·巴赫（C. P. E. Bach）
+  desc: 由C·P·E·巴赫创作的钢琴曲。C·P·E·巴赫是约翰·塞巴斯蒂安·巴赫（J·S·巴赫）的第五位孩子，也被称为“柏林巴赫”或“汉堡巴赫”。
+en:
+  title: Solfeggietto
+  author: Carl Philipp Emanuel Bach
+  desc: A piano piece composed by C. P. E. Bach, the fifth child of Johann Sebastian Bach (J. S. Bach), who is also known as the “Berlin Bach” or the “Hamburg Bach”.
+
+curator: Ayu
