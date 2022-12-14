@@ -7,25 +7,24 @@ tune:
   - [5, 3]
   - [2, 1]
   - [1, 4]
-tuneBeatDur: 250
+tuneBeatDur: 275
 tunePitchBase: F4
 metronome: [-2, 4]
 
-tuneRevealBeatDur: 346 # 2937 + 11080 / 32
-tuneRevealOffset: 3666
-# https://youtu.be/PgF-rcHcPqE
+tuneRevealBeatDur: 306 # 9169 / 30
+tuneRevealOffset: 4450
+# https://youtu.be/6qr25F9t6Es
+# https://youtu.be/PgF-rcHcPqE (City of Prague Philharmonic Orchestra)
 
 zh-Hans:
   title: 塔拉庄园主题（Tara’s Theme）
   author: 马克斯·史坦纳（Max Steiner）
   desc: |-
     1939 年上映的电影《乱世佳人》（Gone with the Wind）主题曲。
-    由布拉格市爱乐乐团（City of Prague Philharmonic Orchestra）于 2005 年演奏并录制。
 en:
   title: Tara’s Theme
   author: Max Steiner
   desc: |-
     Theme from the 1939 film “Gone with the Wind”.
-    Performed and recorded by the City of Prague Philharmonic Orchestra in 2005.
 
 curator: Ayu
