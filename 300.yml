@@ -1,0 +1,28 @@
+tune:
+  - [5, 8, -4]
+  - [3, 8, 4]
+  - [5, 2]
+  - [5, 2]
+  - [6, 3]
+  - [5, 1]
+  - [4, 2]
+  - [3, 2]
+  - [4, 2]
+tuneBeatDur: 125
+tunePitchBase: Eb4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 132 # 4750 / 36
+tuneRevealOffset: 157
+# https://youtu.be/Cyu84xBRBhk
+
+zh-Hans:
+  title: 长命百岁（Sto Lat）
+  author: 波兰民歌
+  desc: 波兰民歌，标题意为“一百年”，常在生日或庆典场合演唱。录音来自乐队 Czarne Koszule。
+en:
+  title: A Hundred Years (Sto Lat)
+  author: Polish folk
+  desc: A traditional Polish song, sung on birthdays or celebratory occasions. Recording from the band Czarne Koszule.
+
+curator: Ayu
