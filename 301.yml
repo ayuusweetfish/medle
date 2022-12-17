@@ -1,0 +1,36 @@
+tune:
+  - [1+, 1]
+  - [6, 1]
+  - [1+, 2]
+  - [7, 2]
+  - [5#, 2]
+  - [6, 2]
+  - [5, 1]
+  - [5, 1]
+  - [5, 2]
+  #- [5, 1, 1, 2]
+  #- [4#, 1, 1, 2]
+  #- [4, 1, 1, 2]
+tuneBeatDur: 275
+tunePitchBase: G4
+metronome: [-2, 2, 2]
+
+tuneRevealBeatDur: 305 # 6699 / 22
+tuneRevealOffset: 662
+# Sep 23 23:13:34 2022
+# https://youtu.be/zV1qLYukTH8
+
+zh-Hans:
+  title: 糖梅仙子之舞（Danse de la Fée-Dragée）
+  author: 柴可夫斯基（Pyotr Ilyich Tchaikovsky）
+  desc: |-
+    来自 1892 年的芭蕾舞剧《胡桃夹子》（Щелкунчик），为第二幕中双人舞（pas de deux）的第三乐章。
+    演出录音来自英国伦敦的皇家芭蕾舞团（Royal Ballet）。
+en:
+  title: Dance of the Sugar Plum Fairy (Danse de la Fée-Dragée)
+  author: Pyotr Ilyich Tchaikovsky
+  desc: |-
+    The third movement of the Nutcracker pas de deux, from the 1892 ballet “Nutcracker” (Щелкунчик).
+    Recording of performance by the Royal Ballet.
+
+curator: Ayu
