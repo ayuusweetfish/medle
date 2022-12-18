@@ -1,0 +1,26 @@
+tune:
+  - [1, 8]
+  - [2, 6]
+  - [5-, 2]
+  - [5, 4]
+  - [4, 2]
+  - [3, 1]
+  - [2, 3]
+tuneBeatDur: 250
+tunePitchBase: E4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 303 # 9706 / 32
+tuneRevealOffset: 2508
+# https://youtu.be/Siz-xBfIqpg
+
+zh-Hans:
+  title: 我心永恒（My Heart Will Go On）
+  author: 詹姆斯·霍纳/James Horner（曲）；威尔·詹宁斯/Will Jennings（词）
+  desc: 1997 年电影《泰坦尼克号》（Titanic）主题曲，由席琳·迪翁（Celine Dion）演唱。
+en:
+  title: My Heart Will Go On
+  author: James Horner (composer); Will Jennings (lyrics)
+  desc: Theme song of the 1997 film “Titanic”, with vocals by Celine Dion.
+
+curator: Ayu
