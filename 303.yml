@@ -1,0 +1,29 @@
+tune:
+  - [5, 2]
+  - [3, 1]
+  - [5, 1]
+  - [3, 1]
+  - [5, 3]
+  - [6, 1]
+  - [5, 1]
+  - [3, 1]
+  - [6, 1]
+  - [5, 2]
+tuneBeatDur: 349
+tunePitchBase: C4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 349 # 86 BPM / 2
+tuneRevealOffset: 3026
+# https://music.163.com/#/song?id=1914685930
+
+zh-Hans:
+  title: 七子之歌・澳门
+  author: 李海鹰（曲）；闻一多（词）
+  desc: 创作于 1998 年的歌曲，歌词来自诗人闻一多作于 1925 年的同名组诗。由容韵琳担任独唱。
+en:
+  title: 七子之歌・澳门 (The Song of Seven Children — Ao'men/Macau)
+  author: Li Haiying (composer); Wen Yiduo (lyrics)
+  desc: A song composed in 1998, with lyrics from an eponymous poem by the Chinese poet Wen Yiduo in 1925. Vocal solo by Winnie Rong Yunlin (容韵琳).
+
+curator: Ayu
