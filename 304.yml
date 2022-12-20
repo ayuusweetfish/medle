@@ -1,0 +1,33 @@
+tune:
+  - [1+, 1]
+  - [2+, 1]
+  - [1+, 2]
+  - [3, 1]
+  - [4, 1]
+  - [5, 2]
+  - [5, 1]
+  - [6, 3, -2]
+  - [5, 4, 1]
+tuneBeatDur: 275
+tunePitchBase: Eb4
+metronome: [-2, 2, 2]
+
+tuneRevealBeatDur: 298 # 14815 + 4170 / 14
+tuneRevealOffset: 14815
+# https://adp.library.ucsb.edu/index.php/matrix/detail/200027689/PBS-09849-With_a_smile_and_a_song
+# https://youtu.be/hQZ6zzLpoNQ
+
+zh-Hans:
+  title: 欢笑唱起歌（With a Smile and a Song）
+  author: Frank Churchill（曲）；Larry Morey（词）
+  desc: |-
+    1937 年迪士尼动画电影《白雪公主与七个小矮人》（Snow White and the Seven Dwarfs）中的歌曲，由为影片中白雪公主配音的阿德里亚娜·卡塞洛蒂（Adriana Caselotti）演唱。
+    “What will you do when things go wrong?”
+en:
+  title: With a Smile and a Song
+  author: Frank Churchill (music); Larry Morey (lyrics)
+  desc: |-
+    A song from the 1937 animated film “Snow White and the Seven Dwarfs” by Disney, performed by Adriana Caselotti, the voice actor of Snow White in the film.
+    “What will you do when things go wrong?”
+
+curator: Ayu
