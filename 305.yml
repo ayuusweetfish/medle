@@ -1,0 +1,26 @@
+tune:
+  - [6, 4]
+  - [5, 4]
+  - [3, 3]
+  - [2, 1, 4]
+  - [6, 4]
+  - [5, 4]
+  - [3, 3]
+  - [2, 1, 4]
+tuneBeatDur: 400
+tunePitchBase: Gb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 557 # 17810 / 32, adjusted
+tuneRevealOffset: 302
+
+zh-Hans:
+  title: Vissi d'arte（为艺术，为爱情）
+  author: 贾科莫·普契尼（Giacomo Puccini）
+  desc: 意大利作曲家普契尼创作的首演于 1900 年的歌剧《托斯卡》（Tosca）中的一首咏叹调。
+en:
+  title: Vissi d'arte (I lived for art)
+  author: Giacomo Puccini
+  desc: An aria from the opera “Tosca” by the Italian composer Puccini, which premiered in 1900.
+
+curator: Ayu
