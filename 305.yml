@@ -13,14 +13,19 @@ metronome: [0, 2]
 
 tuneRevealBeatDur: 557 # 17810 / 32, adjusted
 tuneRevealOffset: 302
+# https://youtu.be/hupZFCY4FkU
 
 zh-Hans:
   title: Vissi d'arte（为艺术，为爱情）
   author: 贾科莫·普契尼（Giacomo Puccini）
-  desc: 意大利作曲家普契尼创作的首演于 1900 年的歌剧《托斯卡》（Tosca）中的一首咏叹调。
+  desc: |-
+    意大利作曲家普契尼创作的首演于 1900 年的歌剧《托斯卡》（Tosca）中的一首咏叹调。
+    由 Sondra Radvanovsky 担任独唱。
 en:
   title: Vissi d'arte (I lived for art)
   author: Giacomo Puccini
-  desc: An aria from the opera “Tosca” by the Italian composer Puccini, which premiered in 1900.
+  desc: |-
+    An aria from the opera “Tosca” by the Italian composer Puccini, which premiered in 1900.
+    Vocal solo performed by Sondra Radvanovsky.
 
 curator: Ayu
