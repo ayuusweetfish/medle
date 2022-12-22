@@ -230,7 +230,7 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
 
   puzzleContents.packaged = packaged;
 
-  persistLog(`puzzle ${puzzleId} ${analytics(req)}`);
+  persistLog(`puzzle ${puzzleId} ${req.url} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
   return new Response(pageContents, {
     status: 200,

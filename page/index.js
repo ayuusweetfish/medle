@@ -642,7 +642,8 @@ const startGame = () => {
     text: () => {
       btnShare.classList.add('copied');
       const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/${attemptsLimit}\n`;
-      const suffix = `https://medle.0-th.art/` +
+      const suffix =
+        (todayDaily >= 306 ? `https://medle.ayu.land/` : `https://medle.0-th.art/`) +
         (puzzleId === todayDaily ? '' : puzzleId);
       return prefix +
         attResults.map((result) => result.map((r) => {
