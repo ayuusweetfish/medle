@@ -1,0 +1,28 @@
+tune:
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [5, 1]
+  - [2, 2]
+  - [1, 2, -1]
+  - [7-, 2, 1]
+  - [1, 1]
+  - [3, 3]
+tuneBeatDur: 428.6
+tunePitchBase: Db4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 428.6 # 70 BPM / 2
+tuneRevealOffset: 3487
+# https://music.163.com/#/song?id=27580476
+
+zh-Hans:
+  title: 回遊魚の原風景（洄游鱼的原初风景）
+  author: Nasu Asaco（南壽あさ子）
+  desc: 日本创作歌手南寿亚彩子的歌曲，收录于 2012 年专辑《Landscape》。
+en:
+  title: Primal Landscapes of Migratory Fish (回遊魚の原風景)
+  author: Nasu Asaco (南壽あさ子)
+  desc: A song by the Japanese singer-songwriter Nasu Asaco, from the 2012 album “Landscape”.
+
+curator: Ayu
