@@ -1,0 +1,29 @@
+tune:
+  - [6, 2, 1, 2]
+  - [5, 2]
+  - [3, 2]
+  - [5, 2]
+  - [3, 5]
+  - [2, 2]
+  - [1, 1]
+  - [2, 2]
+  - [3, 3]
+  - [1, 4]
+tuneBeatDur: 181
+tunePitchBase: Gb4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 181 # 5866 / 32 (adjusted)
+tuneRevealOffset: 346
+# https://music.163.com/#/song?id=29544245
+
+zh-Hans:
+  title: That's Christmas to Me（那就是我眼里的圣诞）
+  author: Pentatonix
+  desc: 美国无伴奏合唱乐团 Pentatonix（五声音阶）的原创歌曲，收录于 2014 年发行的同名专辑。
+en:
+  title: That's Christmas to Me
+  author: Pentatonix
+  desc: An original song by the American a cappella group Pentatonix, from the eponymous album released in 2014.
+
+curator: Ayu

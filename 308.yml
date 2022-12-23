@@ -1,0 +1,29 @@
+tune:
+  - [1, 1, 1]
+  - [3, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1, 1]
+  - [6-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [2, 1]
+tuneBeatDur: 297
+tunePitchBase: D4
+metronome: [-1, 2, 4]
+
+tuneRevealBeatDur: 297 # 101 BPM / 2
+tuneRevealOffset: 6250
+# https://youtu.be/-2RIIHI2mZA
+
+zh-Hans:
+  title: Forza Gesù（加油耶稣）
+  author: Rosa Martirano
+  desc: 意大利的安东尼亚诺小合唱团（Piccolo Coro dell'Antoniano）于 2010 年参加意大利的年度赛事“金币儿歌赛”（Zecchino d'Oro）的演出曲目。
+en:
+  title: Forza Gesù (Come on Jesus)
+  author: Rosa Martirano
+  desc: Performed by the Little Choir of Antoniano (Piccolo Coro dell'Antoniano) in Italy, on the Italian annual competition “Zecchino d'Oro” (Golden Sequin) in 2010.
+
+curator: sakura
