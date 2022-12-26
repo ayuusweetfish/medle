@@ -1,0 +1,32 @@
+tune:
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [4, 1]
+  - [3, 1]
+  - [5#, 1]
+  - [6, 4]
+tuneBeatDur: 176
+tunePitchBase: Ab4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 176 # 1411 / 8
+tuneRevealOffset: 12655
+# https://youtu.be/Wq5Ks3_r6f0
+
+zh-Hans:
+  title: 乐兴之时（Moments musicaux），其三
+  author: 弗朗茨·舒伯特（Franz Schubert）
+  desc: |-
+    《乐兴之时》是奥地利作曲家舒伯特创作的六首钢琴小品，于 1828 年出版。这一系列作品也是浪漫主义时期即兴短小钢琴曲体裁的代表。
+    由法国钢琴家 David Fray 演奏。
+en:
+  title: Musical moments (Moments musicaux), No. 3
+  author: Franz Schubert
+  desc: |-
+    “Moments musicaux” is a collection of six short piece for the solo piano by the Austrian composer Schubert, published in 1828. The collection is also representative of the form of improvisational short piano pieces during the Romantic era.
+    Performed by the French pianist David Fray.
+
+curator: Ayu
