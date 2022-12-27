@@ -1,0 +1,34 @@
+tune:
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 3]
+  - [5, 1, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [4, 1]
+  # Inaccurate, transcribed according to lead sheets found online
+tuneBeatDur: 400
+tunePitchBase: Db4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 424 # 6786 / 16
+tuneRevealOffset: 9770
+# https://youtu.be/c2GlVN2Gn3A
+
+zh-Hans:
+  title: 时光流转（As Time Goes By）
+  author: Herman Hupfeld
+  desc: |-
+    美国歌曲作者 Herman Hupfeld 作于 1931 年的歌曲，原本为百老汇剧目《Everybody's Welcome》所作。
+    歌曲亦出现在 1942 年电影《卡萨布兰卡》（Casablanca）中。由影片中扮演 Sam 的 Dooley Wilson 演唱（并未严格遵从节奏，加入了自由处理）。
+en:
+  title: As Time Goes By
+  author: Herman Hupfeld
+  desc: |-
+    A song composed by the American songwriter Herman Hupfeld, originally written for the Broadway show “Everybody's Welcome”.
+    The song was featured in the 1942 film “Casablanca”. Performed by Dooley Wilson who performed as Sam in the film. (This performance deviates from the even rhythms.)
+
+curator: Ayu
