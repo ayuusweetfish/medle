@@ -1,0 +1,33 @@
+tune:
+  - [5-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 2]
+  - [3, 3]
+  - [3, 1]
+  - [2, 1]
+  - [3, 1]
+  - [1, 2]
+  - [5-, 3]
+tuneBeatDur: 400
+tunePitchBase: D4
+metronome: [3, 2, 4]
+
+tuneRevealBeatDur: 476 # 7610 / 16
+tuneRevealOffset: 1190
+# https://youtu.be/_X2QrNyIp-4
+
+zh-Hans:
+  title: 你是我的阳光（You Are My Sunshine）
+  author: Jimmie Davis、Charles Mitchell
+  desc: |-
+    美国创作歌手、政治家 Jimmie Davis 于 1940 年初发行的歌曲，后来广为传唱，被翻译为 30 余种语言。
+    由英国歌手 Jasmine Thompson 演唱。
+en:
+  title: You Are My Sunshine
+  author: Jimmie Davis, Charles Mitchell
+  desc: |-
+    A song by the singer-songwriter and politician Jimmie Davis, published in 1940 and has become widespread with translations in over 30 languages.
+    Recorded by the British singer Jasmine Thompson.
+
+curator: Ayu
