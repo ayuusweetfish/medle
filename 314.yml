@@ -1,0 +1,31 @@
+tune:
+  - [5-, 2]
+  - [1, 3]
+  - [1, 1]
+  - [1, 2]
+  - [3, 2]
+  - [2, 3]
+  - [1, 1]
+  - [2, 2]
+tuneBeatDur: 350
+tunePitchBase: E4
+metronome: [2, 2, 4]
+
+tuneRevealBeatDur: 393 # 6285 / 16
+tuneRevealOffset: 12061
+# https://zh.wikipedia.org/wiki/File:Auld_Lang_Syne.ogg
+
+zh-Hans:
+  title: 友谊地久天长（Auld Lang Syne）
+  author: 苏格兰民谣
+  desc: |-
+    一首苏格兰民谣，歌词为苏格兰诗人罗伯特·彭斯（Robert Burns）于 18 世纪创作的低地苏格兰语诗歌。常在迎接公历新年辞旧迎新的时刻歌唱。
+    由弗兰克·C·斯坦利（Frank C. Stanley）演唱。
+en:
+  title: Auld Lang Syne
+  author: Scottish folk
+  desc: |-
+    A Scottish folk song, with lyrics being a Scots-language poem by Robert Burns in the 18th century. The title can be translated as “old long since”. Frequently sung at the stroke of midnight on New Year’s Eve.
+    Performed by Frank C. Stanley.
+
+curator: Ayu
