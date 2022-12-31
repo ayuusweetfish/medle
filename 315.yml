@@ -1,0 +1,27 @@
+tune:
+  - [1, 2]
+  - [3, 1]
+  - [2, 3]
+  - [5-, 3]
+  - [7-, 2]
+  - [2, 1]
+  - [1, 6]
+tuneBeatDur: 200
+tunePitchBase: F4
+metronome: [3, 3]
+
+tuneRevealBeatDur: 219 # 3947 / 18
+tuneRevealOffset: 16057
+# https://americanenglish.state.gov/resources/sing-out-loud-traditional-songs
+# https://youtu.be/ebyiyntVQNM
+
+zh-Hans:
+  title: 我亲爱的克莱门汀（Oh My Darling, Clementine）
+  author: Percy Montross、Barker Bradford
+  desc: 作于 1884 年的美国西部民歌，讲述一位淘金工人的女儿落入河水的故事。在中国和犹太文化中被改编为新年歌曲［《新年好》和《Dip The Apple In The Honey》（把苹果蘸上蜂蜜）］。
+en:
+  title: Oh My Darling, Clementine
+  author: Percy Montross, Barker Bradford
+  desc: An American western folk ballad written in 1884, telling a story about a drowned daughter of a miner. In China and the Jewish culture, it is adapted into new year’s songs (“新年好 / Happy New Year” and “Dip The Apple In The Honey”).
+
+curator: Ayu
