@@ -1,0 +1,27 @@
+tune:
+  - [5-, 2]
+  - [3-, 1]
+  - [4-, 1]
+  - [5-, 2]
+  - [1, 7]
+  - [3, 1]
+  - [2, 2]
+  - [1, 2]
+tuneBeatDur: 178
+tunePitchBase: Eb4
+metronome: [2, 4]
+
+tuneRevealBeatDur: 178 # 3553 / 20
+tuneRevealOffset: 174
+# https://youtu.be/Yop62wQH498
+
+zh-Hans:
+  title: Tomorrow（明天）
+  author: Charles Strouse（曲）；Martin Charnin（词）
+  desc: 1977 年百老汇音乐剧《安妮》（Annie）中的歌曲。录音版本由 1982 年电影中担任主角的 Aileen Quinn 演唱。
+en:
+  title: Tomorrow
+  author: Charles Strouse (music); Martin Charnin (lyrics)
+  desc: A show tune from the 1977 Broadway musical “Annie”. Performed by Aileen Quinn, who played the role of Annie in the 1982 film.
+
+curator: Ayu
