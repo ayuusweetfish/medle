@@ -1,0 +1,29 @@
+tune:
+  - [5-, 1]
+  - [5-, 1]
+  - [5, 3]
+  - [5, 3]
+  - [5-, 1]
+  - [5-, 1]
+  - [5, 2]
+  - [6, 1]
+  - [5, 3]
+tuneBeatDur: 300
+tunePitchBase: Eb4
+metronome: [2, 2, -4]
+
+tuneRevealBeatDur: 310
+tuneRevealOffset: 1261 # 1881 + 4957/16 - 2 beats
+# https://youtu.be/AXrPbg7G_UE?t=239
+# See also: https://youtu.be/kc32AnGzTLM
+
+zh-Hans:
+  title: 如果明天就是下一生
+  author: 石青如（曲）；张卉湄（词）
+  desc: 由台大合唱团首演于 2009 年的歌曲。由连芳贝指挥。
+en:
+  title: 
+  author: 石青如/Shih Ching-Ju (composition); 張卉湄 (lyrics)
+  desc: A song first performed by the National Taiwan University Chorus in 2009. Conducted by 連芳貝 (Fang-Pei Tracy Lien).
+
+curator: Ayu
