@@ -1,0 +1,29 @@
+tune:
+  - [3, 4]
+  - [2, 2]
+  - [5, 2]
+  - [1, 4]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [7-, 1]
+  - [6-, 1]
+tuneBeatDur: 250
+tunePitchBase: E4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 253 # 4040 / 16
+tuneRevealOffset: 372
+# https://youtu.be/p7s9rRAjxlU
+# https://imslp.org/wiki/Flute_Concerto_No.7_in_E_minor_(Devienne%2C_Fran%C3%A7ois)
+
+zh-Hans:
+  title: 长笛协奏曲第7号，E小调
+  author: 弗朗索瓦·戴维安（François Devienne）
+  desc: 法国作曲家弗朗索瓦·戴维安于 1787 年出版的乐曲。由西蒙·玻利瓦青年交响乐团（Orquesta Sinfónica Simón Bolívar）演奏，Philippe Bernold 担任指挥与长笛独奏。
+en:
+  title: Flute Concerto No. 7 in E minor
+  author: François Devienne
+  desc: A piece by the French composer François Devienne, published in 1787. Performed by the Simón Bolívar youth orchestra with Philippe Bernold as the conductor and the flute soloist.
+
+curator: Ayu
