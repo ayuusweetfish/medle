@@ -1,0 +1,29 @@
+tune:
+  - [5-, 2]
+  - [1, 4]
+  - [1, 1]
+  - [2, 1]
+  - [3, 3, 1, 1]
+  - [5, 1]
+  - [3, 3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 1, 1]
+tuneBeatDur: 300
+tunePitchBase: Eb4
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 336.5 # 8077 / 24
+tuneRevealOffset: 8554
+# https://music.163.com/#/song?id=441483
+
+zh-Hans:
+  title: 向日葵之家的回旋曲（ひまわりの家の輪舞曲）
+  author: 久石让（曲）；宫崎骏（词）
+  desc: 2008 年动画电影《崖上的波妞》（崖の上のポニョ）印象曲。由藤泽麻衣演唱。
+en:
+  title: Rondo of the Sunflower House (ひまわりの家の輪舞曲)
+  author: Joe Hisaishi (composition); Miyazaki Hayao (lyrics)
+  desc: Image song of the 2008 animated film “Ponyo” (崖の上のポニョ). Vocals by Fuzisawa Mai (麻衣).
+
+curator: Ayu
