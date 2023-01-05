@@ -1,0 +1,34 @@
+tune:
+  - [5-, 2]
+  - [1, 1]
+  - [3, 2]
+  - [2, 1]
+  - [1, 3]
+  - [2, 3]
+  - [2, 2]
+  - [3, 1]
+  - [1, 3]
+tuneBeatDur: 450
+tunePitchBase: F#4
+metronome: [3, 3, 4]
+
+tuneRevealBeatDur: 524 # 290 + 12566/24
+tuneRevealOffset: 290
+# https://youtu.be/JsLjrSmLeaI?t=110
+# https://imslp.org/wiki/Piano_Concerto,_Op.20_(Scriabin,_Alexander)
+# IMSLP03811, p.23
+
+zh-Hans:
+  title: 钢琴协奏曲（作品 20 号）
+  author: 亚历山大·斯克里亚宾（Алекса́ндр Скря́бин）
+  desc: |-
+    俄罗斯作曲家斯克里亚宾的唯一一首协奏曲，作于 24 岁（1896 年）。
+    选段来自第二乐章，由冰岛交响乐团（Sinfóníuhljómsveit Íslands）演奏，Víkingur Heiðar Ólafsson 担任钢琴独奏，Eivind Aadland 指挥。
+en:
+  title: Piano Concerto (Op. 20)
+  author: Alexander Scriabin
+  desc: |-
+    Written by the Russian composer Scriabin at the age of 24 (in 1896), being the only concerto of the composer.
+    Excerpt from the second movement. Performed by the Iceland Symphony Orchestra, with Víkingur Heiðar Ólafsson as the piano soloist and Eivind Aadland as the conductor.
+
+curator: Ayu
