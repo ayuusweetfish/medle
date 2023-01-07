@@ -1,0 +1,32 @@
+tune:
+  - [1, 2]
+  - [5-, 2]
+  - [1, 2]
+  - [1, 2]
+  - [2, 2]
+  - [1, 1]
+  - [2, 1]
+  - [3, 2]
+tuneBeatDur: 120
+tunePitchBase: F4/415
+metronome: [0, 4, 3]
+
+tuneRevealBeatDur: 108 # 2589 / 24
+tuneRevealOffset: 87
+# https://youtu.be/-RQqdumu7SI?t=14
+# ref: IMSLP 11613
+
+zh-Hans:
+  title: 大协奏曲（Concerto Grosso），F 大调
+  author: 阿尔坎杰罗·科雷利（Arcangelo Corelli）
+  desc: |-
+    巴洛克时期意大利小提琴家与作曲家科雷利为弦乐与键盘乐器（通奏低音）创作的乐曲。
+    选段来自第二乐段“快板”，由 Voices of Music 合奏团演奏。
+en:
+  title: Concerto Grosso in F Major
+  author: Arcangelo Corelli
+  desc: |-
+    A piece for strings and a keyboard (basso continuo) by the Italian violinist and composer Corelli from the Baroque era.
+    Excerpt from the second movement “Allegro”, performed by the Voices of Music ensemble.
+
+curator: Ayu
