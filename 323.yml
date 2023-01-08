@@ -1,0 +1,32 @@
+tune:
+  - [1, 4]
+  - [3-, 1]
+  - [6-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [7-, 2]
+  - [3-, 2]
+  - [5#-, 2]
+  - [7-, 2]
+tuneBeatDur: 150
+tunePitchBase: Ab4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 138 # 4406 / 32
+tuneRevealOffset: 139
+# https://youtu.be/RKvd4tMkFHc
+
+zh-Hans:
+  title: 回旋曲（Rondeau），来自《异邦恋情》
+  author: 让-菲利普·拉莫（Jean-Philippe Rameau）
+  desc: |-
+    巴洛克时期法国歌剧作曲家拉莫在歌剧《异邦恋情》（Les Indes galantes）中的乐曲。
+    由卢浮宫音乐家（les Musiciens du Louvre）演奏，Marc Minkowski 指挥。
+en:
+  title: Rondeau, from “Les Indes galantes”
+  author: Jean-Philippe Rameau
+  desc: |-
+    Music from the opera “Les Indes galantes” (The Amorous Indies) by Rameau, the French composer from the Baroque era.
+    Performed by Les Musiciens du Louvre, conducted by Marc Minkowski.
+
+curator: Ayu
