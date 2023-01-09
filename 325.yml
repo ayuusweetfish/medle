@@ -1,0 +1,29 @@
+tune:
+  - [5, 10]
+  - [6, 1]
+  - [5, 1]
+  - [5, 12]
+  - [5, 7]
+  - [7, 1]
+  - [6, 1]
+  - [5, 1, 1]
+  - [4, 1]
+  - [3, 6]
+tuneBeatDur: 195
+tunePitchBase: G3
+metronome: [0, 3, 4]
+
+tuneRevealBeatDur: 233 # 11195 / 48
+tuneRevealOffset: 10990
+# https://music.163.com/#/song?id=484444649
+
+zh-Hans:
+  title: 我无怨无悔（Non, je ne regrette rien）
+  author: Charles Dumont（曲）；Michel Vaucaire（词）
+  desc: 创作于 1956 年的歌曲。艾迪特·皮雅芙（Édith Piaf）于 1960 年演唱录制，由此广为流传。
+en:
+  title: Non, je ne regrette rien
+  author: Charles Dumont (composition); Michel Vaucaire (lyrics)
+  desc: A song written in 1956 and popularised by Édith Piaf’s 1960 recording.
+
+curator: sakura

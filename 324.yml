@@ -1,0 +1,26 @@
+tune:
+  - [5, 2]
+  - [5, 2]
+  - [5, 1]
+  - [6, 2]
+  - [3, 1]
+  - [5, 1]
+  - [4, 1, 2]
+tuneBeatDur: 213
+tunePitchBase: Eb4/428.288 # (44.1/48 * 2^(1/12) — E4/404.25...???)
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 213 # 6832 / 32
+tuneRevealOffset: 8490
+# https://music.163.com/#/song?id=1980999758
+
+zh-Hans:
+  title: 啊哈！黑猫警长
+  author: 蔡璐
+  desc: 1984 年首播、由上海美术电影制片厂根据诸志祥同名小说改编的动画《黑猫警长》主题曲。由沈小岑演唱。
+en:
+  title: Aha! Mr. Black (啊哈！黑猫警长)
+  author: Cai Lu (蔡璐)
+  desc: Theme song of the animation series “Black Cat Detective” adapted from an eponymous novel by Zhu Zhixiang (诸志祥), produced by the Shanghai Animation Film Studio and first aired in 1984. Vocals by Shen Xiaocen (沈小岑).
+
+curator: Ayu
