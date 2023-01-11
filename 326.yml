@@ -1,0 +1,29 @@
+tune:
+  - [4, 1, 5, 1]
+  - [3, 2]
+  - [2, 7]
+  - [4, 2]
+  - [3, 2]
+  - [3, 1]
+  - [3, 3]
+  - [2, 1]
+  - [1, 3]
+tuneBeatDur: 168.5
+tunePitchBase: D4
+metronome: [2, 4, 4]
+
+tuneRevealBeatDur: 168.5 # 5393 / 32
+tuneRevealOffset: 13241
+# https://www.harukimurakami.com/resource_category/playlist/hard-boiled-wonderland-and-the-end-of-the-world
+# https://youtu.be/MMFj8uDubsE
+
+zh-Hans:
+  title: 答案在风中飘荡（Blowin' in the Wind）
+  author: 鲍勃·迪伦（Bob Dylan）
+  desc: 美国创作歌手、2016 年诺贝尔文学奖得主鲍勃·迪伦创作于 1962 年的歌曲。
+en:
+  title: Blowin' in the Wind
+  author: Bob Dylan
+  desc: A song by Bob Dylan, the American songwriter and laureate of the 2016 Nobel Prize in Literature, written in 1962.
+
+curator: Ayu
