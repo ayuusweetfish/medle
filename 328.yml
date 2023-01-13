@@ -1,0 +1,29 @@
+tune:
+  - [3, 2]
+  - [5, 3]
+  - [1+, 1]
+  - [2+, 2]
+  - [3+, 4]
+  - [4, 3]
+  - [5, 1]
+  - [1+, 2]
+  - [1+, 2]
+  - [2+, 4]
+tuneBeatDur: 240
+tunePitchBase: A3
+metronome: [0, 2, 3]
+
+tuneRevealBeatDur: 251 # 6025 / 24
+tuneRevealOffset: 6136
+# https://youtu.be/h0Hd3uWKFKY
+
+zh-Hans:
+  title: 彩虹的联结（Rainbow Connection）
+  author: Paul Williams、Kenneth Ascher
+  desc: 1979 年电影《布偶电影》（The Muppet Movie）插曲。由黛比·哈利（Debbie Harry）与电影中为布偶 Kermit the Frog 配音的吉姆·亨森（Jim Henson）演唱。
+en:
+  title: Rainbow Connection
+  author: Paul Williams, Kenneth Ascher
+  desc: Insert song from the 1979 movie “The Muppet Movie”. Vocals by Debbie Harry with Jim Henson, who voiced Kermit the Frog in the film.
+
+curator: Ayu
