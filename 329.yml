@@ -1,0 +1,30 @@
+tune:
+  - [5, 2]
+  - [6, 2]
+  - [7, 2]
+  - [1+, 7, 1]
+  - [7, 3]
+  - [6, 1]
+  - [5, 2]
+  - [4, 2]
+  - [5, 4]
+  - [3, 4]
+tuneBeatDur: 225
+tunePitchBase: F4
+metronome: [6, 4, 4]
+
+tuneRevealBeatDur: 272 # 8696 / 32
+tuneRevealOffset: 789
+# https://youtu.be/UddLOA-QoqM
+# ref: https://youtu.be/Yfwlj0gba_k
+
+zh-Hans:
+  title: 你鼓舞了我（You Raise Me Up）
+  author: Rolf Løvland（曲）；Brendan Graham（词）
+  desc: 由挪威/爱尔兰双人组合秘密花园（Secret Garden）成员创作的歌曲，收录于 2001 年专辑《红月》（Once in a Red Moon）。由北爱尔兰歌手 Brian Kennedy 演唱。
+en:
+  title: You Raise Me Up
+  author: Rolf Løvland (music); Brendan Graham (lyrics)
+  desc: A song composed by the Norwegian-Irish duo Secret Garden, released on the 2001 album “Once in a Red Moon”. Vocals by the Northern Irish singer Brian Kennedy.
+
+curator: Ayu
