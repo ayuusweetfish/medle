@@ -1,0 +1,34 @@
+tune:
+  - [5-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [4, 2]
+  - [3, 2]
+  - [2, 2]
+  - [1, 2]
+  - [2, 2]
+tuneBeatDur: 425
+tunePitchBase: Ab4
+metronome: [3, 2]
+
+tuneRevealBeatDur: 453 # 7250 / 16
+tuneRevealOffset: 360
+# https://youtu.be/WLVXJbtigXY?t=22
+# ref. ver. by ai-kon/あい混声合唱団: https://youtu.be/9J9adYMNjZY
+
+zh-Hans:
+  title: 全部（ぜんぶ）
+  author: 相泽直人（Aizawa Naoto）
+  desc: |-
+    原为日本作曲家相泽直人的钢琴独奏曲，后来被樱桃子（《樱桃小丸子》漫画作者）的诗作打动，遂改为合唱。
+    由来自日本的 harmonia ensemble 演唱。
+en:
+  title: Everything（ぜんぶ）
+  author: Aizawa Naoto（相澤 直人）
+  desc: |-
+    Originally a solo piano piece by the Japanese composer Aizawa, who was later moved by the poem by Sakura Momoko (creator of the “Chibi Maruko-chan” manga series) and rearranged the work into a choral piece.
+    Performed by “harmonia ensemble” from Japan.
+# 简介部分摘自上海彩虹室内合唱团/Description contains excerpts by RCSH
+# https://youtu.be/X5NafcPrHek
+
+curator: Ayu
