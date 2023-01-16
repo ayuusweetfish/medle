@@ -1,0 +1,29 @@
+tune:
+  - [3, 3, 2]
+  - [1+, 1]
+  - [7, 1]
+  - [2+, 1]
+  - [6, 3, 1]
+  - [6, 1]
+  - [5, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [5, 4]
+tuneBeatDur: 341
+tunePitchBase: C5
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 341 # 5454 / 16
+tuneRevealOffset: 61
+# https://youtu.be/KVmpsEtcE8I
+
+zh-Hans:
+  title: energy flow
+  author: 坂本龙一
+  desc: 日本作曲家坂本龙一于 1999 年的作品，是日本公信榜（Oricon）历史上第一首榜首器乐曲。
+en:
+  title: energy flow
+  author: Sakamoto Ryuuichi (坂本 龍一)
+  desc: A piece by the Japanese composer Sakamoto in 1999. The first instrumental single to reach the top in Japan’s Oricon charts.
+
+curator: Ayu
