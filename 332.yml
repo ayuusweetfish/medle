@@ -1,0 +1,30 @@
+tune:
+  - [6-, 2]
+  - [6-, 1]
+  - [6-, 1]
+  - [1, 2]
+  - [2, 1]
+  - [6-, 1]
+  - [5-, 4]
+tuneBeatDur: 366.5
+tunePitchBase: G4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 366.5 # 2932 / 8
+tuneRevealOffset: 1041
+# https://music.163.com/#/song?id=310166
+
+zh-Hans:
+  title: 春江花月夜
+  author: 中国古曲
+  desc: |-
+    原题《浔阳琵琶》，为琵琶曲，乐谱最早见于清代手抄本。后来出现了多种民族乐器的改编曲，亦根据原题出处《琵琶行》中“春江花朝秋月夜”句更名为《春江花月夜》。
+    录音为古筝演奏家项斯华演奏。
+en:
+  title: Spring River Blossoms in a Moonlit Night (春江花月夜)
+  author: Ancient Chinese tune
+  desc: |-
+    Originally a piece for the Chinese traditional instrument Pipa, with manuscripts dating back to the Qing dynasty (19th century). The piece was later rearranged for multiple traditional instruments and retitled with the title of a renowned poem, according to ancient poetry related to the music.
+    Recorded version performed by Xiang Sihua on the guzheng.
+
+curator: 
