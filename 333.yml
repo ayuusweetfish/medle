@@ -1,0 +1,31 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+  - [2, 1]
+tuneBeatDur: 275
+tunePitchBase: Ab3
+metronome: [-1, 2]
+
+tuneRevealBeatDur: 244 # 1707 / 7
+tuneRevealOffset: 3924
+# https://youtu.be/aJZOUXtDCn0
+
+zh-Hans:
+  title: 这些傻事（让我想起你） / These Foolish Things (Remind Me Of You)
+  author: Jack Strachey（曲）；Eric Maschwitz（词）
+  desc: |-
+    出版于 1935 年的歌曲，后来由许多艺术家进行演绎。由英国作家 Eric Maschwitz 以笔名 Holt Marvell 创作。
+    由美国爵士歌手 Ella Fitzgerald 演唱。
+en:
+  title: These Foolish Things (Remind Me Of You)
+  author: Jack Strachey (composition); Eric Maschwitz (lyrics)
+  desc: |-
+    A song published in 1935 with interpretations by various artists. Written by the English writer Maschwitz under the pseudonym Holt Marvell.
+    Vocal by the American jazz singer Ella Fitzgerald.
+
+curator: Ayu
