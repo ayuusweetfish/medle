@@ -1,0 +1,29 @@
+tune:
+  - [1+, 1]
+  - [5, 2]
+  - [3, 2, 1]
+  - [4, 1]
+  - [3, 2]
+  - [4, 2]
+  - [3, 1]
+  - [2, 1]
+  - [1, 1]
+tuneBeatDur: 237.5
+tunePitchBase: D4
+metronome: [-2, 2, 4]
+
+tuneRevealBeatDur: 237.5 # 7599 / 32
+tuneRevealOffset: 15586
+# https://youtu.be/NTrml2KJ7jk
+# ref: https://youtu.be/EGYesqpoLcw
+
+zh-Hans:
+  title: 飞鱼
+  author: 吴青峰
+  desc: 台湾乐团苏打绿的歌曲，收录于 2005 年发行的同名专辑《苏打绿》。
+en:
+  title: 飛魚（Flying Fish）
+  author: Wu Qing-feng（吳青峰）
+  desc: A song by the band Sodagreen (蘇打綠) from Taiwan. Included in the album of the same name, “Sodagreen”, released in 2005.
+
+curator: Ayu
