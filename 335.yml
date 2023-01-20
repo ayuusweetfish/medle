@@ -1,0 +1,28 @@
+tune:
+  - [2, 2]
+  - [3, 1]
+  - [2, 1]
+  - [1, 4]
+  - [2, 2]
+  - [3, 1]
+  - [2, 1]
+  - [5-, 4]
+tuneBeatDur: 250
+tunePitchBase: G4
+metronome: [0, 4, 4]
+
+tuneRevealBeatDur: 266 # 17035 / 64
+tuneRevealOffset: 2187
+# https://music.163.com/#/song?id=1915260281
+
+zh-Hans:
+  title: 难忘今宵
+  author: 王酩（曲）；乔羽（词）
+  desc: 为 1984 年（第二届）《中央电视台春节联欢晚会》所作的歌曲，此后成为了几乎每年春晚的片尾曲。由李谷一演唱。
+  # https://baike.baidu.com/item/%E9%9A%BE%E5%BF%98%E4%BB%8A%E5%AE%B5/2911758 (retrieved 2023.01.20)
+en:
+  title: Unforgettable Tonight (难忘今宵)
+  author: Wang Ming (music); Qiao Yu (lyrics)
+  desc: A song composed for the second CMG Spring Festival Gala in 1984 and has since become the ending song of nearly every Gala. Vocals by Li Guyi.
+
+curator: Ayu
