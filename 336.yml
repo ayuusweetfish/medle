@@ -1,0 +1,33 @@
+tune:
+  - [3, 1]
+  - [2, 2]
+  - [3, 1]
+  - [5, 1]
+  - [5, 2]
+  - [6, 1]
+  - [1+, 2]
+  - [6, 1]
+  - [3+, 1]
+  - [1+, 2]
+tuneBeatDur: 360
+tunePitchBase: F4
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 392 # 6278 / 16
+tuneRevealOffset: 133
+# https://music.163.com/#/song?id=395304
+
+zh-Hans:
+  title: 春节序曲
+  author: 李焕之
+  desc: |-
+    中国作曲家李焕之于 1955 年创作的管弦乐作品，为一套四个乐章《春节组曲》中的第一乐章。乐曲以秧歌舞与陕北民歌作为素材。
+    选段来自乐曲中段，由中国人民解放军军乐团演奏。
+en:
+  title: Spring Festival Overture (春节序曲)
+  author: Li Huanzhi (李焕之)
+  desc: |-
+    An orchestral work by the Chinese composer Li in 1955, being the first movement of a four-movement suite. The piece draws inspiration from the traditional Chinese folk dance “Yang-ge” as well as folk music from the Northern Shaanxi region.
+    Excerpt from the middle section. Performed by the Central Military Band of People’s Liberation Army of China.
+
+curator: Ayu
