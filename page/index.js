@@ -868,7 +868,7 @@ const initToggleButton = (ids, cfgKey, defaultVal, fn) => {
     });
 };
 initToggleButton('btn-play-sfx', 'sfx', true, (on) => sfxOn = on);
-initToggleButton('btn-metronome', 'metronome', false, (on) => metronomeOn = on);
+initToggleButton('btn-metronome', 'metronome', true, (on) => metronomeOn = on);
 initToggleButton('btn-dark-theme', 'dark',
   window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
 (on) => {
