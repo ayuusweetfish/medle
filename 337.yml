@@ -1,0 +1,33 @@
+tune:
+  - [1+, 2]
+  - [3+, 1]
+  - [1+, 1]
+  - [5, 2]
+  - [5, 2]
+  - [1+, 2]
+  - [3+, 1]
+  - [1+, 1]
+  - [5, 2]
+  - [5+, 2]
+tuneBeatDur: 160
+tunePitchBase: C4
+metronome: [0, 4]
+
+tuneRevealBeatDur: 144 # 2308 / 16
+tuneRevealOffset: 115
+# https://commons.wikimedia.org/wiki/File:Clementi,_Sonatina_N.1_-_1_Mov._Allegro.ogg
+
+zh-Hans:
+  title: 钢琴小奏鸣曲，作品 36，第 1 首
+  author: 穆齐奥·克莱门蒂（Muzio Clementi）
+  desc: |-
+    意大利作曲家、钢琴家克莱门蒂为钢琴创作的短小作品，出版于 1797 年。
+    选段来自第一乐章，录音来自 Museopen。
+en:
+  title: Sonatina for Piano, Op. 36, No. 1
+  author: Muzio Clementi
+  desc: |-
+    A short piece for the piano by the Italian composer and pianist Clementi, published in 1797.
+    Excerpt from the first movement, recording courtesy of Museopen.
+
+curator: Ayu
