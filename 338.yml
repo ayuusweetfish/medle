@@ -1,0 +1,30 @@
+tune:
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 1]
+  - [3, 1]
+  - [1, 1]
+  - [3, 2]
+tuneBeatDur: 297
+tunePitchBase: D3
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 297 # 2373 / 8
+tuneRevealOffset: 3672
+# https://commons.wikimedia.org/wiki/File:Musopen_-_In_the_Hall_Of_The_Mountain_King.ogg
+
+zh-Hans:
+  title: 山魔王的宫殿（I Dovregubbens hall）
+  author: 爱德华·格里格（Edvard Grieg）
+  desc: |-
+    挪威作曲家格里格为挪威剧作家易卜生（Henrik Ibsen）的戏剧《培尔·金特》（Peer Gynt）创作的配乐，作于 1875 年。
+    由挪威国家交响乐团（Český národní symfonický orchestr）演奏。
+en:
+  title: In the Hall of the Mountain King (I Dovregubbens hall)
+  author: Edvard Grieg
+  desc: |-
+    Music by the Norwegian composer Grieg for the play “Peer Gynt” by the Norwegian playwright Henrik Ibsen. Composed in 1875.
+    Performed by the Czech National Symphony Orchestra (ČNSO).
+
+curator: Ayu
