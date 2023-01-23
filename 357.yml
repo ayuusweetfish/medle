@@ -1,0 +1,33 @@
+tune:
+  - [6, 2]
+  - [3, 1]
+  - [6, 1]
+  - [1+, 4]
+  - [6, 4]
+  - [1+, 2]
+  - [6, 1]
+  - [1+, 1]
+  - [3+, 4]
+  - [1+, 4]
+tuneBeatDur: 151
+tunePitchBase: D3
+metronome: [4, 4, 3]
+
+tuneRevealBeatDur: 151 # 4243 / 28
+tuneRevealOffset: 14410
+# https://commons.wikimedia.org/wiki/File:Richard_Wagner_-_Ride_of_the_Valkyries.ogg?uselang=zh-cn
+
+zh-Hans:
+  title: 女武神的骑行（Walkürenritt）
+  author: 理查德·瓦格纳（Richard Wagner）
+  desc: |-
+    德国作曲家瓦格纳为首演于 1876 年首演的歌剧四部曲《尼伯龙根的指环》（Der Ring des Nibelungen）中第二部《女武神》（Die Walküre）写作的音乐。
+    由美国交响乐团（American Symphony Orchestra）演奏。
+en:
+  title: Ride of the Valkyries (Walkürenritt)
+  author: Richard Wagner
+  desc: |-
+    Music by the German composer Wagner from the second opera, “The Valkyrie” (Die Walküre), of the cycle of four operas “The Ring of the Nibelung” (Der Ring des Nibelungen), premiered in 1876.
+    Performed by the American Symphony Orchestra.
+
+curator: Ayu
