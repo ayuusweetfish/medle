@@ -1,0 +1,29 @@
+tune:
+  - [3, 2]
+  - [6, 2]
+  - [3, 2]
+  - [5, 3]
+  - [4, 1]
+  - [4, 6]
+  - [2, 2]
+  - [5, 3]
+  - [2, 1]
+  - [3, 4]
+tuneBeatDur: 225
+tunePitchBase: F4
+metronome: [6, 4]
+
+tuneRevealBeatDur: 252 # 8068 / 32
+tuneRevealOffset: 3491
+# https://music.163.com/#/song?id=19169053
+
+zh-Hans:
+  title: 剧院魅影（The Phantom Of The Opera）
+  author: Andrew Lloyd Webber（曲）；Charles Hart、Richard Stilgoe、Mike Batt（词）
+  desc: 1986 年首演的音乐剧《剧院魅影》中的同名歌曲。音乐剧改编自法国作家加斯东·勒鲁（Gaston Leroux）的同名小说。由 Sarah Brightman 演唱。
+en:
+  title: The Phantom Of The Opera
+  author: Andrew Lloyd Webber (music); Charles Hart, Richard Stilgoe, Mike Batt (lyrics)
+  desc: A song from the stage musical “The Phantom of the Opera”, which premiered in 1986 and was adapted from the eponymous novel by the French writer Gaston Leroux. Vocal by Sarah Brightman.
+
+curator: Ayu

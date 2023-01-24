@@ -1,0 +1,29 @@
+tune:
+  - [4, 1]
+  - [5, 1]
+  - [6, 4]
+  - [6, 2]
+  - [1+, 2]
+  - [7, 2]
+  - [6, 2]
+  - [5, 4]
+  - [7, 2]
+  - [6, 2]
+tuneBeatDur: 195
+tunePitchBase: D4
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 195 # 4693 / 24
+tuneRevealOffset: 10218
+# https://music.163.com/#/song?id=454216034
+
+zh-Hans:
+  title: 春节自救指南
+  author: 金承志
+  desc: 由上海彩虹室内合唱团演唱的歌曲，首演于 2017 年音乐会《永恒与一日》返场。
+en:
+  title: What I Do is for Your Own Good (春节自救指南)
+  author: Jin Chengzhi (金承志)
+  desc: A song by the Shanghai Rainbow Chamber Singers, which premiered in 2017 as an encore on the concert “Eternity and a Day”.
+
+curator: Ayu
