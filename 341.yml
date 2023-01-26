@@ -1,0 +1,33 @@
+tune:
+  - [3, 9]
+  - [2, 3]
+  - [1, 12]
+  - [5-, 9]
+  - [5, 3, 12]
+  - [3, 9]
+  - [1, 3, 4]
+  - [7-, 4]
+  - [2, 4]
+  - [4, 12]
+tuneBeatDur: 100
+tunePitchBase: F#4
+metronome: [12, 12, 4]
+
+tuneRevealBeatDur: 124.14 # 10428 / 84
+tuneRevealOffset: 4303
+# https://music.163.com/#/song?id=472995905
+
+zh-Hans:
+  title: 飞吧！思想，乘着金色的翅膀（Va, pensiero, sull'ali dorate）
+  author: 朱塞佩·威尔第（Giuseppe Verdi）
+  desc: |-
+    意大利作曲家威尔第的歌剧《纳布科》（Nabucco）中的合唱片段，也称为“希伯来奴隶大合唱”。
+    由柏林德意志歌剧院（Deutsche Oper Berlin）乐团与合唱团演出，西诺波利（Giuseppe Sinopoli）指挥。
+en:
+  title: Va, pensiero, sull'ali dorate
+  author: Giuseppe Verdi
+  desc: |-
+    A chorus from the opera “Nabucco” by the Italian composer Verdi, also known as “the Chorus of the Hebrew Slaves”.
+    Performed by the orchestra and the chorus of Deutsche Oper Berlin, conducted by Giuseppe Sinopoli.
+
+curator: Ayu
