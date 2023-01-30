@@ -1,0 +1,35 @@
+tune:
+  - [5, 4]
+  - [1+, 6, 2]
+  - [3+, 4, 4]
+  - [1+, 8]
+  - [5, 8, 6, 2]
+  - [2+, 3]
+  - [1+, 1]
+  - [7, 3]
+  - [6, 1]
+  - [5, 4]
+tuneBeatDur: 120
+tunePitchBase: D4
+metronome: [4, 8, 2]
+
+tuneRevealBeatDur: 137 # 952 + 4380 / 32
+tuneRevealOffset: 404
+# https://youtu.be/RMr4pDGo0KE?t=1469
+
+zh-Hans:
+  title: 鳟鱼五重奏（Forellenquintett）
+  author: 弗朗茨·舒伯特（Franz Schubert）
+  desc: |-
+    奥地利作曲家舒伯特作于 1819 年的室内乐。
+    选段来自第四乐章，基于舒伯特 1817 年创作的艺术歌曲《鳟鱼》（Die Forelle）。
+    演奏者为 Martin Helmchen（钢琴）、Christian Tetzlaff（小提琴）、Antoine Tamestit（中提琴）、Marie-Elisabeth Hecker（大提琴）、Alois Posch（低音提琴）。
+en:
+  title: Trout Quintet (Forellenquintett)
+  author: Franz Schubert
+  desc: |-
+    A chamber work by the Austrian composer Schubert in 1819.
+    Excerpt from the fourth movement, based on “The Trout” (Die Forelle), the composer’s Lied (art song) in 1817.
+    Performed by Martin Helmchen (piano), Christian Tetzlaff (violin), Antoine Tamestit (viola), Marie-Elisabeth Hecker (cello), and Alois Posch (double bass).
+
+curator: Ayu
