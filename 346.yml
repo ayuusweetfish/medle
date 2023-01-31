@@ -1,0 +1,33 @@
+tune:
+  - [6, 3]
+  - [5, 1]
+  - [3, 2]
+  - [5, 1]
+  - [3, 1]
+  - [6, 2]
+  - [1+*, 1]
+  - [7, 1]
+  - [6, 4]
+tuneBeatDur: 300
+tunePitchBase: E3
+metronome: [0, 4]
+
+tuneRevealBeatDur: 334 # 5329 / 16 adjusted
+tuneRevealOffset: 16504
+# https://youtu.be/q8PQOrLoRT0
+# ref: https://youtu.be/vnRN4v0Y68U
+
+zh-Hans:
+  title: 醉渔唱晚
+  author: 中国古曲
+  desc: |-
+    古琴独奏曲，最早见于明代传谱《西麓堂琴统》中，据其记载为陆龟蒙与皮日休泛舟松江时所作。有不同版本琴谱传世。
+    由中国民族乐器演奏家卫仲乐演奏。
+en:
+  title: The Drunken Fisherman Singing in the Sunset (醉漁唱晚)
+  author: Ancient Chinese tune
+  desc: |-
+    A solo tune for the guqin (7-string ching). Manuscripts date back to the Ming dynasty (1368–1644) and is believed to originate in as early as the Tang dynasty (618–907). Different versions of the score exist at present.
+    Performed by the Chinese ethnic instrumentalist, Wei Chung Loh (衛仲樂).
+
+curator: Ayu
