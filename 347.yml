@@ -1,0 +1,32 @@
+tune:
+  - [1+, 4]
+  - [5, 2]
+  - [1+, 4]
+  - [5, 2]
+  - [1+, 2, 1]
+  - [2+, 1]
+  - [3+, 2]
+  - [2+*, 2]
+  - [1+, 4]
+tuneBeatDur: 163
+tunePitchBase: D4/415
+metronome: [0, 2, 3]
+
+tuneRevealBeatDur: 163 # 3907 / 24
+tuneRevealOffset: 134
+# https://youtu.be/fNqJ8mED1VE?t=884
+
+zh-Hans:
+  title: 皇家烟火（Music for the Royal Fireworks）
+  author: 乔治·亨德尔（George Frideric Handel）
+  desc: |-
+    巴洛克时期英国德裔音乐家亨德尔作于 1749 年的组曲。
+    选段来自第五乐章“小步舞曲”，由心灵音乐会乐团（Le Concert Spirituel）演奏，Hervé Niquet 指挥。
+en:
+  title: Music for the Royal Fireworks
+  author: George Frideric Handel
+  desc: |-
+    A suite by the German-British Baroque composer Handel, composed in 1749.
+    Excerpt from the fifth movement “Menuets”, performed by Le Concert Spirituel, conducted by Hervé Niquet.
+
+curator: Ayu
