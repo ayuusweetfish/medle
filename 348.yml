@@ -1,0 +1,27 @@
+tune:
+  - [1, 4]
+  - [6-, 3]
+  - [7-, 2]
+  - [5-, 7]
+  - [3, 4]
+  - [1, 3]
+  - [2, 2]
+  - [2, 7]
+tuneBeatDur: 185
+tunePitchBase: C5/442
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 192.5 # 6162 / 32
+tuneRevealOffset: 12204
+# https://music.163.com/#/song?id=5167413
+
+zh-Hans:
+  title: 班巴（La Bamba）
+  author: 墨西哥民歌
+  desc: 源自墨西哥韦拉克鲁斯地区的民歌，随着 1958 年里奇·瓦伦斯（Ritchie Valens）的演唱流行起来。录音来自狼族乐队（Los Lobos）的翻唱。
+en:
+  title: La Bamba
+  author: Mexican folk
+  desc: A folk song from the region of Veracruz in Mexico, popularised with the adaptation by Ritchie Valens in 1958. Covered by the band Los Lobos.
+
+curator: Ayu
