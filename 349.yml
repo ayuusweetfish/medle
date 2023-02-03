@@ -1,0 +1,32 @@
+tune:
+  - [2, 1]
+  - [3, 1]
+  - [4, 4]
+  - [7-, 1]
+  - [1, 1]
+  - [2, 4]
+  - [5-, 2]
+  - [1, 6]
+tuneBeatDur: 160
+tunePitchBase: Bb4
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 142 # 1985 / 14
+tuneRevealOffset: 1521
+# https://youtu.be/DlopkAIJ6wQ
+# https://youtu.be/2gG9YSaf4Mg
+
+zh-Hans:
+  title: 春之声（Frühlingsstimmen）
+  author: 约翰·施特劳斯二世（Johann Strauss II）
+  desc: |-
+    奥地利作曲家小约翰·施特劳斯创作于 1882 年的管弦乐圆舞曲。
+    由匈牙利裔美国指挥家尤金·奥曼迪（Eugene Ormandy）指挥费城管弦乐团（Philadelphia Orchestra）演奏。
+en:
+  title: Voices of Spring (Frühlingsstimmen)
+  author: Johann Strauss II
+  desc: |-
+    A waltz for the orchestra by the Austrian composer Johann Strauss Jr. in 1882.
+    Performed by the Philadelphia Orchestra, directed by the Hungarian-American conductor Eugene Ormandy.
+
+curator: Ayu
