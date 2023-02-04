@@ -1,0 +1,32 @@
+tune:
+  - [5, 3]
+  - [6, 1]
+  - [1+, 2]
+  - [3+, 2]
+  - [2+, 1]
+  - [3+, 1]
+  - [2+, 1]
+  - [1+, 1]
+  - [6, 4]
+tuneBeatDur: 200
+tunePitchBase: G4/442
+metronome: [0, 2, 4]
+
+tuneRevealBeatDur: 229 # 3665 / 16
+tuneRevealOffset: 11025
+# https://music.163.com/#/song?id=362035
+
+zh-Hans:
+  title: 花好月圆
+  author: 黄贻钧
+  desc: |-
+    中国作曲家、指挥家黄贻钧创作的民乐乐曲，后来由作曲家、指挥家彭修文改编为民族管弦乐。
+    由江苏省歌舞团民族乐队演奏。
+en:
+  title: Blooming Flowers and the Full Moon (花好月圆)
+  author: Huang Yijun (黄贻钧)
+  desc: |-
+    A piece for ethnic musicial instruments by the Chinese composer and conductor Huang Yijun, later adapted for the ethnic orchestra by the composer and conductor Peng Xiuwen.
+    Performed by the Chinese Traditional Orchestra of Jiangsu, Song and Dance Ensemble.
+
+curator: Ayu
