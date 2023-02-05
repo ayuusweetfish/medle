@@ -1,0 +1,30 @@
+tune:
+  - [3, 2]
+  - [3, 1]
+  - [4, 1]
+  - [3, 1]
+  - [2#, 1]
+  - [3, 1]
+  - [6, 4]
+tuneBeatDur: 250
+tunePitchBase: G4
+metronome: [-1, 2, 4]
+
+tuneRevealBeatDur: 264 # 1846 / 7
+tuneRevealOffset: 2444
+# b23.tv/BV1Wg41127Ro
+
+zh-Hans:
+  title: 二十年（Veinte Años）
+  author: 玛丽亚·特里萨·维拉（María Teresa Vera）
+  desc: |-
+    古巴歌手、作曲家玛丽亚·特里萨·维拉创作的一首拉丁美洲行列舞（habanera）乐曲。
+    由古巴乐团“好景俱乐部”（Buena Vista Social Club）演出。
+en:
+  title: Twenty Years (Veinte Años)
+  author: María Teresa Vera
+  desc: |-
+    A habanera (Latin American country dance) by the Cuban singer and composer, María Teresa Vera.
+    Performed by the Cuban ensemble Buena Vista Social Club.
+
+curator: Ayu
