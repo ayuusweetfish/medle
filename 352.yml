@@ -1,0 +1,33 @@
+tune:
+  - [6-, 2]
+  - [5-, 2]
+  - [1, 2]
+  - [2, 4, -3]
+  - [5, 4, -3]
+  - [3, 4, 2]
+  - [1, 2]
+  - [2, 2]
+  - [6-, 2]
+  - [5-, 2]
+tuneBeatDur: 320
+tunePitchBase: Bb4
+metronome: [0, 2]
+
+tuneRevealBeatDur: 378.5 # 8353 / 22, adjusted
+tuneRevealOffset: 226
+# https://youtu.be/kkC3chi_ysw
+
+zh-Hans:
+  title: 图画展览会（Картинки с выставки）
+  author: 莫杰斯特·穆索尔斯基（Модест Мусоргский）
+  desc: |-
+    俄罗斯作曲家穆索尔斯基作于 1874 年的钢琴组曲，包含十段，各以一幅画作为主题；以及一段穿插其间的“漫步”主题。也被改编为多个不同的管弦乐版本。
+    选段来自乐曲伊始的“漫步”，由拉威尔（Maurice Ravel）改编，柏林爱乐乐团演奏，卡拉扬（Herbert von Karajan）指挥。
+en:
+  title: Pictures at an Exhibition (Картинки с выставки)
+  author: Modest Mussorgsky
+  desc: |-
+    A piano suite by the Russian composer Mussorgsky, composed in 1874. Consists of ten pieces, each based on a painting, plus a recurring “Promenade” theme. Multiple arranges for the orchestra exist.
+    Excerpt from the Promenade at the beginning of the suite, orchestrated by Maurice Ravel, performed by Berliner Philharmoniker, conducted by Herbert von Karajan.
+
+curator: Ayu
