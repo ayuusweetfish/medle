@@ -1,0 +1,33 @@
+tune:
+  - [5-, 1, 1, 2, 1, 1, 2, 1, 1]
+  - [1, 2]
+  - [2, 2]
+  - [3, 2]
+  - [5-, 1, 1, 2, 1, 1]
+  - [1, 2]
+  - [3, 2]
+  - [2, 2]
+  - [7-, 2]
+  - [5-, 2]
+tuneBeatDur: 120
+tunePitchBase: E4
+metronome: [2, 4, 4]
+
+tuneRevealBeatDur: 89.34 # 5718 / 64
+tuneRevealOffset: 8406
+# https://youtu.be/j3T8-aeOrbg
+
+zh-Hans:
+  title: 威廉·退尔序曲（Guglielmo Tell Introduzione）
+  author: 焦阿基诺·罗西尼（Gioachino Rossini）
+  desc: |-
+    意大利作曲家罗西尼作于 1829 年的的歌剧《威廉·退尔》的序曲。
+    选段来自第四部分即终章“瑞士士兵进行曲”。由东京爱乐交响乐团演奏，郑明勋（정명훈）指挥。
+en:
+  title: William Tell Overture
+  author: Gioachino Rossini
+  desc: |-
+    Overture to the opera “William Tell” by the Italian composer Rossini, composed in 1829.
+    Excerpt from the finale of the four parts, known as the “March of the Swiss Soldiers”. Performed by the Tokyo Philharmonic Orchestra, conducted by Chung Myung-whun (정명훈).
+
+curator: Ayu
