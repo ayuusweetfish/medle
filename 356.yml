@@ -1,0 +1,33 @@
+tune:
+  - [5-, 2]
+  - [1, 4]
+  - [3, 1]
+  - [1, 1]
+  - [3, 4]
+  - [2, 2]
+  - [1, 4]
+  - [6-, 2]
+  - [5-, 4]
+tuneBeatDur: 325
+tunePitchBase: Db4
+metronome: [2, 2, 3]
+
+tuneRevealBeatDur: 437 # 10484 / 24
+tuneRevealOffset: 1955
+# https://commons.wikimedia.org/wiki/File:Amazing_Grace_US_Marine_Band.ogg
+# ref: https://youtu.be/l6q7shFb8zs
+
+zh-Hans:
+  title: 奇异恩典（Amazing Grace）
+  author: 佚名（曲）；约翰·牛顿/John Newton（词）
+  desc: |-
+    英国诗人、牧师约翰·牛顿创作的基督教圣诗，创作于 1772 年。1779 年出版，所配曲调为赞美诗《新不列颠》（New Britain）。
+    录音为 Ryan Nowlin 的管乐队改编，由美国海军陆战队军乐团演奏，Sara Sheffield 担任独唱。
+en:
+  title: Amazing Grace
+  author: Anonymous (music); John Newton (lyrics)
+  desc: |-
+    A Christian hymn by the English poet and clergy John Newton, written in 1772. Set to the hymnal tune “New Britain” and published in 1779.
+    Wind band rearrangement by Ryan Nowlin, performed by the US Marine Band, with Sara Sheffield as the vocalist.
+
+curator: Ayu
