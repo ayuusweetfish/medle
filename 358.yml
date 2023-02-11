@@ -1,0 +1,27 @@
+tune:
+  - [1+, 2]
+  - [2+, 2]
+  - [3+, 2]
+  - [2+, 2]
+  - [1+, 2]
+  - [2+, 3]
+  - [7, 1]
+  - [6, 4]
+tuneBeatDur: 215
+tunePitchBase: D4
+metronome: [-2, 4, 4]
+
+tuneRevealBeatDur: 231 # 3239 / 14
+tuneRevealOffset: 488
+# https://youtu.be/cWc7vYjgnTs?t=66
+
+zh-Hans:
+  title: 今夜无人入眠（Nessun dorma）
+  author: 贾科莫·普契尼（Giacomo Puccini）
+  desc: 意大利作曲家普契尼创作的咏叹调，来自首演于 1926 年的歌剧《图兰朵》。由意大利男高音歌唱家卢恰诺·帕瓦罗蒂（Luciano Pavarotti）演唱。
+en:
+  title: Nessun dorma
+  author: Giacomo Puccini
+  desc: An aria by the Italian composer Puccini, from the opera “Turandot”, which premiered in 1926. Vocal solo performed by the Italian tenor singer Luciano Pavarotti.
+
+curator: Ayu
