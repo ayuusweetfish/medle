@@ -1,0 +1,29 @@
+tune:
+  - [5, 2, 1, 1]
+  - [4, 1]
+  - [3, 1]
+  - [4, 2, 1, 1]
+  - [3, 1]
+  - [2, 1]
+  - [5-, 2, 1, 1]
+  - [6-, 1]
+  - [7-, 1]
+  - [1, 3]
+tuneBeatDur: 300
+tunePitchBase: F4
+metronome: [0, 3, 2]
+
+tuneRevealBeatDur: 371 # 6676 / 18
+tuneRevealOffset: 34946
+# https://youtu.be/BjLw3o-3cus
+
+zh-Hans:
+  title: 愉快的梦（ゆかいなゆめ）
+  author: 市川都志春（曲）；岩瀬菊夫（词）
+  desc: 日本作曲家市川都志春创作的儿歌。由杉并儿童合唱团演唱，出版于 1986 年。
+en:
+  title: A Joyful Dream (ゆかいなゆめ)
+  author: Ichikawa Toshiharu/市川都志春 (music); Iwase Kikuo/岩瀬菊夫 (lyrics)
+  desc: A children’s song by the Japanese composer Ichikawa Toshiharu. Performed by Suginami Junior Chorus, published in 1986.
+
+curator: Ayu
