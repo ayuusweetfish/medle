@@ -1,0 +1,29 @@
+tune:
+  - [5-, 1]
+  - [1, 1]
+  - [3, 3]
+  - [5, 1]
+  - [3, 2]
+  - [2, 1]
+  - [1, 1]
+  - [1, 1, 1, 1]
+  - [6-, 1]
+  - [5-, 2]
+tuneBeatDur: 400
+tunePitchBase: Db4
+metronome: [2, 2, 4]
+
+tuneRevealBeatDur: 419 # 6705 / 16
+tuneRevealOffset: 2467
+# https://youtu.be/be2wvNFTLMc
+
+zh-Hans:
+  title: 隐形的翅膀
+  author: 王雅君（曲、词）
+  desc: 台湾词曲作者王雅君为歌手张韶涵创作的歌曲，收录于 2006 年发行的专辑《潘朵拉》中。
+en:
+  title: Invisible Wings (隐形的翅膀)
+  author: Tina Wang/王雅君 (music, lyrics)
+  desc: A song written by the musician and lyricist Tina Wang from Taiwan, for the singer Angela Chang (张韶涵). Included in the album “Pandora” (潘朵拉), released in 2006.
+
+curator: Ayu
