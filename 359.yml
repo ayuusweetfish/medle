@@ -1,0 +1,29 @@
+tune:
+  - [3, 1]
+  - [4, 1]
+  - [5, 4]
+  - [3, 1]
+  - [5, 1]
+  - [6, 4]
+  - [6, 1, 1, 4]
+  - [4, 1]
+  - [6, 1]
+  - [7, 1]
+tuneBeatDur: 279
+tunePitchBase: A3
+metronome: [2, 3, 2]
+
+tuneRevealBeatDur: 279 # 7250 / 26
+tuneRevealOffset: 7796
+# https://youtu.be/DkYuM_r8cKQ
+
+zh-Hans:
+  title: 所有男孩女孩（Tous les garçons et les filles）
+  author: 弗朗索瓦丝·阿迪（Françoise Hardy）、罗杰·萨明（Roger Samyn）
+  desc: 法国创作歌手 Françoise Hardy 发行于 1962 年的歌曲，后来被许多艺术家用不同语言翻唱，也出现于多部电影配乐中。
+en:
+  title: All the Boys and Girls (Tous les garçons et les filles)
+  author: Françoise Hardy, Roger Samyn
+  desc: A song by the French singer-songwriter Françoise Hardy, released in 1962. It has since been covered by various artists in multiple languages and featured in film soundtracks.
+
+curator: Ayu
