@@ -1,0 +1,32 @@
+tune:
+  - [5, 4]
+  - [6, 2]
+  - [5, 4]
+  - [3, 2]
+  - [5, 2]
+  - [3, 1]
+  - [2, 1]
+  - [1, 2]
+  - [5-, 6]
+tuneBeatDur: 250
+tunePitchBase: E4
+metronome: [0, 2, 3]
+
+tuneRevealBeatDur: 282 # 6767 / 24
+tuneRevealOffset: 303
+# https://youtu.be/oSV1-zVXVyI
+
+zh-Hans:
+  title: 小白船
+  author: 尹克荣/윤극영（曲）；金铁男、金正平（词）
+  desc: |-
+    原名《半月》（반월가/반달），韩国诗人、音乐家尹克荣创作于 1924 年的童谣。1951 年，由中国朝鲜族的金铁男与金正平父子翻译成中文。
+    由上海 · 黄浦春天少年合唱团演唱，陈明茹编配，宗融熙伴奏，徐忠莹指挥。
+en:
+  title: Little White Boat (小白船)
+  author: Yoon Kyeok-Young / 윤극영 (music); 金铁男, 金正平 (lyrics)
+  desc: |-
+    Originally titled “Half Moon” (반월가/반달), a nursery rhyme by the Korean poet and musician Yoon Kyeok-Young. Translated into Chinese by the Kims, a father and a son of Chinese Korean descent, in 1951.
+    Performed by Shanghai Spring Children’s Choir, arranged by Chen Mingru, accompanied by Zong Rongxi, conducted by Xu Zhongying.
+
+curator: Ayu
