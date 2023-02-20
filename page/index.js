@@ -643,8 +643,7 @@ const startGame = () => {
       btnShare.classList.add('copied');
       const prefix = `Medle #${puzzleId} ${succeeded ? attResults.length : 'X'}/${attemptsLimit}\n`;
       const suffix =
-        'https://medle.ayu.land/' +
-        (puzzleId === todayDaily ? '' : puzzleId);
+        'https://medle.ayu.land/' + puzzleId;
       return prefix +
         attResults.map((result) => result.map((r) => {
           if (r === 0) return '\u{26aa}';
@@ -689,6 +688,12 @@ const startGame = () => {
 
   window.revealAnswer = () => {
     btnShare.classList.remove('copied');
+
+    if (localStorage.partyshown === undefined) {
+      showModal('modal-party');
+      localStorage.partyshown = '';
+      localStorageToCookie();
+    }
 
     showModal('modal-finish', () => {
       if (playing) window.revealPlay();
@@ -793,11 +798,11 @@ const puzzleLink = (index) => {
   const id = index.toString().padStart(3, '0');
   const date = new Date('2022-02-21');
   date.setDate(date.getDate() + (index - 1));
-  a.innerHTML =
-    date.getFullYear() + '.' +
+  const dateStr = 
+    (index === 366) ? '02.29' :
     (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
-    (date.getDate()).toString().padStart(2, '0') +
-    ` — <strong>#${id}</strong>`;
+    (date.getDate()).toString().padStart(2, '0');
+  a.innerHTML = `${dateStr} — <strong>#${id}</strong>`;
   if (id === puzzleId) {
     a.classList.add('current');
     a.setAttribute('href', `javascript:closeModal()`);
@@ -812,9 +817,9 @@ if (isDaily) {
   });
 
   const container = document.getElementById('archive-container');
-  const latest = parseInt(todayDaily);
-  for (let i = latest; i >= 1; i--) {
-    container.appendChild(puzzleLink(i));
+  const start = parseInt(puzzleId);
+  for (let i = 0; i < 366; i++) {
+    container.appendChild(puzzleLink((start + i - 1) % 366 + 1));
   }
 }
 if (guideToToday) {
@@ -835,6 +840,10 @@ document.getElementById('icon-btn-help').addEventListener('click', () => {
 
 document.getElementById('icon-btn-options').addEventListener('click', () => {
   showModal('modal-options');
+});
+
+document.getElementById('archive-party-link').addEventListener('click', () => {
+  showModal('modal-party');
 });
 
 const initToggleButton = (ids, cfgKey, defaultVal, fn) => {

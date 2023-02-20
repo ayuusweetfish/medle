@@ -234,6 +234,7 @@
   <div class='modal hidden' id='modal-archive'>
     <p class='title' data-t='archive'></p>
     <div id='archive-container'>
+      <div class='puzzle-link' id='archive-party-link'>🎉 <span data-t='archive-party-link'></span></div>
     </div>
     <div class='bottom-shadow'></div>
   </div>
@@ -271,8 +272,8 @@
     </div>
     <br>
     <div style='color: #999'>
-      <span>&copy; Medle 2022</span><br>
-      <span id='repo-notes'><a href='https://github.com/ayuusweetfish/medle'><span data-t='opt-source'></span></a><span data-t='opt-dist'></span></span>
+      <span>&copy; Ayu 2022–2023</span><br>
+      <span id='repo-notes'><a class='text-link' href='https://github.com/ayuusweetfish/medle'><span data-t='opt-source'></span></a><span data-t='opt-dist'></span></span>
     </div>
     <div class='bottom-shadow'></div>
   </div>
@@ -285,6 +286,16 @@
     <p style='color: #999' data-t='daily-update'></p>
   </div>
   <%_ } %>
+  <div class='modal hidden' id='modal-party'>
+    <p class='title'>🎉</p>
+    <p style='font-weight: bold;' data-t='party-1'></p>
+    <p data-t='party-2'></p>
+    <p><span data-t='party-3-pfx'></span><a class='text-link' href='https://ayu.land/medle-postmortem' data-t='party-post'></a><span data-t='party-3-sfx'></span></p>
+    <p data-t='party-4'></p>
+    <div style='text-align: center; margin-top: 1.25em'>
+      <img src='/favicon.ico'>
+    </div>
+  </div>
 </div>
 <div id='modal-bg' class='hidden'></div>
 

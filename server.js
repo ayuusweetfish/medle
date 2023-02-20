@@ -56,7 +56,15 @@ const persistLog = (line) => {
 };
 
 const epoch = new Date('2022-02-20T16:00:00Z');
-const todaysPuzzleIndex = () => Math.ceil((new Date() - epoch) / 86400000);
+const todaysPuzzleIndex = () => {
+  const date = new Date();
+  const id = Math.ceil((date - epoch) / 86400000);
+  if (id <= 366) return id;
+  if (date.getMonth() === 1 && date.getDate() === 29) return 366;
+  date.setYear(2022);
+  if (date < epoch) date.setYear(2023);
+  return Math.ceil((date - epoch) / 86400000);
+}
 const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 
 let packaged = {}
@@ -223,8 +231,7 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
   puzzleContents.isLanding = isLanding;
 
   const isDaily = !!puzzleId.match(/^[0-9]{3,}$/g);
-  puzzleContents.guideToToday =
-    (checkToday && isDaily && parseInt(puzzleId) < parseInt(today));
+  puzzleContents.guideToToday = false;
   puzzleContents.isDaily = isDaily;
   puzzleContents.todayDaily = today;
 
