@@ -807,7 +807,7 @@ const puzzleLink = (index) => {
     a.classList.add('current');
     a.setAttribute('href', `javascript:closeModal()`);
   } else {
-    a.setAttribute('href', `/${id}?past`);
+    a.setAttribute('href', `/${id}`);
   }
   return a;
 };
