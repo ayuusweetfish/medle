@@ -285,7 +285,7 @@ const handler = async (req) => {
       return servePuzzle(req, undefined, false, true);
     }
     if (url.pathname === '/favicon.ico') {
-      return serveFileCached(req, 'favicon.png');
+      return serveFileCached(req, 'page/favicon.png');
     }
     if (url.pathname.startsWith('/build/')) {
       const fileName = url.pathname.substring('/build/'.length);
