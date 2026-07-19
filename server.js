@@ -56,14 +56,18 @@ const persistLog = (line) => {
     });
 };
 
-const cdnPullZone = Deno.env.get('CDN_PULL_ZONE');  // http://{pull-zone-name}.b-cdn.net
-const { serveFile, readTextFile } = cdnPullZone ? (() => {
+// STORAGE_URL=http://{pull-zone-name}.b-cdn.net
+// STORAGE_URL=https://storage.bunnycdn.com/{bucket-name} STORAGE_ACCESS_KEY=...
+const storageUrl = Deno.env.get('STORAGE_URL');
+const storageAccessKey = Deno.env.get('STORAGE_ACCESS_KEY');
+const { serveFile, readTextFile } = storageUrl ? (() => {
   const serveFile = async (req, path) => {
-    const remoteResp = await fetch(cdnPullZone + '/' + path, {
+    const remoteResp = await fetch(storageUrl + '/' + path, {
       method: 'GET',
       headers: {
-        'Range': (req && req.headers.get('Range')) || undefined,
-        'If-None-Match': (req && req.headers.get('If-None-Match')) || undefined,
+        ...(storageAccessKey && { 'AccessKey': storageAccessKey }),
+        ...(req && { 'Range': req.headers.get('Range') }),
+        ...(req && { 'If-None-Match': req.headers.get('If-None-Match') }),
       },
     });
     if (remoteResp.status === 404) return null;
