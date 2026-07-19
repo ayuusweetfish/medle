@@ -76,7 +76,7 @@ const { serveFile, readTextFile } = cdnPullZone ? (() => {
   };
   return { serveFile, readTextFile };
 })() : {
-  serveFile: (await import('https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
+  serveFile: (await import(0 || 'https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
   readTextFile: Deno.readTextFile,
 }
 
@@ -110,6 +110,12 @@ const indexHtmlContents = await readTextFile('page/index.html');
 const indexTemplate = etaCompile(indexHtmlContents);
 
 const availLangs = ['zh-Hans', 'en'];
+
+const serveFileCached = async (req, path) => {
+  const resp = await serveFile(req, path);
+  resp.headers.set('Cache-Control', 'public, max-age=2592000');
+  return resp;
+};
 
 const getCookies = (req) => {
   const cookies = req.headers.get('Cookie');
@@ -255,10 +261,15 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
 
   persistLog(`puzzle ${puzzleId} ${req.url} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
+  const cacheSeconds =
+    isLanding ?
+      86400 - Math.ceil(((Date.now() + 3600000 * 8) % 86400000) / 1000) :
+      2592000;
   return new Response(pageContents, {
     status: 200,
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
+      'Cache-Control': `public, max-age=${cacheSeconds}`,
     },
   });
 };
@@ -270,19 +281,19 @@ const handler = async (req) => {
       return servePuzzle(req, undefined, false, true);
     }
     if (url.pathname === '/favicon.ico') {
-      return serveFile(req, 'favicon.png');
+      return serveFileCached(req, 'favicon.png');
     }
     if (url.pathname.startsWith('/build/')) {
       const fileName = url.pathname.substring('/build/'.length);
-      return serveFile(req, 'build/' + fileName);
+      return serveFileCached(req, 'build/' + fileName);
     }
     if (url.pathname.startsWith('/static/')) {
       const fileName = url.pathname.substring('/static/'.length);
-      return serveFile(req, 'page/' + fileName);
+      return serveFileCached(req, 'page/' + fileName);
     }
     if (url.pathname.startsWith('/reveal/')) {
       const fileName = url.pathname.substring('/reveal/'.length);
-      return serveFile(req, 'puzzles/reveal/' + fileName);
+      return serveFileCached(req, 'puzzles/reveal/' + fileName);
     }
     // Custom puzzle
     if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
