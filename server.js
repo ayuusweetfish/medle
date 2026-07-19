@@ -81,8 +81,8 @@ const { serveFile, readTextFile } = cdnPullZone ? (() => {
 }
 
 const epoch = new Date('2022-02-20T16:00:00Z');
-const todaysPuzzleIndex = () => {
-  const date = new Date();
+const todaysPuzzleIndex = (date) => {
+  date = new Date(date);  // Copy to avoid `setYear()` modifying in-place
   const id = Math.ceil((date - epoch) / 86400000);
   if (id <= 366) return id;
   if (date.getMonth() === 1 && date.getDate() === 29) return 366;
@@ -90,7 +90,7 @@ const todaysPuzzleIndex = () => {
   if (date < epoch) date.setYear(2023);
   return Math.ceil((date - epoch) / 86400000);
 }
-const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
+const todaysPuzzle = (date) => todaysPuzzleIndex(date).toString().padStart(3, '0');
 
 let packaged = {}
 if (Deno.env.get('NOBUILD') !== '1') {
@@ -113,8 +113,9 @@ const availLangs = ['zh-Hans', 'en'];
 
 const serveFileCached = async (req, path) => {
   const resp = await serveFile(req, path);
-  resp.headers.set('Cache-Control', 'public, max-age=2592000');
-  return resp;
+  const headers = new Headers(resp.headers);
+  headers.set('Cache-Control', 'public, max-age=2592000');
+  return new Response(resp.body, { headers });
 };
 
 const getCookies = (req) => {
@@ -184,7 +185,8 @@ const negotiateLang = (accept, supported) => {
 const noSuchPuzzle = () => new Response('No such puzzle > <\n', { status: 404 });
 
 const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
-  const today = todaysPuzzle();
+  const date = new Date();
+  const today = todaysPuzzle(date);
   if (puzzleId === undefined) puzzleId = today;
 
   const file = `puzzles/${puzzleId}.yml`;
@@ -261,17 +263,19 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
 
   persistLog(`puzzle ${puzzleId} ${req.url} ${analytics(req)}`);
   const pageContents = indexTemplate(puzzleContents, etaConfig);
-  const cacheSeconds =
-    isLanding ?
-      86400 - Math.ceil(((Date.now() + 3600000 * 8) % 86400000) / 1000) :
-      2592000;
-  return new Response(pageContents, {
-    status: 200,
-    headers: {
-      'Content-Type': 'text/html; charset=utf-8',
-      'Cache-Control': `public, max-age=${cacheSeconds}`,
-    },
-  });
+  const headers = {
+    'Content-Type': 'text/html; charset=utf-8',
+  };
+  if (isLanding) {
+    const expires =
+      +date - ((+date + 3600000 * 8) % 86400000) + 86400000;
+    const maxAge = isLanding ? Math.floor((expires - +date) / 1000) : 2592000;
+    headers['Cache-Control'] = `public, s-maxage=${maxAge}`;
+    headers['Expires'] = new Date(expires).toUTCString();
+  } else {
+    headers['Cache-Control'] = `public, max-age=2592000`;
+  }
+  return new Response(pageContents, { status: 200, headers });
 };
 
 const handler = async (req) => {
