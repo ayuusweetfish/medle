@@ -1,9 +1,5 @@
-import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
-import { serveFile } from 'https://deno.land/std@0.168.0/http/file_server.ts';
 import { parse as parseYaml } from 'https://deno.land/std@0.168.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
-import { minify as terserMinify } from 'https://esm.sh/terser@5.15.1';
-import { minify as cssoMinify } from 'https://unpkg.com/csso@5.0.5/dist/csso.esm.js';
 
 const log = (msg) => {
   console.log(`${(new Date()).toISOString()} ${msg}`);
@@ -13,6 +9,9 @@ const debug = (Deno.env.get('DEBUG') === '1');
 // Built-in minification
 // deno run --allow-read --allow-write --allow-env server.js build
 if (Deno.args[0] === 'build') {
+  const { minify: terserMinify } = await import(0 || 'https://esm.sh/terser@5.15.1');
+  const { minify: cssoMinify } = await import(0 || 'https://unpkg.com/csso@5.0.5/dist/csso.esm.js');
+
   try {
     await Deno.remove('build', { recursive: true });
   } catch (e) {
@@ -42,6 +41,8 @@ if (Deno.args[0] === 'build') {
   const cssMinified = cssoMinify(cssContents).css;
   const cssHash = hash(cssMinified);
   await Deno.writeTextFile(`build/index.min.${cssHash}.css`, cssMinified);
+  await Deno.writeTextFile(`build/list.txt`,
+    `index.min.${jsHash}.js\nindex.min.${cssHash}.css`);
   Deno.exit();
 }
 
@@ -54,6 +55,30 @@ const persistLog = (line) => {
       body: `${(new Date()).toISOString()} ${line}`,
     });
 };
+
+const cdnPullZone = Deno.env.get('CDN_PULL_ZONE');  // http://{pull-zone-name}.b-cdn.net
+const { serveFile, readTextFile } = cdnPullZone ? (() => {
+  const serveFile = async (req, path) => {
+    const remoteResp = await fetch(cdnPullZone + '/' + path, {
+      method: 'GET',
+      headers: {
+        'Range': (req && req.headers.get('Range')) || undefined,
+        'If-None-Match': (req && req.headers.get('If-None-Match')) || undefined,
+      },
+    });
+    if (remoteResp.status === 404) return null;
+    return remoteResp;
+  };
+  const readTextFile = async (path) => {
+    const resp = await serveFile(null, path);
+    if (resp === null) throw new Deno.errors.NotFound(path);
+    return await resp.text();
+  };
+  return { serveFile, readTextFile };
+})() : {
+  serveFile: (await import('https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
+  readTextFile: Deno.readTextFile,
+}
 
 const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = () => {
@@ -70,10 +95,9 @@ const todaysPuzzle = () => todaysPuzzleIndex().toString().padStart(3, '0');
 let packaged = {}
 if (Deno.env.get('NOBUILD') !== '1') {
   try {
-    for await (const entry of Deno.readDir('build')) {
-      if (entry.name.endsWith('.js')) packaged.indexJs = entry.name;
-      if (entry.name.endsWith('.css')) packaged.indexCss = entry.name;
-    }
+    const builtFiles = (await readTextFile('build/list.txt')).split('\n');
+    packaged.indexJs = builtFiles[0];
+    packaged.indexCss = builtFiles[1];
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) { }
     throw err;
@@ -82,16 +106,10 @@ if (Deno.env.get('NOBUILD') !== '1') {
 if (packaged.indexJs === undefined || packaged.indexCss === undefined)
   packaged = false;
 
-const indexHtmlContents = await Deno.readTextFile('page/index.html');
+const indexHtmlContents = await readTextFile('page/index.html');
 const indexTemplate = etaCompile(indexHtmlContents);
 
 const availLangs = ['zh-Hans', 'en'];
-
-const serveFileCached = async (req, path) => {
-  const resp = await serveFile(req, path);
-  resp.headers.set('Cache-Control', 'public, max-age=2592000');
-  return resp;
-};
 
 const getCookies = (req) => {
   const cookies = req.headers.get('Cookie');
@@ -167,9 +185,7 @@ const servePuzzle = async (req, puzzleId, checkToday, isLanding) => {
 
   let puzzleContents;
   try {
-    puzzleContents = parseYaml(
-      new TextDecoder().decode(await Deno.readFile(file))
-    );
+    puzzleContents = parseYaml(await readTextFile(file));
   } catch (err) {
     if (err instanceof Deno.errors.NotFound)
       return noSuchPuzzle();
@@ -254,19 +270,19 @@ const handler = async (req) => {
       return servePuzzle(req, undefined, false, true);
     }
     if (url.pathname === '/favicon.ico') {
-      return serveFileCached(req, 'favicon.png');
+      return serveFile(req, 'favicon.png');
     }
     if (url.pathname.startsWith('/build/')) {
       const fileName = url.pathname.substring('/build/'.length);
-      return serveFileCached(req, 'build/' + fileName);
+      return serveFile(req, 'build/' + fileName);
     }
     if (url.pathname.startsWith('/static/')) {
       const fileName = url.pathname.substring('/static/'.length);
-      return serveFileCached(req, 'page/' + fileName);
+      return serveFile(req, 'page/' + fileName);
     }
     if (url.pathname.startsWith('/reveal/')) {
       const fileName = url.pathname.substring('/reveal/'.length);
-      return serveFileCached(req, 'puzzles/reveal/' + fileName);
+      return serveFile(req, 'puzzles/reveal/' + fileName);
     }
     // Custom puzzle
     if (url.pathname.match(/^\/[A-Za-z0-9]+$/g)) {
@@ -289,5 +305,10 @@ const handler = async (req) => {
 };
 
 const port = 2220;
-log(`http://localhost:${port}/`);
-await serve(handler, { port });
+const serve =
+  (typeof Bunny !== 'undefined') ? (opts, handler) => Bunny.v1.serve(handler || opts)
+    : Deno.serve;
+serve({
+  port,
+  onListen: () => log(`http://localhost:${port}/`),
+}, handler);
