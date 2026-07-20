@@ -1,3 +1,5 @@
+// [MINI=1] deno run --allow-read=. --allow-write=. --allow-env --unstable-bundle misc/bundle/bundle.js
+
 const imports = []
 imports.push('page/index.html')
 imports.push('build/list.txt')
@@ -13,7 +15,10 @@ const s = (await Deno.readTextFile('./server.js'))
     (path) => `'${path}': (await import('./${path}', { with: { type: 'text' } })).default,\n`
   ).join(''))
 await Deno.writeTextFile('./_bundle_temp.js', s)
-const r = (await Deno.bundle({ entrypoints: ['./_bundle_temp.js'], minify: true }))
+const r = (await Deno.bundle({
+  entrypoints: ['./_bundle_temp.js'],
+  minify: !!Deno.env.get('MINI'),
+}))
 if (r.errors.length > 0 || r.warnings.length > 0)
   console.warn(r.errors, r.warnings)
 else
