@@ -62,7 +62,7 @@ const debug = (Deno.env.get('DEBUG') === '1');
 // STORAGE_URL=https://storage.bunnycdn.com/{bucket-name} STORAGE_ACCESS_KEY=...
 const storageUrl = Deno.env.get('STORAGE_URL');
 const storageAccessKey = Deno.env.get('STORAGE_ACCESS_KEY');
-const { serveFile, readTextFile } = storageUrl ? (() => {
+const { serveFile, readTextFile } = storageUrl ? await (async () => {
   const serveFile = async (req, path) => {
     const remoteResp = await fetch(storageUrl + '/' + path, {
       method: 'GET',
@@ -75,16 +75,23 @@ const { serveFile, readTextFile } = storageUrl ? (() => {
     if (remoteResp.status === 404) return null;
     return remoteResp;
   };
+
+  const bundledFiles = {
+    // ------ bundle ------ //
+  };
+
   const readTextFile = async (path) => {
+    if (bundledFiles[path]) return bundledFiles[path];
     const resp = await serveFile(null, path);
     if (resp === null) throw new Deno.errors.NotFound(path);
     return await resp.text();
   };
+
   return { serveFile, readTextFile };
 })() : {
   serveFile: (await importDefer('https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
   readTextFile: Deno.readTextFile,
-}
+};
 
 const epoch = new Date('2022-02-20T16:00:00Z');
 const todaysPuzzleIndex = (date) => {
@@ -95,7 +102,7 @@ const todaysPuzzleIndex = (date) => {
   date.setYear(2022);
   if (date < epoch) date.setYear(2023);
   return Math.ceil((date - epoch) / 86400000);
-}
+};
 const todaysPuzzle = (date) => todaysPuzzleIndex(date).toString().padStart(3, '0');
 
 let packaged = {}
