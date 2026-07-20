@@ -1,16 +1,13 @@
 import { parse as parseYaml } from 'https://deno.land/std@0.168.0/encoding/yaml.ts';
 import { compile as etaCompile, config as etaConfig } from 'https://deno.land/x/eta@v1.12.3/mod.ts';
 
-const log = (msg) => {
-  console.log(`${(new Date()).toISOString()} ${msg}`);
-};
-const debug = (Deno.env.get('DEBUG') === '1');
+const importDefer = (mod) => import(mod); // Avoid static preloading by runtimes
 
 // Built-in minification
-// deno run --allow-read --allow-write --allow-env server.js build
+// deno run --allow-read=. --allow-write=./build server.js build
 if (Deno.args[0] === 'build') {
-  const { minify: terserMinify } = await import(0 || 'https://esm.sh/terser@5.15.1');
-  const { minify: cssoMinify } = await import(0 || 'https://unpkg.com/csso@5.0.5/dist/csso.esm.js');
+  const { minify: terserMinify } = await importDefer('https://esm.sh/terser@5.15.1');
+  const { minify: cssoMinify } = await importDefer('https://raw.esm.sh/csso@5.0.5/dist/csso.esm.js');
 
   try {
     await Deno.remove('build', { recursive: true });
@@ -56,6 +53,11 @@ const persistLog = (line) => {
     });
 };
 
+const log = (msg) => {
+  console.log(`${(new Date()).toISOString()} ${msg}`);
+};
+const debug = (Deno.env.get('DEBUG') === '1');
+
 // STORAGE_URL=http://{pull-zone-name}.b-cdn.net
 // STORAGE_URL=https://storage.bunnycdn.com/{bucket-name} STORAGE_ACCESS_KEY=...
 const storageUrl = Deno.env.get('STORAGE_URL');
@@ -80,7 +82,7 @@ const { serveFile, readTextFile } = storageUrl ? (() => {
   };
   return { serveFile, readTextFile };
 })() : {
-  serveFile: (await import(0 || 'https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
+  serveFile: (await importDefer('https://deno.land/std@0.168.0/http/file_server.ts')).serveFile,
   readTextFile: Deno.readTextFile,
 }
 
